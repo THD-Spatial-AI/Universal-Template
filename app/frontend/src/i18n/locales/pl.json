@@ -234,7 +234,6 @@
     "creating": "Tworzenie...",
     "agreeToTerms": "Tworząc konto, akceptujesz nasze Warunki korzystania z usługi",
     "signInHere": "Sign in here",
-    "sidePanel": {},
     "consentText": "Wyrażam zgodę na przetwarzanie i przechowywanie moich danych osobowych zgodnie z",
     "declarationOfConsent": "Deklaracją zgody",
     "and": "oraz",
@@ -607,7 +606,6 @@
         "title": "Panel administratora",
         "description": "Zarządzaj obszarami roboczymi, użytkownikami i wszystkimi modelami na platformie. Widoczne tylko dla administratorów."
       },
-      "simulations": {},
       "map": {
         "title": "Interaktywna Mapa"
       },
@@ -766,9 +764,7 @@
         "tip": "Wszystkie pola muszą być wypełnione, zanim będziesz mógł zapisać"
       },
       "calculationStatus": {
-        "title": "Calculation status",
-        "description": "This line tells you whether available dates are loading, unavailable, errored, or ready for selection.",
-        "tip": "If this shows a blocker, the continue button stays disabled until the date selection is valid."
+        "title": "Calculation status"
       },
       "finalReview": {
         "title": "Validation status"
@@ -1214,12 +1210,6 @@
       "skip": "Pomiń"
     }
   },
-  "newsFeed": {
-    "title": "Wiadomości",
-    "readMore": "Czytaj więcej",
-    "noNews": "Brak dostępnych wiadomości",
-    "loading": "Ładowanie wiadomości..."
-  },
   "landing": {
     "contact": {
       "label": "Skontaktuj się",
@@ -1286,12 +1276,10 @@
       "region": "Region",
       "country": "Country",
       "from": "From",
-      "to": "To",
-      "humidity": "Humidity"
+      "to": "To"
     }
   },
   "configurator": {
-    "registry": {},
     "stepper": {
       "stepOf": "Step {{step}} of {{total}}",
       "back": "Back",
@@ -1303,7 +1291,6 @@
       "saveAndRun": "Save & run",
       "introTitle": "New analysis model",
       "introSubtitle": "Let's set up your simulation",
-      "introDesc": "Six guided steps to define your area, validate inputs and launch a analysis run.",
       "introProgressSaved": "Your progress is saved as you go",
       "introDontShow": "Don't show this intro again",
       "introCancel": "Cancel",
@@ -1314,35 +1301,15 @@
       "purpose": "Name this analysis run and choose the date window you want to assess.",
       "modelNameLabel": "Model name",
       "modelNameHint": "A descriptive name so you can find this model later.",
-      "dynamicLoading": "Loading available dynamic dates...",
-      "dynamicEmpty": "No dynamic dates available.",
-      "dynamicSelected": "Selected range: {{start}} to {{end}} ({{days}} days).",
-      "dynamicSelectedOne": "Selected range: {{start}} to {{end}} (1 day).",
-      "dynamicSelectInside": "Select a range inside available dynamic dates: {{start}} to {{end}}",
-      "dynamicAvailable": "Available dynamic dates: {{start}} to {{end}}",
       "suggestedNamesLabel": "Szybki wybór",
       "suggestedName2": "Badanie klastra przemysłowego",
       "modelNameQuestion": "Jak chcesz nazwać ten model?",
       "periodQuestion": "Jaki okres ma zostać oceniony?",
       "assessmentPeriod": "Okres oceny"
     },
-    "layer2": {},
     "layer4": {
-      "purpose": "CAPEX rurociągu skaluje się z oporem trasy; ciężarówka i kolej korzystają z taryf odległościowych.",
       "nextStepHint": "Następnie sprawdzimy wszystko przed zapisaniem.",
       "missingModelName": "Missing — go back to Step 1.",
-      "missingDates": "Start or end date missing.",
-      "loadingDynamic": "Loading available dynamic dates…",
-      "dynamicRequiresBefore": "Dynamic mode requires start before end.",
-      "dynamicUnavailableDates": "The selected dynamic date range contains unavailable dates.",
-      "dynamicRange": "Dynamic {{start}} → {{end}}.",
-      "noGeoJson": "No GeoJSON uploaded.",
-      "noPolygon": "No polygon drawn on the map.",
-      "uploadIncomplete": "GeoJSON upload incomplete.",
-      "areaDetails": "{{count}} regions · {{area}}",
-      "areaDetailsSingle": "1 region · {{area}}",
-      "someSignalsActive": "Running with {{count}} of 3 optional signals — output will differ from the full model.",
-      "bufferDistance": "{{buffer}} m around the AOI.",
       "blockers": "{{count}} blockers — fix before running.",
       "blockersSingle": "1 blocker — fix before running.",
       "warnings": "{{count}} warnings — review before running.",
@@ -1350,12 +1317,8 @@
       "allPassed": "All checks passed. Ready to save & calculate.",
       "labels": {
         "modelName": "Model name",
-        "timeframe": "Timeframe",
-        "areaOfInterest": "Area of interest",
-        "bufferDistance": "Buffer distance"
-      },
-      "costsQuestion": "Ile kosztują te trasy?",
-      "costsInfo": "Obliczone na podstawie tras z poprzedniego kroku."
+        "timeframe": "Timeframe"
+      }
     },
     "layer5": {
       "looksGood": "Everything looks good? Hit ",
@@ -1366,29 +1329,9 @@
         "to": "To"
       }
     },
-    "coverage": {
-      "title": "Data coverage",
-      "unavailable": "Coverage unavailable",
-      "exactFootprint": "Exact raster footprint",
-      "mainFootprint": "{{percent}}% main footprint",
-      "data": "Data",
-      "noData": "No data",
-      "useShaded": "Use shaded areas",
-      "requiredAvailable": "Required inputs are available.",
-      "requiredAvailableDates": "Required inputs are available for {{dates}}.",
-      "avoidBlank": "Avoid blank gaps",
-      "blankDesc": "Blank areas have no valid source raster data for calculation.",
-      "availableData": "Data available"
-    },
-    "mapHeader": {},
     "blocking": {
       "and": " i ",
-      "dateRange": "datę początkową i końcową",
-      "dynamicEmpty": "Brak dostępnych dat dynamicznych.",
-      "dynamicLoading": "Ładowanie dostępnych dat dynamicznych.",
-      "dynamicRange": "Wybierz w pełni dostępny zakres dat dynamicznych.",
-      "modelName": "nazwę modelu",
-      "dynamicOrder": "Data początkowa musi być wcześniejsza lub równa końcowej."
+      "modelName": "nazwę modelu"
     },
     "save": {
       "calculationFailed": "Model został zapisany, ale nie udało się uruchomić obliczeń.",
@@ -1450,10 +1393,6 @@
     }
   },
   "adminDashboard": {
-    "welcome": "Witaj ponownie",
-    "subtitle": "Twoje centrum dowodzenia oceną ryzyka",
-    "navigation": "Nawigacja",
-    "overview": "Przegląd",
     "profile": "Profil",
     "settings": "Ustawienia",
     "logout": "Wyloguj",

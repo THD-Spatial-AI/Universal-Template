@@ -30,10 +30,8 @@ interface RuntimeSample {
 interface WorkloadProfile {
 	areaKm2: number | null;
 	bufferMetres: number | null;
-	calculationMode: string;
 	country: string;
 	dayCount: number;
-	forceCompute: boolean | null;
 	optionalLayers: string;
 	userInputs: string;
 }
@@ -83,14 +81,8 @@ const workloadProfile = (model: Model): WorkloadProfile => {
 	return {
 		areaKm2: modelAreaKm2(model),
 		bufferMetres: typeof buffer === "number" && buffer >= 0 ? buffer : null,
-		calculationMode: typeof parameters?.calculation_mode === "string"
-			? parameters.calculation_mode
-			: "unknown",
 		country: model.country?.trim().toLocaleLowerCase() ?? "",
 		dayCount: dateSpanDays(model.from_date, model.to_date),
-		forceCompute: typeof parameters?.force_compute === "boolean"
-			? parameters.force_compute
-			: null,
 		optionalLayers: stableRecordSignature(parameters?.optional_layers),
 		userInputs: stableRecordKeys(config?.user_inputs),
 	};
@@ -103,8 +95,6 @@ const valuesWithinRatio = (left: number | null, right: number | null, maxRatio: 
 };
 
 const comparableWorkload = (target: WorkloadProfile, sample: WorkloadProfile): boolean =>
-	target.calculationMode === sample.calculationMode &&
-	target.forceCompute === sample.forceCompute &&
 	(!target.country || !sample.country || target.country === sample.country) &&
 	target.optionalLayers === sample.optionalLayers &&
 	target.userInputs === sample.userInputs &&

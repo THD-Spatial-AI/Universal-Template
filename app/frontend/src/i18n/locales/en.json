@@ -70,7 +70,6 @@
       "help": "Help"
     },
     "sidebar": {
-      "energySimulations": "Simulations",
       "map": "Map",
       "simulationReports": "Model Comparison",
       "simulations": "Analysis Runs"
@@ -753,8 +752,7 @@
       "maplibreVoyager": "Detailed vector basemap (Voyager)"
     },
     "dataLayers": {
-      "title": "Data Layers",
-      "energySimulation": "Simulation result layer"
+      "title": "Data Layers"
     },
     "tooltip": "Base Maps"
   },
@@ -954,8 +952,8 @@
       },
       "calculationStatus": {
         "title": "Calculation status",
-        "description": "This line tells you whether available dates are loading, unavailable, errored, or ready for selection.",
-        "tip": "If this shows a blocker, the continue button stays disabled until the date selection is valid."
+        "description": "This line shows the selected period and how many years it covers.",
+        "tip": "If no period is selected, the continue button stays disabled."
       },
       "finalReview": {
         "title": "Validation status",
@@ -1449,8 +1447,7 @@
       "region": "Region",
       "country": "Country",
       "from": "From",
-      "to": "To",
-      "humidity": "Humidity"
+      "to": "To"
     },
     "placeholderTitle": "Results",
     "placeholderText": "This project has no result view yet. Add map layers and summaries for the model output here."
@@ -1477,7 +1474,7 @@
       "saveAndRun": "Save & run",
       "introTitle": "New analysis model",
       "introSubtitle": "Let's set up your simulation",
-      "introDesc": "Six guided steps to define your area, validate inputs and launch a analysis run.",
+      "introDesc": "Four guided steps to set up, review and run a model.",
       "introProgressSaved": "Your progress is saved as you go",
       "introDontShow": "Don't show this intro again",
       "introCancel": "Cancel",
@@ -1490,12 +1487,6 @@
       "modelNameLabel": "Model name",
       "modelNamePlaceholder": "e.g. Baseline 2030–2040",
       "modelNameHint": "A descriptive name so you can find this model later.",
-      "dynamicLoading": "Loading available dynamic dates...",
-      "dynamicEmpty": "No dynamic dates available.",
-      "dynamicSelected": "Selected range: {{start}} to {{end}} ({{days}} days).",
-      "dynamicSelectedOne": "Selected range: {{start}} to {{end}} (1 day).",
-      "dynamicSelectInside": "Select a range inside available dynamic dates: {{start}} to {{end}}",
-      "dynamicAvailable": "Available dynamic dates: {{start}} to {{end}}",
       "suggestedNamesLabel": "Quick picks",
       "suggestedName1": "Baseline Scenario",
       "suggestedName2": "Industrial Cluster Study",
@@ -1518,21 +1509,9 @@
       "placeholder": "No project inputs yet. Add form fields here and store them in the model configuration."
     },
     "layer4": {
-      "purpose": "Pipeline CAPEX scales with route resistance; truck and railway use distance tariffs.",
+      "purpose": "Checks the model setup. Clear any blockers in their steps before the run can start.",
       "nextStepHint": "Next we'll do a final review before saving.",
       "missingModelName": "Missing — go back to Step 1.",
-      "missingDates": "Start or end date missing.",
-      "loadingDynamic": "Loading available dynamic dates…",
-      "dynamicRequiresBefore": "Dynamic mode requires start before end.",
-      "dynamicUnavailableDates": "The selected dynamic date range contains unavailable dates.",
-      "dynamicRange": "Dynamic {{start}} → {{end}}.",
-      "noGeoJson": "No GeoJSON uploaded.",
-      "noPolygon": "No polygon drawn on the map.",
-      "uploadIncomplete": "GeoJSON upload incomplete.",
-      "areaDetails": "{{count}} regions · {{area}}",
-      "areaDetailsSingle": "1 region · {{area}}",
-      "someSignalsActive": "Running with {{count}} of 3 optional signals — output will differ from the full model.",
-      "bufferDistance": "{{buffer}} m around the AOI.",
       "blockers": "{{count}} blockers — fix before running.",
       "blockersSingle": "1 blocker — fix before running.",
       "warnings": "{{count}} warnings — review before running.",
@@ -1540,12 +1519,8 @@
       "allPassed": "All checks passed. Ready to save & calculate.",
       "labels": {
         "modelName": "Model name",
-        "timeframe": "Timeframe",
-        "areaOfInterest": "Area of interest",
-        "bufferDistance": "Buffer distance"
+        "timeframe": "Timeframe"
       },
-      "costsQuestion": "What do these routes cost?",
-      "costsInfo": "Calculated from the routes found in the previous step.",
       "missingYears": "Start or end year missing — go back to Step 1.",
       "yearOrder": "The start year is after the end year.",
       "periodYears": "{{period}} · {{count}} years"
@@ -1560,29 +1535,9 @@
         "to": "To"
       }
     },
-    "coverage": {
-      "title": "Data coverage",
-      "unavailable": "Coverage unavailable",
-      "exactFootprint": "Exact raster footprint",
-      "mainFootprint": "{{percent}}% main footprint",
-      "data": "Data",
-      "noData": "No data",
-      "useShaded": "Use shaded areas",
-      "requiredAvailable": "Required inputs are available.",
-      "requiredAvailableDates": "Required inputs are available for {{dates}}.",
-      "avoidBlank": "Avoid blank gaps",
-      "blankDesc": "Blank areas have no valid source raster data for calculation.",
-      "availableData": "Data available"
-    },
-    "mapHeader": {},
     "blocking": {
       "and": " and ",
-      "dateRange": "a start and end date",
-      "dynamicEmpty": "No dynamic dates are currently available.",
-      "dynamicLoading": "Loading available dynamic dates.",
-      "dynamicRange": "Select a fully available dynamic date range.",
       "modelName": "a model name",
-      "dynamicOrder": "The start date must be before or equal to the end date.",
       "yearRange": "a start and end year",
       "yearOrder": "The start year must not be after the end year."
     },

@@ -145,11 +145,7 @@ export const useModelCreation = ({
           config: {
             ...withoutBuffer(originalConfig),
             // Project inputs go here.
-            parameters: {
-              ...(originalParameters ?? {}),
-              calculation_mode: "dynamic",
-              force_compute: true,
-            },
+            parameters: originalParameters ?? {},
           } as Record<string, unknown>,
         };
 

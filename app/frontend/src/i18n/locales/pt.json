@@ -389,7 +389,6 @@
     "creating": "A criar...",
     "agreeToTerms": "Ao criar uma conta, aceita os nossos Termos de Serviço",
     "signInHere": "Inicie sessão aqui",
-    "sidePanel": {},
     "consentText": "Consinto o tratamento e o armazenamento dos meus dados pessoais nos termos da",
     "declarationOfConsent": "Declaração de consentimento",
     "and": "e",
@@ -762,7 +761,6 @@
         "title": "Painel de administração",
         "description": "Gerencie espaços de trabalho, usuários e todos os modelos da plataforma. Visível apenas para administradores."
       },
-      "simulations": {},
       "map": {
         "title": "Mapa interativo"
       },
@@ -921,9 +919,7 @@
         "tip": "Todos os campos têm de estar preenchidos antes de poder guardar"
       },
       "calculationStatus": {
-        "title": "Estado do cálculo",
-        "description": "Esta linha indica se as datas disponíveis estão a carregar, indisponíveis, com erro ou prontas a selecionar.",
-        "tip": "Se mostrar um bloqueio, o botão continuar fica desativado até a seleção de datas ser válida."
+        "title": "Estado do cálculo"
       },
       "finalReview": {
         "title": "Estado da validação"
@@ -1280,12 +1276,10 @@
       "region": "Região",
       "country": "País",
       "from": "De",
-      "to": "Até",
-      "humidity": "Humidade"
+      "to": "Até"
     }
   },
   "configurator": {
-    "registry": {},
     "stepper": {
       "stepOf": "Passo {{step}} de {{total}}",
       "back": "Voltar",
@@ -1297,7 +1291,6 @@
       "saveAndRun": "Guardar e executar",
       "introTitle": "Novo modelo de análise",
       "introSubtitle": "Vamos configurar a sua simulação",
-      "introDesc": "Seis passos guiados para definir a área, validar os dados e iniciar uma análise.",
       "introProgressSaved": "O seu progresso é guardado à medida que avança",
       "introDontShow": "Não mostrar esta introdução novamente",
       "introCancel": "Cancelar",
@@ -1308,35 +1301,15 @@
       "purpose": "Dê um nome a esta análise e escolha o período a avaliar.",
       "modelNameLabel": "Nome do modelo",
       "modelNameHint": "Um nome descritivo para encontrar este modelo mais tarde.",
-      "dynamicLoading": "A carregar as datas dinâmicas disponíveis...",
-      "dynamicEmpty": "Não há datas dinâmicas disponíveis.",
-      "dynamicSelected": "Intervalo selecionado: {{start}} a {{end}} ({{days}} dias).",
-      "dynamicSelectedOne": "Intervalo selecionado: {{start}} a {{end}} (1 dia).",
-      "dynamicSelectInside": "Selecione um intervalo dentro das datas dinâmicas disponíveis: {{start}} a {{end}}",
-      "dynamicAvailable": "Datas dinâmicas disponíveis: {{start}} a {{end}}",
       "suggestedNamesLabel": "Sugestões rápidas",
       "suggestedName2": "Estudo de cluster industrial",
       "modelNameQuestion": "Como quer chamar a este modelo?",
       "periodQuestion": "Que período deve avaliar?",
       "assessmentPeriod": "Período de avaliação"
     },
-    "layer2": {},
     "layer4": {
-      "purpose": "O CAPEX de conduta acompanha a resistência do traçado; camião e ferrovia usam tarifas por distância.",
       "nextStepHint": "A seguir faremos uma revisão final antes de guardar.",
       "missingModelName": "Em falta — volte ao passo 1.",
-      "missingDates": "Falta a data de início ou de fim.",
-      "loadingDynamic": "A carregar as datas dinâmicas disponíveis…",
-      "dynamicRequiresBefore": "O modo dinâmico exige que o início seja anterior ao fim.",
-      "dynamicUnavailableDates": "O intervalo de datas dinâmicas selecionado contém datas indisponíveis.",
-      "dynamicRange": "Dinâmico {{start}} → {{end}}.",
-      "noGeoJson": "Nenhum GeoJSON carregado.",
-      "noPolygon": "Nenhum polígono desenhado no mapa.",
-      "uploadIncomplete": "Carregamento do GeoJSON incompleto.",
-      "areaDetails": "{{count}} regiões · {{area}}",
-      "areaDetailsSingle": "1 região · {{area}}",
-      "someSignalsActive": "A executar com {{count}} de 3 sinais opcionais — o resultado será diferente do modelo completo.",
-      "bufferDistance": "{{buffer}} m em redor da AOI.",
       "blockers": "{{count}} bloqueios — resolva antes de executar.",
       "blockersSingle": "1 bloqueio — resolva antes de executar.",
       "warnings": "{{count}} avisos — reveja antes de executar.",
@@ -1344,12 +1317,8 @@
       "allPassed": "Todas as verificações passaram. Pronto para guardar e calcular.",
       "labels": {
         "modelName": "Nome do modelo",
-        "timeframe": "Período",
-        "areaOfInterest": "Área de interesse",
-        "bufferDistance": "Distância de buffer"
-      },
-      "costsQuestion": "Quanto custam estas rotas?",
-      "costsInfo": "Calculado a partir das rotas encontradas no passo anterior."
+        "timeframe": "Período"
+      }
     },
     "layer5": {
       "looksGood": "Está tudo bem? Prima ",
@@ -1360,29 +1329,9 @@
         "to": "Até"
       }
     },
-    "coverage": {
-      "title": "Cobertura de dados",
-      "unavailable": "Cobertura indisponível",
-      "exactFootprint": "Área raster exata",
-      "mainFootprint": "{{percent}}% da área principal",
-      "data": "Dados",
-      "noData": "Sem dados",
-      "useShaded": "Use as zonas sombreadas",
-      "requiredAvailable": "Os dados necessários estão disponíveis.",
-      "requiredAvailableDates": "Os dados necessários estão disponíveis para {{dates}}.",
-      "avoidBlank": "Evite lacunas em branco",
-      "blankDesc": "As zonas em branco não têm dados raster de origem válidos para cálculo.",
-      "availableData": "Dados disponíveis"
-    },
-    "mapHeader": {},
     "blocking": {
       "and": " e ",
-      "dateRange": "uma data de início e de fim",
-      "dynamicEmpty": "Não há datas dinâmicas disponíveis de momento.",
-      "dynamicLoading": "A carregar as datas dinâmicas disponíveis.",
-      "dynamicRange": "Selecione um intervalo de datas dinâmicas totalmente disponível.",
-      "modelName": "um nome de modelo",
-      "dynamicOrder": "A data de início deve ser anterior ou igual à data de fim."
+      "modelName": "um nome de modelo"
     },
     "save": {
       "calculationFailed": "O modelo foi guardado, mas não foi possível iniciar o cálculo.",

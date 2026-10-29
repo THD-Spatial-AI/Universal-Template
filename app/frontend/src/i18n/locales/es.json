@@ -389,7 +389,6 @@
     "creating": "Creando...",
     "agreeToTerms": "Al crear una cuenta, acepta nuestros Términos de Servicio",
     "signInHere": "Sign in here",
-    "sidePanel": {},
     "consentText": "Doy mi consentimiento para el tratamiento y almacenamiento de mis datos personales de acuerdo con la",
     "declarationOfConsent": "Declaración de Consentimiento",
     "and": "y",
@@ -762,7 +761,6 @@
         "title": "Panel de administración",
         "description": "Gestiona espacios de trabajo, usuarios y todos los modelos de la plataforma. Solo visible para administradores."
       },
-      "simulations": {},
       "map": {
         "title": "Mapa Interactivo"
       },
@@ -921,9 +919,7 @@
         "tip": "Todos los campos deben estar completos antes de poder guardar"
       },
       "calculationStatus": {
-        "title": "Calculation status",
-        "description": "This line tells you whether available dates are loading, unavailable, errored, or ready for selection.",
-        "tip": "If this shows a blocker, the continue button stays disabled until the date selection is valid."
+        "title": "Calculation status"
       },
       "finalReview": {
         "title": "Validation status"
@@ -1280,12 +1276,10 @@
       "region": "Region",
       "country": "Country",
       "from": "From",
-      "to": "To",
-      "humidity": "Humidity"
+      "to": "To"
     }
   },
   "configurator": {
-    "registry": {},
     "stepper": {
       "stepOf": "Step {{step}} of {{total}}",
       "back": "Back",
@@ -1297,7 +1291,6 @@
       "saveAndRun": "Save & run",
       "introTitle": "New analysis model",
       "introSubtitle": "Let's set up your simulation",
-      "introDesc": "Six guided steps to define your area, validate inputs and launch a analysis run.",
       "introProgressSaved": "Your progress is saved as you go",
       "introDontShow": "Don't show this intro again",
       "introCancel": "Cancel",
@@ -1308,35 +1301,15 @@
       "purpose": "Name this analysis run and choose the date window you want to assess.",
       "modelNameLabel": "Model name",
       "modelNameHint": "A descriptive name so you can find this model later.",
-      "dynamicLoading": "Loading available dynamic dates...",
-      "dynamicEmpty": "No dynamic dates available.",
-      "dynamicSelected": "Selected range: {{start}} to {{end}} ({{days}} days).",
-      "dynamicSelectedOne": "Selected range: {{start}} to {{end}} (1 day).",
-      "dynamicSelectInside": "Select a range inside available dynamic dates: {{start}} to {{end}}",
-      "dynamicAvailable": "Available dynamic dates: {{start}} to {{end}}",
       "suggestedNamesLabel": "Selección rápida",
       "suggestedName2": "Estudio de clúster industrial",
       "modelNameQuestion": "¿Cómo quieres llamar a este modelo?",
       "periodQuestion": "¿Qué periodo debe evaluar?",
       "assessmentPeriod": "Periodo de evaluación"
     },
-    "layer2": {},
     "layer4": {
-      "purpose": "El CAPEX de tubería escala con la resistencia de la ruta; camión y ferrocarril usan tarifas por distancia.",
       "nextStepHint": "A continuación haremos una revisión final antes de guardar.",
       "missingModelName": "Missing — go back to Step 1.",
-      "missingDates": "Start or end date missing.",
-      "loadingDynamic": "Loading available dynamic dates…",
-      "dynamicRequiresBefore": "Dynamic mode requires start before end.",
-      "dynamicUnavailableDates": "The selected dynamic date range contains unavailable dates.",
-      "dynamicRange": "Dynamic {{start}} → {{end}}.",
-      "noGeoJson": "No GeoJSON uploaded.",
-      "noPolygon": "No polygon drawn on the map.",
-      "uploadIncomplete": "GeoJSON upload incomplete.",
-      "areaDetails": "{{count}} regions · {{area}}",
-      "areaDetailsSingle": "1 region · {{area}}",
-      "someSignalsActive": "Running with {{count}} of 3 optional signals — output will differ from the full model.",
-      "bufferDistance": "{{buffer}} m around the AOI.",
       "blockers": "{{count}} blockers — fix before running.",
       "blockersSingle": "1 blocker — fix before running.",
       "warnings": "{{count}} warnings — review before running.",
@@ -1344,12 +1317,8 @@
       "allPassed": "All checks passed. Ready to save & calculate.",
       "labels": {
         "modelName": "Model name",
-        "timeframe": "Timeframe",
-        "areaOfInterest": "Area of interest",
-        "bufferDistance": "Buffer distance"
-      },
-      "costsQuestion": "¿Cuánto cuestan estas rutas?",
-      "costsInfo": "Calculado a partir de las rutas del paso anterior."
+        "timeframe": "Timeframe"
+      }
     },
     "layer5": {
       "looksGood": "Everything looks good? Hit ",
@@ -1360,29 +1329,9 @@
         "to": "To"
       }
     },
-    "coverage": {
-      "title": "Data coverage",
-      "unavailable": "Coverage unavailable",
-      "exactFootprint": "Exact raster footprint",
-      "mainFootprint": "{{percent}}% main footprint",
-      "data": "Data",
-      "noData": "No data",
-      "useShaded": "Use shaded areas",
-      "requiredAvailable": "Required inputs are available.",
-      "requiredAvailableDates": "Required inputs are available for {{dates}}.",
-      "avoidBlank": "Avoid blank gaps",
-      "blankDesc": "Blank areas have no valid source raster data for calculation.",
-      "availableData": "Data available"
-    },
-    "mapHeader": {},
     "blocking": {
       "and": " y ",
-      "dateRange": "una fecha de inicio y de fin",
-      "dynamicEmpty": "No hay fechas dinámicas disponibles actualmente.",
-      "dynamicLoading": "Cargando fechas dinámicas disponibles.",
-      "dynamicRange": "Selecciona un rango de fechas dinámicas totalmente disponible.",
-      "modelName": "un nombre de modelo",
-      "dynamicOrder": "La fecha de inicio debe ser anterior o igual a la de fin."
+      "modelName": "un nombre de modelo"
     },
     "save": {
       "calculationFailed": "El modelo se guardó, pero no se pudo iniciar el cálculo.",
@@ -1444,10 +1393,6 @@
     }
   },
   "adminDashboard": {
-    "welcome": "Bienvenido de nuevo",
-    "subtitle": "Tu centro de mando de evaluación de riesgos",
-    "navigation": "Navegación",
-    "overview": "Resumen",
     "profile": "Perfil",
     "settings": "Configuración",
     "logout": "Cerrar sesión",
