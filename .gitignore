@@ -15,5 +15,3 @@ sonar-project.properties
 main
 bin/
 
-# Partner survey data (keep out of the repo)
-ruhr/

@@ -13,7 +13,7 @@ For your security, make sure to use a strong, unique password.
 If you didn't request this, please ignore this email. Your account remains secure.
 
 ---
-App - Energy Simulation Platform
-Advanced energy simulation and analysis
-Empowering sustainable energy decisions
+App - Assessment Platform
+Geospatial modelling and analysis
+Supporting informed decisions
 © 2026 App. All rights reserved.

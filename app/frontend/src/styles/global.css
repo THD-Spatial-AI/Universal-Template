@@ -11,8 +11,6 @@
 @source "../../../../libs/auth/src";
 /* stylelint-disable-next-line at-rule-no-unknown */
 @source "../../../../libs/ui/src";
-/* stylelint-disable-next-line at-rule-no-unknown */
-@source "../../../../../feeedback_pipeline/frontend_overlay/src";
 
 
 @theme inline {

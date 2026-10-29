@@ -549,7 +549,13 @@
     "estimateBasis_one": "Based on 1 comparable run, which took {{typical}}",
     "estimateBasis_other": "Based on {{count}} comparable runs, which typically take {{typical}}",
     "view": "View",
-    "run": "Run"
+    "run": "Run",
+    "showVersions_one": "Show {{count}} version",
+    "showVersions_other": "Show {{count}} versions",
+    "hideVersions_one": "Hide {{count}} version",
+    "hideVersions_other": "Hide {{count}} versions",
+    "originalVersion": "Original",
+    "originalVersionHint": "This row is the original model. Its status, period and activity are its own; each version has its own row."
   },
   "userManagement": {
     "groups": {
@@ -1614,8 +1620,7 @@
       "allSimulationModels": "All Simulation Models",
       "simulationEngine": "Simulation-Engine",
       "feedback": "Feedback",
-      "userManagement": "User Management",
-      "gridEngine": "Compute Engine"
+      "userManagement": "User Management"
     },
     "stats": {
       "accessLevel": "Access Level",

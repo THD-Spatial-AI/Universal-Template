@@ -72,7 +72,7 @@
     "sidebar": {
       "map": "Kaart",
       "simulationReports": "Modelvergelijking",
-      "simulations": "Analysis Runs"
+      "simulations": "Analyseruns"
     },
     "menu": {
       "profile": "Profiel",
@@ -107,7 +107,8 @@
     "saved": "Saved",
     "copied": "Gekopieerd",
     "copy": "Kopiëren",
-    "done": "Klaar"
+    "done": "Klaar",
+    "appName": "Projectbeoordeling"
   },
   "dashboard": {
     "stats": {
@@ -233,11 +234,12 @@
     "createPassword": "Maak een wachtwoord aan",
     "creating": "Aanmaken...",
     "agreeToTerms": "Door een account aan te maken, gaat u akkoord met onze Servicevoorwaarden",
-    "signInHere": "Sign in here",
+    "signInHere": "Hier inloggen",
     "consentText": "Ik geef toestemming voor de verwerking en opslag van mijn persoonsgegevens in overeenstemming met de",
     "declarationOfConsent": "Toestemmingsverklaring",
     "and": "en",
-    "privacyPolicy": "Privacybeleid"
+    "privacyPolicy": "Privacybeleid",
+    "joinUsAccess": "Meld u aan om toegang te krijgen tot het platform"
   },
   "workspace": {
     "workspace": "Werkruimte",
@@ -289,7 +291,7 @@
     "duplicate": "Dupliceren",
     "export": "Exporteren",
     "compare": "Vergelijken",
-    "dashboard": "Model Dashboard",
+    "dashboard": "Modeldashboard",
     "searchModels": "Modellen zoeken...",
     "allModels": "Alle modellen",
     "modelGroups": "Modelgroepen",
@@ -382,7 +384,17 @@
     "estimateBasis_one": "Op basis van 1 vergelijkbare run, die {{typical}} duurde",
     "estimateBasis_other": "Op basis van {{count}} vergelijkbare runs, die meestal {{typical}} duren",
     "view": "Bekijken",
-    "run": "Starten"
+    "run": "Starten",
+    "manageConfigurations": "Beheer uw modelconfiguraties",
+    "loadingModelsDescription": "Even geduld, uw modellen worden geladen.",
+    "noModelsYet": "U heeft nog geen modellen gemaakt. Begin met het maken van uw eerste model!",
+    "peopleWithAccessDescription": "De hier vermelde gebruikers kunnen dit model en de resultaatlagen openen.",
+    "showVersions_one": "{{count}} versie tonen",
+    "showVersions_other": "{{count}} versies tonen",
+    "hideVersions_one": "{{count}} versie verbergen",
+    "hideVersions_other": "{{count}} versies verbergen",
+    "originalVersion": "Origineel",
+    "originalVersionHint": "Deze rij is het originele model. Status, periode en activiteit horen bij dit model; elke versie heeft een eigen rij."
   },
   "userManagement": {
     "groups": {
@@ -540,27 +552,27 @@
       "failedToUpdate": "Profiel bijwerken mislukt. Probeer het opnieuw."
     },
     "password": {
-      "title": "Change Password",
-      "description": "Update the password you use to sign in",
-      "current": "Current Password",
-      "new": "New Password",
-      "confirm": "Confirm New Password",
-      "currentPlaceholder": "Enter your current password",
-      "newPlaceholder": "Enter a new password",
-      "confirmPlaceholder": "Re-enter your new password",
-      "submit": "Update Password",
+      "title": "Wachtwoord wijzigen",
+      "description": "Wijzig het wachtwoord waarmee u inlogt",
+      "current": "Huidig wachtwoord",
+      "new": "Nieuw wachtwoord",
+      "confirm": "Nieuw wachtwoord bevestigen",
+      "currentPlaceholder": "Voer uw huidige wachtwoord in",
+      "newPlaceholder": "Voer een nieuw wachtwoord in",
+      "confirmPlaceholder": "Voer het nieuwe wachtwoord opnieuw in",
+      "submit": "Wachtwoord bijwerken",
       "updating": "Updating...",
-      "updated": "Password changed successfully!",
-      "failed": "Failed to change password. Please try again.",
+      "updated": "Wachtwoord succesvol gewijzigd!",
+      "failed": "Wachtwoord wijzigen mislukt. Probeer het opnieuw.",
       "requirements": {
-        "minChars": "At least 8 characters",
-        "uppercase": "One uppercase letter",
-        "lowercase": "One lowercase letter",
-        "number": "One number",
-        "specialChar": "One special character"
+        "minChars": "Minimaal 8 tekens",
+        "uppercase": "Eén hoofdletter",
+        "lowercase": "Eén kleine letter",
+        "number": "Eén cijfer",
+        "specialChar": "Eén speciaal teken"
       },
-      "requirementsNotMet": "Password does not meet all requirements",
-      "mismatch": "Passwords do not match"
+      "requirementsNotMet": "Het wachtwoord voldoet niet aan alle eisen",
+      "mismatch": "De wachtwoorden komen niet overeen"
     }
   },
   "simulation": {
@@ -581,22 +593,25 @@
       "cartoPositron": "Lichte thema basiskaart van CartoDB",
       "cartoVoyager": "Gedetailleerde basiskaart van CartoDB",
       "openTopoMap": "Topografische stijlkaart",
-      "maplibreDark": "Dark vector basemap",
+      "maplibreDark": "Donkere vectorkaart",
       "maplibreVoyager": "Detailed vector basemap"
     },
     "dataLayers": {
       "title": "Datalagen"
     },
-    "tooltip": "Base Maps"
+    "tooltip": "Basiskaarten"
   },
   "tour": {
     "product": {
       "welcome": {
-        "tip": "Deze rondleiding wordt slechts één keer getoond. U kunt hem op elk moment overslaan of opnieuw starten vanuit de zijbalk."
+        "tip": "Deze rondleiding wordt slechts één keer getoond. U kunt hem op elk moment overslaan of opnieuw starten vanuit de zijbalk.",
+        "title": "Welkom op het platform!",
+        "description": "Een korte rondleiding helpt u op weg."
       },
       "newAssessment": {
         "title": "Nieuwe Beoordeling Maken",
-        "tip": "Wanneer u hier klikt, gaat u naar een speciale rondleiding voor het gebiedsselectieproces!"
+        "tip": "Wanneer u hier klikt, gaat u naar een speciale rondleiding voor het gebiedsselectieproces!",
+        "description": "Klaar om te beginnen? Klik op deze knop om uw eerste model te maken. Hiermee opent u de begeleide instelling."
       },
       "profile": {
         "title": "Profiel & Instellingen",
@@ -607,7 +622,8 @@
         "description": "Beheer werkruimtes, gebruikers en alle modellen op het platform. Alleen zichtbaar voor beheerders."
       },
       "map": {
-        "title": "Interactieve Kaart"
+        "title": "Interactieve Kaart",
+        "description": "Uw centrale werkruimte voor geografische analyse. Bekijk kaartlagen en selecteer gebieden."
       },
       "reports": {
         "title": "Simulatierapporten",
@@ -630,7 +646,9 @@
         "title": "U bent Klaar!",
         "nextSteps": "Volgende Stappen",
         "restartTour": "Rondleiding Herstarten",
-        "restartTourDescription": "U kunt deze rondleiding op elk moment herstarten vanuit de zijbalk."
+        "restartTourDescription": "U kunt deze rondleiding op elk moment herstarten vanuit de zijbalk.",
+        "description": "U heeft de rondleiding voltooid! U bent nu klaar om uw eerste model te maken.",
+        "nextStepsDescription": "Maak uw eerste model of verken de interactieve kaart."
       },
       "dashboard": {
         "tabsOverview": {
@@ -670,7 +688,8 @@
           "description": "Elke rij is een modelfamilie met het oorspronkelijke model bovenaan. De versiebadge klapt de kopieën uit, oudste eerst."
         },
         "columns": {
-          "title": "Kolommen"
+          "title": "Kolommen",
+          "description": "‘Laatste activiteit’ toont eerst lopende modellen, daarna de laatst voltooide. Periode en gebied in één oogopslag."
         },
         "pin": {
           "title": "Modellen pinnen",
@@ -717,7 +736,8 @@
       },
       "demo": {
         "example": "Voorbeeld",
-        "justNow": "Zojuist"
+        "justNow": "Zojuist",
+        "title": "Voorbeeldmodel"
       },
       "github": {
         "title": "GitHub",
@@ -738,21 +758,32 @@
       "version": {
         "title": "Wat is er nieuw",
         "description": "Klik op het versienummer om de nieuwste functies en verbeteringen te zien."
+      },
+      "simulations": {
+        "title": "Simulaties",
+        "description": "Maak en beheer uw modellen. Start nieuwe beoordelingen, stel parameters in en bekijk bestaande berekeningen."
       }
     },
     "areaSelect": {
       "welcome": {
-        "tip": "U leert hoe u uw model configureert, gebieden tekent en uw simulatie maakt."
+        "tip": "U leert hoe u uw model configureert, gebieden tekent en uw simulatie maakt.",
+        "title": "Gids voor het instellen van een model",
+        "description": "Welkom! Deze rondleiding helpt u bij het maken van een model."
       },
       "modelName": {
-        "title": "Modelnaam"
+        "title": "Modelnaam",
+        "description": "Geef uw model een duidelijke naam, zodat u het later in uw dashboard terugvindt.",
+        "tip": "Goede namen: \"Basis 2030\" of \"Scenario regio A\"."
       },
       "dateRange": {
-        "title": "Simulatieperiode"
+        "title": "Simulatieperiode",
+        "description": "Kies de periode die het model beslaat.",
+        "tip": "Langere periodes geven een breder beeld."
       },
       "mapContainer": {
         "title": "Interactieve Kaart",
-        "tip": "U kunt zoomen en de kaart verschuiven om verschillende regio's te verkennen"
+        "tip": "U kunt zoomen en de kaart verschuiven om verschillende regio's te verkennen",
+        "description": "Dit is uw hoofdwerkruimte. Selecteer op de kaart plaatsen of gebieden voor uw model."
       },
       "search": {
         "title": "Locatie Zoeken",
@@ -761,17 +792,21 @@
       },
       "save": {
         "title": "Simulatie Maken",
-        "tip": "Alle velden moeten zijn ingevuld voordat u kunt opslaan"
+        "tip": "Alle velden moeten zijn ingevuld voordat u kunt opslaan",
+        "description": "Als alles is ingesteld, klikt u hier om het model op te slaan en de berekening te starten."
       },
       "calculationStatus": {
-        "title": "Calculation status"
+        "title": "Berekeningsstatus",
+        "description": "Deze regel toont de gekozen periode en hoeveel jaren die beslaat.",
+        "tip": "Zonder gekozen periode blijft de knop ‘Doorgaan’ uitgeschakeld."
       },
       "finalReview": {
-        "title": "Validation status"
+        "title": "Validatiestatus",
+        "description": "De controle bekijkt de modelnaam en periode voordat het model kan worden opgeslagen."
       },
       "saveSummary": {
-        "title": "Save summary",
-        "description": "This final summary shows the values that will be saved with the model and sent to the calculation workflow."
+        "title": "Samenvatting",
+        "description": "Deze samenvatting toont de waarden die met het model worden opgeslagen en naar de berekening gaan."
       },
       "ui": {
         "sections": {
@@ -781,6 +816,11 @@
           "layers": "Lagen",
           "review": "Controleren"
         }
+      },
+      "configure": {
+        "title": "Projectinvoer",
+        "description": "Stel hier de projectspecifieke invoer van het model in.",
+        "tip": "Elk project vervangt deze stap door eigen invoer."
       }
     },
     "buttons": {
@@ -830,7 +870,7 @@
       "submitFailed": "Feedback verzenden mislukt. Probeer het later opnieuw.",
       "invalidImageType": "Selecteer een geldig afbeeldingsbestand (PNG, JPG, GIF)",
       "imageTooLarge": "Afbeeldingsgrootte moet kleiner zijn dan 15MB",
-      "payloadTooLarge": "The attachment is too large. Please use smaller images."
+      "payloadTooLarge": "De bijlage is te groot. Gebruik kleinere afbeeldingen."
     },
     "myFeedback": {
       "title": "Mijn feedback",
@@ -851,10 +891,10 @@
     },
     "write": "Write",
     "preview": "Preview",
-    "markdownSupported": "Markdown supported",
+    "markdownSupported": "Markdown wordt ondersteund",
     "words": "words",
     "chars": "chars",
-    "previewEmpty": "Nothing to preview"
+    "previewEmpty": "Niets om te tonen"
   },
   "settings": {
     "title": "Instellingen",
@@ -957,7 +997,8 @@
         "intermediate": "Gemiddeld",
         "manager": "Manager",
         "expert": "Expert"
-      }
+      },
+      "subtitle": "Selectielimieten"
     },
     "accessLevels": {
       "basic": "Basis",
@@ -1023,7 +1064,9 @@
     "cartoPolicy": "Carto Privacybeleid",
     "osmfPolicy": "OSMF Privacybeleid",
     "deny": "Weigeren",
-    "accept": "Accepteren"
+    "accept": "Accepteren",
+    "dataPolicy": "Privacybeleid",
+    "platformPolicy": "Privacybeleid van het platform"
   },
   "forms": {
     "user": {
@@ -1188,7 +1231,8 @@
       "step1": "Kies je voorkeurstaal",
       "step2": "Stel uw kaart- en meldingsvoorkeuren in",
       "step3": "Configureer meldingsinstellingen",
-      "timeNote": "Dit duurt maar een minuut"
+      "timeNote": "Dit duurt maar een minuut",
+      "greeting": "Welkom op het platform!"
     },
     "language": {
       "title": "Taalvoorkeur",
@@ -1246,61 +1290,64 @@
     }
   },
   "modelResults": {
-    "title": "Model Results",
+    "title": "Modelresultaten",
     "errors": {
-      "noId": "No model ID provided",
-      "loadFailed": "Failed to load model results",
-      "layerIncomplete": "Layer configuration is incomplete",
-      "layerLoad": "Failed to load layer from GeoServer",
-      "tileLoad": "Some tiles failed to load from GeoServer ({{count}})"
+      "noId": "Geen model-ID opgegeven",
+      "loadFailed": "Modelresultaten konden niet worden geladen",
+      "layerIncomplete": "De laagconfiguratie is onvolledig",
+      "layerLoad": "Laag kon niet worden geladen van GeoServer",
+      "tileLoad": "Sommige tegels konden niet worden geladen van GeoServer ({{count}})"
     },
-    "loadingWorkspace": "Loading workspace…",
-    "loadingModels": "Loading models…",
-    "noCompletedModels": "No completed models",
-    "selectModel": "Select a model",
+    "loadingWorkspace": "Werkruimte laden…",
+    "loadingModels": "Modellen laden…",
+    "noCompletedModels": "Geen voltooide modellen",
+    "selectModel": "Selecteer een model",
     "map": {
-      "initializing": "Initializing map…"
+      "initializing": "Kaart initialiseren…"
     },
     "empty": {
-      "title": "No result for this model yet.",
-      "hint": "The simulation output will appear here once processing finishes."
+      "title": "Er is nog geen resultaat voor dit model.",
+      "hint": "De resultaten verschijnen hier zodra de verwerking klaar is."
     },
     "details": {
       "description": "Description",
       "location": "Location",
-      "period": "Assessment period",
+      "period": "Beoordelingsperiode",
       "days": "days",
       "updated": "Updated",
-      "awaiting": "Waiting for result…",
+      "awaiting": "Wachten op resultaat…",
       "title": "Title",
       "region": "Region",
       "country": "Country",
       "from": "From",
       "to": "To"
-    }
+    },
+    "placeholderTitle": "Resultaten",
+    "placeholderText": "Dit project heeft nog geen resultaatweergave. Voeg hier kaartlagen en samenvattingen toe."
   },
   "configurator": {
     "stepper": {
-      "stepOf": "Step {{step}} of {{total}}",
+      "stepOf": "Stap {{step}} van {{total}}",
       "back": "Back",
       "continue": "Continue",
       "update": "Update",
       "save": "Save",
       "saving": "Saving...",
       "starting": "Starting...",
-      "saveAndRun": "Save & run",
-      "introTitle": "New analysis model",
-      "introSubtitle": "Let's set up your simulation",
-      "introProgressSaved": "Your progress is saved as you go",
-      "introDontShow": "Don't show this intro again",
+      "saveAndRun": "Opslaan & starten",
+      "introTitle": "Nieuw analysemodel",
+      "introSubtitle": "Laten we uw simulatie instellen",
+      "introProgressSaved": "Uw voortgang wordt automatisch opgeslagen",
+      "introDontShow": "Deze introductie niet meer tonen",
       "introCancel": "Cancel",
-      "introStart": "Get started",
-      "step": "STEP"
+      "introStart": "Aan de slag",
+      "step": "STEP",
+      "introDesc": "Vier begeleide stappen om een model in te stellen, te controleren en uit te voeren."
     },
     "layer1": {
       "purpose": "Geef deze beoordeling een naam en kies de jaren die ze beslaat.",
-      "modelNameLabel": "Model name",
-      "modelNameHint": "A descriptive name so you can find this model later.",
+      "modelNameLabel": "Modelnaam",
+      "modelNameHint": "Een duidelijke naam zodat u het model later terugvindt.",
       "suggestedNamesLabel": "Snelle keuzes",
       "suggestedName2": "Studie industriecluster",
       "modelNameQuestion": "Hoe wilt u dit model noemen?",
@@ -1309,32 +1356,40 @@
       "startYear": "Beginjaar",
       "endYear": "Eindjaar",
       "periodSelected": "{{period}} · {{count}} jaar",
-      "periodMissing": "Kies een begin- en eindjaar."
+      "periodMissing": "Kies een begin- en eindjaar.",
+      "nextStepHint": "Hierna stelt u de projectinvoer in.",
+      "modelNamePlaceholder": "bijv. Basis 2030–2040",
+      "suggestedName1": "Basisscenario",
+      "suggestedName3": "Locatiescreening",
+      "suggestedName4": "Regionale beoordeling",
+      "periodHint": "Hele jaren."
     },
     "layer4": {
       "nextStepHint": "Daarna volgt de laatste controle voor het opslaan.",
-      "missingModelName": "Missing — go back to Step 1.",
-      "blockers": "{{count}} blockers — fix before running.",
-      "blockersSingle": "1 blocker — fix before running.",
-      "warnings": "{{count}} warnings — review before running.",
-      "warningsSingle": "1 warning — review before running.",
-      "allPassed": "All checks passed. Ready to save & calculate.",
+      "missingModelName": "Ontbreekt — ga terug naar stap 1.",
+      "blockers": "{{count}} blokkades — los ze op vóór de run.",
+      "blockersSingle": "1 blokkade — los deze op vóór de run.",
+      "warnings": "{{count}} waarschuwingen — controleer vóór de run.",
+      "warningsSingle": "1 waarschuwing — controleer vóór de run.",
+      "allPassed": "Alle controles geslaagd. Klaar om op te slaan en te berekenen.",
       "labels": {
-        "modelName": "Model name",
+        "modelName": "Modelnaam",
         "timeframe": "Timeframe"
       },
       "missingYears": "Begin- of eindjaar ontbreekt – ga terug naar stap 1.",
       "yearOrder": "Het beginjaar ligt na het eindjaar.",
-      "periodYears": "{{period}} · {{count}} jaar"
+      "periodYears": "{{period}} · {{count}} jaar",
+      "purpose": "Controleert de modelinstelling. Los blokkades op in de betreffende stap voordat de run kan starten."
     },
     "layer5": {
-      "looksGood": "Everything looks good? Hit ",
-      "below": " below.",
+      "looksGood": "Ziet alles er goed uit? Klik hieronder op ",
+      "below": ".",
       "labels": {
-        "modelName": "Model name",
+        "modelName": "Modelnaam",
         "from": "From",
         "to": "To"
-      }
+      },
+      "purpose": "Controleer de modelinstelling voordat u opslaat. De berekening gebruikt deze instellingen."
     },
     "blocking": {
       "and": " en ",
@@ -1352,6 +1407,23 @@
     "stepPurposeShow": "Wat houdt deze stap in?",
     "wizard": {
       "steps": "Modelstappen"
+    },
+    "registry": {
+      "layer1Title": "Modelinstelling",
+      "layer1Subtitle": "Naam en periode",
+      "layer2Title": "Configureren",
+      "layer2Subtitle": "Projectspecifieke invoer",
+      "layer3Title": "Laatste controle",
+      "layer3Subtitle": "Controleren voor opslaan",
+      "layer4Title": "Opslaan & berekenen",
+      "layer4Subtitle": "Opslaan en run starten"
+    },
+    "layer2": {
+      "purpose": "Stel de projectspecifieke invoer in. Op de kaart kunt u plaatsen of gebieden selecteren.",
+      "nextStepHint": "Hierna controleert u het model voordat u het opslaat.",
+      "question": "Wat moet het model gebruiken?",
+      "info": "Vervang deze stap door de invoer van uw project.",
+      "placeholder": "Nog geen projectinvoer. Voeg hier formuliervelden toe en sla ze op in de modelconfiguratie."
     }
   },
   "whatsNew": {
@@ -1410,8 +1482,7 @@
       "allSimulationModels": "Alle Simulatiemodellen",
       "simulationEngine": "Simulatie-Engine",
       "feedback": "Feedback",
-      "userManagement": "Gebruikersbeheer",
-      "gridEngine": "Compute Engine"
+      "userManagement": "Gebruikersbeheer"
     },
     "stats": {
       "accessLevel": "Toegangsniveau",
@@ -1466,7 +1537,7 @@
       "allLayersAvailable": "Alle Lagen Beschikbaar",
       "fullSystemAccess": "Volledige Systeemtoegang",
       "upgradeMessage": "Ontgrendel meer functies door een upgrade aan te vragen bij uw beheerder.",
-      "resultFinal": "Result Final"
+      "resultFinal": "Eindresultaat"
     },
     "quickActions": {
       "title": "Snelle Acties",
@@ -1478,7 +1549,8 @@
     "title": "Beheerdersdashboard",
     "welcomeBack": "Welkom terug, {{name}}!",
     "administrator": "Beheerder",
-    "loadingContent": "Inhoud laden..."
+    "loadingContent": "Inhoud laden...",
+    "managePlatform": "Beheer uw simulatieplatform"
   },
   "modelsManagement": {
     "title": "Alle simulatiebeoordelingsmodellen",
@@ -1648,7 +1720,7 @@
       "adminResponse": "Admin Reactie:",
       "respondedOn": "Gereageerd op:",
       "attachedImage": "Bijgevoegde afbeelding",
-      "feedbackScreenshot": "Feedback screenshot",
+      "feedbackScreenshot": "Feedbackschermafbeelding",
       "clickToEnlarge": "Klik om te vergroten",
       "imageLoadError": "Afbeelding laden mislukt",
       "submittedBy": "Ingediend door"

@@ -72,7 +72,7 @@
     "sidebar": {
       "map": "Mapa",
       "simulationReports": "Porównanie Modeli",
-      "simulations": "Analysis Runs"
+      "simulations": "Analizy"
     },
     "menu": {
       "profile": "Profil",
@@ -107,7 +107,8 @@
     "saved": "Saved",
     "copied": "Skopiowano",
     "copy": "Kopiuj",
-    "done": "Gotowe"
+    "done": "Gotowe",
+    "appName": "Ocena projektu"
   },
   "dashboard": {
     "stats": {
@@ -233,11 +234,12 @@
     "createPassword": "Utwórz hasło",
     "creating": "Tworzenie...",
     "agreeToTerms": "Tworząc konto, akceptujesz nasze Warunki korzystania z usługi",
-    "signInHere": "Sign in here",
+    "signInHere": "Zaloguj się tutaj",
     "consentText": "Wyrażam zgodę na przetwarzanie i przechowywanie moich danych osobowych zgodnie z",
     "declarationOfConsent": "Deklaracją zgody",
     "and": "oraz",
-    "privacyPolicy": "Polityką prywatności"
+    "privacyPolicy": "Polityką prywatności",
+    "joinUsAccess": "Dołącz, aby uzyskać dostęp do platformy"
   },
   "workspace": {
     "workspace": "Przestrzeń robocza",
@@ -382,7 +384,23 @@
     "estimateBasis_one": "Na podstawie 1 porównywalnego uruchomienia, które trwało {{typical}}",
     "estimateBasis_other": "Na podstawie {{count}} porównywalnych uruchomień, które zwykle trwają {{typical}}",
     "view": "Zobacz",
-    "run": "Uruchom"
+    "run": "Uruchom",
+    "manageConfigurations": "Zarządzaj konfiguracjami modeli",
+    "loadingModelsDescription": "Poczekaj, trwa wczytywanie modeli.",
+    "noModelsYet": "Nie utworzono jeszcze żadnych modeli. Zacznij od utworzenia pierwszego modelu!",
+    "peopleWithAccessDescription": "Wymienieni tu użytkownicy mogą otworzyć ten model i jego warstwy wyników.",
+    "versions_few": "{{count}} wersje",
+    "versions_many": "{{count}} wersji",
+    "showVersions_one": "Pokaż {{count}} wersję",
+    "showVersions_other": "Pokaż wersje: {{count}}",
+    "hideVersions_one": "Ukryj {{count}} wersję",
+    "hideVersions_other": "Ukryj wersje: {{count}}",
+    "originalVersion": "Oryginał",
+    "originalVersionHint": "Ten wiersz to oryginalny model. Status, okres i aktywność dotyczą tego modelu; każda wersja ma własny wiersz.",
+    "showVersions_few": "Pokaż wersje: {{count}}",
+    "showVersions_many": "Pokaż wersje: {{count}}",
+    "hideVersions_few": "Ukryj wersje: {{count}}",
+    "hideVersions_many": "Ukryj wersje: {{count}}"
   },
   "userManagement": {
     "groups": {
@@ -540,27 +558,27 @@
       "failedToUpdate": "Nie udało się zaktualizować profilu. Spróbuj ponownie."
     },
     "password": {
-      "title": "Change Password",
-      "description": "Update the password you use to sign in",
-      "current": "Current Password",
-      "new": "New Password",
-      "confirm": "Confirm New Password",
-      "currentPlaceholder": "Enter your current password",
-      "newPlaceholder": "Enter a new password",
-      "confirmPlaceholder": "Re-enter your new password",
-      "submit": "Update Password",
+      "title": "Zmień hasło",
+      "description": "Zmień hasło używane do logowania",
+      "current": "Obecne hasło",
+      "new": "Nowe hasło",
+      "confirm": "Potwierdź nowe hasło",
+      "currentPlaceholder": "Wpisz obecne hasło",
+      "newPlaceholder": "Wpisz nowe hasło",
+      "confirmPlaceholder": "Wpisz ponownie nowe hasło",
+      "submit": "Zaktualizuj hasło",
       "updating": "Updating...",
-      "updated": "Password changed successfully!",
-      "failed": "Failed to change password. Please try again.",
+      "updated": "Hasło zostało zmienione!",
+      "failed": "Nie udało się zmienić hasła. Spróbuj ponownie.",
       "requirements": {
-        "minChars": "At least 8 characters",
-        "uppercase": "One uppercase letter",
-        "lowercase": "One lowercase letter",
-        "number": "One number",
-        "specialChar": "One special character"
+        "minChars": "Co najmniej 8 znaków",
+        "uppercase": "Jedna wielka litera",
+        "lowercase": "Jedna mała litera",
+        "number": "Jedna cyfra",
+        "specialChar": "Jeden znak specjalny"
       },
-      "requirementsNotMet": "Password does not meet all requirements",
-      "mismatch": "Passwords do not match"
+      "requirementsNotMet": "Hasło nie spełnia wszystkich wymagań",
+      "mismatch": "Hasła nie są zgodne"
     }
   },
   "simulation": {
@@ -581,22 +599,25 @@
       "cartoPositron": "Jasna mapa bazowa CartoDB",
       "cartoVoyager": "Szczegółowa mapa bazowa CartoDB",
       "openTopoMap": "Mapa stylu topograficznego",
-      "maplibreDark": "Dark vector basemap",
+      "maplibreDark": "Ciemna mapa wektorowa",
       "maplibreVoyager": "Detailed vector basemap"
     },
     "dataLayers": {
       "title": "Warstwy danych"
     },
-    "tooltip": "Base Maps"
+    "tooltip": "Mapy bazowe"
   },
   "tour": {
     "product": {
       "welcome": {
-        "tip": "Ta wycieczka pokaże się tylko raz. Możesz ją pominąć w dowolnym momencie lub uruchomić ponownie z paska bocznego."
+        "tip": "Ta wycieczka pokaże się tylko raz. Możesz ją pominąć w dowolnym momencie lub uruchomić ponownie z paska bocznego.",
+        "title": "Witamy na platformie!",
+        "description": "Krótka prezentacja pomoże Ci zacząć."
       },
       "newAssessment": {
         "title": "Utwórz Nową Ocenę",
-        "tip": "Gdy klikniesz tutaj, przejdziesz do dedykowanej wycieczki po procesie wyboru obszaru!"
+        "tip": "Gdy klikniesz tutaj, przejdziesz do dedykowanej wycieczki po procesie wyboru obszaru!",
+        "description": "Gotowy? Kliknij ten przycisk, aby utworzyć pierwszy model. Otworzy się konfiguracja z przewodnikiem."
       },
       "profile": {
         "title": "Profil i Ustawienia",
@@ -607,7 +628,8 @@
         "description": "Zarządzaj obszarami roboczymi, użytkownikami i wszystkimi modelami na platformie. Widoczne tylko dla administratorów."
       },
       "map": {
-        "title": "Interaktywna Mapa"
+        "title": "Interaktywna Mapa",
+        "description": "Główny obszar roboczy do analiz geograficznych. Przeglądaj warstwy mapy i wybieraj obszary."
       },
       "reports": {
         "title": "Raporty Symulacji",
@@ -630,7 +652,9 @@
         "title": "Wszystko Gotowe!",
         "nextSteps": "Następne Kroki",
         "restartTour": "Uruchom Ponownie Wycieczkę",
-        "restartTourDescription": "Możesz uruchomić tę wycieczkę ponownie w dowolnym momencie z paska bocznego."
+        "restartTourDescription": "Możesz uruchomić tę wycieczkę ponownie w dowolnym momencie z paska bocznego.",
+        "description": "Prezentacja zakończona! Możesz teraz utworzyć pierwszy model.",
+        "nextStepsDescription": "Utwórz pierwszy model lub poznaj interaktywną mapę."
       },
       "dashboard": {
         "tabsOverview": {
@@ -670,7 +694,8 @@
           "description": "Każdy wiersz to rodzina modeli z modelem oryginalnym na górze. Odznaka wersji rozwija kopie, od najstarszej."
         },
         "columns": {
-          "title": "Kolumny"
+          "title": "Kolumny",
+          "description": "„Ostatnia aktywność” pokazuje najpierw uruchomione modele, a potem ostatnio zakończone. Okres i obszar w skrócie."
         },
         "pin": {
           "title": "Przypnij modele",
@@ -717,7 +742,8 @@
       },
       "demo": {
         "example": "Przykład",
-        "justNow": "Przed chwilą"
+        "justNow": "Przed chwilą",
+        "title": "Przykładowy model"
       },
       "github": {
         "title": "GitHub",
@@ -738,21 +764,32 @@
       "version": {
         "title": "Co nowego",
         "description": "Kliknij numer wersji, aby zobaczyć najnowsze funkcje i ulepszenia."
+      },
+      "simulations": {
+        "title": "Symulacje",
+        "description": "Twórz modele i zarządzaj nimi. Rozpoczynaj nowe oceny, konfiguruj parametry i przeglądaj istniejące obliczenia."
       }
     },
     "areaSelect": {
       "welcome": {
-        "tip": "Nauczysz się, jak skonfigurować model, rysować obszary i tworzyć symulację."
+        "tip": "Nauczysz się, jak skonfigurować model, rysować obszary i tworzyć symulację.",
+        "title": "Przewodnik konfiguracji modelu",
+        "description": "Witamy! Ta prezentacja przeprowadzi Cię przez tworzenie modelu."
       },
       "modelName": {
-        "title": "Nazwa Modelu"
+        "title": "Nazwa Modelu",
+        "description": "Nadaj modelowi opisową nazwę, aby łatwo znaleźć go później w panelu.",
+        "tip": "Dobre nazwy: „Bazowy 2030” lub „Scenariusz region A”."
       },
       "dateRange": {
-        "title": "Okres Symulacji"
+        "title": "Okres Symulacji",
+        "description": "Wybierz okres, który obejmuje model.",
+        "tip": "Dłuższe okresy dają szerszy obraz."
       },
       "mapContainer": {
         "title": "Interaktywna Mapa",
-        "tip": "Możesz powiększać i przesuwać mapę, aby eksplorować różne regiony"
+        "tip": "Możesz powiększać i przesuwać mapę, aby eksplorować różne regiony",
+        "description": "To główny obszar roboczy. Użyj mapy, aby wybrać miejsca lub obszary dla modelu."
       },
       "search": {
         "title": "Wyszukiwanie Lokalizacji",
@@ -761,17 +798,21 @@
       },
       "save": {
         "title": "Utwórz Symulację",
-        "tip": "Wszystkie pola muszą być wypełnione, zanim będziesz mógł zapisać"
+        "tip": "Wszystkie pola muszą być wypełnione, zanim będziesz mógł zapisać",
+        "description": "Gdy wszystko jest skonfigurowane, kliknij tutaj, aby zapisać model i rozpocząć obliczenia."
       },
       "calculationStatus": {
-        "title": "Calculation status"
+        "title": "Status obliczeń",
+        "description": "Ten wiersz pokazuje wybrany okres i liczbę obejmowanych lat.",
+        "tip": "Bez wybranego okresu przycisk „Dalej” pozostaje nieaktywny."
       },
       "finalReview": {
-        "title": "Validation status"
+        "title": "Status weryfikacji",
+        "description": "Krok przeglądu sprawdza nazwę i okres, zanim model będzie można zapisać."
       },
       "saveSummary": {
-        "title": "Save summary",
-        "description": "This final summary shows the values that will be saved with the model and sent to the calculation workflow."
+        "title": "Podsumowanie",
+        "description": "To podsumowanie pokazuje wartości zapisywane z modelem i przekazywane do obliczeń."
       },
       "ui": {
         "sections": {
@@ -781,6 +822,11 @@
           "layers": "Warstwy",
           "review": "Przegląd"
         }
+      },
+      "configure": {
+        "title": "Dane projektu",
+        "description": "Ustaw tutaj dane specyficzne dla projektu.",
+        "tip": "Każdy projekt zastępuje ten krok własnymi danymi."
       }
     },
     "buttons": {
@@ -830,7 +876,7 @@
       "submitFailed": "Nie udało się wysłać opinii. Spróbuj ponownie później.",
       "invalidImageType": "Wybierz prawidłowy plik obrazu (PNG, JPG, GIF)",
       "imageTooLarge": "Rozmiar obrazu musi być mniejszy niż 15MB",
-      "payloadTooLarge": "The attachment is too large. Please use smaller images."
+      "payloadTooLarge": "Załącznik jest za duży. Użyj mniejszych obrazów."
     },
     "myFeedback": {
       "title": "Moje opinie",
@@ -851,10 +897,10 @@
     },
     "write": "Write",
     "preview": "Preview",
-    "markdownSupported": "Markdown supported",
+    "markdownSupported": "Obsługiwany Markdown",
     "words": "words",
     "chars": "chars",
-    "previewEmpty": "Nothing to preview"
+    "previewEmpty": "Brak podglądu"
   },
   "settings": {
     "title": "Ustawienia",
@@ -957,7 +1003,8 @@
         "intermediate": "Średniozaawansowany",
         "manager": "Menedżer",
         "expert": "Ekspert"
-      }
+      },
+      "subtitle": "Limity wyboru"
     },
     "accessLevels": {
       "basic": "Podstawowy",
@@ -1023,7 +1070,9 @@
     "cartoPolicy": "Polityka prywatności Carto",
     "osmfPolicy": "Polityka prywatności OSMF",
     "deny": "Odmów",
-    "accept": "Akceptuj"
+    "accept": "Akceptuj",
+    "dataPolicy": "Polityka prywatności",
+    "platformPolicy": "Polityka prywatności platformy"
   },
   "forms": {
     "user": {
@@ -1188,7 +1237,8 @@
       "step1": "Wybierz preferowany język",
       "step2": "Ustaw preferencje mapy i powiadomień",
       "step3": "Skonfiguruj ustawienia powiadomień",
-      "timeNote": "To zajmie tylko minutę"
+      "timeNote": "To zajmie tylko minutę",
+      "greeting": "Witamy na platformie!"
     },
     "language": {
       "title": "Preferencje językowe",
@@ -1246,92 +1296,112 @@
     }
   },
   "modelResults": {
-    "title": "Model Results",
+    "title": "Wyniki modelu",
     "errors": {
-      "noId": "No model ID provided",
-      "loadFailed": "Failed to load model results",
-      "layerIncomplete": "Layer configuration is incomplete",
-      "layerLoad": "Failed to load layer from GeoServer",
-      "tileLoad": "Some tiles failed to load from GeoServer ({{count}})"
+      "noId": "Nie podano identyfikatora modelu",
+      "loadFailed": "Nie udało się wczytać wyników modelu",
+      "layerIncomplete": "Konfiguracja warstwy jest niekompletna",
+      "layerLoad": "Nie udało się wczytać warstwy z GeoServera",
+      "tileLoad": "Nie udało się wczytać części kafelków z GeoServera ({{count}})"
     },
-    "loadingWorkspace": "Loading workspace…",
-    "loadingModels": "Loading models…",
-    "noCompletedModels": "No completed models",
-    "selectModel": "Select a model",
+    "loadingWorkspace": "Wczytywanie obszaru roboczego…",
+    "loadingModels": "Wczytywanie modeli…",
+    "noCompletedModels": "Brak ukończonych modeli",
+    "selectModel": "Wybierz model",
     "map": {
-      "initializing": "Initializing map…"
+      "initializing": "Inicjowanie mapy…"
     },
     "empty": {
-      "title": "No result for this model yet.",
-      "hint": "The simulation output will appear here once processing finishes."
+      "title": "Brak wyników dla tego modelu.",
+      "hint": "Wyniki pojawią się tutaj po zakończeniu przetwarzania."
     },
     "details": {
       "description": "Description",
       "location": "Location",
-      "period": "Assessment period",
+      "period": "Okres oceny",
       "days": "days",
       "updated": "Updated",
-      "awaiting": "Waiting for result…",
+      "awaiting": "Oczekiwanie na wynik…",
       "title": "Title",
       "region": "Region",
       "country": "Country",
       "from": "From",
       "to": "To"
-    }
+    },
+    "placeholderTitle": "Wyniki",
+    "placeholderText": "Ten projekt nie ma jeszcze widoku wyników. Dodaj tutaj warstwy i podsumowania."
   },
   "configurator": {
     "stepper": {
-      "stepOf": "Step {{step}} of {{total}}",
+      "stepOf": "Krok {{step}} z {{total}}",
       "back": "Back",
       "continue": "Continue",
       "update": "Update",
       "save": "Save",
       "saving": "Saving...",
       "starting": "Starting...",
-      "saveAndRun": "Save & run",
-      "introTitle": "New analysis model",
-      "introSubtitle": "Let's set up your simulation",
-      "introProgressSaved": "Your progress is saved as you go",
-      "introDontShow": "Don't show this intro again",
+      "saveAndRun": "Zapisz i uruchom",
+      "introTitle": "Nowy model analizy",
+      "introSubtitle": "Skonfigurujmy symulację",
+      "introProgressSaved": "Postęp jest zapisywany na bieżąco",
+      "introDontShow": "Nie pokazuj więcej tego wprowadzenia",
       "introCancel": "Cancel",
-      "introStart": "Get started",
-      "step": "STEP"
+      "introStart": "Zaczynamy",
+      "step": "STEP",
+      "introDesc": "Cztery kroki z przewodnikiem, aby skonfigurować, sprawdzić i uruchomić model."
     },
     "layer1": {
       "purpose": "Name this analysis run and choose the date window you want to assess.",
-      "modelNameLabel": "Model name",
-      "modelNameHint": "A descriptive name so you can find this model later.",
+      "modelNameLabel": "Nazwa modelu",
+      "modelNameHint": "Opisowa nazwa, aby później łatwo znaleźć model.",
       "suggestedNamesLabel": "Szybki wybór",
       "suggestedName2": "Badanie klastra przemysłowego",
       "modelNameQuestion": "Jak chcesz nazwać ten model?",
       "periodQuestion": "Jaki okres ma zostać oceniony?",
-      "assessmentPeriod": "Okres oceny"
+      "assessmentPeriod": "Okres oceny",
+      "nextStepHint": "Następnie ustawisz dane projektu.",
+      "modelNamePlaceholder": "np. Bazowy 2030–2040",
+      "suggestedName1": "Scenariusz bazowy",
+      "suggestedName3": "Wstępna ocena lokalizacji",
+      "suggestedName4": "Ocena regionalna",
+      "periodHint": "Pełne lata.",
+      "startYear": "Rok początkowy",
+      "endYear": "Rok końcowy",
+      "periodSelected": "{{period}} · lata: {{count}}",
+      "periodMissing": "Wybierz rok początkowy i końcowy."
     },
     "layer4": {
       "nextStepHint": "Następnie sprawdzimy wszystko przed zapisaniem.",
-      "missingModelName": "Missing — go back to Step 1.",
-      "blockers": "{{count}} blockers — fix before running.",
-      "blockersSingle": "1 blocker — fix before running.",
-      "warnings": "{{count}} warnings — review before running.",
-      "warningsSingle": "1 warning — review before running.",
-      "allPassed": "All checks passed. Ready to save & calculate.",
+      "missingModelName": "Brak — wróć do kroku 1.",
+      "blockers": "Blokady: {{count}} — usuń przed uruchomieniem.",
+      "blockersSingle": "1 blokada — usuń przed uruchomieniem.",
+      "warnings": "Ostrzeżenia: {{count}} — sprawdź przed uruchomieniem.",
+      "warningsSingle": "1 ostrzeżenie — sprawdź przed uruchomieniem.",
+      "allPassed": "Wszystkie testy zaliczone. Gotowe do zapisania i obliczeń.",
       "labels": {
-        "modelName": "Model name",
+        "modelName": "Nazwa modelu",
         "timeframe": "Timeframe"
-      }
+      },
+      "purpose": "Sprawdza konfigurację modelu. Usuń blokady w odpowiednich krokach przed uruchomieniem.",
+      "missingYears": "Brak roku początkowego lub końcowego — wróć do kroku 1.",
+      "yearOrder": "Rok początkowy jest późniejszy niż końcowy.",
+      "periodYears": "{{period}} · lata: {{count}}"
     },
     "layer5": {
-      "looksGood": "Everything looks good? Hit ",
-      "below": " below.",
+      "looksGood": "Wszystko w porządku? Kliknij ",
+      "below": " poniżej.",
       "labels": {
-        "modelName": "Model name",
+        "modelName": "Nazwa modelu",
         "from": "From",
         "to": "To"
-      }
+      },
+      "purpose": "Sprawdź konfigurację przed zapisaniem. Obliczenia używają tych ustawień."
     },
     "blocking": {
       "and": " i ",
-      "modelName": "nazwę modelu"
+      "modelName": "nazwę modelu",
+      "yearRange": "rok początkowy i końcowy",
+      "yearOrder": "Rok początkowy nie może być późniejszy niż końcowy."
     },
     "save": {
       "calculationFailed": "Model został zapisany, ale nie udało się uruchomić obliczeń.",
@@ -1343,6 +1413,23 @@
     "stepPurposeShow": "Na czym polega ten krok?",
     "wizard": {
       "steps": "Kroki modelu"
+    },
+    "registry": {
+      "layer1Title": "Konfiguracja modelu",
+      "layer1Subtitle": "Nazwa i okres",
+      "layer2Title": "Konfiguruj",
+      "layer2Subtitle": "Dane specyficzne dla projektu",
+      "layer3Title": "Przegląd końcowy",
+      "layer3Subtitle": "Sprawdź przed zapisaniem",
+      "layer4Title": "Zapisz i oblicz",
+      "layer4Subtitle": "Zapisz i uruchom"
+    },
+    "layer2": {
+      "purpose": "Ustaw dane specyficzne dla projektu. Na mapie możesz wybrać miejsca lub obszary.",
+      "nextStepHint": "Następnie sprawdzisz model przed zapisaniem.",
+      "question": "Czego ma używać model?",
+      "info": "Zastąp ten krok danymi swojego projektu.",
+      "placeholder": "Brak danych projektu. Dodaj tutaj pola formularza i zapisz je w konfiguracji modelu."
     }
   },
   "whatsNew": {
@@ -1401,8 +1488,7 @@
       "allSimulationModels": "Wszystkie Modele Symulacji",
       "simulationEngine": "Silnik Symulacji",
       "feedback": "Opinie",
-      "userManagement": "Zarządzanie Użytkownikami",
-      "gridEngine": "Compute Engine"
+      "userManagement": "Zarządzanie Użytkownikami"
     },
     "stats": {
       "accessLevel": "Poziom Dostępu",
@@ -1457,7 +1543,7 @@
       "allLayersAvailable": "Wszystkie Warstwy Dostępne",
       "fullSystemAccess": "Pełny Dostęp do Systemu",
       "upgradeMessage": "Odblokuj więcej funkcji, prosząc administratora o ulepszenie.",
-      "resultFinal": "Result Final"
+      "resultFinal": "Wynik końcowy"
     },
     "quickActions": {
       "title": "Szybkie Akcje",
@@ -1469,7 +1555,8 @@
     "title": "Panel administratora",
     "welcomeBack": "Witaj ponownie, {{name}}!",
     "administrator": "Administrator",
-    "loadingContent": "Ładowanie zawartości..."
+    "loadingContent": "Ładowanie zawartości...",
+    "managePlatform": "Zarządzaj platformą symulacyjną"
   },
   "modelsManagement": {
     "title": "Wszystkie modele oceny symulacji",

@@ -107,7 +107,8 @@
     "saved": "Guardado",
     "copied": "Copiado",
     "copy": "Copiar",
-    "done": "Concluído"
+    "done": "Concluído",
+    "appName": "Avaliação de projetos"
   },
   "forms": {
     "user": {
@@ -392,7 +393,8 @@
     "consentText": "Consinto o tratamento e o armazenamento dos meus dados pessoais nos termos da",
     "declarationOfConsent": "Declaração de consentimento",
     "and": "e",
-    "privacyPolicy": "Política de privacidade"
+    "privacyPolicy": "Política de privacidade",
+    "joinUsAccess": "Registe-se para aceder à plataforma"
   },
   "workspace": {
     "workspace": "Espaço de trabalho",
@@ -537,7 +539,17 @@
     "estimateBasis_one": "Com base em 1 execução comparável, que demorou {{typical}}",
     "estimateBasis_other": "Com base em {{count}} execuções comparáveis, que normalmente demoram {{typical}}",
     "view": "Ver",
-    "run": "Executar"
+    "run": "Executar",
+    "manageConfigurations": "Gerir as configurações dos seus modelos",
+    "loadingModelsDescription": "Aguarde enquanto carregamos os seus modelos.",
+    "noModelsYet": "Ainda não criou nenhum modelo. Comece por criar o seu primeiro modelo!",
+    "peopleWithAccessDescription": "Os utilizadores aqui indicados podem abrir este modelo e as suas camadas de resultados.",
+    "showVersions_one": "Mostrar {{count}} versão",
+    "showVersions_other": "Mostrar {{count}} versões",
+    "hideVersions_one": "Ocultar {{count}} versão",
+    "hideVersions_other": "Ocultar {{count}} versões",
+    "originalVersion": "Original",
+    "originalVersionHint": "Esta linha é o modelo original. O estado, o período e a atividade são dele; cada versão tem a sua própria linha."
   },
   "userManagement": {
     "groups": {
@@ -747,11 +759,14 @@
   "tour": {
     "product": {
       "welcome": {
-        "tip": "Esta visita só aparece uma vez. Pode ignorá-la a qualquer momento ou reiniciá-la a partir da barra lateral."
+        "tip": "Esta visita só aparece uma vez. Pode ignorá-la a qualquer momento ou reiniciá-la a partir da barra lateral.",
+        "title": "Bem-vindo à plataforma!",
+        "description": "Uma breve visita para o ajudar a começar."
       },
       "newAssessment": {
         "title": "Criar nova avaliação",
-        "tip": "Ao clicar aqui, entra numa visita dedicada ao processo de seleção de área!"
+        "tip": "Ao clicar aqui, entra numa visita dedicada ao processo de seleção de área!",
+        "description": "Pronto para começar? Clique neste botão para criar o seu primeiro modelo. Abre-se a configuração guiada."
       },
       "profile": {
         "title": "Perfil e definições",
@@ -762,7 +777,8 @@
         "description": "Gerencie espaços de trabalho, usuários e todos os modelos da plataforma. Visível apenas para administradores."
       },
       "map": {
-        "title": "Mapa interativo"
+        "title": "Mapa interativo",
+        "description": "O seu espaço de trabalho principal para análise geográfica. Veja camadas do mapa e selecione áreas."
       },
       "reports": {
         "title": "Relatórios de simulação",
@@ -785,7 +801,9 @@
         "title": "Está tudo pronto!",
         "nextSteps": "Próximos passos",
         "restartTour": "Reiniciar a visita",
-        "restartTourDescription": "Pode reiniciar esta visita a qualquer momento a partir da barra lateral."
+        "restartTourDescription": "Pode reiniciar esta visita a qualquer momento a partir da barra lateral.",
+        "description": "Concluiu a visita! Já pode criar o seu primeiro modelo.",
+        "nextStepsDescription": "Crie o seu primeiro modelo ou explore o mapa interativo."
       },
       "dashboard": {
         "tabsOverview": {
@@ -825,7 +843,8 @@
           "description": "Cada linha é uma família de modelos com o modelo original no topo. O distintivo de versões mostra as cópias, da mais antiga para a mais recente."
         },
         "columns": {
-          "title": "Colunas"
+          "title": "Colunas",
+          "description": "«Última atividade» mostra primeiro os modelos em execução e depois os concluídos mais recentemente. Período e área num relance."
         },
         "pin": {
           "title": "Fixar modelos",
@@ -872,7 +891,8 @@
       },
       "demo": {
         "example": "Exemplo",
-        "justNow": "Agora mesmo"
+        "justNow": "Agora mesmo",
+        "title": "Modelo de exemplo"
       },
       "github": {
         "title": "GitHub",
@@ -893,21 +913,32 @@
       "version": {
         "title": "Novidades",
         "description": "Clique no número da versão para ver os recursos e melhorias mais recentes."
+      },
+      "simulations": {
+        "title": "Simulações",
+        "description": "Crie e gira os seus modelos. Inicie novas avaliações, configure parâmetros e reveja cálculos existentes."
       }
     },
     "areaSelect": {
       "welcome": {
-        "tip": "Vai aprender a configurar o modelo, a desenhar áreas e a criar a sua simulação."
+        "tip": "Vai aprender a configurar o modelo, a desenhar áreas e a criar a sua simulação.",
+        "title": "Guia de configuração do modelo",
+        "description": "Bem-vindo! Esta visita guia-o na criação de um modelo."
       },
       "modelName": {
-        "title": "Nome do modelo"
+        "title": "Nome do modelo",
+        "description": "Dê ao seu modelo um nome descritivo para o encontrar mais tarde no painel.",
+        "tip": "Bons nomes: «Base 2030» ou «Cenário região A»."
       },
       "dateRange": {
-        "title": "Período da simulação"
+        "title": "Período da simulação",
+        "description": "Escolha o período abrangido pelo modelo.",
+        "tip": "Períodos mais longos dão uma visão mais ampla."
       },
       "mapContainer": {
         "title": "Mapa interativo",
-        "tip": "Pode aproximar e deslocar o mapa para explorar diferentes regiões"
+        "tip": "Pode aproximar e deslocar o mapa para explorar diferentes regiões",
+        "description": "Este é o seu espaço de trabalho principal. Use o mapa para selecionar locais ou áreas para o modelo."
       },
       "search": {
         "title": "Pesquisa de localizações",
@@ -916,13 +947,17 @@
       },
       "save": {
         "title": "Criar simulação",
-        "tip": "Todos os campos têm de estar preenchidos antes de poder guardar"
+        "tip": "Todos os campos têm de estar preenchidos antes de poder guardar",
+        "description": "Quando tudo estiver configurado, clique aqui para guardar o modelo e iniciar o cálculo."
       },
       "calculationStatus": {
-        "title": "Estado do cálculo"
+        "title": "Estado do cálculo",
+        "description": "Esta linha mostra o período selecionado e quantos anos abrange.",
+        "tip": "Sem um período selecionado, o botão «Continuar» fica desativado."
       },
       "finalReview": {
-        "title": "Estado da validação"
+        "title": "Estado da validação",
+        "description": "O passo de revisão verifica o nome e o período antes de o modelo poder ser guardado."
       },
       "saveSummary": {
         "title": "Resumo antes de guardar",
@@ -936,6 +971,11 @@
           "layers": "Camadas",
           "review": "Revisão"
         }
+      },
+      "configure": {
+        "title": "Dados do projeto",
+        "description": "Defina aqui os dados específicos do projeto.",
+        "tip": "Cada projeto substitui este passo pelos seus próprios dados."
       }
     },
     "buttons": {
@@ -1112,7 +1152,8 @@
         "intermediate": "Intermédio",
         "manager": "Gestor",
         "expert": "Especialista"
-      }
+      },
+      "subtitle": "Limites de seleção"
     },
     "accessLevels": {
       "basic": "Básico",
@@ -1178,7 +1219,9 @@
     "cartoPolicy": "Política de privacidade da Carto",
     "osmfPolicy": "Política de privacidade da OSMF",
     "deny": "Recusar",
-    "accept": "Aceitar"
+    "accept": "Aceitar",
+    "dataPolicy": "Política de privacidade",
+    "platformPolicy": "Política de privacidade da plataforma"
   },
   "onboarding": {
     "welcome": {
@@ -1188,7 +1231,8 @@
       "step1": "Escolha o seu idioma preferido",
       "step2": "Defina as suas preferências de mapa e notificações",
       "step3": "Configure as definições de notificações",
-      "timeNote": "Isto demora apenas um minuto"
+      "timeNote": "Isto demora apenas um minuto",
+      "greeting": "Bem-vindo à plataforma!"
     },
     "language": {
       "title": "Preferência de idioma",
@@ -1277,7 +1321,9 @@
       "country": "País",
       "from": "De",
       "to": "Até"
-    }
+    },
+    "placeholderTitle": "Resultados",
+    "placeholderText": "Este projeto ainda não tem vista de resultados. Adicione aqui camadas e resumos."
   },
   "configurator": {
     "stepper": {
@@ -1295,7 +1341,8 @@
       "introDontShow": "Não mostrar esta introdução novamente",
       "introCancel": "Cancelar",
       "introStart": "Começar",
-      "step": "PASSO"
+      "step": "PASSO",
+      "introDesc": "Quatro passos guiados para configurar, rever e executar um modelo."
     },
     "layer1": {
       "purpose": "Dê um nome a esta análise e escolha o período a avaliar.",
@@ -1305,7 +1352,17 @@
       "suggestedName2": "Estudo de cluster industrial",
       "modelNameQuestion": "Como quer chamar a este modelo?",
       "periodQuestion": "Que período deve avaliar?",
-      "assessmentPeriod": "Período de avaliação"
+      "assessmentPeriod": "Período de avaliação",
+      "nextStepHint": "Em seguida, definirá os dados do projeto.",
+      "modelNamePlaceholder": "ex.: Base 2030–2040",
+      "suggestedName1": "Cenário base",
+      "suggestedName3": "Triagem de locais",
+      "suggestedName4": "Avaliação regional",
+      "periodHint": "Anos completos.",
+      "startYear": "Ano de início",
+      "endYear": "Ano de fim",
+      "periodSelected": "{{period}} · {{count}} anos",
+      "periodMissing": "Escolha um ano de início e de fim."
     },
     "layer4": {
       "nextStepHint": "A seguir faremos uma revisão final antes de guardar.",
@@ -1318,7 +1375,11 @@
       "labels": {
         "modelName": "Nome do modelo",
         "timeframe": "Período"
-      }
+      },
+      "purpose": "Verifica a configuração do modelo. Resolva os bloqueios no respetivo passo antes de iniciar a execução.",
+      "missingYears": "Falta o ano de início ou de fim — volte ao passo 1.",
+      "yearOrder": "O ano de início é posterior ao ano de fim.",
+      "periodYears": "{{period}} · {{count}} anos"
     },
     "layer5": {
       "looksGood": "Está tudo bem? Prima ",
@@ -1327,11 +1388,14 @@
         "modelName": "Nome do modelo",
         "from": "De",
         "to": "Até"
-      }
+      },
+      "purpose": "Reveja a configuração antes de guardar. O cálculo usa estas definições."
     },
     "blocking": {
       "and": " e ",
-      "modelName": "um nome de modelo"
+      "modelName": "um nome de modelo",
+      "yearRange": "um ano de início e de fim",
+      "yearOrder": "O ano de início não pode ser posterior ao ano de fim."
     },
     "save": {
       "calculationFailed": "O modelo foi guardado, mas não foi possível iniciar o cálculo.",
@@ -1343,6 +1407,23 @@
     "stepPurposeShow": "O que é este passo?",
     "wizard": {
       "steps": "Passos do modelo"
+    },
+    "registry": {
+      "layer1Title": "Configuração do modelo",
+      "layer1Subtitle": "Nome e período",
+      "layer2Title": "Configurar",
+      "layer2Subtitle": "Dados específicos do projeto",
+      "layer3Title": "Revisão final",
+      "layer3Subtitle": "Verificar antes de guardar",
+      "layer4Title": "Guardar e calcular",
+      "layer4Subtitle": "Guardar e iniciar a execução"
+    },
+    "layer2": {
+      "purpose": "Defina os dados específicos do projeto. No mapa pode selecionar locais ou áreas.",
+      "nextStepHint": "Em seguida, reverá o modelo antes de o guardar.",
+      "question": "O que deve o modelo usar?",
+      "info": "Substitua este passo pelos dados do seu projeto.",
+      "placeholder": "Ainda sem dados do projeto. Adicione aqui campos e guarde-os na configuração do modelo."
     }
   },
   "whatsNew": {
@@ -1405,8 +1486,7 @@
       "allSimulationModels": "Todos os modelos de simulação",
       "simulationEngine": "Motor de simulação",
       "feedback": "Comentários",
-      "userManagement": "Gestão de utilizadores",
-      "gridEngine": "Motor de cálculo"
+      "userManagement": "Gestão de utilizadores"
     },
     "stats": {
       "accessLevel": "Nível de acesso",
@@ -1469,7 +1549,8 @@
       "interactiveMap": "Mapa interativo",
       "settings": "Definições",
       "configurePreferences": "Configurar preferências"
-    }
+    },
+    "managePlatform": "Gira a sua plataforma de simulação"
   },
   "modelsManagement": {
     "title": "Todos os modelos de avaliação",

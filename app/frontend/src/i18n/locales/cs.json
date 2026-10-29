@@ -72,7 +72,7 @@
     "sidebar": {
       "map": "Mapa",
       "simulationReports": "Porovnání Modelů",
-      "simulations": "Analysis Runs"
+      "simulations": "Analýzy"
     },
     "menu": {
       "profile": "Profil",
@@ -107,7 +107,8 @@
     "saved": "Saved",
     "copied": "Zkopírováno",
     "copy": "Kopírovat",
-    "done": "Hotovo"
+    "done": "Hotovo",
+    "appName": "Hodnocení projektu"
   },
   "dashboard": {
     "stats": {
@@ -233,11 +234,12 @@
     "createPassword": "Vytvořte heslo",
     "creating": "Vytváření...",
     "agreeToTerms": "Vytvořením účtu souhlasíte s našimi Podmínkami služby",
-    "signInHere": "Sign in here",
+    "signInHere": "Přihlaste se zde",
     "consentText": "Souhlasím se zpracováním a uchováváním mých osobních údajů v souladu s",
     "declarationOfConsent": "Prohlášením o souhlasu",
     "and": "a",
-    "privacyPolicy": "Zásadami ochrany osobních údajů"
+    "privacyPolicy": "Zásadami ochrany osobních údajů",
+    "joinUsAccess": "Připojte se a získejte přístup k platformě"
   },
   "workspace": {
     "workspace": "Pracovní prostor",
@@ -382,7 +384,23 @@
     "estimateBasis_one": "Na základě 1 srovnatelného běhu, který trval {{typical}}",
     "estimateBasis_other": "Na základě {{count}} srovnatelných běhů, které obvykle trvají {{typical}}",
     "view": "Zobrazit",
-    "run": "Spustit"
+    "run": "Spustit",
+    "manageConfigurations": "Spravujte konfigurace svých modelů",
+    "loadingModelsDescription": "Počkejte prosím, načítáme vaše modely.",
+    "noModelsYet": "Zatím jste nevytvořili žádné modely. Začněte vytvořením prvního modelu!",
+    "peopleWithAccessDescription": "Uvedení uživatelé mohou otevřít tento model a jeho vrstvy výsledků.",
+    "versions_few": "{{count}} verze",
+    "versions_many": "{{count}} verzí",
+    "showVersions_one": "Zobrazit {{count}} verzi",
+    "showVersions_other": "Zobrazit verze: {{count}}",
+    "hideVersions_one": "Skrýt {{count}} verzi",
+    "hideVersions_other": "Skrýt verze: {{count}}",
+    "originalVersion": "Originál",
+    "originalVersionHint": "Tento řádek je původní model. Stav, období a aktivita patří tomuto modelu; každá verze má vlastní řádek.",
+    "showVersions_few": "Zobrazit verze: {{count}}",
+    "showVersions_many": "Zobrazit verze: {{count}}",
+    "hideVersions_few": "Skrýt verze: {{count}}",
+    "hideVersions_many": "Skrýt verze: {{count}}"
   },
   "userManagement": {
     "groups": {
@@ -540,27 +558,27 @@
       "failedToUpdate": "Nepodařilo se aktualizovat profil. Zkuste to prosím znovu."
     },
     "password": {
-      "title": "Change Password",
-      "description": "Update the password you use to sign in",
-      "current": "Current Password",
-      "new": "New Password",
-      "confirm": "Confirm New Password",
-      "currentPlaceholder": "Enter your current password",
-      "newPlaceholder": "Enter a new password",
-      "confirmPlaceholder": "Re-enter your new password",
-      "submit": "Update Password",
+      "title": "Změnit heslo",
+      "description": "Změňte heslo, kterým se přihlašujete",
+      "current": "Současné heslo",
+      "new": "Nové heslo",
+      "confirm": "Potvrďte nové heslo",
+      "currentPlaceholder": "Zadejte současné heslo",
+      "newPlaceholder": "Zadejte nové heslo",
+      "confirmPlaceholder": "Zadejte nové heslo znovu",
+      "submit": "Aktualizovat heslo",
       "updating": "Updating...",
-      "updated": "Password changed successfully!",
-      "failed": "Failed to change password. Please try again.",
+      "updated": "Heslo bylo úspěšně změněno!",
+      "failed": "Heslo se nepodařilo změnit. Zkuste to znovu.",
       "requirements": {
-        "minChars": "At least 8 characters",
-        "uppercase": "One uppercase letter",
-        "lowercase": "One lowercase letter",
-        "number": "One number",
-        "specialChar": "One special character"
+        "minChars": "Alespoň 8 znaků",
+        "uppercase": "Jedno velké písmeno",
+        "lowercase": "Jedno malé písmeno",
+        "number": "Jedna číslice",
+        "specialChar": "Jeden speciální znak"
       },
-      "requirementsNotMet": "Password does not meet all requirements",
-      "mismatch": "Passwords do not match"
+      "requirementsNotMet": "Heslo nesplňuje všechny požadavky",
+      "mismatch": "Hesla se neshodují"
     }
   },
   "simulation": {
@@ -581,22 +599,25 @@
       "cartoPositron": "Světlá základní mapa od CartoDB",
       "cartoVoyager": "Podrobná základní mapa od CartoDB",
       "openTopoMap": "Topografická stylová mapa",
-      "maplibreDark": "Dark vector basemap",
+      "maplibreDark": "Tmavá vektorová mapa",
       "maplibreVoyager": "Detailed vector basemap"
     },
     "dataLayers": {
       "title": "Datové vrstvy"
     },
-    "tooltip": "Base Maps"
+    "tooltip": "Podkladové mapy"
   },
   "tour": {
     "product": {
       "welcome": {
-        "tip": "Tato prohlídka se zobrazí pouze jednou. Můžete ji kdykoli přeskočit nebo restartovat z postranního panelu."
+        "tip": "Tato prohlídka se zobrazí pouze jednou. Můžete ji kdykoli přeskočit nebo restartovat z postranního panelu.",
+        "title": "Vítejte na platformě!",
+        "description": "Krátká prohlídka vám pomůže začít."
       },
       "newAssessment": {
         "title": "Vytvořit Nové Hodnocení",
-        "tip": "Když zde kliknete, vstoupíte do speciální prohlídky procesu výběru oblasti!"
+        "tip": "Když zde kliknete, vstoupíte do speciální prohlídky procesu výběru oblasti!",
+        "description": "Připraveni? Kliknutím na toto tlačítko vytvoříte první model. Otevře se průvodce nastavením."
       },
       "profile": {
         "title": "Profil a Nastavení",
@@ -607,7 +628,8 @@
         "description": "Spravujte pracovní prostory, uživatele a všechny modely na platformě. Viditelné pouze pro administrátory."
       },
       "map": {
-        "title": "Interaktivní Mapa"
+        "title": "Interaktivní Mapa",
+        "description": "Hlavní pracovní prostor pro geografickou analýzu. Zobrazujte vrstvy mapy a vybírejte oblasti."
       },
       "reports": {
         "title": "Zprávy o Simulaci",
@@ -630,7 +652,9 @@
         "title": "Vše je Připraveno!",
         "nextSteps": "Další Kroky",
         "restartTour": "Restartovat Prohlídku",
-        "restartTourDescription": "Tuto prohlídku můžete kdykoli restartovat z postranního panelu."
+        "restartTourDescription": "Tuto prohlídku můžete kdykoli restartovat z postranního panelu.",
+        "description": "Dokončili jste prohlídku! Nyní můžete vytvořit svůj první model.",
+        "nextStepsDescription": "Vytvořte první model nebo prozkoumejte interaktivní mapu."
       },
       "dashboard": {
         "tabsOverview": {
@@ -670,7 +694,8 @@
           "description": "Každý řádek je rodina modelů s původním modelem nahoře. Odznak verzí rozbalí kopie, od nejstarší."
         },
         "columns": {
-          "title": "Sloupce"
+          "title": "Sloupce",
+          "description": "„Poslední aktivita“ zobrazuje nejprve běžící modely, potom naposledy dokončené. Období a oblast na první pohled."
         },
         "pin": {
           "title": "Připnout modely",
@@ -717,7 +742,8 @@
       },
       "demo": {
         "example": "Ukázka",
-        "justNow": "Právě teď"
+        "justNow": "Právě teď",
+        "title": "Ukázkový model"
       },
       "github": {
         "title": "GitHub",
@@ -738,21 +764,32 @@
       "version": {
         "title": "Co je nového",
         "description": "Klikněte na číslo verze a zobrazte nejnovější funkce a vylepšení."
+      },
+      "simulations": {
+        "title": "Simulace",
+        "description": "Vytvářejte a spravujte modely. Spouštějte nová hodnocení, nastavujte parametry a prohlížejte existující výpočty."
       }
     },
     "areaSelect": {
       "welcome": {
-        "tip": "Naučíte se, jak nakonfigurovat model, kreslit oblasti a vytvořit simulaci."
+        "tip": "Naučíte se, jak nakonfigurovat model, kreslit oblasti a vytvořit simulaci.",
+        "title": "Průvodce nastavením modelu",
+        "description": "Vítejte! Tato prohlídka vás provede vytvořením modelu."
       },
       "modelName": {
-        "title": "Název Modelu"
+        "title": "Název Modelu",
+        "description": "Pojmenujte model výstižně, abyste jej později snadno našli na přehledu.",
+        "tip": "Dobré názvy: „Výchozí 2030“ nebo „Scénář oblast A“."
       },
       "dateRange": {
-        "title": "Období Simulace"
+        "title": "Období Simulace",
+        "description": "Zvolte období, které model pokrývá.",
+        "tip": "Delší období poskytují širší obraz."
       },
       "mapContainer": {
         "title": "Interaktivní Mapa",
-        "tip": "Můžete přibližovat a posouvat mapu pro prozkoumání různých oblastí"
+        "tip": "Můžete přibližovat a posouvat mapu pro prozkoumání různých oblastí",
+        "description": "Toto je váš hlavní pracovní prostor. Na mapě vyberte místa nebo oblasti pro model."
       },
       "search": {
         "title": "Vyhledávání Lokace",
@@ -761,17 +798,21 @@
       },
       "save": {
         "title": "Vytvořit Simulaci",
-        "tip": "Všechna pole musí být vyplněna, než budete moci uložit"
+        "tip": "Všechna pole musí být vyplněna, než budete moci uložit",
+        "description": "Až bude vše nastaveno, kliknutím sem model uložíte a spustíte výpočet."
       },
       "calculationStatus": {
-        "title": "Calculation status"
+        "title": "Stav výpočtu",
+        "description": "Tento řádek ukazuje zvolené období a počet let, které pokrývá.",
+        "tip": "Bez zvoleného období zůstane tlačítko „Pokračovat“ neaktivní."
       },
       "finalReview": {
-        "title": "Validation status"
+        "title": "Stav kontroly",
+        "description": "Kontrola ověří název a období modelu před jeho uložením."
       },
       "saveSummary": {
-        "title": "Save summary",
-        "description": "This final summary shows the values that will be saved with the model and sent to the calculation workflow."
+        "title": "Souhrn",
+        "description": "Tento souhrn ukazuje hodnoty, které se uloží s modelem a předají výpočtu."
       },
       "ui": {
         "sections": {
@@ -781,6 +822,11 @@
           "layers": "Vrstvy",
           "review": "Kontrola"
         }
+      },
+      "configure": {
+        "title": "Vstupy projektu",
+        "description": "Zde nastavte vstupy specifické pro projekt.",
+        "tip": "Každý projekt tento krok nahradí vlastními vstupy."
       }
     },
     "buttons": {
@@ -830,7 +876,7 @@
       "submitFailed": "Odeslání zpětné vazby se nezdařilo. Zkuste to prosím později.",
       "invalidImageType": "Vyberte prosím platný obrazový soubor (PNG, JPG, GIF)",
       "imageTooLarge": "Velikost obrázku musí být menší než 15MB",
-      "payloadTooLarge": "The attachment is too large. Please use smaller images."
+      "payloadTooLarge": "Příloha je příliš velká. Použijte menší obrázky."
     },
     "myFeedback": {
       "title": "Moje zpětná vazba",
@@ -851,10 +897,10 @@
     },
     "write": "Write",
     "preview": "Preview",
-    "markdownSupported": "Markdown supported",
+    "markdownSupported": "Podporuje Markdown",
     "words": "words",
     "chars": "chars",
-    "previewEmpty": "Nothing to preview"
+    "previewEmpty": "Není co zobrazit"
   },
   "settings": {
     "title": "Nastavení",
@@ -957,7 +1003,8 @@
         "intermediate": "Střední",
         "manager": "Manažer",
         "expert": "Expert"
-      }
+      },
+      "subtitle": "Limity výběru"
     },
     "accessLevels": {
       "basic": "Základní",
@@ -1023,7 +1070,9 @@
     "cartoPolicy": "Zásady ochrany osobních údajů Carto",
     "osmfPolicy": "Zásady ochrany osobních údajů OSMF",
     "deny": "Odmítnout",
-    "accept": "Přijmout"
+    "accept": "Přijmout",
+    "dataPolicy": "Zásady ochrany osobních údajů",
+    "platformPolicy": "Zásady ochrany osobních údajů platformy"
   },
   "forms": {
     "user": {
@@ -1188,7 +1237,8 @@
       "step1": "Vyberte svůj preferovaný jazyk",
       "step2": "Nastavte předvolby mapy a oznámení",
       "step3": "Nakonfigurujte nastavení oznámení",
-      "timeNote": "Bude to trvat jen minutu"
+      "timeNote": "Bude to trvat jen minutu",
+      "greeting": "Vítejte na platformě!"
     },
     "language": {
       "title": "Jazyková preference",
@@ -1246,92 +1296,112 @@
     }
   },
   "modelResults": {
-    "title": "Model Results",
+    "title": "Výsledky modelu",
     "errors": {
-      "noId": "No model ID provided",
-      "loadFailed": "Failed to load model results",
-      "layerIncomplete": "Layer configuration is incomplete",
-      "layerLoad": "Failed to load layer from GeoServer",
-      "tileLoad": "Some tiles failed to load from GeoServer ({{count}})"
+      "noId": "Nebylo zadáno ID modelu",
+      "loadFailed": "Výsledky modelu se nepodařilo načíst",
+      "layerIncomplete": "Konfigurace vrstvy je neúplná",
+      "layerLoad": "Vrstvu se nepodařilo načíst z GeoServeru",
+      "tileLoad": "Některé dlaždice se nepodařilo načíst z GeoServeru ({{count}})"
     },
-    "loadingWorkspace": "Loading workspace…",
-    "loadingModels": "Loading models…",
-    "noCompletedModels": "No completed models",
-    "selectModel": "Select a model",
+    "loadingWorkspace": "Načítání pracovního prostoru…",
+    "loadingModels": "Načítání modelů…",
+    "noCompletedModels": "Žádné dokončené modely",
+    "selectModel": "Vyberte model",
     "map": {
-      "initializing": "Initializing map…"
+      "initializing": "Inicializace mapy…"
     },
     "empty": {
-      "title": "No result for this model yet.",
-      "hint": "The simulation output will appear here once processing finishes."
+      "title": "Tento model zatím nemá výsledek.",
+      "hint": "Výsledky se zde zobrazí po dokončení zpracování."
     },
     "details": {
       "description": "Description",
       "location": "Location",
-      "period": "Assessment period",
+      "period": "Období hodnocení",
       "days": "days",
       "updated": "Updated",
-      "awaiting": "Waiting for result…",
+      "awaiting": "Čekání na výsledek…",
       "title": "Title",
       "region": "Region",
       "country": "Country",
       "from": "From",
       "to": "To"
-    }
+    },
+    "placeholderTitle": "Výsledky",
+    "placeholderText": "Tento projekt zatím nemá zobrazení výsledků. Přidejte sem vrstvy a souhrny."
   },
   "configurator": {
     "stepper": {
-      "stepOf": "Step {{step}} of {{total}}",
+      "stepOf": "Krok {{step}} z {{total}}",
       "back": "Back",
       "continue": "Continue",
       "update": "Update",
       "save": "Save",
       "saving": "Saving...",
       "starting": "Starting...",
-      "saveAndRun": "Save & run",
-      "introTitle": "New analysis model",
-      "introSubtitle": "Let's set up your simulation",
-      "introProgressSaved": "Your progress is saved as you go",
-      "introDontShow": "Don't show this intro again",
+      "saveAndRun": "Uložit a spustit",
+      "introTitle": "Nový analytický model",
+      "introSubtitle": "Pojďme nastavit vaši simulaci",
+      "introProgressSaved": "Váš postup se průběžně ukládá",
+      "introDontShow": "Tento úvod již nezobrazovat",
       "introCancel": "Cancel",
-      "introStart": "Get started",
-      "step": "STEP"
+      "introStart": "Začít",
+      "step": "STEP",
+      "introDesc": "Čtyři kroky s průvodcem k nastavení, kontrole a spuštění modelu."
     },
     "layer1": {
       "purpose": "Name this analysis run and choose the date window you want to assess.",
-      "modelNameLabel": "Model name",
-      "modelNameHint": "A descriptive name so you can find this model later.",
+      "modelNameLabel": "Název modelu",
+      "modelNameHint": "Výstižný název, abyste model později našli.",
       "suggestedNamesLabel": "Rychlý výběr",
       "suggestedName2": "Studie průmyslového klastru",
       "modelNameQuestion": "Jak chcete tento model pojmenovat?",
       "periodQuestion": "Jaké období se má vyhodnotit?",
-      "assessmentPeriod": "Období hodnocení"
+      "assessmentPeriod": "Období hodnocení",
+      "nextStepHint": "Dále nastavíte vstupy projektu.",
+      "modelNamePlaceholder": "např. Výchozí 2030–2040",
+      "suggestedName1": "Výchozí scénář",
+      "suggestedName3": "Prověření lokalit",
+      "suggestedName4": "Regionální hodnocení",
+      "periodHint": "Celé roky.",
+      "startYear": "Počáteční rok",
+      "endYear": "Koncový rok",
+      "periodSelected": "{{period}} · počet let: {{count}}",
+      "periodMissing": "Zvolte počáteční a koncový rok."
     },
     "layer4": {
       "nextStepHint": "Následuje závěrečná kontrola před uložením.",
-      "missingModelName": "Missing — go back to Step 1.",
-      "blockers": "{{count}} blockers — fix before running.",
-      "blockersSingle": "1 blocker — fix before running.",
-      "warnings": "{{count}} warnings — review before running.",
-      "warningsSingle": "1 warning — review before running.",
-      "allPassed": "All checks passed. Ready to save & calculate.",
+      "missingModelName": "Chybí — vraťte se ke kroku 1.",
+      "blockers": "Blokace: {{count}} — opravte před spuštěním.",
+      "blockersSingle": "1 blokace — opravte před spuštěním.",
+      "warnings": "Upozornění: {{count}} — zkontrolujte před spuštěním.",
+      "warningsSingle": "1 upozornění — zkontrolujte před spuštěním.",
+      "allPassed": "Všechny kontroly prošly. Připraveno k uložení a výpočtu.",
       "labels": {
-        "modelName": "Model name",
+        "modelName": "Název modelu",
         "timeframe": "Timeframe"
-      }
+      },
+      "purpose": "Kontroluje nastavení modelu. Před spuštěním odstraňte blokace v příslušných krocích.",
+      "missingYears": "Chybí počáteční nebo koncový rok — vraťte se ke kroku 1.",
+      "yearOrder": "Počáteční rok je pozdější než koncový.",
+      "periodYears": "{{period}} · počet let: {{count}}"
     },
     "layer5": {
-      "looksGood": "Everything looks good? Hit ",
-      "below": " below.",
+      "looksGood": "Vše v pořádku? Klikněte níže na ",
+      "below": ".",
       "labels": {
-        "modelName": "Model name",
+        "modelName": "Název modelu",
         "from": "From",
         "to": "To"
-      }
+      },
+      "purpose": "Před uložením zkontrolujte nastavení. Výpočet používá tato nastavení."
     },
     "blocking": {
       "and": " a ",
-      "modelName": "název modelu"
+      "modelName": "název modelu",
+      "yearRange": "počáteční a koncový rok",
+      "yearOrder": "Počáteční rok nesmí být pozdější než koncový."
     },
     "save": {
       "calculationFailed": "Model byl uložen, ale výpočet se nepodařilo spustit.",
@@ -1343,6 +1413,23 @@
     "stepPurposeShow": "Co je tento krok?",
     "wizard": {
       "steps": "Kroky modelu"
+    },
+    "registry": {
+      "layer1Title": "Nastavení modelu",
+      "layer1Subtitle": "Název a období",
+      "layer2Title": "Konfigurace",
+      "layer2Subtitle": "Vstupy specifické pro projekt",
+      "layer3Title": "Závěrečná kontrola",
+      "layer3Subtitle": "Zkontrolujte před uložením",
+      "layer4Title": "Uložit a vypočítat",
+      "layer4Subtitle": "Uložit a spustit výpočet"
+    },
+    "layer2": {
+      "purpose": "Nastavte vstupy specifické pro projekt. Na mapě můžete vybrat místa nebo oblasti.",
+      "nextStepHint": "Dále model před uložením zkontrolujete.",
+      "question": "Co má model použít?",
+      "info": "Nahraďte tento krok vstupy svého projektu.",
+      "placeholder": "Zatím žádné vstupy projektu. Přidejte sem pole formuláře a uložte je do konfigurace modelu."
     }
   },
   "whatsNew": {
@@ -1401,8 +1488,7 @@
       "allSimulationModels": "Všechny Simulační Modely",
       "simulationEngine": "Simulační Engine",
       "feedback": "Zpětná Vazba",
-      "userManagement": "Správa Uživatelů",
-      "gridEngine": "Compute Engine"
+      "userManagement": "Správa Uživatelů"
     },
     "stats": {
       "accessLevel": "Úroveň Přístupu",
@@ -1457,7 +1543,7 @@
       "allLayersAvailable": "Všechny Vrstvy Dostupné",
       "fullSystemAccess": "Plný Přístup k Systému",
       "upgradeMessage": "Odemkněte více funkcí požádáním administrátora o upgrade.",
-      "resultFinal": "Result Final"
+      "resultFinal": "Konečný výsledek"
     },
     "quickActions": {
       "title": "Rychlé Akce",
@@ -1469,7 +1555,8 @@
     "title": "Panel správce",
     "welcomeBack": "Vítejte zpět, {{name}}!",
     "administrator": "Administrátor",
-    "loadingContent": "Načítání obsahu..."
+    "loadingContent": "Načítání obsahu...",
+    "managePlatform": "Spravujte svou simulační platformu"
   },
   "modelsManagement": {
     "title": "Všechny modely hodnocení simulace",

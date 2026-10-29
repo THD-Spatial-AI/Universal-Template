@@ -14,10 +14,10 @@ const Disclaimer: React.FC = () => {
       <div className="prose prose-lg max-w-none text-foreground">
         <p>
           The analysis results produced by the App platform are based on data
-          from sources such as OpenStreetMap (OSM), MERRA-2, and other public datasets. While we
+          from sources such as OpenStreetMap (OSM) and other public datasets. While we
           strive for accuracy, these simulations are intended for informational and research
-          purposes and should not be solely relied upon for emergency response, evacuation
-          planning, or other safety-critical decisions. To continuously improve the platform, we
+          purposes and should not be solely relied upon for investment, permitting, or other
+          safety-critical decisions. To continuously improve the platform, we
           analyze user-generated models and outcomes to refine our estimation techniques and data
           sources.
         </p>
@@ -40,15 +40,8 @@ const Disclaimer: React.FC = () => {
                 reference, but we cannot guarantee its absolute accuracy.
               </li>
               <li>
-                <strong>MERRA-2</strong>: The Modern-Era Retrospective Analysis for Research and
-                Applications, Version 2 (MERRA-2), provides climate and atmospheric data. This
-                data is based on estimations and historical records, which may not reflect
-                current conditions.
-              </li>
-              <li>
-                <strong>Emission, terrain, and infrastructure datasets</strong>: Inputs such as
-                point-source registries, topography, and transport networks are sourced from public
-                providers and may be subject to updates, gaps, or revisions.
+                <strong>[Project data set]</strong>: [Describe the source of each project data
+                set and its known limitations.]
               </li>
             </ul>
           </li>
@@ -73,8 +66,7 @@ const Disclaimer: React.FC = () => {
               <li>
                 The analysis results generated through our platform are intended for
                 informational, research, and educational purposes. They must not be used as the
-                sole basis for emergency response, evacuation, land-use, or other safety-critical
-                decisions.
+                sole basis for investment, permitting, or other safety-critical decisions.
               </li>
               <li>
                 Users should consult qualified domain experts and consider local

@@ -17,22 +17,22 @@
             padding: 20px;
             -webkit-font-smoothing: antialiased;
         }
-        .ep-container {
+        .app-container {
             width: 100%;
             max-width: 440px;
         }
-        .ep-card {
+        .app-card {
             background: #ffffff;
             border-radius: 16px;
             box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
             overflow: hidden;
         }
-        .ep-header {
+        .app-header {
             background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
             padding: 32px 24px;
             text-align: center;
         }
-        .ep-icon {
+        .app-icon {
             width: 56px;
             height: 56px;
             margin: 0 auto 12px;
@@ -42,7 +42,7 @@
             text-align: center;
             font-size: 28px;
         }
-        .ep-logo-img {
+        .app-logo-img {
             height: 44px;
             width: auto;
             max-width: 85%;
@@ -51,33 +51,33 @@
             /* Render the dark brand logo as white on the dark header */
             filter: brightness(0) invert(1);
         }
-        .ep-logo {
+        .app-logo {
             font-size: 28px;
             font-weight: 800;
             color: #ffffff;
             letter-spacing: 0.5px;
             text-transform: uppercase;
         }
-        .ep-tagline {
+        .app-tagline {
             font-size: 13px;
             color: rgba(255,255,255,0.5);
             margin-top: 6px;
             letter-spacing: 0.3px;
         }
-        .ep-accent {
+        .app-accent {
             height: 3px;
             background: linear-gradient(90deg, #374151, #6b7280, #9ca3af, #6b7280, #374151);
         }
-        .ep-body {
+        .app-body {
             padding: 36px 32px;
         }
-        .ep-body h2 {
+        .app-body h2 {
             color: #111827;
             font-size: 22px;
             font-weight: 700;
             margin-bottom: 8px;
         }
-        .ep-body p {
+        .app-body p {
             color: #6b7280;
             font-size: 14px;
             line-height: 1.6;
@@ -183,25 +183,25 @@
         }
         .kc-feedback-text { font-size: 14px; }
         /* Info text */
-        .ep-info {
+        .app-info {
             padding: 0 32px 24px;
             text-align: center;
         }
-        .ep-info p {
+        .app-info p {
             color: #6b7280;
             font-size: 13px;
         }
-        .ep-info a {
+        .app-info a {
             color: #374151;
             font-weight: 600;
         }
         /* Footer */
-        .ep-footer {
+        .app-footer {
             background-color: #111827;
             padding: 24px 32px;
             text-align: center;
         }
-        .ep-footer-brand {
+        .app-footer-brand {
             font-size: 14px;
             font-weight: 700;
             color: #ffffff;
@@ -209,12 +209,12 @@
             letter-spacing: 0.5px;
             margin-bottom: 4px;
         }
-        .ep-footer-text {
+        .app-footer-text {
             font-size: 11px;
             color: #d1d5db;
             line-height: 1.6;
         }
-        .ep-footer-copy {
+        .app-footer-copy {
             font-size: 10px;
             color: #d1d5db;
             margin-top: 8px;
@@ -227,17 +227,17 @@
     </style>
 </head>
 <body>
-    <div class="ep-container">
-        <div class="ep-card">
+    <div class="app-container">
+        <div class="app-card">
             <!-- Header -->
-            <div class="ep-header">
-                <img class="ep-logo-img" src="${url.resourcesPath}/img/logo.png" alt="${realm.displayName!'App'}"/>
-                <div class="ep-tagline">Energy Simulation Platform</div>
+            <div class="app-header">
+                <img class="app-logo-img" src="${url.resourcesPath}/img/logo.png" alt="${realm.displayName!'App'}"/>
+                <div class="app-tagline">Assessment Platform</div>
             </div>
-            <div class="ep-accent"></div>
+            <div class="app-accent"></div>
 
             <!-- Body -->
-            <div class="ep-body">
+            <div class="app-body">
                 <#if displayMessage && message?has_content && (message.type != 'warning' || !isAppInitiatedAction??)>
                     <div class="alert alert-${message.type}">
                         <span class="kc-feedback-text">${kcSanitize(message.summary)?no_esc}</span>
@@ -248,16 +248,16 @@
             </div>
 
             <#if displayInfo>
-                <div class="ep-info">
+                <div class="app-info">
                     <#nested "info">
                 </div>
             </#if>
 
             <!-- Footer -->
-            <div class="ep-footer">
-                <div class="ep-footer-brand">App</div>
-                <div class="ep-footer-text">Your organisation</div>
-                <div class="ep-footer-copy">&copy; 2026 App. All rights reserved.</div>
+            <div class="app-footer">
+                <div class="app-footer-brand">App</div>
+                <div class="app-footer-text">Your organisation</div>
+                <div class="app-footer-copy">&copy; 2026 App. All rights reserved.</div>
             </div>
         </div>
     </div>

@@ -30,7 +30,7 @@
                                 </tr>
                             </table>
                             <h1 style="margin: 0; font-size: 28px; font-weight: 800; color: #ffffff; letter-spacing: 0.5px; text-transform: uppercase;">App</h1>
-                            <p style="margin: 6px 0 0; font-size: 13px; color: rgba(255,255,255,0.5); font-weight: 400; letter-spacing: 0.3px;">Energy Simulation Platform</p>
+                            <p style="margin: 6px 0 0; font-size: 13px; color: rgba(255,255,255,0.5); font-weight: 400; letter-spacing: 0.3px;">Assessment Platform</p>
                         </td>
                     </tr>
 
@@ -116,8 +116,8 @@
                     <tr>
                         <td style="background-color: #111827; padding: 32px 36px; text-align: center;">
                             <p style="margin: 0 0 6px; font-size: 16px; font-weight: 700; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px;">App</p>
-                            <p style="margin: 0 0 4px; font-size: 12px; color: #d1d5db; line-height: 1.6;">Advanced energy simulation and analysis</p>
-                            <p style="margin: 0 0 12px; font-size: 12px; color: #d1d5db; line-height: 1.6;">Empowering sustainable energy decisions</p>
+                            <p style="margin: 0 0 4px; font-size: 12px; color: #d1d5db; line-height: 1.6;">Geospatial modelling and analysis</p>
+                            <p style="margin: 0 0 12px; font-size: 12px; color: #d1d5db; line-height: 1.6;">Supporting informed decisions</p>
                             <p style="margin: 0 0 8px; font-size: 11px; color: #e5e7eb;">Your organisation</p>
                             <p style="margin: 0; font-size: 11px; color: #d1d5db;">&copy; 2026 App. All rights reserved.</p>
                         </td>
