@@ -1,0 +1,11 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": ["src/main.tsx"],
+  "project": ["src/**/*.{ts,tsx}"],
+  "ignore": ["src/tests/**", "src/vite-env.d.ts"],
+  "ignoreDependencies": [
+    "@spatialhub/auth",
+    "@spatialhub/forms",
+    "@spatialhub/ui"
+  ]
+}

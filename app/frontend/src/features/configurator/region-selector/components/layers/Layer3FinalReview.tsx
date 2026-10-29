@@ -1,0 +1,116 @@
+import type { FC, ReactNode } from "react";
+import { CheckCircle2, AlertTriangle, XCircle } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { formatPeriod, periodYears } from "@/features/configurator/utils/assessmentYears";
+import { useTranslation } from "@/i18n";
+import { LayerShell } from "./shared/LayerShell";
+import type { ConfiguratorContext } from "./types";
+
+type CheckStatus = "pass" | "warn" | "fail";
+
+interface CheckResult {
+    label: string;
+    status: CheckStatus;
+    detail: ReactNode;
+}
+
+const ICONS: Record<CheckStatus, FC<{ className?: string }>> = {
+    pass: CheckCircle2,
+    warn: AlertTriangle,
+    fail: XCircle,
+};
+
+const TONES: Record<CheckStatus, string> = {
+    pass: "border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
+    warn: "border-amber-500/40 bg-amber-500/10 text-amber-600 dark:text-amber-400",
+    fail: "border-red-500/40 bg-red-500/10 text-red-600 dark:text-red-400",
+};
+
+const buildChecks = (ctx: ConfiguratorContext, t: (key: string, data?: any) => string): CheckResult[] => {
+    const { state } = ctx;
+    const checks: CheckResult[] = [];
+
+    checks.push(
+        state.modelName.trim()
+            ? { label: t("configurator.layer4.labels.modelName", "Model name"), status: "pass", detail: state.modelName.trim() }
+            : { label: t("configurator.layer4.labels.modelName", "Model name"), status: "fail", detail: t("configurator.layer4.missingModelName", "Missing — go back to Step 1.") },
+    );
+
+    const timeframe = t("configurator.layer4.labels.timeframe", "Timeframe");
+    if (!state.fromDate || !state.toDate) {
+        checks.push({ label: timeframe, status: "fail", detail: t("configurator.layer4.missingYears", "Start or end year missing — go back to Step 1.") });
+    } else if (state.fromDate > state.toDate) {
+        checks.push({ label: timeframe, status: "fail", detail: t("configurator.layer4.yearOrder", "The start year is after the end year.") });
+    } else {
+        checks.push({
+            label: timeframe,
+            status: "pass",
+            detail: t("configurator.layer4.periodYears", {
+                period: formatPeriod(state.fromDate, state.toDate),
+                count: periodYears(state.fromDate, state.toDate),
+                defaultValue: "{{period}} · {{count}} years",
+            }),
+        });
+    }
+
+    return checks;
+};
+
+export const Layer3FinalReview: FC<{ ctx: ConfiguratorContext }> = ({ ctx }) => {
+    const { t } = useTranslation();
+    const checks = buildChecks(ctx, t);
+    const failed = checks.filter((c) => c.status === "fail").length;
+    const warned = checks.filter((c) => c.status === "warn").length;
+
+    const summary =
+        failed > 0
+            ? (failed === 1 ? t("configurator.layer4.blockersSingle", "1 blocker — fix before running.") : t("configurator.layer4.blockers", `${failed} blockers — fix before running.`, { count: failed }))
+            : warned > 0
+              ? (warned === 1 ? t("configurator.layer4.warningsSingle", "1 warning — review before running.") : t("configurator.layer4.warnings", `${warned} warnings — review before running.`, { count: warned }))
+              : t("configurator.layer4.allPassed", "All checks passed. Ready to save & calculate.");
+
+    const summaryTone: CheckStatus = failed > 0 ? "fail" : warned > 0 ? "warn" : "pass";
+
+    return (
+        <LayerShell
+            purpose={t("configurator.layer4.purpose", "Real-time validation of the model configuration. Blockers must be cleared in their respective steps before the run can start.")}
+            nextStepHint={t("configurator.layer4.nextStepHint", "Then you'll save the model and kick off the calculation.")}
+        >
+            <div data-tour="final-review">
+                <div
+                    className={cn(
+                        "md-fade-in mb-3 rounded-lg border px-3 py-2 text-[11px] font-medium leading-snug transition-colors duration-300",
+                        TONES[summaryTone],
+                    )}
+                >
+                    {summary}
+                </div>
+                <ul className="space-y-1.5">
+                    {checks.map((c, index) => {
+                        const Icon = ICONS[c.status];
+                        return (
+                            <li
+                                key={c.label}
+                                style={{ animationDelay: `${Math.min(index * 30, 240)}ms` }}
+                                className="md-row-in flex items-start gap-2.5 rounded-md border border-border bg-background px-2.5 py-2 transition-colors duration-150 hover:bg-muted/40"
+                            >
+                                <Icon
+                                    className={cn(
+                                        "mt-0.5 h-4 w-4 shrink-0",
+                                        c.status === "pass" && "text-emerald-500",
+                                        c.status === "warn" && "text-amber-500",
+                                        c.status === "fail" && "text-red-500",
+                                    )}
+                                />
+                                <div className="min-w-0 flex-1">
+                                    <div className="text-xs font-medium text-foreground">{c.label}</div>
+                                    <div className="mt-0.5 text-[11px] leading-snug text-muted-foreground">{c.detail}</div>
+                                </div>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
+        </LayerShell>
+    );
+};

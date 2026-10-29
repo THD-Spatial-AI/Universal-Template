@@ -1,0 +1,1955 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "close": "Close",
+    "confirm": "Confirm",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Info",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "reset": "Reset",
+    "clear": "Clear",
+    "clearAll": "Clear All",
+    "selectAll": "Select All",
+    "noResults": "No results found",
+    "actions": "Actions",
+    "settings": "Settings",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "unknown": "Unknown",
+    "more": "more",
+    "add": "Add",
+    "refresh": "Refresh",
+    "healthCheck": "Health check",
+    "na": "N/A",
+    "from": "From",
+    "to": "To",
+    "duration": "Duration",
+    "days": "days",
+    "country": "Country",
+    "region": "Region",
+    "status": "Status",
+    "createdAt": "Created",
+    "updatedAt": "Last Updated",
+    "workspace": "Workspace",
+    "results": "Results",
+    "name": "Name",
+    "description": "Description",
+    "id": "ID",
+    "current": "Current",
+    "max": "Max",
+    "tooltips": {
+      "viewOnMap": "View on Map",
+      "editLocation": "Edit Location",
+      "editName": "Edit name",
+      "duplicate": "Duplicate",
+      "view": "View",
+      "share": "Share",
+      "moveToWorkspace": "Move to Workspace",
+      "profile": "Profile",
+      "documentation": "Documentation",
+      "howItWorks": "How it works",
+      "restartTour": "Restart tour",
+      "feedback": "Feedback",
+      "theme": "Theme",
+      "searchLocation": "Search for a location",
+      "help": "Help"
+    },
+    "sidebar": {
+      "energySimulations": "Simulations",
+      "map": "Map",
+      "simulationReports": "Model Comparison",
+      "simulations": "Analysis Runs"
+    },
+    "menu": {
+      "profile": "Profile",
+      "settings": "Settings",
+      "logout": "Log out"
+    },
+    "modelActions": {
+      "viewResults": "View Results",
+      "downloadResults": "Download Results",
+      "copyConfiguration": "Copy Configuration",
+      "editConfiguration": "Edit Configuration",
+      "cannotEditCompleted": "Cannot edit completed model",
+      "moveToWorkspace": "Move to Workspace",
+      "shareModel": "Share Model",
+      "delete": "Delete",
+      "cannotDelete": "Cannot delete - only the owner or an expert can delete",
+      "retryCalculation": "Retry Calculation",
+      "startCalculation": "Start Calculation",
+      "engineNotAvailable": "Simulation engine is not available"
+    },
+    "pagination": {
+      "showing": "Showing",
+      "to": "to",
+      "of": "of",
+      "results": "results",
+      "noResults": "No results",
+      "loading": "Loading...",
+      "perPage": "per page",
+      "previousPage": "Previous page",
+      "nextPage": "Next page"
+    },
+    "appName": "Project Assessment",
+    "saved": "Saved",
+    "copied": "Copied",
+    "copy": "Copy",
+    "done": "Done"
+  },
+  "forms": {
+    "user": {
+      "personalInfo": {
+        "title": "Personal Information",
+        "description": "Basic user details and contact information"
+      },
+      "security": {
+        "title": "Security",
+        "description": "Account security credentials"
+      },
+      "fields": {
+        "fullName": "Full Name",
+        "email": "Email Address",
+        "accessLevel": "Access Level",
+        "emailVerified": "Email Verified",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "modelLimit": "Model Limit"
+      },
+      "placeholders": {
+        "fullName": "Enter full name",
+        "email": "Enter email address",
+        "password": "Enter password",
+        "confirmPassword": "Confirm password",
+        "modelLimit": "Leave empty for default"
+      },
+      "descriptions": {
+        "emailVerified": "Mark email as verified",
+        "modelLimit": "Custom model creation limit (0 = unlimited, empty = use default)"
+      },
+      "accessLevels": {
+        "veryLow": "Very Low Access",
+        "intermediate": "Intermediate Access",
+        "manager": "Manager (Group Access)",
+        "expert": "Expert (Full Access)"
+      },
+      "validation": {
+        "passwordLength": "Password must be at least 8 characters long",
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "accessLevelRequired": "Access level is required",
+        "passwordRequired": "Password is required",
+        "confirmPasswordRequired": "Password confirmation is required",
+        "passwordsMismatch": "Passwords do not match"
+      }
+    },
+    "webservice": {
+      "serviceInfo": {
+        "title": "Service Information",
+        "description": "Basic webservice identification and metadata"
+      },
+      "connectionDetails": {
+        "title": "Connection Details",
+        "description": "Network connection and endpoint configuration"
+      },
+      "performanceSettings": {
+        "title": "Performance Settings",
+        "description": "Service capacity and performance configuration"
+      },
+      "fields": {
+        "serviceName": "Service Name",
+        "protocol": "Protocol",
+        "ipAddress": "IP Address",
+        "port": "Port",
+        "endpoint": "Endpoint Path",
+        "autoScaling": "Auto Scaling",
+        "maxConcurrency": "Max Concurrent Requests",
+        "initialStatus": "Initial Status"
+      },
+      "placeholders": {
+        "serviceName": "Enter service name",
+        "ipAddress": "e.g., 192.168.1.100"
+      },
+      "descriptions": {
+        "serviceName": "Human-readable name for the webservice",
+        "autoScaling": "Enable automatic scaling based on load",
+        "maxConcurrency": "Maximum number of concurrent requests (1-100)"
+      },
+      "statusOptions": {
+        "active": "Active",
+        "inactive": "Inactive",
+        "maintenance": "Maintenance"
+      },
+      "validation": {
+        "ipInvalid": "Please enter a valid IP address",
+        "portRange": "Port must be between 1 and 65535",
+        "concurrencyRange": "Max concurrency must be between 1 and 100",
+        "nameRequired": "Service name is required",
+        "ipRequired": "IP address is required",
+        "portRequired": "Port is required"
+      }
+    },
+    "workspace": {
+      "details": {
+        "title": "Details",
+        "description": "Enter the workspace name and optional description"
+      },
+      "fields": {
+        "name": "Workspace Name",
+        "description": "Description"
+      },
+      "placeholders": {
+        "name": "Enter workspace name",
+        "description": "Enter workspace description (optional)"
+      },
+      "descriptions": {
+        "name": "A unique name for your workspace",
+        "description": "Optional description of the workspace purpose"
+      },
+      "validation": {
+        "nameRequired": "Workspace name is required"
+      }
+    },
+    "moveModel": {
+      "destination": {
+        "title": "Destination",
+        "description": "Select the target workspace for the model"
+      },
+      "fields": {
+        "targetWorkspace": "Target Workspace"
+      },
+      "placeholders": {
+        "selectWorkspace": "Select a workspace"
+      },
+      "descriptions": {
+        "targetWorkspace": "Choose the workspace to move the model to"
+      },
+      "defaultWorkspace": "Default Workspace",
+      "errorMove": "Failed to move model. Please try again.",
+      "errorMovePlural": "Failed to move models. Please try again.",
+      "errorSelect": "Please select a workspace",
+      "noWorkspaces": "No other workspaces available. Create a new workspace first.",
+      "title": "Move Model",
+      "titlePlural": "Move Models"
+    },
+    "shareModel": {
+      "title": "Share with an Individual User",
+      "description": "Enter the email address of the user to share with",
+      "emailDescription": "The user will get access to this model"
+    },
+    "bulkCopy": {
+      "title": "Number of Copies",
+      "description": "Specify how many copies to create for each selected model",
+      "fields": {
+        "copyCount": "Number of Copies",
+        "copyCountDescription": "Each selected model will be duplicated this many times"
+      },
+      "validation": {
+        "min": "At least 1 copy is required",
+        "max": "Maximum 10 copies allowed",
+        "integer": "Must be a whole number"
+      }
+    }
+  },
+  "dashboard": {
+    "stats": {
+      "totalModels": "Total Models",
+      "draft": "Draft",
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "published": "Published",
+      "modelLimit": "Model Limit",
+      "unlimited": "Unlimited"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "noNotifications": "No notifications",
+    "allCaughtUp": "You're all caught up!",
+    "markAllRead": "Mark all read",
+    "clearAll": "Clear all",
+    "viewAll": "View all notifications",
+    "moreNotification": "+{{count}} more notification",
+    "moreNotifications": "+{{count}} more notifications",
+    "details": "Details",
+    "close": "Close",
+    "scheduledFor": "Scheduled For:",
+    "service": "Service",
+    "last30Days": "Last 30 days",
+    "unread": "{{count}} unread",
+    "loading": "Loading notifications...",
+    "confirmClearTitle": "Clear all notifications?",
+    "confirmClearDescription": "Are you sure you want to clear all notifications? This action cannot be undone.",
+    "confirmClearButton": "Clear All",
+    "dismiss": "Dismiss",
+    "types": {
+      "success": "Success",
+      "error": "Error",
+      "warning": "Warning",
+      "info": "Info",
+      "maintenance": "Maintenance"
+    },
+    "totalExecutionTime": "Total Execution Time",
+    "completedIn": "Successfully completed in {{time}}",
+    "failedAfter": "Failed after {{time}}",
+    "cancelledAfter": "Cancelled after {{time}}",
+    "messages": {
+      "modelCalculationComplete": "Model Calculation Complete",
+      "modelCalculationCompleteMessage": "Your model '{{modelName}}' has been successfully calculated and is ready to view.",
+      "modelCalculationFailed": "Model Calculation Failed",
+      "modelCalculationFailedMessage": "Your model '{{modelName}}' calculation has failed. Please try again.",
+      "modelCalculationStarted": "Model Calculation Started",
+      "modelCalculationStartedMessage": "Your model '{{modelName}}' calculation has started."
+    }
+  },
+  "modelStatus": {
+    "draft": "Draft",
+    "queue": "Queued",
+    "calculating": "Calculating",
+    "running": "Running",
+    "processing": "Processing",
+    "completed": "Completed",
+    "published": "Published",
+    "failed": "Failed",
+    "cancelled": "Cancelled",
+    "modified": "Modified"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "signingIn": "Signing in...",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "enterYourEmail": "Enter your email",
+    "enterYourPassword": "Enter your password",
+    "welcomeBack": "Welcome back",
+    "signInToContinue": "Sign in to continue to your account",
+    "or": "or",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "forgotPassword": "Forgot your password?",
+    "rememberMe": "Remember me",
+    "loginFailed": "Login Failed",
+    "verificationEmailSent": "Verification Email Sent",
+    "checkInboxVerify": "Check your inbox and click the verification link.",
+    "emailVerificationRequired": "Email Verification Required",
+    "sending": "Sending...",
+    "resendVerificationEmail": "Resend verification email",
+    "protectedByEncryption": "Protected by industry-standard encryption",
+    "createAccount": "Create Account",
+    "joinUsAccess": "Join us to access the platform",
+    "personalInformation": "Personal Information",
+    "fullName": "Full Name",
+    "enterFullName": "Enter your full name",
+    "emailAddress": "Email Address",
+    "enterEmailAddress": "Enter your email address",
+    "security": "Security",
+    "confirmYourPassword": "Confirm your password",
+    "passwordRequirements": {
+      "title": "Password Requirements",
+      "minChars": "At least 8 characters",
+      "uppercase": "One uppercase letter",
+      "lowercase": "One lowercase letter",
+      "number": "One number",
+      "specialChar": "One special character",
+      "hasSpaces": "Password contains leading or trailing spaces"
+    },
+    "accessLevel": "Access Level",
+    "veryLow": "Very Low",
+    "low": "Low",
+    "intermediate": "Intermediate",
+    "manager": "Manager",
+    "expert": "Expert",
+    "forgotPasswordTitle": "Forgot Password",
+    "forgotPasswordDescription": "Enter your email address and we'll send you instructions to reset your password.",
+    "secureResetProcess": "Secure password reset process",
+    "sendResetInstructions": "Send Reset Instructions",
+    "backToLogin": "Back to Login",
+    "cancel": "Cancel",
+    "checkYourEmail": "Check Your Email",
+    "sentResetInstructions": "We've sent password reset instructions to your email address.",
+    "note": "Note",
+    "checkSpamFolder": "If you don't see the email, please check your spam or junk folder.",
+    "signUpNow": "Sign up now",
+    "createPassword": "Create a password",
+    "creating": "Creating...",
+    "agreeToTerms": "By creating an account, you agree to our Terms of Service",
+    "signInHere": "Sign in here",
+    "sidePanel": {
+      "badge": "Project assessment",
+      "title": "Your platform headline",
+      "subtitle": "One or two sentences on what users can do with the platform.",
+      "funded": "Your organisation · Your project"
+    },
+    "consentText": "I consent to the processing and storage of my personal data in accordance with the",
+    "declarationOfConsent": "Declaration of Consent",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "workspace": {
+    "workspace": "Workspace",
+    "workspaces": "Workspaces",
+    "selectWorkspace": "Select Workspace",
+    "defaultWorkspace": "Default Workspace",
+    "default": "Default",
+    "shared": "Shared",
+    "searchWorkspaces": "Search workspaces...",
+    "noWorkspacesMatch": "No workspaces match your search",
+    "noWorkspacesFound": "No workspaces found",
+    "createNewWorkspace": "Create New Workspace",
+    "createDescription": "Create a new workspace to organize your models and collaborate with others",
+    "createWorkspace": "Create Workspace",
+    "renameWorkspace": "Rename Workspace",
+    "renameDescription": "Enter a new name for your workspace",
+    "copyWorkspaceTitle": "Copy Workspace",
+    "copyDescription": "Create a copy of this workspace with a new name",
+    "saveChanges": "Save Changes",
+    "copyWorkspace": "Copy Workspace",
+    "sharedWithYouBy": "Shared with you by {{user}}",
+    "sharedWithUsers": "Shared with users",
+    "sharedWithGroups": "Shared with groups",
+    "anotherUser": "another user",
+    "noMembersYet": "No members yet. Share with someone to collaborate!",
+    "noGroupsYet": "No groups have access yet. Share with a group to give all members access!",
+    "removeMember": "Remove member",
+    "removeGroup": "Remove group",
+    "selectorHint": "Select or create a workspace to organize your models"
+  },
+  "model": {
+    "title": "Model",
+    "models": "Models",
+    "newModel": "New Model",
+    "editModel": "Edit Model",
+    "deleteModel": "Delete Model",
+    "modelName": "Model Name",
+    "description": "Description",
+    "status": "Status",
+    "created": "Created",
+    "updated": "Updated",
+    "running": "Running",
+    "completed": "Completed",
+    "failed": "Failed",
+    "pending": "Pending",
+    "queued": "Queued",
+    "cancelled": "Cancelled",
+    "modified": "Modified",
+    "runSimulation": "Run Simulation",
+    "viewResults": "View Results",
+    "duplicate": "Duplicate",
+    "export": "Export",
+    "compare": "Compare",
+    "dashboard": "Model Dashboard",
+    "manageConfigurations": "Manage your model configurations",
+    "searchModels": "Search models...",
+    "allModels": "All Models",
+    "modelGroups": "Model Groups",
+    "loadingWorkspace": "Loading workspace...",
+    "loadingModels": "Loading models...",
+    "loadingWorkspaceDescription": "Please wait while we initialize your workspace preferences.",
+    "loadingModelsDescription": "Please wait while we fetch your models.",
+    "selectWorkspace": "Select or create a workspace to organize your models",
+    "refreshModels": "Refresh models list",
+    "share": "Share",
+    "shareDescription": "Share \"{{title}}\" with another user",
+    "copy": "Copy",
+    "rename": "Rename",
+    "delete": "Delete",
+    "move": "Move",
+    "shareWorkspace": "Share this workspace with other users",
+    "copyWorkspace": "Create a copy of this workspace with all its models",
+    "renameWorkspace": "Rename this workspace",
+    "deleteWorkspace": "Delete this workspace",
+    "moveToWorkspace": "Move to workspace",
+    "noModelsFound": "No models found",
+    "noModelsMatch": "No models match \"{{search}}\". Try adjusting your search.",
+    "noModelsYet": "You haven't created any models yet. Get started by creating your first model!",
+    "createFirstModel": "Create Your First Model",
+    "selected": "selected",
+    "deleteSelected": "Delete selected",
+    "moveSelected": "Move selected",
+    "cannotDelete": "Cannot delete - models are disabled or don't belong to you",
+    "cannotMove": "Cannot move - models don't belong to you",
+    "calculate": "Calculate",
+    "cannotCalculate": "Cannot calculate - no eligible models selected",
+    "noWebserviceAvailable": "No simulation engine available",
+    "bulkCopy": "Copy Models",
+    "bulkCopyDescription": "Create copies of {{count}} selected model(s)",
+    "bulkCopySubmit": "Create Copies",
+    "bulkCopyFailed": "Some models could not be copied. Please try again.",
+    "sharedCannotDelete": "Shared models cannot be deleted. Copy it first to delete",
+    "sharedCannotMove": "Shared models cannot be moved. Copy it first to move",
+    "sharedCannotShare": "Shared models cannot be shared again. Copy it first to share",
+    "limitReached": "You have reached your model creation limit",
+    "selectAll": "Select all",
+    "deselectAll": "Deselect all",
+    "actions": "Actions",
+    "name": "Model Name",
+    "owner": "Owner",
+    "workspace": "Workspace",
+    "draft": "Draft",
+    "published": "Published",
+    "total": "Total",
+    "queue": "Queue",
+    "copyOf": "Copy of \"{{name}}\"",
+    "ownedBy": "Owned by",
+    "parentModel": "Parent Model",
+    "parent": "Parent",
+    "anotherModel": "another model",
+    "failedDefaultMessage": "Calculation failed - webservice unavailable or timeout",
+    "waiting": "Waiting",
+    "queuedTooltip": "Your model is in the queue - the simulation engine is processing other calculations",
+    "compareRequires2Completed": "Select exactly 2 completed models to compare",
+    "estimateApproximate": "Those runs predate queue tracking, so the real wait is likely longer.",
+    "estimateOverdue": "taking longer than usual",
+    "estimateRemaining": "~{{duration}} left",
+    "estimateUnavailable": "Not enough comparable successful runs to estimate a finish time",
+    "canEdit": "Can edit",
+    "canView": "Can view",
+    "clearDateFilter": "Clear date filter",
+    "filterPeriod": "Filter by period",
+    "noDirectShares": "This model has not been shared with anyone yet.",
+    "peopleWithAccess": "People with direct access",
+    "peopleWithAccessDescription": "Users listed here can open this model and its result layers.",
+    "revokeAccess": "Revoke",
+    "revokingAccess": "Revoking…",
+    "revokeAccessFor": "Revoke access for {{email}}",
+    "tabs": {
+      "all": "All",
+      "pinned": "Pinned",
+      "running": "Running",
+      "completed": "Completed",
+      "drafts": "Drafts",
+      "failed": "Failed"
+    },
+    "area": "Area",
+    "period": "Period",
+    "lastActivity": "Last activity",
+    "pin": "Pin to top",
+    "unpin": "Unpin",
+    "recentlyCompleted": "New",
+    "recentlyCompletedTooltip": "Finished {{time}}. Open it to see the results.",
+    "versions_one": "{{count}} version",
+    "versions_other": "{{count}} versions",
+    "estimateBasis_one": "Based on 1 comparable run, which took {{typical}}",
+    "estimateBasis_other": "Based on {{count}} comparable runs, which typically take {{typical}}",
+    "view": "View",
+    "run": "Run"
+  },
+  "userManagement": {
+    "groups": {
+      "selectOrCreate": "Select or create a group",
+      "renameGroup": "Rename group",
+      "enableGroup": "Enable group and its users",
+      "disableGroup": "Disable group and its users",
+      "deleteGroup": "Delete group and all its users",
+      "defaultCannotDelete": "Default group cannot be deleted",
+      "default": "Default",
+      "unknown": "Unknown",
+      "defaultGroup": "Default Group",
+      "unknownGroup": "Unknown Group",
+      "changeUserGroup": "Change User Group",
+      "groupAssignment": "Group Assignment",
+      "selectGroup": "Select Group",
+      "changeGroup": "Change Group",
+      "renameGroupTitle": "Rename Group",
+      "groupName": "Group Name",
+      "newGroupName": "New Group Name",
+      "enterNewGroupName": "Enter new group name",
+      "rename": "Rename",
+      "bulkChangeGroup": "Move Users to Group",
+      "moveUsers": "Move Users",
+      "createNewGroup": "Create New Group",
+      "createGroupDescription": "Create a new group to organize users in your organization",
+      "createGroup": "Create Group",
+      "groupNameRequired": "Group name is required",
+      "groupCreated": "Group created successfully",
+      "failedToCreateGroup": "Failed to create group",
+      "groupNamePlaceholder": "e.g., Operations, Planning",
+      "searchGroups": "Search groups...",
+      "allGroups": "All Groups",
+      "viewUsersFromAllGroups": "View users from all groups",
+      "noGroups": "No Groups",
+      "loading": "Loading...",
+      "noGroupsFound": "No groups found",
+      "noGroupsMatchSearch": "No groups match your search"
+    },
+    "title": "User Management",
+    "subtitle": "Manage users, groups, and permissions",
+    "searchPlaceholder": "Search name or email...",
+    "refresh": "Refresh",
+    "addNewUser": "Add New User",
+    "add": "Add",
+    "editUser": "Edit User",
+    "createUser": "Create User",
+    "updateUser": "Update User",
+    "loadingUsers": "Loading users...",
+    "noUsersFound": "No users found",
+    "noUsersInGroup": "No users found in your group. Please contact an administrator to assign users to your group.",
+    "noUsersMatch": "No users match \"{{search}}\"",
+    "noUsersMatchSearch": "No users match \"{{search}}\"",
+    "addFirstUser": "Add the first user to get started.",
+    "dialog": {
+      "editTitle": "Edit User",
+      "addTitle": "Add New User",
+      "updateUser": "Update User",
+      "createUser": "Create User"
+    },
+    "table": {
+      "user": "User",
+      "accessLevel": "Access Level",
+      "group": "Group",
+      "emailVerified": "Email Verified",
+      "actions": "Actions"
+    },
+    "emailStatus": {
+      "verified": "Verified",
+      "unverified": "Unverified"
+    },
+    "actions": {
+      "changeGroup": "Change Group",
+      "enableUser": "User is disabled — click to enable",
+      "disableUser": "User is enabled — click to disable",
+      "editUser": "Edit User",
+      "deleteUser": "Delete User",
+      "copyEmail": "Copy email",
+      "copied": "Copied!",
+      "selectAll": "Select all",
+      "deselectAll": "Deselect all",
+      "selected": "{{count}} selected",
+      "bulkMoveToGroup": "Move to group",
+      "bulkDelete": "Delete selected",
+      "apiTokens": "API tokens",
+      "apiTokensActive": "API access enabled — manage tokens"
+    },
+    "notifications": {
+      "userCreated": "User created successfully!",
+      "userUpdated": "User updated successfully!",
+      "userDeleted": "User deleted successfully!",
+      "userDisabled": "User disabled successfully!",
+      "userEnabled": "User enabled successfully!",
+      "groupDisabled": "Group \"{{name}}\" disabled",
+      "groupEnabled": "Group \"{{name}}\" enabled",
+      "groupDeleted": "Group \"{{name}}\" deleted",
+      "groupRenamed": "Group renamed to \"{{name}}\" successfully",
+      "userMovedToGroup": "User moved to new group and logged out. They must re-login to access their new workspace.",
+      "failedToCreate": "Failed to create user",
+      "failedToUpdate": "Failed to update user",
+      "failedToDelete": "Failed to delete user",
+      "failedToDisable": "Failed to disable user",
+      "failedToEnable": "Failed to enable user",
+      "failedToFetch": "Failed to fetch users",
+      "failedToUpdateGroup": "Failed to update user group",
+      "failedToRenameGroup": "Failed to rename group",
+      "failedToCopyEmail": "Failed to copy email",
+      "bulkGroupChanged": "{{count}} users moved to new group successfully",
+      "bulkGroupChangeFailed": "Failed to move users to group",
+      "bulkDeleted": "{{count}} users deleted successfully",
+      "bulkDeletePartial": "{{succeeded}} of {{total}} users deleted. {{failed}} failed.",
+      "pleaseLogIn": "Please log in to view users",
+      "passwordMismatch": "Password and confirmation must match"
+    },
+    "confirmations": {
+      "disableUserDescription": "This will prevent the user from logging in.",
+      "enableUserDescription": "This will re-enable the user to log in.",
+      "disableGroupDescription": "Disabling a group will disable all its users.",
+      "enableGroupDescription": "Enabling a group will enable all its users.",
+      "deleteGroupDescription": "This will delete the group and all its users. This action cannot be undone.",
+      "bulkDeleteDescription": "This will permanently delete {{count}} selected users. This action cannot be undone."
+    }
+  },
+  "profile": {
+    "title": "Profile Settings",
+    "subtitle": "Manage your personal information and account preferences",
+    "goBack": "Go back",
+    "loadingProfile": "Loading your profile...",
+    "defaultUser": "User",
+    "accessLevel": "Access Level",
+    "notSpecified": "Not specified",
+    "personalInfo": "Personal Information",
+    "personalInfoDescription": "Update your profile details below",
+    "readOnly": "read-only",
+    "saving": "Saving...",
+    "saveChanges": "Save Changes",
+    "fields": {
+      "fullName": "Full Name",
+      "email": "Email Address"
+    },
+    "placeholders": {
+      "fullName": "Enter your full name"
+    },
+    "accessLevels": {
+      "basic": "Basic",
+      "basicDescription": "Standard access to basic features",
+      "intermediate": "Intermediate",
+      "intermediateDescription": "Extended access with advanced features",
+      "expert": "Expert",
+      "expertDescription": "Full access to all features"
+    },
+    "notifications": {
+      "updated": "Profile updated successfully!",
+      "failedToLoad": "Failed to load profile. Please try again.",
+      "failedToUpdate": "Failed to update profile. Please try again."
+    },
+    "password": {
+      "title": "Change Password",
+      "description": "Update the password you use to sign in",
+      "current": "Current Password",
+      "new": "New Password",
+      "confirm": "Confirm New Password",
+      "currentPlaceholder": "Enter your current password",
+      "newPlaceholder": "Enter a new password",
+      "confirmPlaceholder": "Re-enter your new password",
+      "submit": "Update Password",
+      "updating": "Updating...",
+      "updated": "Password changed successfully!",
+      "failed": "Failed to change password. Please try again.",
+      "requirements": {
+        "minChars": "At least 8 characters",
+        "uppercase": "One uppercase letter",
+        "lowercase": "One lowercase letter",
+        "number": "One number",
+        "specialChar": "One special character"
+      },
+      "requirementsNotMet": "Password does not meet all requirements",
+      "mismatch": "Passwords do not match"
+    }
+  },
+  "simulation": {
+    "progress": {
+      "queued": "Queued",
+      "assessing": "Assessing",
+      "done": "Done"
+    }
+  },
+  "mapLayers": {
+    "title": "Map Layers",
+    "description": "Configure map appearance and data layers",
+    "baseLayers": {
+      "title": "Base Layers",
+      "description": "Choose the background map style",
+      "osmStandard": "Standard OpenStreetMap layer",
+      "osmHumanitarian": "Humanitarian style OpenStreetMap",
+      "cartoPositron": "Light theme base map by CartoDB",
+      "cartoVoyager": "Detailed raster base map by CartoDB",
+      "openTopoMap": "Topographic style map",
+      "maplibreDark": "Dark vector basemap",
+      "maplibreVoyager": "Detailed vector basemap (Voyager)"
+    },
+    "dataLayers": {
+      "title": "Data Layers",
+      "energySimulation": "Simulation result layer"
+    },
+    "tooltip": "Base Maps"
+  },
+  "tour": {
+    "product": {
+      "welcome": {
+        "title": "Welcome to the platform!",
+        "description": "Let's take a quick tour to help you get started.",
+        "tip": "This tour will only show once. You can skip it anytime or restart it from the sidebar."
+      },
+      "newAssessment": {
+        "title": "Create New Assessment",
+        "description": "Ready to get started? Click this button to create your first model. This opens the guided setup.",
+        "tip": "When you click this, you'll enter a dedicated tour for the area selection process!"
+      },
+      "profile": {
+        "title": "Profile & Settings",
+        "description": "Access your profile, account settings, and user preferences. Manage your account and access additional options."
+      },
+      "navigation": {
+        "title": "Admin Dashboard",
+        "description": "Manage workspaces, users and every model on the platform. Visible to administrators only."
+      },
+      "simulations": {
+        "title": "Simulations",
+        "description": "Create and manage your models. Start new assessments, configure parameters and review existing calculations."
+      },
+      "map": {
+        "title": "Interactive Map",
+        "description": "Your main workspace for geographical analysis. View map layers and select areas for assessment."
+      },
+      "reports": {
+        "title": "Simulation Reports",
+        "description": "View detailed simulation reports, export data, and analyze historical trends and patterns."
+      },
+      "layers": {
+        "title": "Map Layers",
+        "description": "Control map layers and overlays. Choose base maps, toggle data layers, and customize your map view."
+      },
+      "documentation": {
+        "title": "Documentation",
+        "description": "Open the platform docs for detailed guides, API references, and best practices.",
+        "tip": "Opens in a new tab so you keep your current workflow."
+      },
+      "feedback": {
+        "title": "Feedback",
+        "description": "Share your thoughts and suggestions with us. Your feedback helps improve the platform."
+      },
+      "complete": {
+        "title": "You're All Set!",
+        "description": "You've completed the tour! You're now ready to create your first model.",
+        "nextSteps": "Next Steps",
+        "nextStepsDescription": "Try creating your first model or explore the interactive map.",
+        "restartTour": "Restart Tour",
+        "restartTourDescription": "You can restart this tour anytime from the sidebar."
+      },
+      "dashboard": {
+        "tabsOverview": {
+          "title": "Filter by status",
+          "description": "These tabs filter your models by state, with live counts for each group."
+        },
+        "tabAll": {
+          "title": "All models",
+          "description": "Every model family in this workspace, with pinned families on top."
+        },
+        "tabPinned": {
+          "title": "Pinned",
+          "description": "Models you pinned. Pinning any version keeps the whole family on top."
+        },
+        "tabRunning": {
+          "title": "Running",
+          "description": "Queued, calculating, running or processing models. The list updates live while they run."
+        },
+        "tabCompleted": {
+          "title": "Completed",
+          "description": "Completed and published models, ready to open and explore."
+        },
+        "tabDrafts": {
+          "title": "Drafts",
+          "description": "Draft and modified models that still need to be run."
+        },
+        "tabFailed": {
+          "title": "Failed",
+          "description": "Failed or cancelled runs. Inspect the error and re-run when ready."
+        },
+        "search": {
+          "title": "Search & period",
+          "description": "Search model titles and filter by simulation period. Matches include older versions of a family."
+        },
+        "familyRow": {
+          "title": "One row per model",
+          "description": "Each row is a model family with the original model on top. The versions badge expands its copies, oldest first."
+        },
+        "columns": {
+          "title": "Columns",
+          "description": "Last activity lists running models first, then the most recently finished. Period and area at a glance."
+        },
+        "pin": {
+          "title": "Pin models",
+          "description": "Pin a model to keep its family at the top of every tab."
+        },
+        "primaryAction": {
+          "title": "Primary action",
+          "description": "View finished models or run drafts straight from the row."
+        },
+        "moreMenu": {
+          "title": "More actions",
+          "description": "Edit, copy, download, share, move to a workspace or delete from this menu."
+        },
+        "newBadge": {
+          "title": "New results",
+          "description": "Recently completed models you have not opened yet are marked as new."
+        },
+        "refresh": {
+          "title": "Refresh, share & copy",
+          "description": "Refresh reloads the model list (running models also update on their own). Share gives your team access to this workspace, and Copy duplicates it with its models."
+        }
+      },
+      "ui": {
+        "stepOf": "Step {{current}} of {{total}}",
+        "skipTour": "Skip tour",
+        "finish": "Finish",
+        "whatsNew": "New",
+        "sections": {
+          "welcome": "Welcome",
+          "navigation": "Navigation",
+          "dashboard": "Dashboard",
+          "tabs": "Tabs",
+          "rows": "Rows",
+          "finish": "Finish",
+          "tools": "Tools"
+        },
+        "chips": {
+          "filters": "Filters"
+        }
+      },
+      "workspace": {
+        "title": "Workspace",
+        "description": "Models belong to a workspace. Switch workspaces here, or create a new one to organise projects and share them with your team."
+      },
+      "demo": {
+        "title": "Example model",
+        "example": "Example",
+        "justNow": "Just now"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "View the open-source code and report issues on GitHub."
+      },
+      "help": {
+        "title": "Help",
+        "description": "Everything you need in one place: open the documentation, restart this tour at any time, or send us feedback."
+      },
+      "language": {
+        "title": "Language",
+        "description": "Switch the interface language. Your choice is saved in this browser."
+      },
+      "notifications": {
+        "title": "Notifications",
+        "description": "See finished runs, shares and system announcements here."
+      },
+      "version": {
+        "title": "What's New",
+        "description": "Click the version number to see the latest features and improvements."
+      }
+    },
+    "areaSelect": {
+      "welcome": {
+        "title": "Model Setup Guide",
+        "description": "Welcome! This tour guides you through creating a model.",
+        "tip": "You'll learn how to configure your model, draw areas, and create your simulation."
+      },
+      "modelName": {
+        "title": "Model Name",
+        "description": "Give your model a descriptive name. This helps you find it later in your dashboard.",
+        "tip": "Good names: \"Baseline 2030\" or \"Region A scenario\"."
+      },
+      "dateRange": {
+        "title": "Simulation Period",
+        "description": "Choose the period the model covers.",
+        "tip": "Longer periods give a broader picture."
+      },
+      "mapContainer": {
+        "title": "Interactive Map",
+        "description": "This is your main workspace. Use the map to select places or areas for your model.",
+        "tip": "You can zoom and pan the map to explore different regions"
+      },
+      "search": {
+        "title": "Location Search",
+        "description": "Use this search box to quickly find specific locations by name or address.",
+        "tip": "Try typing a location name to see instant results"
+      },
+      "save": {
+        "title": "Create Simulation",
+        "description": "Once everything is configured, click here to save the model and start the calculation.",
+        "tip": "All fields must be completed before you can save"
+      },
+      "calculationStatus": {
+        "title": "Calculation status",
+        "description": "This line tells you whether available dates are loading, unavailable, errored, or ready for selection.",
+        "tip": "If this shows a blocker, the continue button stays disabled until the date selection is valid."
+      },
+      "finalReview": {
+        "title": "Validation status",
+        "description": "The review step checks the model name and period before the model can be saved."
+      },
+      "saveSummary": {
+        "title": "Save summary",
+        "description": "This final summary shows the values that will be saved with the model and sent to the calculation workflow."
+      },
+      "ui": {
+        "sections": {
+          "intro": "Intro",
+          "setup": "Setup",
+          "map": "Map",
+          "layers": "Layers",
+          "review": "Review"
+        }
+      },
+      "configure": {
+        "title": "Project inputs",
+        "description": "Set the project-specific inputs of the model here.",
+        "tip": "Each project replaces this step with its own inputs."
+      }
+    },
+    "buttons": {
+      "skip": "Skip",
+      "back": "Back",
+      "next": "Next",
+      "finish": "Finish",
+      "close": "Close"
+    }
+  },
+  "feedback": {
+    "title": "Send Feedback",
+    "subtitle": "Help us improve your experience",
+    "category": "Feedback Category",
+    "categories": {
+      "bug": "Bug Report",
+      "bugDescription": "Something isn't working",
+      "feature": "Feature Request",
+      "featureDescription": "Suggest new functionality",
+      "improvement": "Improvement",
+      "improvementDescription": "Enhance existing features",
+      "general": "General",
+      "generalDescription": "Other feedback"
+    },
+    "subject": "Subject",
+    "subjectPlaceholder": "e.g., Map loading issue, Feature suggestion...",
+    "message": "Your Feedback",
+    "messagePlaceholder": "Please describe your feedback, suggestions, or issues in detail...",
+    "image": "Attachment (Optional)",
+    "imageDropzone": "Click to upload or drag and drop",
+    "imageFormats": "PNG, JPG, GIF up to 15MB",
+    "imagePreview": "Image preview",
+    "removeImage": "Remove image",
+    "rating": "Overall Rating",
+    "ratingDescription": "How would you rate your experience?",
+    "submit": "Send Feedback",
+    "submitting": "Submitting...",
+    "submittingMessage": "Submitting your feedback...",
+    "gdprNotice": "Your feedback is processed in compliance with GDPR regulations.",
+    "success": {
+      "title": "Feedback Submitted!",
+      "message": "Thank you for your feedback. We'll review it and get back to you if needed.",
+      "reference": "Reference"
+    },
+    "errors": {
+      "loginRequired": "Please log in to submit feedback",
+      "submitFailed": "Failed to submit feedback. Please try again later.",
+      "invalidImageType": "Please select a valid image file (PNG, JPG, GIF)",
+      "imageTooLarge": "Image size must be less than 15MB",
+      "payloadTooLarge": "The attachment is too large. Please use smaller images."
+    },
+    "myFeedback": {
+      "title": "My Feedback",
+      "subtitle": "Track the status of your submitted feedback",
+      "empty": "You haven't submitted any feedback yet",
+      "adminResponse": "Admin Response",
+      "submittedOn": "Submitted on",
+      "autoDeleteNotice": "This item will be automatically removed in {days} days",
+      "autoDeleteSoon": "This item will be automatically removed soon",
+      "showHistory": "My Submissions",
+      "hideHistory": "Hide",
+      "status": {
+        "pending": "Pending",
+        "in_progress": "In Progress",
+        "resolved": "Resolved",
+        "closed": "Closed"
+      }
+    },
+    "write": "Write",
+    "preview": "Preview",
+    "markdownSupported": "Markdown supported",
+    "words": "words",
+    "chars": "chars",
+    "previewEmpty": "Nothing to preview"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Customize your experience and preferences",
+    "configuration": "Configuration",
+    "goBack": "Go back",
+    "tabs": {
+      "general": "General",
+      "display": "Display",
+      "notifications": "Notifications",
+      "advanced": "Advanced",
+      "privacyTerms": "Privacy & Terms"
+    },
+    "stats": {
+      "language": "Language",
+      "theme": "Theme",
+      "notifications": "Notifications",
+      "accessLevel": "Access Level",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "system": "System",
+      "user": "User"
+    },
+    "language": {
+      "title": "Language",
+      "subtitle": "Interface language"
+    },
+    "mapLocation": {
+      "title": "Map Location",
+      "subtitle": "Saved positions",
+      "syncing": "Syncing...",
+      "searchPlaceholder": "Search for a location...",
+      "current": "Current",
+      "noLocation": "No location set",
+      "savedLocations": "Saved Locations",
+      "clearAll": "Clear All",
+      "syncNote": "Locations sync to your account"
+    },
+    "locationSearch": {
+      "placeholder": "Search location...",
+      "searching": "Searching...",
+      "noResults": "No locations found",
+      "searchFailed": "Search failed"
+    },
+    "dataDisplay": {
+      "title": "Data & Display",
+      "subtitle": "Units and formatting",
+      "distance": "Distance",
+      "kilometers": "Kilometers",
+      "miles": "Miles",
+      "dataRefresh": "Data Refresh",
+      "min": "min",
+      "textSize": "Text size",
+      "textSizes": {
+        "large": "Large",
+        "normal": "Normal",
+        "small": "Small"
+      }
+    },
+    "notifications": {
+      "title": "Notifications",
+      "subtitle": "Alert preferences",
+      "email": "Email",
+      "notifyWhenComplete": "Notify when complete",
+      "browser": "Browser",
+      "enabled": "Enabled",
+      "blocked": "Blocked",
+      "systemAlerts": "System alerts"
+    },
+    "sendNotification": {
+      "title": "Send Notification",
+      "subtitle": "System notifications",
+      "selectService": "Select service...",
+      "services": {
+        "webService": "Web Service",
+        "geoServer": "GeoServer",
+        "database": "Database",
+        "api": "API",
+        "mapService": "Map Service"
+      },
+      "messagePlaceholder": "Enter notification message...",
+      "sending": "Sending...",
+      "sendNotification": "Send Notification",
+      "sent": "Notification sent!",
+      "failedToSend": "Failed to send"
+    },
+    "polygonLimits": {
+      "title": "Polygon Limits",
+      "subtitle": "Selection limits",
+      "yourLimit": "Your limit",
+      "unlimited": "Unlimited",
+      "byRole": "By Role",
+      "reset": "Reset",
+      "resetSuccess": "All limits reset to defaults",
+      "resetFailed": "Failed to reset limits",
+      "limitUpdated": "{{label}} limit updated to {{value}}",
+      "failedToUpdate": "Failed to update {{label}} limit",
+      "contactAdmin": "Contact admin for higher limits.",
+      "levels": {
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "manager": "Manager",
+        "expert": "Expert"
+      }
+    },
+    "accessLevels": {
+      "basic": "Basic",
+      "expert": "Expert",
+      "intermediate": "Intermediate",
+      "manager": "Manager"
+    },
+    "modelCreation": {
+      "checking": "Checking preference...",
+      "description": "Controls the setup card shown before the guided model creation steps.",
+      "enabled": "Intro is enabled",
+      "enabledHint": "The setup summary will appear before new model creation.",
+      "enabledMessage": "The intro card will show the next time you create a new model.",
+      "guidancePreferences": "Guidance preferences",
+      "hidden": "Intro is hidden",
+      "hiddenHint": "Enable it again when users need the setup summary before creating a model.",
+      "loadError": "Unable to load this preference.",
+      "sectionTitle": "Model creation",
+      "showAgain": "Show again",
+      "title": "Model intro card",
+      "updateError": "Could not update the intro card preference."
+    }
+  },
+  "map": {
+    "zoomIn": "Zoom In",
+    "zoomOut": "Zoom Out",
+    "centerMap": "Center Map",
+    "fitToExtent": "Fit to extent",
+    "resetTopDown": "Reset to top-down",
+    "rightClickRotate": "Right-click + drag to rotate",
+    "regions": "regions",
+    "myModels": "my models",
+    "grids": "grids",
+    "countries": "countries",
+    "bookmarks": {
+      "namePlaceholder": "Bookmark name...",
+      "none": "No bookmarks yet",
+      "saveCurrentView": "Save current view",
+      "title": "Map bookmarks"
+    },
+    "latestModel": "latest model",
+    "legend": {
+      "title": "Map outlines",
+      "yourModels": "Green area: your latest model — select it to open the results",
+      "availableRegions": "Dashed indigo: available administrative regions",
+      "zoomDetail": "The base map reveals more detail as you zoom in."
+    },
+    "newModelShortcut": "Shortcut: N",
+    "privacyRequired": "Please accept the Data & Privacy terms to view the map"
+  },
+  "privacy": {
+    "dataAndPrivacy": "Data & Privacy",
+    "acceptTerms": "Accept Privacy Terms",
+    "openSettings": "Open data & privacy settings",
+    "dialogTitle": "Data Processing & Privacy",
+    "cartoDescription": "To provide you with our services, we rely on CARTO and OSMF as third-party mapping providers.",
+    "sharedWithCarto": "By accepting, the following details will be shared with CARTO and OSMF respectively:",
+    "ipAddress": "IP Address",
+    "browserDeviceType": "Browser + Device Type",
+    "timeOfRequest": "Time of Request",
+    "localStorageDescription": "Additionally, we use local storage to remember your preferences and to track whether you've seen the introductory content on this device.",
+    "reviewPolicies": "For more information, please review the respective privacy policies:",
+    "cartoPolicy": "Carto Privacy Policy",
+    "osmfPolicy": "OSMF Privacy Policy",
+    "deny": "Deny",
+    "accept": "Accept",
+    "dataPolicy": "Privacy Policy",
+    "platformPolicy": "Platform Privacy Policy"
+  },
+  "onboarding": {
+    "welcome": {
+      "title": "Welcome!",
+      "description": "Let's set up your preferences to get started",
+      "greeting": "Welcome to the platform!",
+      "intro": "Let's take a moment to set up your preferences. This will help us personalize your experience and provide you with the most relevant information.",
+      "step1": "Choose your preferred language",
+      "step2": "Set your map and notification preferences",
+      "step3": "Configure notification settings",
+      "timeNote": "This will only take a minute"
+    },
+    "language": {
+      "title": "Language Preference",
+      "description": "Select your preferred language for the application"
+    },
+    "map": {
+      "title": "Map Preferences",
+      "description": "Configure your default map location"
+    },
+    "notifications": {
+      "title": "Notification Preferences",
+      "description": "Choose how you want to receive alerts and updates"
+    },
+    "navigation": {
+      "previous": "Previous",
+      "next": "Next",
+      "complete": "Complete",
+      "completing": "Completing...",
+      "skip": "Skip"
+    }
+  },
+  "landing": {
+    "nav": {
+      "challenge": "Challenge",
+      "platform": "Platform",
+      "infrastructure": "Approach",
+      "howItWorks": "How it Works",
+      "caseStudy": "Case Study",
+      "personas": "Who It's For",
+      "contact": "Contact",
+      "signIn": "Sign in",
+      "tryItNow": "Try the Platform"
+    },
+    "hero": {
+      "badge": "Research Project",
+      "title1": "Assess your projects in",
+      "titleHighlight": "your study regions",
+      "subtitle": "Describe what the platform does for its users in one or two sentences.",
+      "getStarted": "Launch Assessment",
+      "seeHow": "See How It Works",
+      "publicNote": "Everything on this page is public — no account needed. Sign in only to create and run your own assessments.",
+      "metricSites": "Key figure 1",
+      "metricStorage": "Key figure 2",
+      "metricNetwork": "Key figure 3",
+      "metricCost": "Key figure 4"
+    },
+    "caseStudy": {
+      "eyebrow": "The Case Study",
+      "title": "Your case study regions",
+      "description": "Describe the case study the platform is built on and the regions it covers.",
+      "germanyTitle": "Region 1",
+      "germanyDesc": "Short description of the first study region.",
+      "norwayTitle": "Region 2",
+      "norwayDesc": "Short description of the second study region.",
+      "netherlandsTitle": "Region 3",
+      "netherlandsDesc": "Short description of the third study region."
+    },
+    "challenge": {
+      "eyebrow": "The Challenge",
+      "title": "The challenge this platform addresses",
+      "description": "Explain the problem users face and why a dedicated tool helps.",
+      "card1Title": "Challenge 1",
+      "card1Desc": "Describe the first part of the challenge.",
+      "card2Title": "Challenge 2",
+      "card2Desc": "Describe the second part of the challenge.",
+      "card3Title": "Challenge 3",
+      "card3Desc": "Describe the third part of the challenge.",
+      "card4Title": "Challenge 4",
+      "card4Desc": "Describe the fourth part of the challenge."
+    },
+    "features": {
+      "label": "Platform Capabilities",
+      "title": "Everything you need in one platform",
+      "description": "Summarise the main capabilities of the platform.",
+      "f1Title": "Interactive Geospatial Map",
+      "f1Desc": "Explore the project data on one interactive map.",
+      "f2Title": "Guided Model Setup",
+      "f2Desc": "Create models in a few guided steps.",
+      "f3Title": "Simulation Runs",
+      "f3Desc": "Run models on the simulation engine and follow their progress.",
+      "f4Title": "Data Catalogue",
+      "f4Desc": "Browse the data sets used by the models.",
+      "f5Title": "Results & Reports",
+      "f5Desc": "Review model results on the map and download reports.",
+      "f6Title": "Collaborative Workspaces",
+      "f6Desc": "Share models, compare scenarios and collaborate in shared workspaces."
+    },
+    "infrastructure": {
+      "eyebrow": "Approach",
+      "title": "Four stages, one integrated model",
+      "description": "Describe how the platform's approach is structured.",
+      "c1Subtitle": "Stage 1",
+      "c1Title": "First stage",
+      "c1Desc": "Describe the first stage.",
+      "c1Spec1": "Detail",
+      "c1Spec2": "Detail",
+      "c1Spec3": "Detail",
+      "c1Spec4": "Detail",
+      "c2Subtitle": "Stage 2",
+      "c2Title": "Second stage",
+      "c2Desc": "Describe the second stage.",
+      "c2Spec1": "Detail",
+      "c2Spec2": "Detail",
+      "c2Spec3": "Detail",
+      "c2Spec4": "Detail",
+      "c3Subtitle": "Stage 3",
+      "c3Title": "Third stage",
+      "c3Desc": "Describe the third stage.",
+      "c3Spec1": "Detail",
+      "c3Spec2": "Detail",
+      "c3Spec3": "Detail",
+      "c3Spec4": "Detail",
+      "c4Subtitle": "Stage 4",
+      "c4Title": "Fourth stage",
+      "c4Desc": "Describe the fourth stage.",
+      "c4Spec1": "Detail",
+      "c4Spec2": "Detail",
+      "c4Spec3": "Detail",
+      "c4Spec4": "Detail"
+    },
+    "howItWorks": {
+      "label": "4-Step Workflow",
+      "title": "From data to results",
+      "description": "Set up, review and run a model in four steps.",
+      "s1Title": "1. Name & Period",
+      "s1Desc": "Name your model and choose the period it covers.",
+      "s2Title": "2. Configure",
+      "s2Desc": "Set the project-specific inputs, on the map where needed.",
+      "s3Title": "3. Review",
+      "s3Desc": "Check the setup before saving.",
+      "s4Title": "4. Save & Run",
+      "s4Desc": "Save the model, start the run and explore the results."
+    },
+    "personas": {
+      "eyebrow": "Who it is for",
+      "title": "Designed for your stakeholders",
+      "p1Title": "User group 1",
+      "p1Desc": "Describe what this group uses the platform for.",
+      "p2Title": "User group 2",
+      "p2Desc": "Describe what this group uses the platform for.",
+      "p3Title": "User group 3",
+      "p3Desc": "Describe what this group uses the platform for.",
+      "p4Title": "User group 4",
+      "p4Desc": "Describe what this group uses the platform for."
+    },
+    "contact": {
+      "label": "Get in Touch",
+      "title": "Contact the Project Team",
+      "description": "Questions, partnership ideas or feedback? Send us a message and we'll get back to you.",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "category": "Category",
+      "categories": {
+        "general": "General Inquiry",
+        "partnership": "Partnership",
+        "pilot": "Pilot / Demo Request",
+        "research": "Research Collaboration",
+        "media": "Media & Press"
+      },
+      "subject": "Subject",
+      "subjectPlaceholder": "How can we help?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us more…",
+      "send": "Send Message",
+      "sending": "Sending…",
+      "successText": "Thanks! Your message has been sent.",
+      "genericError": "Something went wrong. Please try again.",
+      "submitFailed": "Failed to send your message. Please try again.",
+      "validationError": "Please fill in all required fields."
+    },
+    "footer": {
+      "brandDescription": "Assessment platform for your project.",
+      "privacySettings": "Privacy Settings",
+      "privacyPolicy": "Privacy Policy",
+      "tagline": "Describe the platform in one line.",
+      "cookies": "Cookies Policy",
+      "impressum": "Impressum",
+      "terms": "Terms & Conditions",
+      "copyright": "Your organisation"
+    }
+  },
+  "modelResults": {
+    "title": "Model Results",
+    "errors": {
+      "noId": "No model ID provided",
+      "loadFailed": "Failed to load model results",
+      "layerIncomplete": "Layer configuration is incomplete",
+      "layerLoad": "Failed to load layer from GeoServer",
+      "tileLoad": "Some tiles failed to load from GeoServer ({{count}})"
+    },
+    "loadingWorkspace": "Loading workspace…",
+    "loadingModels": "Loading models…",
+    "noCompletedModels": "No completed models",
+    "selectModel": "Select a model",
+    "map": {
+      "initializing": "Initializing map…"
+    },
+    "empty": {
+      "title": "No result for this model yet.",
+      "hint": "The simulation output will appear here once processing finishes."
+    },
+    "details": {
+      "description": "Description",
+      "location": "Location",
+      "period": "Assessment period",
+      "days": "days",
+      "updated": "Updated",
+      "awaiting": "Waiting for result…",
+      "title": "Title",
+      "region": "Region",
+      "country": "Country",
+      "from": "From",
+      "to": "To",
+      "humidity": "Humidity"
+    },
+    "placeholderTitle": "Results",
+    "placeholderText": "This project has no result view yet. Add map layers and summaries for the model output here."
+  },
+  "configurator": {
+    "registry": {
+      "layer1Title": "Model Setup",
+      "layer1Subtitle": "Name and period",
+      "layer2Title": "Configure",
+      "layer2Subtitle": "Project-specific inputs",
+      "layer3Title": "Final Review",
+      "layer3Subtitle": "Check before saving",
+      "layer4Title": "Save & Calculate",
+      "layer4Subtitle": "Save and start the run"
+    },
+    "stepper": {
+      "stepOf": "Step {{step}} of {{total}}",
+      "back": "Back",
+      "continue": "Continue",
+      "update": "Update",
+      "save": "Save",
+      "saving": "Saving...",
+      "starting": "Starting...",
+      "saveAndRun": "Save & run",
+      "introTitle": "New analysis model",
+      "introSubtitle": "Let's set up your simulation",
+      "introDesc": "Six guided steps to define your area, validate inputs and launch a analysis run.",
+      "introProgressSaved": "Your progress is saved as you go",
+      "introDontShow": "Don't show this intro again",
+      "introCancel": "Cancel",
+      "introStart": "Get started",
+      "step": "STEP"
+    },
+    "layer1": {
+      "purpose": "Name this assessment and choose the years it covers.",
+      "nextStepHint": "Next you'll set the project inputs.",
+      "modelNameLabel": "Model name",
+      "modelNamePlaceholder": "e.g. Baseline 2030–2040",
+      "modelNameHint": "A descriptive name so you can find this model later.",
+      "dynamicLoading": "Loading available dynamic dates...",
+      "dynamicEmpty": "No dynamic dates available.",
+      "dynamicSelected": "Selected range: {{start}} to {{end}} ({{days}} days).",
+      "dynamicSelectedOne": "Selected range: {{start}} to {{end}} (1 day).",
+      "dynamicSelectInside": "Select a range inside available dynamic dates: {{start}} to {{end}}",
+      "dynamicAvailable": "Available dynamic dates: {{start}} to {{end}}",
+      "suggestedNamesLabel": "Quick picks",
+      "suggestedName1": "Baseline Scenario",
+      "suggestedName2": "Industrial Cluster Study",
+      "suggestedName3": "Site Screening",
+      "suggestedName4": "Regional Assessment",
+      "modelNameQuestion": "What do you want to call this model?",
+      "periodQuestion": "Which period should it assess?",
+      "assessmentPeriod": "Assessment Period",
+      "periodHint": "Whole years.",
+      "startYear": "Start year",
+      "endYear": "End year",
+      "periodSelected": "{{period}} · {{count}} years",
+      "periodMissing": "Choose a start and end year."
+    },
+    "layer2": {
+      "purpose": "Set the project-specific inputs of the model. The map is available for selecting places or areas.",
+      "nextStepHint": "Next you'll review the model before saving.",
+      "question": "What should the model use?",
+      "info": "Replace this step with your project's inputs.",
+      "placeholder": "No project inputs yet. Add form fields here and store them in the model configuration."
+    },
+    "layer4": {
+      "purpose": "Pipeline CAPEX scales with route resistance; truck and railway use distance tariffs.",
+      "nextStepHint": "Next we'll do a final review before saving.",
+      "missingModelName": "Missing — go back to Step 1.",
+      "missingDates": "Start or end date missing.",
+      "loadingDynamic": "Loading available dynamic dates…",
+      "dynamicRequiresBefore": "Dynamic mode requires start before end.",
+      "dynamicUnavailableDates": "The selected dynamic date range contains unavailable dates.",
+      "dynamicRange": "Dynamic {{start}} → {{end}}.",
+      "noGeoJson": "No GeoJSON uploaded.",
+      "noPolygon": "No polygon drawn on the map.",
+      "uploadIncomplete": "GeoJSON upload incomplete.",
+      "areaDetails": "{{count}} regions · {{area}}",
+      "areaDetailsSingle": "1 region · {{area}}",
+      "someSignalsActive": "Running with {{count}} of 3 optional signals — output will differ from the full model.",
+      "bufferDistance": "{{buffer}} m around the AOI.",
+      "blockers": "{{count}} blockers — fix before running.",
+      "blockersSingle": "1 blocker — fix before running.",
+      "warnings": "{{count}} warnings — review before running.",
+      "warningsSingle": "1 warning — review before running.",
+      "allPassed": "All checks passed. Ready to save & calculate.",
+      "labels": {
+        "modelName": "Model name",
+        "timeframe": "Timeframe",
+        "areaOfInterest": "Area of interest",
+        "bufferDistance": "Buffer distance"
+      },
+      "costsQuestion": "What do these routes cost?",
+      "costsInfo": "Calculated from the routes found in the previous step.",
+      "missingYears": "Start or end year missing — go back to Step 1.",
+      "yearOrder": "The start year is after the end year.",
+      "periodYears": "{{period}} · {{count}} years"
+    },
+    "layer5": {
+      "purpose": "Review the model setup before saving. The calculation uses these settings.",
+      "looksGood": "Everything looks good? Hit ",
+      "below": " below.",
+      "labels": {
+        "modelName": "Model name",
+        "from": "From",
+        "to": "To"
+      }
+    },
+    "coverage": {
+      "title": "Data coverage",
+      "unavailable": "Coverage unavailable",
+      "exactFootprint": "Exact raster footprint",
+      "mainFootprint": "{{percent}}% main footprint",
+      "data": "Data",
+      "noData": "No data",
+      "useShaded": "Use shaded areas",
+      "requiredAvailable": "Required inputs are available.",
+      "requiredAvailableDates": "Required inputs are available for {{dates}}.",
+      "avoidBlank": "Avoid blank gaps",
+      "blankDesc": "Blank areas have no valid source raster data for calculation.",
+      "availableData": "Data available"
+    },
+    "mapHeader": {},
+    "blocking": {
+      "and": " and ",
+      "dateRange": "a start and end date",
+      "dynamicEmpty": "No dynamic dates are currently available.",
+      "dynamicLoading": "Loading available dynamic dates.",
+      "dynamicRange": "Select a fully available dynamic date range.",
+      "modelName": "a model name",
+      "dynamicOrder": "The start date must be before or equal to the end date.",
+      "yearRange": "a start and end year",
+      "yearOrder": "The start year must not be after the end year."
+    },
+    "save": {
+      "calculationFailed": "The model was saved, but the calculation could not be started.",
+      "createFailed": "The model could not be created. Please try again.",
+      "updateFailed": "The model could not be saved. Please try again.",
+      "uploadFailed": "The model was saved, but its input files could not be uploaded."
+    },
+    "stepPurposeHide": "Hide step info",
+    "stepPurposeShow": "What is this step?",
+    "wizard": {
+      "steps": "Model steps"
+    }
+  },
+  "whatsNew": {
+    "open": "What's new in this version",
+    "title": "What's new",
+    "version": "Version {{version}}",
+    "released": "Released {{date}}",
+    "intro": "A summary of the latest features, improvements and fixes in this release.",
+    "where": "Where",
+    "viewAll": "All changes on GitHub",
+    "close": "Got it",
+    "groups": {
+      "new": "New",
+      "improved": "Improved",
+      "fixed": "Fixed"
+    },
+    "items": {
+      "families": {
+        "title": "Model versions grouped",
+        "description": "Each model now appears once, with its copies grouped under it. The original model stays on top, and the version badge expands its copies, oldest first.",
+        "where": "Model dashboard → model list"
+      },
+      "tabs": {
+        "title": "Status tabs",
+        "description": "Switch between All, Pinned, Running, Completed, Drafts and Failed to see only the models you need. Search and period filters work inside every tab.",
+        "where": "Model dashboard → above the list"
+      },
+      "pinning": {
+        "title": "Pin models",
+        "description": "Pin a model to keep it at the top of the list. Pinning any version keeps the whole family on top, and the Pinned tab collects them in one place.",
+        "where": "Model row → pin icon"
+      },
+      "newBadge": {
+        "title": "New results badge",
+        "description": "Recently finished models get a New badge so fresh results stand out. Hover over it to see when the run finished.",
+        "where": "Model row → next to the title"
+      },
+      "tour": {
+        "title": "Redesigned guided tour",
+        "description": "The tour now walks through the dashboard, map and tools step by step, with section dots and arrow-key navigation.",
+        "where": "Help menu → Restart tour"
+      },
+      "workspaceMenu": {
+        "title": "Workspace menu",
+        "description": "The workspace list now opens fully above the status tabs and the model list.",
+        "where": "Model dashboard → workspace selector"
+      }
+    }
+  },
+  "adminDashboard": {
+    "title": "Admin Dashboard",
+    "welcomeBack": "Welcome back, {{name}}!",
+    "managePlatform": "Manage your simulation platform",
+    "administrator": "Administrator",
+    "loadingContent": "Loading content...",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "tabs": {
+      "overview": "Overview",
+      "allSimulationModels": "All Simulation Models",
+      "simulationEngine": "Simulation-Engine",
+      "feedback": "Feedback",
+      "userManagement": "User Management",
+      "gridEngine": "Compute Engine"
+    },
+    "stats": {
+      "accessLevel": "Access Level",
+      "availableLayers": "Available Layers",
+      "status": "Status",
+      "totalUsers": "Total Users",
+      "lastLogin": "Last Login",
+      "active": "Active",
+      "online": "Online",
+      "live": "Live",
+      "updating": "Updating",
+      "recent": "Recent",
+      "allMapLayers": "All Maps Layers",
+      "mapLayers": "{{count}} Map Layers",
+      "mapLayer": "{{count}} Map Layer"
+    },
+    "accessLevels": {
+      "expert": "Expert Access",
+      "manager": "Manager Access",
+      "intermediate": "Intermediate Access",
+      "veryLow": "Very Low Access",
+      "unknown": "Unknown"
+    },
+    "accessTrends": {
+      "maximum": "Maximum",
+      "management": "Management",
+      "upgradable": "Upgradable",
+      "basic": "Basic"
+    },
+    "userProfile": {
+      "title": "User Profile",
+      "subtitle": "Your account information",
+      "email": "Email"
+    },
+    "accessPermissions": {
+      "title": "Access & Permissions",
+      "subtitle": "System capabilities",
+      "active": "Active",
+      "currentLevel": "Current Level",
+      "workspaces": "Workspaces",
+      "unlimited": "Unlimited",
+      "activeWorkspaces": "{{count}} Active",
+      "teamSharing": "Team Sharing",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "modelQuota": "Model Quota",
+      "standardLimit": "Standard Limit",
+      "computePower": "Compute Power",
+      "highPerformance": "High Perf.",
+      "standard": "Standard",
+      "availableFeatures": "Available Features",
+      "allLayersAvailable": "All Layers Available",
+      "fullSystemAccess": "Full System Access",
+      "upgradeMessage": "Unlock more features by requesting an upgrade from your admin.",
+      "resultFinal": "Result Final"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "subtitle": "Navigate to key features",
+      "interactiveMap": "Interactive Map",
+      "settings": "Settings",
+      "configurePreferences": "Configure preferences"
+    }
+  },
+  "modelsManagement": {
+    "title": "All Simulation Assessment Models",
+    "subtitle": "Manage and monitor all models in the system",
+    "searchPlaceholder": "Search models...",
+    "refresh": "Refresh",
+    "loadingModels": "Loading models...",
+    "noModelsFound": "No models found",
+    "noModelsDescription": "Get started by creating your first simulation assessment model.",
+    "sharedWorkspace": "Shared Workspace (Owner: {{owner}})",
+    "table": {
+      "model": "Model",
+      "status": "Status",
+      "created": "Created",
+      "lastModified": "Last Modified",
+      "actions": "Actions"
+    },
+    "status": {
+      "draft": "Draft",
+      "inQueue": "In Queue",
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "published": "Published"
+    },
+    "notifications": {
+      "duplicated": "Model \"{{title}}\" has been duplicated successfully",
+      "calculationStarted": "Calculation started successfully",
+      "failedToDuplicate": "Failed to duplicate model. Please try again.",
+      "failedToCalculate": "Failed to start calculation. Please try again.",
+      "moveComingSoon": "Move to workspace feature coming soon for \"{{title}}\"",
+      "shared": "Model shared successfully",
+      "deleted": "Model \"{{title}}\" has been deleted",
+      "failedToDelete": "Failed to delete model. Please try again."
+    }
+  },
+  "webservicesManagement": {
+    "title": "Simulation Engine Management",
+    "subtitle": "Manage calculation webservice instances",
+    "searchPlaceholder": "Search by name, IP...",
+    "refresh": "Refresh",
+    "registerNew": "Register New Webservice",
+    "loadingWebservices": "Loading webservices...",
+    "noWebservicesFound": "No webservices found",
+    "noWebservicesDescription": "Get started by registering your first webservice instance.",
+    "noWebservicesAvailable": "No simulation engines are currently configured. Contact an administrator.",
+    "healthCheck": "Simulation Engine",
+    "summary": {
+      "total": "Total",
+      "online": "Online",
+      "available": "Available",
+      "busy": "Busy",
+      "offline": "Offline"
+    },
+    "yourSimulationStatus": "Your Simulation Status",
+    "modelsRunningDescription": "{{count}} of your models are currently being calculated",
+    "modelsQueuedDescription": "{{count}} of your models are waiting - the simulation engine is processing other calculations",
+    "filters": {
+      "allStatus": "All Status",
+      "active": "Active",
+      "inactive": "Inactive",
+      "maintenance": "Maintenance",
+      "error": "Error",
+      "allAvailability": "All Availability",
+      "available": "Available",
+      "unavailable": "Unavailable"
+    },
+    "table": {
+      "service": "Service",
+      "endpoint": "Endpoint",
+      "status": "Status",
+      "availability": "Availability",
+      "jobs": "Jobs",
+      "performance": "Performance",
+      "user": "User",
+      "ip": "IP Address",
+      "port": "Port",
+      "lastCheck": "Last Check",
+      "actions": "Actions",
+      "never": "Never"
+    },
+    "status": {
+      "online": "Online",
+      "offline": "Offline",
+      "available": "Available",
+      "unavailable": "Unavailable"
+    },
+    "busyStatus": {
+      "calculating": "Calculating ({{current}}/{{max}})",
+      "idle": "Idle (0/{{max}})"
+    },
+    "actions": {
+      "pingWebservice": "Ping Webservice",
+      "editWebservice": "Edit Webservice",
+      "deleteWebservice": "Delete Webservice"
+    },
+    "dialog": {
+      "editTitle": "Edit Webservice Instance",
+      "createTitle": "Register New Webservice",
+      "editDescription": "Update webservice configuration and settings",
+      "createDescription": "Configure a new simulation calculation webservice instance",
+      "editButton": "Update Webservice",
+      "createButton": "Register Webservice"
+    },
+    "notifications": {
+      "created": "Webservice registered successfully!",
+      "updated": "Webservice updated successfully!",
+      "deleted": "Webservice deleted successfully!",
+      "statusChanged": "Webservice status changed to {{status}}",
+      "failedToCreate": "Failed to register webservice",
+      "failedToUpdate": "Failed to update webservice",
+      "failedToDelete": "Failed to delete webservice",
+      "failedToPing": "Failed to ping webservice"
+    }
+  },
+  "feedbackManagement": {
+    "title": "User Feedback Management",
+    "subtitle": "Review and respond to user feedback",
+    "refresh": "Refresh",
+    "noFeedbackFound": "No feedback found",
+    "noFeedbackDescription": "User feedback will appear here when submitted.",
+    "filters": {
+      "label": "Filters:",
+      "allStatus": "All Status",
+      "allCategories": "All Categories",
+      "allPriorities": "All Priorities"
+    },
+    "statuses": {
+      "pending": "Pending",
+      "inProgress": "In Progress",
+      "resolved": "Resolved",
+      "closed": "Closed"
+    },
+    "categories": {
+      "bug": "Bug Report",
+      "feature": "Feature Request",
+      "improvement": "Improvement",
+      "general": "General"
+    },
+    "priorities": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "critical": "Critical"
+    },
+    "table": {
+      "subject": "Subject",
+      "category": "Category",
+      "priority": "Priority",
+      "status": "Status",
+      "rating": "Rating",
+      "user": "User",
+      "created": "Created",
+      "actions": "Actions"
+    },
+    "actions": {
+      "viewDetails": "View Details",
+      "editStatus": "Edit Status",
+      "deleteFeedback": "Delete Feedback",
+      "delete": "Delete"
+    },
+    "hasAttachment": "Has attached image",
+    "viewDialog": {
+      "title": "Feedback Details",
+      "subtitle": "View complete feedback information",
+      "message": "Message:",
+      "rating": "Rating:",
+      "submitted": "Submitted",
+      "adminResponse": "Admin Response:",
+      "respondedOn": "Responded on:",
+      "attachedImage": "Attached Image",
+      "feedbackScreenshot": "Feedback screenshot",
+      "clickToEnlarge": "Click to enlarge",
+      "imageLoadError": "Failed to load image",
+      "submittedBy": "Submitted by"
+    },
+    "editDialog": {
+      "title": "Update Feedback",
+      "description": "Modify feedback status, priority, and provide an admin response",
+      "statusAndPriority": "Feedback Status & Priority",
+      "statusAndPriorityDescription": "Update feedback status and priority level",
+      "status": "Status",
+      "priority": "Priority",
+      "adminResponse": "Admin Response",
+      "adminResponseDescription": "Provide a response to the user",
+      "response": "Response",
+      "responsePlaceholder": "Add your response to the user...",
+      "saveChanges": "Save Changes"
+    },
+    "notifications": {
+      "updateSuccess": "Feedback \"{{subject}}\" updated successfully",
+      "updateError": "Failed to update feedback. Please try again.",
+      "deleteSuccess": "Feedback \"{{subject}}\" deleted successfully",
+      "deleteError": "Failed to delete feedback. Please try again."
+    }
+  },
+  "apiTokens": {
+    "create": "Create new token",
+    "createdOnce": "Copy this token now — it will never be shown again.",
+    "errors": {
+      "create": "Failed to create token",
+      "load": "Failed to load tokens",
+      "revoke": "Failed to revoke token"
+    },
+    "existing": "Existing tokens",
+    "expires": "expires",
+    "expiry": "Expiry",
+    "expiry30": "Expires in 30 days",
+    "expiry365": "Expires in 1 year",
+    "expiry90": "Expires in 90 days",
+    "expiryNever": "Never expires",
+    "generate": "Generate token",
+    "lastUsed": "last used",
+    "namePlaceholder": "Token name (e.g. analysis script)",
+    "none": "No tokens yet.",
+    "revoke": "Revoke",
+    "scope": "Scope",
+    "scopeFull": "Read & write",
+    "scopeFullShort": "read & write",
+    "scopeRead": "Read-only (recommended)",
+    "scopeReadShort": "read-only",
+    "status": {
+      "active": "Active",
+      "expired": "Expired",
+      "revoked": "Revoked"
+    },
+    "subtitle": "Manage API access tokens for",
+    "title": "API Tokens"
+  }
+}

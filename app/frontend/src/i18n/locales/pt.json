@@ -1,0 +1,1752 @@
+{
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Criar",
+    "close": "Fechar",
+    "confirm": "Confirmar",
+    "loading": "A carregar...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "warning": "Aviso",
+    "info": "Informação",
+    "yes": "Sim",
+    "no": "Não",
+    "ok": "OK",
+    "back": "Voltar",
+    "next": "Seguinte",
+    "submit": "Enviar",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "reset": "Repor",
+    "clear": "Limpar",
+    "clearAll": "Limpar tudo",
+    "selectAll": "Selecionar tudo",
+    "noResults": "Nenhum resultado encontrado",
+    "actions": "Ações",
+    "settings": "Definições",
+    "logout": "Terminar sessão",
+    "login": "Iniciar sessão",
+    "register": "Registar",
+    "unknown": "Desconhecido",
+    "more": "mais",
+    "add": "Adicionar",
+    "refresh": "Atualizar",
+    "healthCheck": "Verificação de estado",
+    "na": "N/D",
+    "from": "De",
+    "to": "Até",
+    "duration": "Duração",
+    "days": "dias",
+    "country": "País",
+    "region": "Região",
+    "status": "Estado",
+    "createdAt": "Criado",
+    "updatedAt": "Última atualização",
+    "workspace": "Espaço de trabalho",
+    "results": "Resultados",
+    "name": "Nome",
+    "description": "Descrição",
+    "id": "ID",
+    "current": "Atual",
+    "max": "Máx.",
+    "tooltips": {
+      "viewOnMap": "Ver no mapa",
+      "editLocation": "Editar localização",
+      "editName": "Editar nome",
+      "duplicate": "Duplicar",
+      "view": "Ver",
+      "share": "Partilhar",
+      "moveToWorkspace": "Mover para espaço de trabalho",
+      "profile": "Perfil",
+      "documentation": "Documentação",
+      "howItWorks": "Como funciona",
+      "restartTour": "Reiniciar visita guiada",
+      "feedback": "Comentários",
+      "theme": "Tema",
+      "searchLocation": "Pesquisar uma localização",
+      "help": "Ajuda"
+    },
+    "sidebar": {
+      "map": "Mapa",
+      "simulationReports": "Comparação de modelos",
+      "simulations": "Execuções de análise"
+    },
+    "menu": {
+      "profile": "Perfil",
+      "settings": "Definições",
+      "logout": "Terminar sessão"
+    },
+    "modelActions": {
+      "viewResults": "Ver resultados",
+      "downloadResults": "Descarregar resultados",
+      "copyConfiguration": "Copiar configuração",
+      "editConfiguration": "Editar configuração",
+      "cannotEditCompleted": "Não é possível editar um modelo concluído",
+      "moveToWorkspace": "Mover para espaço de trabalho",
+      "shareModel": "Partilhar modelo",
+      "delete": "Eliminar",
+      "cannotDelete": "Não é possível eliminar — só o proprietário ou um especialista o pode fazer",
+      "retryCalculation": "Repetir cálculo",
+      "startCalculation": "Iniciar cálculo",
+      "engineNotAvailable": "O motor de simulação não está disponível"
+    },
+    "pagination": {
+      "showing": "A mostrar",
+      "to": "a",
+      "of": "de",
+      "results": "resultados",
+      "noResults": "Sem resultados",
+      "loading": "A carregar...",
+      "perPage": "por página",
+      "previousPage": "Página anterior",
+      "nextPage": "Página seguinte"
+    },
+    "saved": "Guardado",
+    "copied": "Copiado",
+    "copy": "Copiar",
+    "done": "Concluído"
+  },
+  "forms": {
+    "user": {
+      "personalInfo": {
+        "title": "Informação pessoal",
+        "description": "Dados básicos do utilizador e informação de contacto"
+      },
+      "security": {
+        "title": "Segurança",
+        "description": "Credenciais de segurança da conta"
+      },
+      "fields": {
+        "fullName": "Nome completo",
+        "email": "Endereço de e-mail",
+        "accessLevel": "Nível de acesso",
+        "emailVerified": "E-mail verificado",
+        "password": "Palavra-passe",
+        "confirmPassword": "Confirmar palavra-passe",
+        "modelLimit": "Limite de modelos"
+      },
+      "placeholders": {
+        "fullName": "Introduza o nome completo",
+        "email": "Introduza o endereço de e-mail",
+        "password": "Introduza a palavra-passe",
+        "confirmPassword": "Confirme a palavra-passe",
+        "modelLimit": "Deixe vazio para o valor predefinido"
+      },
+      "descriptions": {
+        "emailVerified": "Marcar o e-mail como verificado",
+        "modelLimit": "Limite personalizado de criação de modelos (0 = ilimitado, vazio = predefinição)"
+      },
+      "accessLevels": {
+        "veryLow": "Acesso muito baixo",
+        "intermediate": "Acesso intermédio",
+        "manager": "Gestor (acesso a grupos)",
+        "expert": "Especialista (acesso total)"
+      },
+      "validation": {
+        "passwordLength": "A palavra-passe deve ter pelo menos 8 caracteres",
+        "nameRequired": "O nome é obrigatório",
+        "emailRequired": "O e-mail é obrigatório",
+        "emailInvalid": "Introduza um endereço de e-mail válido",
+        "accessLevelRequired": "O nível de acesso é obrigatório",
+        "passwordRequired": "A palavra-passe é obrigatória",
+        "confirmPasswordRequired": "A confirmação da palavra-passe é obrigatória",
+        "passwordsMismatch": "As palavras-passe não coincidem"
+      }
+    },
+    "webservice": {
+      "serviceInfo": {
+        "title": "Informação do serviço",
+        "description": "Identificação básica e metadados do webservice"
+      },
+      "connectionDetails": {
+        "title": "Detalhes de ligação",
+        "description": "Configuração da ligação de rede e do endpoint"
+      },
+      "performanceSettings": {
+        "title": "Definições de desempenho",
+        "description": "Configuração da capacidade e do desempenho do serviço"
+      },
+      "fields": {
+        "serviceName": "Nome do serviço",
+        "protocol": "Protocolo",
+        "ipAddress": "Endereço IP",
+        "port": "Porta",
+        "endpoint": "Caminho do endpoint",
+        "autoScaling": "Escalamento automático",
+        "maxConcurrency": "Pedidos simultâneos máximos",
+        "initialStatus": "Estado inicial"
+      },
+      "placeholders": {
+        "serviceName": "Introduza o nome do serviço",
+        "ipAddress": "p. ex., 192.168.1.100"
+      },
+      "descriptions": {
+        "serviceName": "Nome legível para o webservice",
+        "autoScaling": "Ativar o escalamento automático em função da carga",
+        "maxConcurrency": "Número máximo de pedidos simultâneos (1-100)"
+      },
+      "statusOptions": {
+        "active": "Ativo",
+        "inactive": "Inativo",
+        "maintenance": "Manutenção"
+      },
+      "validation": {
+        "ipInvalid": "Introduza um endereço IP válido",
+        "portRange": "A porta deve estar entre 1 e 65535",
+        "concurrencyRange": "A concorrência máxima deve estar entre 1 e 100",
+        "nameRequired": "O nome do serviço é obrigatório",
+        "ipRequired": "O endereço IP é obrigatório",
+        "portRequired": "A porta é obrigatória"
+      }
+    },
+    "workspace": {
+      "details": {
+        "title": "Detalhes",
+        "description": "Introduza o nome do espaço de trabalho e uma descrição opcional"
+      },
+      "fields": {
+        "name": "Nome do espaço de trabalho",
+        "description": "Descrição"
+      },
+      "placeholders": {
+        "name": "Introduza o nome do espaço de trabalho",
+        "description": "Introduza a descrição do espaço de trabalho (opcional)"
+      },
+      "descriptions": {
+        "name": "Um nome único para o seu espaço de trabalho",
+        "description": "Descrição opcional da finalidade do espaço de trabalho"
+      },
+      "validation": {
+        "nameRequired": "O nome do espaço de trabalho é obrigatório"
+      }
+    },
+    "moveModel": {
+      "destination": {
+        "title": "Destino",
+        "description": "Selecione o espaço de trabalho de destino para o modelo"
+      },
+      "fields": {
+        "targetWorkspace": "Espaço de trabalho de destino"
+      },
+      "placeholders": {
+        "selectWorkspace": "Selecione um espaço de trabalho"
+      },
+      "descriptions": {
+        "targetWorkspace": "Escolha o espaço de trabalho para onde mover o modelo"
+      },
+      "defaultWorkspace": "Espaço de trabalho predefinido",
+      "errorMove": "Não foi possível mover o modelo. Tente novamente.",
+      "errorMovePlural": "Não foi possível mover os modelos. Tente novamente.",
+      "errorSelect": "Selecione um espaço de trabalho",
+      "noWorkspaces": "Não há outros espaços de trabalho disponíveis. Crie primeiro um novo.",
+      "title": "Mover modelo",
+      "titlePlural": "Mover modelos"
+    },
+    "shareModel": {
+      "title": "Partilhar com um utilizador",
+      "description": "Introduza o endereço de e-mail do utilizador com quem partilhar",
+      "emailDescription": "O utilizador passará a ter acesso a este modelo"
+    },
+    "bulkCopy": {
+      "title": "Número de cópias",
+      "description": "Indique quantas cópias criar para cada modelo selecionado",
+      "fields": {
+        "copyCount": "Número de cópias",
+        "copyCountDescription": "Cada modelo selecionado será duplicado este número de vezes"
+      },
+      "validation": {
+        "min": "É necessária pelo menos 1 cópia",
+        "max": "São permitidas no máximo 10 cópias",
+        "integer": "Tem de ser um número inteiro"
+      }
+    }
+  },
+  "dashboard": {
+    "stats": {
+      "totalModels": "Total de modelos",
+      "draft": "Rascunho",
+      "inProgress": "Em curso",
+      "completed": "Concluído",
+      "published": "Publicado",
+      "modelLimit": "Limite de modelos",
+      "unlimited": "Ilimitado"
+    }
+  },
+  "notifications": {
+    "title": "Notificações",
+    "noNotifications": "Sem notificações",
+    "allCaughtUp": "Está tudo em dia!",
+    "markAllRead": "Marcar todas como lidas",
+    "clearAll": "Limpar tudo",
+    "viewAll": "Ver todas as notificações",
+    "moreNotification": "+{{count}} notificação",
+    "moreNotifications": "+{{count}} notificações",
+    "details": "Detalhes",
+    "close": "Fechar",
+    "scheduledFor": "Agendada para:",
+    "service": "Serviço",
+    "last30Days": "Últimos 30 dias",
+    "unread": "{{count}} por ler",
+    "loading": "A carregar as notificações...",
+    "confirmClearTitle": "Limpar todas as notificações?",
+    "confirmClearDescription": "Tem a certeza de que quer limpar todas as notificações? Esta ação não pode ser anulada.",
+    "confirmClearButton": "Limpar tudo",
+    "dismiss": "Dispensar",
+    "types": {
+      "success": "Sucesso",
+      "error": "Erro",
+      "warning": "Aviso",
+      "info": "Informação",
+      "maintenance": "Manutenção"
+    },
+    "totalExecutionTime": "Tempo total de execução",
+    "completedIn": "Concluído com sucesso em {{time}}",
+    "failedAfter": "Falhou após {{time}}",
+    "cancelledAfter": "Cancelado após {{time}}",
+    "messages": {
+      "modelCalculationComplete": "Cálculo do modelo concluído",
+      "modelCalculationCompleteMessage": "O seu modelo '{{modelName}}' foi calculado com sucesso e está pronto para consulta.",
+      "modelCalculationFailed": "O cálculo do modelo falhou",
+      "modelCalculationFailedMessage": "O cálculo do seu modelo '{{modelName}}' falhou. Tente novamente.",
+      "modelCalculationStarted": "Cálculo do modelo iniciado",
+      "modelCalculationStartedMessage": "O cálculo do seu modelo '{{modelName}}' foi iniciado."
+    }
+  },
+  "modelStatus": {
+    "draft": "Rascunho",
+    "queue": "Em fila",
+    "calculating": "A calcular",
+    "running": "Em execução",
+    "processing": "A processar",
+    "completed": "Concluído",
+    "published": "Publicado",
+    "failed": "Falhou",
+    "cancelled": "Cancelado",
+    "modified": "Modificado"
+  },
+  "auth": {
+    "signIn": "Iniciar sessão",
+    "signUp": "Registar",
+    "signOut": "Terminar sessão",
+    "signingIn": "A iniciar sessão...",
+    "email": "E-mail",
+    "password": "Palavra-passe",
+    "confirmPassword": "Confirmar palavra-passe",
+    "enterYourEmail": "Introduza o seu e-mail",
+    "enterYourPassword": "Introduza a sua palavra-passe",
+    "welcomeBack": "Bem-vindo de volta",
+    "signInToContinue": "Inicie sessão para continuar na sua conta",
+    "or": "ou",
+    "dontHaveAccount": "Ainda não tem conta?",
+    "alreadyHaveAccount": "Já tem conta?",
+    "forgotPassword": "Esqueceu-se da palavra-passe?",
+    "rememberMe": "Manter sessão iniciada",
+    "loginFailed": "Falha ao iniciar sessão",
+    "verificationEmailSent": "E-mail de verificação enviado",
+    "checkInboxVerify": "Verifique a sua caixa de entrada e clique na ligação de verificação.",
+    "emailVerificationRequired": "É necessária a verificação do e-mail",
+    "sending": "A enviar...",
+    "resendVerificationEmail": "Reenviar e-mail de verificação",
+    "protectedByEncryption": "Protegido por encriptação de padrão da indústria",
+    "createAccount": "Criar conta",
+    "personalInformation": "Informação pessoal",
+    "fullName": "Nome completo",
+    "enterFullName": "Introduza o seu nome completo",
+    "emailAddress": "Endereço de e-mail",
+    "enterEmailAddress": "Introduza o seu endereço de e-mail",
+    "security": "Segurança",
+    "confirmYourPassword": "Confirme a sua palavra-passe",
+    "passwordRequirements": {
+      "title": "Requisitos da palavra-passe",
+      "minChars": "Pelo menos 8 caracteres",
+      "uppercase": "Uma letra maiúscula",
+      "lowercase": "Uma letra minúscula",
+      "number": "Um número",
+      "specialChar": "Um carácter especial",
+      "hasSpaces": "A palavra-passe tem espaços no início ou no fim"
+    },
+    "accessLevel": "Nível de acesso",
+    "veryLow": "Muito baixo",
+    "low": "Baixo",
+    "intermediate": "Intermédio",
+    "manager": "Gestor",
+    "expert": "Especialista",
+    "forgotPasswordTitle": "Recuperar palavra-passe",
+    "forgotPasswordDescription": "Introduza o seu endereço de e-mail e enviamos-lhe instruções para repor a palavra-passe.",
+    "secureResetProcess": "Processo seguro de reposição da palavra-passe",
+    "sendResetInstructions": "Enviar instruções",
+    "backToLogin": "Voltar ao início de sessão",
+    "cancel": "Cancelar",
+    "checkYourEmail": "Verifique o seu e-mail",
+    "sentResetInstructions": "Enviámos as instruções de reposição da palavra-passe para o seu endereço de e-mail.",
+    "note": "Nota",
+    "checkSpamFolder": "Se não vir o e-mail, verifique a pasta de spam ou lixo.",
+    "signUpNow": "Registe-se agora",
+    "createPassword": "Crie uma palavra-passe",
+    "creating": "A criar...",
+    "agreeToTerms": "Ao criar uma conta, aceita os nossos Termos de Serviço",
+    "signInHere": "Inicie sessão aqui",
+    "sidePanel": {},
+    "consentText": "Consinto o tratamento e o armazenamento dos meus dados pessoais nos termos da",
+    "declarationOfConsent": "Declaração de consentimento",
+    "and": "e",
+    "privacyPolicy": "Política de privacidade"
+  },
+  "workspace": {
+    "workspace": "Espaço de trabalho",
+    "workspaces": "Espaços de trabalho",
+    "selectWorkspace": "Selecionar espaço de trabalho",
+    "defaultWorkspace": "Espaço de trabalho predefinido",
+    "default": "Predefinido",
+    "shared": "Partilhado",
+    "searchWorkspaces": "Pesquisar espaços de trabalho...",
+    "noWorkspacesMatch": "Nenhum espaço de trabalho corresponde à sua pesquisa",
+    "noWorkspacesFound": "Nenhum espaço de trabalho encontrado",
+    "createNewWorkspace": "Criar novo espaço de trabalho",
+    "createDescription": "Crie um novo espaço de trabalho para organizar os seus modelos e colaborar com outros",
+    "createWorkspace": "Criar espaço de trabalho",
+    "renameWorkspace": "Mudar o nome do espaço de trabalho",
+    "renameDescription": "Introduza um novo nome para o seu espaço de trabalho",
+    "copyWorkspaceTitle": "Copiar espaço de trabalho",
+    "copyDescription": "Crie uma cópia deste espaço de trabalho com um novo nome",
+    "saveChanges": "Guardar alterações",
+    "copyWorkspace": "Copiar espaço de trabalho",
+    "sharedWithYouBy": "Partilhado consigo por {{user}}",
+    "sharedWithUsers": "Partilhado com utilizadores",
+    "sharedWithGroups": "Partilhado com grupos",
+    "anotherUser": "outro utilizador",
+    "noMembersYet": "Ainda não há membros. Partilhe com alguém para colaborar!",
+    "noGroupsYet": "Ainda não há grupos com acesso. Partilhe com um grupo para dar acesso a todos os membros!",
+    "removeMember": "Remover membro",
+    "removeGroup": "Remover grupo",
+    "selectorHint": "Selecione ou crie um espaço de trabalho para organizar os seus modelos"
+  },
+  "model": {
+    "title": "Modelo",
+    "models": "Modelos",
+    "newModel": "Novo modelo",
+    "editModel": "Editar modelo",
+    "deleteModel": "Eliminar modelo",
+    "modelName": "Nome do modelo",
+    "description": "Descrição",
+    "status": "Estado",
+    "created": "Criado",
+    "updated": "Atualizado",
+    "running": "Em execução",
+    "completed": "Concluído",
+    "failed": "Falhou",
+    "pending": "Pendente",
+    "queued": "Em fila",
+    "cancelled": "Cancelado",
+    "modified": "Modificado",
+    "runSimulation": "Executar simulação",
+    "viewResults": "Ver resultados",
+    "duplicate": "Duplicar",
+    "export": "Exportar",
+    "compare": "Comparar",
+    "dashboard": "Painel de modelos",
+    "searchModels": "Pesquisar modelos...",
+    "allModels": "Todos os modelos",
+    "modelGroups": "Grupos de modelos",
+    "loadingWorkspace": "A carregar o espaço de trabalho...",
+    "loadingModels": "A carregar os modelos...",
+    "loadingWorkspaceDescription": "Aguarde enquanto inicializamos as preferências do seu espaço de trabalho.",
+    "selectWorkspace": "Selecione ou crie um espaço de trabalho para organizar os seus modelos",
+    "refreshModels": "Atualizar a lista de modelos",
+    "share": "Partilhar",
+    "shareDescription": "Partilhar \"{{title}}\" com outro utilizador",
+    "copy": "Copiar",
+    "rename": "Mudar o nome",
+    "delete": "Eliminar",
+    "move": "Mover",
+    "shareWorkspace": "Partilhar este espaço de trabalho com outros utilizadores",
+    "copyWorkspace": "Criar uma cópia deste espaço de trabalho com todos os seus modelos",
+    "renameWorkspace": "Mudar o nome deste espaço de trabalho",
+    "deleteWorkspace": "Eliminar este espaço de trabalho",
+    "moveToWorkspace": "Mover para espaço de trabalho",
+    "noModelsFound": "Nenhum modelo encontrado",
+    "noModelsMatch": "Nenhum modelo corresponde a \"{{search}}\". Tente ajustar a pesquisa.",
+    "createFirstModel": "Criar o seu primeiro modelo",
+    "selected": "selecionados",
+    "deleteSelected": "Eliminar selecionados",
+    "moveSelected": "Mover selecionados",
+    "cannotDelete": "Não é possível eliminar — os modelos estão desativados ou não lhe pertencem",
+    "cannotMove": "Não é possível mover — os modelos não lhe pertencem",
+    "calculate": "Calcular",
+    "cannotCalculate": "Não é possível calcular — nenhum modelo elegível selecionado",
+    "noWebserviceAvailable": "Nenhum motor de simulação disponível",
+    "bulkCopy": "Copiar modelos",
+    "bulkCopyDescription": "Criar cópias de {{count}} modelo(s) selecionado(s)",
+    "bulkCopySubmit": "Criar cópias",
+    "bulkCopyFailed": "Não foi possível copiar alguns modelos. Tente novamente.",
+    "sharedCannotDelete": "Os modelos partilhados não podem ser eliminados. Copie-o primeiro para o eliminar",
+    "sharedCannotMove": "Os modelos partilhados não podem ser movidos. Copie-o primeiro para o mover",
+    "sharedCannotShare": "Os modelos partilhados não podem ser partilhados novamente. Copie-o primeiro para o partilhar",
+    "limitReached": "Atingiu o seu limite de criação de modelos",
+    "selectAll": "Selecionar tudo",
+    "deselectAll": "Desselecionar tudo",
+    "actions": "Ações",
+    "name": "Nome do modelo",
+    "owner": "Proprietário",
+    "workspace": "Espaço de trabalho",
+    "draft": "Rascunho",
+    "published": "Publicado",
+    "total": "Total",
+    "queue": "Fila",
+    "copyOf": "Cópia de \"{{name}}\"",
+    "ownedBy": "Pertence a",
+    "parentModel": "Modelo principal",
+    "parent": "Principal",
+    "anotherModel": "outro modelo",
+    "failedDefaultMessage": "O cálculo falhou — webservice indisponível ou tempo esgotado",
+    "waiting": "Em espera",
+    "queuedTooltip": "O seu modelo está na fila — o motor de simulação está a processar outros cálculos",
+    "compareRequires2Completed": "Selecione exatamente 2 modelos concluídos para comparar",
+    "estimateApproximate": "Essas execuções são anteriores ao registo da fila, por isso a espera real será maior.",
+    "estimateOverdue": "está a demorar mais do que o habitual",
+    "estimateRemaining": "~{{duration}} restante",
+    "estimateUnavailable": "Não há execuções comparáveis concluídas suficientes para estimar o fim",
+    "canEdit": "Pode editar",
+    "canView": "Pode ver",
+    "clearDateFilter": "Limpar filtro de datas",
+    "filterPeriod": "Filtrar por período",
+    "noDirectShares": "Este modelo ainda não foi partilhado com ninguém.",
+    "peopleWithAccess": "Pessoas com acesso direto",
+    "revokeAccess": "Revogar",
+    "revokingAccess": "A revogar…",
+    "revokeAccessFor": "Revogar o acesso de {{email}}",
+    "tabs": {
+      "all": "Todos",
+      "pinned": "Fixados",
+      "running": "Em execução",
+      "completed": "Concluídos",
+      "drafts": "Rascunhos",
+      "failed": "Falhados"
+    },
+    "area": "Área",
+    "period": "Período",
+    "lastActivity": "Última atividade",
+    "pin": "Fixar no topo",
+    "unpin": "Desafixar",
+    "recentlyCompleted": "Novo",
+    "recentlyCompletedTooltip": "Concluído em {{time}}. Abra-o para ver os resultados.",
+    "versions_one": "{{count}} versão",
+    "versions_other": "{{count}} versões",
+    "estimateBasis_one": "Com base em 1 execução comparável, que demorou {{typical}}",
+    "estimateBasis_other": "Com base em {{count}} execuções comparáveis, que normalmente demoram {{typical}}",
+    "view": "Ver",
+    "run": "Executar"
+  },
+  "userManagement": {
+    "groups": {
+      "selectOrCreate": "Selecione ou crie um grupo",
+      "renameGroup": "Mudar o nome do grupo",
+      "enableGroup": "Ativar o grupo e os seus utilizadores",
+      "disableGroup": "Desativar o grupo e os seus utilizadores",
+      "deleteGroup": "Eliminar o grupo e todos os seus utilizadores",
+      "defaultCannotDelete": "O grupo predefinido não pode ser eliminado",
+      "default": "Predefinido",
+      "unknown": "Desconhecido",
+      "defaultGroup": "Grupo predefinido",
+      "unknownGroup": "Grupo desconhecido",
+      "changeUserGroup": "Alterar o grupo do utilizador",
+      "groupAssignment": "Atribuição de grupo",
+      "selectGroup": "Selecionar grupo",
+      "changeGroup": "Alterar grupo",
+      "renameGroupTitle": "Mudar o nome do grupo",
+      "groupName": "Nome do grupo",
+      "newGroupName": "Novo nome do grupo",
+      "enterNewGroupName": "Introduza o novo nome do grupo",
+      "rename": "Mudar o nome",
+      "bulkChangeGroup": "Mover utilizadores para um grupo",
+      "moveUsers": "Mover utilizadores",
+      "createNewGroup": "Criar novo grupo",
+      "createGroupDescription": "Crie um novo grupo para organizar os utilizadores da sua organização",
+      "createGroup": "Criar grupo",
+      "groupNameRequired": "O nome do grupo é obrigatório",
+      "groupCreated": "Grupo criado com sucesso",
+      "failedToCreateGroup": "Não foi possível criar o grupo",
+      "groupNamePlaceholder": "p. ex., Bombeiros, Resposta a emergências",
+      "searchGroups": "Pesquisar grupos...",
+      "allGroups": "Todos os grupos",
+      "viewUsersFromAllGroups": "Ver utilizadores de todos os grupos",
+      "noGroups": "Sem grupos",
+      "loading": "A carregar...",
+      "noGroupsFound": "Nenhum grupo encontrado",
+      "noGroupsMatchSearch": "Nenhum grupo corresponde à sua pesquisa"
+    },
+    "title": "Gestão de utilizadores",
+    "subtitle": "Faça a gestão de utilizadores, grupos e permissões",
+    "searchPlaceholder": "Pesquisar nome ou e-mail...",
+    "refresh": "Atualizar",
+    "addNewUser": "Adicionar novo utilizador",
+    "add": "Adicionar",
+    "editUser": "Editar utilizador",
+    "createUser": "Criar utilizador",
+    "updateUser": "Atualizar utilizador",
+    "loadingUsers": "A carregar os utilizadores...",
+    "noUsersFound": "Nenhum utilizador encontrado",
+    "noUsersInGroup": "Não foram encontrados utilizadores no seu grupo. Contacte um administrador para atribuir utilizadores ao seu grupo.",
+    "noUsersMatch": "Nenhum utilizador corresponde a \"{{search}}\"",
+    "noUsersMatchSearch": "Nenhum utilizador corresponde a \"{{search}}\"",
+    "addFirstUser": "Adicione o primeiro utilizador para começar.",
+    "dialog": {
+      "editTitle": "Editar utilizador",
+      "addTitle": "Adicionar novo utilizador",
+      "updateUser": "Atualizar utilizador",
+      "createUser": "Criar utilizador"
+    },
+    "table": {
+      "user": "Utilizador",
+      "accessLevel": "Nível de acesso",
+      "group": "Grupo",
+      "emailVerified": "E-mail verificado",
+      "actions": "Ações"
+    },
+    "emailStatus": {
+      "verified": "Verificado",
+      "unverified": "Não verificado"
+    },
+    "actions": {
+      "changeGroup": "Alterar grupo",
+      "enableUser": "Utilizador desativado — clique para ativar",
+      "disableUser": "Utilizador ativado — clique para desativar",
+      "editUser": "Editar utilizador",
+      "deleteUser": "Eliminar utilizador",
+      "copyEmail": "Copiar e-mail",
+      "copied": "Copiado!",
+      "selectAll": "Selecionar tudo",
+      "deselectAll": "Desselecionar tudo",
+      "selected": "{{count}} selecionados",
+      "bulkMoveToGroup": "Mover para grupo",
+      "bulkDelete": "Eliminar selecionados",
+      "apiTokens": "Tokens de API",
+      "apiTokensActive": "Acesso à API ativado — gerir tokens"
+    },
+    "notifications": {
+      "userCreated": "Utilizador criado com sucesso!",
+      "userUpdated": "Utilizador atualizado com sucesso!",
+      "userDeleted": "Utilizador eliminado com sucesso!",
+      "userDisabled": "Utilizador desativado com sucesso!",
+      "userEnabled": "Utilizador ativado com sucesso!",
+      "groupDisabled": "Grupo \"{{name}}\" desativado",
+      "groupEnabled": "Grupo \"{{name}}\" ativado",
+      "groupDeleted": "Grupo \"{{name}}\" eliminado",
+      "groupRenamed": "Nome do grupo alterado para \"{{name}}\" com sucesso",
+      "userMovedToGroup": "O utilizador foi movido para o novo grupo e a sessão foi terminada. Terá de iniciar sessão novamente para aceder ao novo espaço de trabalho.",
+      "failedToCreate": "Não foi possível criar o utilizador",
+      "failedToUpdate": "Não foi possível atualizar o utilizador",
+      "failedToDelete": "Não foi possível eliminar o utilizador",
+      "failedToDisable": "Não foi possível desativar o utilizador",
+      "failedToEnable": "Não foi possível ativar o utilizador",
+      "failedToFetch": "Não foi possível obter os utilizadores",
+      "failedToUpdateGroup": "Não foi possível atualizar o grupo do utilizador",
+      "failedToRenameGroup": "Não foi possível mudar o nome do grupo",
+      "failedToCopyEmail": "Não foi possível copiar o e-mail",
+      "bulkGroupChanged": "{{count}} utilizadores movidos para o novo grupo com sucesso",
+      "bulkGroupChangeFailed": "Não foi possível mover os utilizadores para o grupo",
+      "bulkDeleted": "{{count}} utilizadores eliminados com sucesso",
+      "bulkDeletePartial": "{{succeeded}} de {{total}} utilizadores eliminados. {{failed}} falharam.",
+      "pleaseLogIn": "Inicie sessão para ver os utilizadores",
+      "passwordMismatch": "A palavra-passe e a confirmação têm de coincidir"
+    },
+    "confirmations": {
+      "disableUserDescription": "Isto impedirá o utilizador de iniciar sessão.",
+      "enableUserDescription": "Isto voltará a permitir que o utilizador inicie sessão.",
+      "disableGroupDescription": "Desativar um grupo desativa todos os seus utilizadores.",
+      "enableGroupDescription": "Ativar um grupo ativa todos os seus utilizadores.",
+      "deleteGroupDescription": "Isto eliminará o grupo e todos os seus utilizadores. Esta ação não pode ser anulada.",
+      "bulkDeleteDescription": "Isto eliminará permanentemente {{count}} utilizadores selecionados. Esta ação não pode ser anulada."
+    }
+  },
+  "profile": {
+    "title": "Definições do perfil",
+    "subtitle": "Faça a gestão da sua informação pessoal e das preferências da conta",
+    "goBack": "Voltar",
+    "loadingProfile": "A carregar o seu perfil...",
+    "defaultUser": "Utilizador",
+    "accessLevel": "Nível de acesso",
+    "notSpecified": "Não especificado",
+    "personalInfo": "Informação pessoal",
+    "personalInfoDescription": "Atualize abaixo os dados do seu perfil",
+    "readOnly": "apenas leitura",
+    "saving": "A guardar...",
+    "saveChanges": "Guardar alterações",
+    "fields": {
+      "fullName": "Nome completo",
+      "email": "Endereço de e-mail"
+    },
+    "placeholders": {
+      "fullName": "Introduza o seu nome completo"
+    },
+    "accessLevels": {
+      "basic": "Básico",
+      "basicDescription": "Acesso padrão às funcionalidades básicas",
+      "intermediate": "Intermédio",
+      "intermediateDescription": "Acesso alargado com funcionalidades avançadas",
+      "expert": "Especialista",
+      "expertDescription": "Acesso total a todas as funcionalidades"
+    },
+    "notifications": {
+      "updated": "Perfil atualizado com sucesso!",
+      "failedToLoad": "Não foi possível carregar o perfil. Tente novamente.",
+      "failedToUpdate": "Não foi possível atualizar o perfil. Tente novamente."
+    },
+    "password": {
+      "title": "Alterar palavra-passe",
+      "description": "Atualize a palavra-passe que usa para iniciar sessão",
+      "current": "Palavra-passe atual",
+      "new": "Nova palavra-passe",
+      "confirm": "Confirmar nova palavra-passe",
+      "currentPlaceholder": "Introduza a sua palavra-passe atual",
+      "newPlaceholder": "Introduza uma nova palavra-passe",
+      "confirmPlaceholder": "Volte a introduzir a nova palavra-passe",
+      "submit": "Atualizar palavra-passe",
+      "updating": "A atualizar...",
+      "updated": "Palavra-passe alterada com sucesso!",
+      "failed": "Não foi possível alterar a palavra-passe. Tente novamente.",
+      "requirements": {
+        "minChars": "Pelo menos 8 caracteres",
+        "uppercase": "Uma letra maiúscula",
+        "lowercase": "Uma letra minúscula",
+        "number": "Um número",
+        "specialChar": "Um carácter especial"
+      },
+      "requirementsNotMet": "A palavra-passe não cumpre todos os requisitos",
+      "mismatch": "As palavras-passe não coincidem"
+    }
+  },
+  "simulation": {
+    "progress": {
+      "queued": "Em fila",
+      "assessing": "A avaliar",
+      "done": "Concluído"
+    }
+  },
+  "mapLayers": {
+    "title": "Camadas do mapa",
+    "description": "Configure o aspeto do mapa e as camadas de dados",
+    "baseLayers": {
+      "title": "Camadas base",
+      "description": "Escolha o estilo do mapa de fundo",
+      "osmStandard": "Camada padrão do OpenStreetMap",
+      "osmHumanitarian": "OpenStreetMap de estilo humanitário",
+      "cartoPositron": "Mapa base de tema claro da CartoDB",
+      "cartoVoyager": "Mapa base raster detalhado da CartoDB",
+      "openTopoMap": "Mapa de estilo topográfico",
+      "maplibreDark": "Mapa base vetorial escuro",
+      "maplibreVoyager": "Mapa base vetorial detalhado (Voyager)"
+    },
+    "dataLayers": {
+      "title": "Camadas de dados"
+    },
+    "tooltip": "Mapas base"
+  },
+  "tour": {
+    "product": {
+      "welcome": {
+        "tip": "Esta visita só aparece uma vez. Pode ignorá-la a qualquer momento ou reiniciá-la a partir da barra lateral."
+      },
+      "newAssessment": {
+        "title": "Criar nova avaliação",
+        "tip": "Ao clicar aqui, entra numa visita dedicada ao processo de seleção de área!"
+      },
+      "profile": {
+        "title": "Perfil e definições",
+        "description": "Aceda ao seu perfil, às definições da conta e às preferências de utilizador. Faça a gestão da sua conta e aceda a opções adicionais."
+      },
+      "navigation": {
+        "title": "Painel de administração",
+        "description": "Gerencie espaços de trabalho, usuários e todos os modelos da plataforma. Visível apenas para administradores."
+      },
+      "simulations": {},
+      "map": {
+        "title": "Mapa interativo"
+      },
+      "reports": {
+        "title": "Relatórios de simulação",
+        "description": "Veja relatórios detalhados, exporte dados e analise tendências e padrões históricos."
+      },
+      "layers": {
+        "title": "Camadas do mapa",
+        "description": "Controle as camadas e sobreposições do mapa. Escolha mapas base, alterne camadas de dados e personalize a vista."
+      },
+      "documentation": {
+        "title": "Documentação",
+        "description": "Abra a documentação da plataforma para guias detalhados, referências da API e boas práticas.",
+        "tip": "Abre num novo separador para não interromper o seu trabalho."
+      },
+      "feedback": {
+        "title": "Comentários",
+        "description": "Partilhe connosco as suas ideias e sugestões. Os seus comentários ajudam a melhorar a plataforma."
+      },
+      "complete": {
+        "title": "Está tudo pronto!",
+        "nextSteps": "Próximos passos",
+        "restartTour": "Reiniciar a visita",
+        "restartTourDescription": "Pode reiniciar esta visita a qualquer momento a partir da barra lateral."
+      },
+      "dashboard": {
+        "tabsOverview": {
+          "title": "Filtrar por estado",
+          "description": "Estes separadores filtram os seus modelos por estado, com contagens ao vivo para cada grupo."
+        },
+        "tabAll": {
+          "title": "Todos os modelos",
+          "description": "Todas as famílias de modelos neste espaço de trabalho, com as famílias fixadas no topo."
+        },
+        "tabPinned": {
+          "title": "Fixados",
+          "description": "Modelos que fixou. Fixar qualquer versão mantém a família inteira no topo."
+        },
+        "tabRunning": {
+          "title": "Em execução",
+          "description": "Modelos em fila, a calcular, em execução ou a processar. A lista atualiza em tempo real enquanto executam."
+        },
+        "tabCompleted": {
+          "title": "Concluídos",
+          "description": "Modelos concluídos e publicados, prontos a abrir e explorar."
+        },
+        "tabDrafts": {
+          "title": "Rascunhos",
+          "description": "Modelos em rascunho ou modificados que ainda precisam de ser executados."
+        },
+        "tabFailed": {
+          "title": "Com falha",
+          "description": "Execuções falhadas ou canceladas. Inspecione o erro e execute novamente quando estiver pronto."
+        },
+        "search": {
+          "title": "Pesquisa e período",
+          "description": "Pesquise títulos de modelos e filtre por período de simulação. Os resultados incluem versões antigas de uma família."
+        },
+        "familyRow": {
+          "title": "Uma linha por modelo",
+          "description": "Cada linha é uma família de modelos com o modelo original no topo. O distintivo de versões mostra as cópias, da mais antiga para a mais recente."
+        },
+        "columns": {
+          "title": "Colunas"
+        },
+        "pin": {
+          "title": "Fixar modelos",
+          "description": "Fixe um modelo para manter a sua família no topo de todos os separadores."
+        },
+        "primaryAction": {
+          "title": "Ação principal",
+          "description": "Veja modelos concluídos ou execute rascunhos diretamente a partir da linha."
+        },
+        "moreMenu": {
+          "title": "Mais ações",
+          "description": "Edite, copie, transfira, partilhe, mova para um espaço de trabalho ou elimine a partir deste menu."
+        },
+        "newBadge": {
+          "title": "Novos resultados",
+          "description": "Os modelos concluídos recentemente que ainda não abriu são marcados como novos."
+        },
+        "refresh": {
+          "title": "Atualizar, partilhar e copiar",
+          "description": "Atualizar recarrega a lista de modelos (os modelos em execução também se atualizam sozinhos). Partilhar dá à sua equipa acesso a este espaço e Copiar duplica-o com os seus modelos."
+        }
+      },
+      "ui": {
+        "stepOf": "Passo {{current}} de {{total}}",
+        "skipTour": "Ignorar a visita",
+        "finish": "Concluir",
+        "whatsNew": "Novo",
+        "sections": {
+          "welcome": "Boas-vindas",
+          "navigation": "Navegação",
+          "dashboard": "Painel",
+          "tabs": "Separadores",
+          "rows": "Linhas",
+          "finish": "Concluir",
+          "tools": "Ferramentas"
+        },
+        "chips": {
+          "filters": "Filtros"
+        }
+      },
+      "workspace": {
+        "title": "Espaço de trabalho",
+        "description": "Os modelos pertencem a um espaço de trabalho. Troque de espaço aqui ou crie um novo para organizar projetos e partilhá-los com a sua equipa."
+      },
+      "demo": {
+        "example": "Exemplo",
+        "justNow": "Agora mesmo"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Veja o código aberto e reporte problemas no GitHub."
+      },
+      "help": {
+        "title": "Ajuda",
+        "description": "Tudo num só lugar: abra a documentação, reinicie este tour a qualquer momento ou envie-nos feedback."
+      },
+      "language": {
+        "title": "Idioma",
+        "description": "Altere o idioma da interface. A sua escolha fica guardada neste navegador."
+      },
+      "notifications": {
+        "title": "Notificações",
+        "description": "Veja aqui simulações concluídas, compartilhamentos e avisos do sistema."
+      },
+      "version": {
+        "title": "Novidades",
+        "description": "Clique no número da versão para ver os recursos e melhorias mais recentes."
+      }
+    },
+    "areaSelect": {
+      "welcome": {
+        "tip": "Vai aprender a configurar o modelo, a desenhar áreas e a criar a sua simulação."
+      },
+      "modelName": {
+        "title": "Nome do modelo"
+      },
+      "dateRange": {
+        "title": "Período da simulação"
+      },
+      "mapContainer": {
+        "title": "Mapa interativo",
+        "tip": "Pode aproximar e deslocar o mapa para explorar diferentes regiões"
+      },
+      "search": {
+        "title": "Pesquisa de localizações",
+        "description": "Use esta caixa de pesquisa para encontrar rapidamente localizações por nome ou morada.",
+        "tip": "Experimente escrever o nome de uma localização para ver resultados imediatos"
+      },
+      "save": {
+        "title": "Criar simulação",
+        "tip": "Todos os campos têm de estar preenchidos antes de poder guardar"
+      },
+      "calculationStatus": {
+        "title": "Estado do cálculo",
+        "description": "Esta linha indica se as datas disponíveis estão a carregar, indisponíveis, com erro ou prontas a selecionar.",
+        "tip": "Se mostrar um bloqueio, o botão continuar fica desativado até a seleção de datas ser válida."
+      },
+      "finalReview": {
+        "title": "Estado da validação"
+      },
+      "saveSummary": {
+        "title": "Resumo antes de guardar",
+        "description": "Este resumo final mostra os valores que serão guardados com o modelo e enviados para o fluxo de cálculo."
+      },
+      "ui": {
+        "sections": {
+          "intro": "Introdução",
+          "setup": "Configuração",
+          "map": "Mapa",
+          "layers": "Camadas",
+          "review": "Revisão"
+        }
+      }
+    },
+    "buttons": {
+      "skip": "Ignorar",
+      "back": "Voltar",
+      "next": "Seguinte",
+      "finish": "Concluir",
+      "close": "Fechar"
+    }
+  },
+  "feedback": {
+    "title": "Enviar comentários",
+    "subtitle": "Ajude-nos a melhorar a sua experiência",
+    "category": "Categoria do comentário",
+    "categories": {
+      "bug": "Relatório de erro",
+      "bugDescription": "Algo não está a funcionar",
+      "feature": "Pedido de funcionalidade",
+      "featureDescription": "Sugerir uma nova funcionalidade",
+      "improvement": "Melhoria",
+      "improvementDescription": "Melhorar funcionalidades existentes",
+      "general": "Geral",
+      "generalDescription": "Outros comentários"
+    },
+    "subject": "Assunto",
+    "subjectPlaceholder": "p. ex., problema ao carregar o mapa, sugestão de funcionalidade...",
+    "message": "O seu comentário",
+    "messagePlaceholder": "Descreva em detalhe os seus comentários, sugestões ou problemas...",
+    "image": "Anexo (opcional)",
+    "imageDropzone": "Clique para carregar ou arraste e largue",
+    "imageFormats": "PNG, JPG, GIF até 15 MB",
+    "imagePreview": "Pré-visualização da imagem",
+    "removeImage": "Remover imagem",
+    "rating": "Avaliação global",
+    "ratingDescription": "Como avalia a sua experiência?",
+    "submit": "Enviar comentários",
+    "submitting": "A enviar...",
+    "submittingMessage": "A enviar os seus comentários...",
+    "gdprNotice": "Os seus comentários são tratados em conformidade com o RGPD.",
+    "success": {
+      "title": "Comentário enviado!",
+      "message": "Obrigado pelos seus comentários. Vamos analisá-los e entraremos em contacto se for necessário.",
+      "reference": "Referência"
+    },
+    "errors": {
+      "loginRequired": "Inicie sessão para enviar comentários",
+      "submitFailed": "Não foi possível enviar os comentários. Tente novamente mais tarde.",
+      "invalidImageType": "Selecione um ficheiro de imagem válido (PNG, JPG, GIF)",
+      "imageTooLarge": "A imagem tem de ter menos de 15 MB",
+      "payloadTooLarge": "O anexo é demasiado grande. Use imagens mais pequenas."
+    },
+    "myFeedback": {
+      "title": "Os meus comentários",
+      "subtitle": "Acompanhe o estado dos comentários que enviou",
+      "empty": "Ainda não enviou nenhum comentário",
+      "adminResponse": "Resposta do administrador",
+      "submittedOn": "Enviado em",
+      "autoDeleteNotice": "Este item será removido automaticamente dentro de {days} dias",
+      "autoDeleteSoon": "Este item será removido automaticamente em breve",
+      "showHistory": "Os meus envios",
+      "hideHistory": "Ocultar",
+      "status": {
+        "pending": "Pendente",
+        "in_progress": "Em curso",
+        "resolved": "Resolvido",
+        "closed": "Fechado"
+      }
+    },
+    "write": "Escrever",
+    "preview": "Pré-visualizar",
+    "markdownSupported": "Suporta Markdown",
+    "words": "palavras",
+    "chars": "caracteres",
+    "previewEmpty": "Nada para pré-visualizar"
+  },
+  "settings": {
+    "title": "Definições",
+    "subtitle": "Personalize a sua experiência e preferências",
+    "configuration": "Configuração",
+    "goBack": "Voltar",
+    "tabs": {
+      "general": "Geral",
+      "display": "Visualização",
+      "notifications": "Notificações",
+      "advanced": "Avançado",
+      "privacyTerms": "Privacidade e condições"
+    },
+    "stats": {
+      "language": "Idioma",
+      "theme": "Tema",
+      "notifications": "Notificações",
+      "accessLevel": "Nível de acesso",
+      "enabled": "Ativado",
+      "disabled": "Desativado",
+      "system": "Sistema",
+      "user": "Utilizador"
+    },
+    "language": {
+      "title": "Idioma",
+      "subtitle": "Idioma da interface"
+    },
+    "mapLocation": {
+      "title": "Localização no mapa",
+      "subtitle": "Posições guardadas",
+      "syncing": "A sincronizar...",
+      "searchPlaceholder": "Pesquisar uma localização...",
+      "current": "Atual",
+      "noLocation": "Nenhuma localização definida",
+      "savedLocations": "Localizações guardadas",
+      "clearAll": "Limpar tudo",
+      "syncNote": "As localizações são sincronizadas com a sua conta"
+    },
+    "locationSearch": {
+      "placeholder": "Pesquisar localização...",
+      "searching": "A pesquisar...",
+      "noResults": "Nenhuma localização encontrada",
+      "searchFailed": "A pesquisa falhou"
+    },
+    "dataDisplay": {
+      "title": "Dados e visualização",
+      "subtitle": "Unidades e formatação",
+      "distance": "Distância",
+      "kilometers": "Quilómetros",
+      "miles": "Milhas",
+      "dataRefresh": "Atualização de dados",
+      "min": "min",
+      "textSize": "Tamanho do texto",
+      "textSizes": {
+        "large": "Grande",
+        "normal": "Normal",
+        "small": "Pequeno"
+      }
+    },
+    "notifications": {
+      "title": "Notificações",
+      "subtitle": "Preferências de alertas",
+      "email": "E-mail",
+      "notifyWhenComplete": "Notificar quando concluir",
+      "browser": "Navegador",
+      "enabled": "Ativadas",
+      "blocked": "Bloqueadas",
+      "systemAlerts": "Alertas do sistema"
+    },
+    "sendNotification": {
+      "title": "Enviar notificação",
+      "subtitle": "Notificações do sistema",
+      "selectService": "Selecionar serviço...",
+      "services": {
+        "webService": "Serviço web",
+        "geoServer": "GeoServer",
+        "database": "Base de dados",
+        "api": "API",
+        "mapService": "Serviço de mapas"
+      },
+      "messagePlaceholder": "Introduza a mensagem da notificação...",
+      "sending": "A enviar...",
+      "sendNotification": "Enviar notificação",
+      "sent": "Notificação enviada!",
+      "failedToSend": "Falha no envio"
+    },
+    "polygonLimits": {
+      "title": "Limites de polígonos",
+      "yourLimit": "O seu limite",
+      "unlimited": "Ilimitado",
+      "byRole": "Por perfil",
+      "reset": "Repor",
+      "resetSuccess": "Todos os limites repostos para os valores predefinidos",
+      "resetFailed": "Não foi possível repor os limites",
+      "limitUpdated": "Limite de {{label}} atualizado para {{value}}",
+      "failedToUpdate": "Não foi possível atualizar o limite de {{label}}",
+      "contactAdmin": "Contacte o administrador para limites mais altos.",
+      "levels": {
+        "basic": "Básico",
+        "intermediate": "Intermédio",
+        "manager": "Gestor",
+        "expert": "Especialista"
+      }
+    },
+    "accessLevels": {
+      "basic": "Básico",
+      "expert": "Especialista",
+      "intermediate": "Intermédio",
+      "manager": "Gestor"
+    },
+    "modelCreation": {
+      "checking": "A verificar a preferência...",
+      "description": "Controla o cartão de configuração mostrado antes dos passos guiados de criação do modelo.",
+      "enabled": "A introdução está ativada",
+      "enabledHint": "O resumo aparecerá antes da criação de um novo modelo.",
+      "enabledMessage": "O cartão de introdução aparecerá da próxima vez que criar um modelo.",
+      "guidancePreferences": "Preferências de orientação",
+      "hidden": "A introdução está oculta",
+      "hiddenHint": "Ative-a novamente quando os utilizadores precisarem do resumo antes de criar um modelo.",
+      "loadError": "Não foi possível carregar esta preferência.",
+      "sectionTitle": "Criação de modelos",
+      "showAgain": "Mostrar novamente",
+      "title": "Cartão de introdução ao modelo",
+      "updateError": "Não foi possível atualizar a preferência do cartão de introdução."
+    }
+  },
+  "map": {
+    "zoomIn": "Aproximar",
+    "zoomOut": "Afastar",
+    "centerMap": "Centrar o mapa",
+    "fitToExtent": "Ajustar à extensão",
+    "resetTopDown": "Repor vista de topo",
+    "rightClickRotate": "Clique com o botão direito + arraste para rodar",
+    "regions": "regiões",
+    "myModels": "os meus modelos",
+    "grids": "grelhas",
+    "countries": "países",
+    "bookmarks": {
+      "namePlaceholder": "Nome do marcador...",
+      "none": "Ainda não há marcadores",
+      "saveCurrentView": "Guardar a vista atual",
+      "title": "Marcadores do mapa"
+    },
+    "latestModel": "modelo mais recente",
+    "legend": {
+      "title": "Contornos do mapa",
+      "yourModels": "Área verde: o seu modelo mais recente — selecione-o para abrir os resultados",
+      "availableRegions": "Índigo tracejado: regiões administrativas disponíveis",
+      "zoomDetail": "O mapa base revela mais detalhe ao aproximar."
+    },
+    "newModelShortcut": "Atalho: N",
+    "privacyRequired": "Aceite os termos de dados e privacidade para ver o mapa"
+  },
+  "privacy": {
+    "dataAndPrivacy": "Dados e privacidade",
+    "acceptTerms": "Aceitar os termos de privacidade",
+    "openSettings": "Abrir definições de dados e privacidade",
+    "dialogTitle": "Tratamento de dados e privacidade",
+    "cartoDescription": "Para lhe prestarmos os nossos serviços, recorremos à CARTO e à OSMF como fornecedores de cartografia terceiros.",
+    "sharedWithCarto": "Ao aceitar, os seguintes dados serão partilhados com a CARTO e a OSMF, respetivamente:",
+    "ipAddress": "Endereço IP",
+    "browserDeviceType": "Navegador + tipo de dispositivo",
+    "timeOfRequest": "Hora do pedido",
+    "localStorageDescription": "Além disso, usamos armazenamento local para memorizar as suas preferências e registar se já viu o conteúdo introdutório neste dispositivo.",
+    "reviewPolicies": "Para mais informações, consulte as respetivas políticas de privacidade:",
+    "cartoPolicy": "Política de privacidade da Carto",
+    "osmfPolicy": "Política de privacidade da OSMF",
+    "deny": "Recusar",
+    "accept": "Aceitar"
+  },
+  "onboarding": {
+    "welcome": {
+      "title": "Bem-vindo!",
+      "description": "Vamos configurar as suas preferências para começar",
+      "intro": "Vamos dedicar um momento a configurar as suas preferências. Isto ajuda-nos a personalizar a sua experiência e a mostrar-lhe a informação mais relevante.",
+      "step1": "Escolha o seu idioma preferido",
+      "step2": "Defina as suas preferências de mapa e notificações",
+      "step3": "Configure as definições de notificações",
+      "timeNote": "Isto demora apenas um minuto"
+    },
+    "language": {
+      "title": "Preferência de idioma",
+      "description": "Selecione o idioma preferido para a aplicação"
+    },
+    "map": {
+      "title": "Preferências do mapa",
+      "description": "Configure a localização predefinida do mapa"
+    },
+    "notifications": {
+      "title": "Preferências de notificações",
+      "description": "Escolha como quer receber alertas e atualizações"
+    },
+    "navigation": {
+      "previous": "Anterior",
+      "next": "Seguinte",
+      "complete": "Concluir",
+      "completing": "A concluir...",
+      "skip": "Ignorar"
+    }
+  },
+  "landing": {
+    "contact": {
+      "label": "Entre em contacto",
+      "description": "Dúvidas, ideias de parceria ou sugestões? Envie-nos uma mensagem e responderemos.",
+      "name": "Nome",
+      "namePlaceholder": "O seu nome",
+      "email": "E-mail",
+      "emailPlaceholder": "utilizador@exemplo.com",
+      "category": "Categoria",
+      "categories": {
+        "general": "Questão geral",
+        "partnership": "Parceria",
+        "pilot": "Pedido de piloto / demonstração",
+        "research": "Colaboração em investigação",
+        "media": "Imprensa e comunicação"
+      },
+      "subject": "Assunto",
+      "subjectPlaceholder": "Como podemos ajudar?",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte-nos mais…",
+      "send": "Enviar mensagem",
+      "sending": "A enviar…",
+      "successText": "Obrigado! A sua mensagem foi enviada.",
+      "genericError": "Algo correu mal. Tente novamente.",
+      "submitFailed": "Não foi possível enviar a mensagem. Tente novamente.",
+      "validationError": "Preencha todos os campos obrigatórios."
+    },
+    "footer": {
+      "privacySettings": "Definições de privacidade",
+      "privacyPolicy": "Política de privacidade",
+      "cookies": "Política de cookies",
+      "impressum": "Ficha técnica",
+      "terms": "Termos e condições"
+    }
+  },
+  "modelResults": {
+    "title": "Resultados do modelo",
+    "errors": {
+      "noId": "Não foi fornecido nenhum ID de modelo",
+      "loadFailed": "Não foi possível carregar os resultados do modelo",
+      "layerIncomplete": "A configuração da camada está incompleta",
+      "layerLoad": "Não foi possível carregar a camada do GeoServer",
+      "tileLoad": "Alguns mosaicos não foram carregados do GeoServer ({{count}})"
+    },
+    "loadingWorkspace": "A carregar o espaço de trabalho…",
+    "loadingModels": "A carregar os modelos…",
+    "noCompletedModels": "Nenhum modelo concluído",
+    "selectModel": "Selecione um modelo",
+    "map": {
+      "initializing": "A inicializar o mapa…"
+    },
+    "empty": {
+      "title": "Ainda não há resultados para este modelo.",
+      "hint": "O resultado da simulação aparecerá aqui assim que o processamento terminar."
+    },
+    "details": {
+      "description": "Descrição",
+      "location": "Localização",
+      "period": "Período de avaliação",
+      "days": "dias",
+      "updated": "Atualizado",
+      "awaiting": "A aguardar resultado…",
+      "title": "Título",
+      "region": "Região",
+      "country": "País",
+      "from": "De",
+      "to": "Até",
+      "humidity": "Humidade"
+    }
+  },
+  "configurator": {
+    "registry": {},
+    "stepper": {
+      "stepOf": "Passo {{step}} de {{total}}",
+      "back": "Voltar",
+      "continue": "Continuar",
+      "update": "Atualizar",
+      "save": "Guardar",
+      "saving": "A guardar...",
+      "starting": "A iniciar...",
+      "saveAndRun": "Guardar e executar",
+      "introTitle": "Novo modelo de análise",
+      "introSubtitle": "Vamos configurar a sua simulação",
+      "introDesc": "Seis passos guiados para definir a área, validar os dados e iniciar uma análise.",
+      "introProgressSaved": "O seu progresso é guardado à medida que avança",
+      "introDontShow": "Não mostrar esta introdução novamente",
+      "introCancel": "Cancelar",
+      "introStart": "Começar",
+      "step": "PASSO"
+    },
+    "layer1": {
+      "purpose": "Dê um nome a esta análise e escolha o período a avaliar.",
+      "modelNameLabel": "Nome do modelo",
+      "modelNameHint": "Um nome descritivo para encontrar este modelo mais tarde.",
+      "dynamicLoading": "A carregar as datas dinâmicas disponíveis...",
+      "dynamicEmpty": "Não há datas dinâmicas disponíveis.",
+      "dynamicSelected": "Intervalo selecionado: {{start}} a {{end}} ({{days}} dias).",
+      "dynamicSelectedOne": "Intervalo selecionado: {{start}} a {{end}} (1 dia).",
+      "dynamicSelectInside": "Selecione um intervalo dentro das datas dinâmicas disponíveis: {{start}} a {{end}}",
+      "dynamicAvailable": "Datas dinâmicas disponíveis: {{start}} a {{end}}",
+      "suggestedNamesLabel": "Sugestões rápidas",
+      "suggestedName2": "Estudo de cluster industrial",
+      "modelNameQuestion": "Como quer chamar a este modelo?",
+      "periodQuestion": "Que período deve avaliar?",
+      "assessmentPeriod": "Período de avaliação"
+    },
+    "layer2": {},
+    "layer4": {
+      "purpose": "O CAPEX de conduta acompanha a resistência do traçado; camião e ferrovia usam tarifas por distância.",
+      "nextStepHint": "A seguir faremos uma revisão final antes de guardar.",
+      "missingModelName": "Em falta — volte ao passo 1.",
+      "missingDates": "Falta a data de início ou de fim.",
+      "loadingDynamic": "A carregar as datas dinâmicas disponíveis…",
+      "dynamicRequiresBefore": "O modo dinâmico exige que o início seja anterior ao fim.",
+      "dynamicUnavailableDates": "O intervalo de datas dinâmicas selecionado contém datas indisponíveis.",
+      "dynamicRange": "Dinâmico {{start}} → {{end}}.",
+      "noGeoJson": "Nenhum GeoJSON carregado.",
+      "noPolygon": "Nenhum polígono desenhado no mapa.",
+      "uploadIncomplete": "Carregamento do GeoJSON incompleto.",
+      "areaDetails": "{{count}} regiões · {{area}}",
+      "areaDetailsSingle": "1 região · {{area}}",
+      "someSignalsActive": "A executar com {{count}} de 3 sinais opcionais — o resultado será diferente do modelo completo.",
+      "bufferDistance": "{{buffer}} m em redor da AOI.",
+      "blockers": "{{count}} bloqueios — resolva antes de executar.",
+      "blockersSingle": "1 bloqueio — resolva antes de executar.",
+      "warnings": "{{count}} avisos — reveja antes de executar.",
+      "warningsSingle": "1 aviso — reveja antes de executar.",
+      "allPassed": "Todas as verificações passaram. Pronto para guardar e calcular.",
+      "labels": {
+        "modelName": "Nome do modelo",
+        "timeframe": "Período",
+        "areaOfInterest": "Área de interesse",
+        "bufferDistance": "Distância de buffer"
+      },
+      "costsQuestion": "Quanto custam estas rotas?",
+      "costsInfo": "Calculado a partir das rotas encontradas no passo anterior."
+    },
+    "layer5": {
+      "looksGood": "Está tudo bem? Prima ",
+      "below": " abaixo.",
+      "labels": {
+        "modelName": "Nome do modelo",
+        "from": "De",
+        "to": "Até"
+      }
+    },
+    "coverage": {
+      "title": "Cobertura de dados",
+      "unavailable": "Cobertura indisponível",
+      "exactFootprint": "Área raster exata",
+      "mainFootprint": "{{percent}}% da área principal",
+      "data": "Dados",
+      "noData": "Sem dados",
+      "useShaded": "Use as zonas sombreadas",
+      "requiredAvailable": "Os dados necessários estão disponíveis.",
+      "requiredAvailableDates": "Os dados necessários estão disponíveis para {{dates}}.",
+      "avoidBlank": "Evite lacunas em branco",
+      "blankDesc": "As zonas em branco não têm dados raster de origem válidos para cálculo.",
+      "availableData": "Dados disponíveis"
+    },
+    "mapHeader": {},
+    "blocking": {
+      "and": " e ",
+      "dateRange": "uma data de início e de fim",
+      "dynamicEmpty": "Não há datas dinâmicas disponíveis de momento.",
+      "dynamicLoading": "A carregar as datas dinâmicas disponíveis.",
+      "dynamicRange": "Selecione um intervalo de datas dinâmicas totalmente disponível.",
+      "modelName": "um nome de modelo",
+      "dynamicOrder": "A data de início deve ser anterior ou igual à data de fim."
+    },
+    "save": {
+      "calculationFailed": "O modelo foi guardado, mas não foi possível iniciar o cálculo.",
+      "createFailed": "Não foi possível criar o modelo. Tente novamente.",
+      "updateFailed": "Não foi possível guardar o modelo. Tente novamente.",
+      "uploadFailed": "O modelo foi guardado, mas não foi possível carregar os seus ficheiros de entrada."
+    },
+    "stepPurposeHide": "Ocultar a informação do passo",
+    "stepPurposeShow": "O que é este passo?",
+    "wizard": {
+      "steps": "Passos do modelo"
+    }
+  },
+  "whatsNew": {
+    "open": "Novidades desta versão",
+    "title": "Novidades",
+    "version": "Versão {{version}}",
+    "released": "Lançada em {{date}}",
+    "intro": "Um resumo dos recursos, melhorias e correções mais recentes desta versão.",
+    "where": "Onde",
+    "viewAll": "Todas as alterações no GitHub",
+    "close": "Entendi",
+    "groups": {
+      "new": "Novo",
+      "improved": "Melhorado",
+      "fixed": "Corrigido"
+    },
+    "items": {
+      "families": {
+        "title": "Versões de modelos agrupadas",
+        "description": "Cada modelo aparece agora uma só vez, com as suas cópias agrupadas por baixo. O modelo original fica no topo e o selo de versões mostra as cópias, da mais antiga para a mais recente.",
+        "where": "Painel de modelos → lista de modelos"
+      },
+      "tabs": {
+        "title": "Abas de status",
+        "description": "Alterne entre Todos, Fixados, Em execução, Concluídos, Rascunhos e Com falha. A busca e o filtro de período funcionam em todas as abas.",
+        "where": "Painel de modelos → acima da lista"
+      },
+      "pinning": {
+        "title": "Fixar modelos",
+        "description": "Um modelo fixado fica no topo da lista. Fixar qualquer versão mantém toda a família no topo, e a aba Fixados reúne-os num só lugar.",
+        "where": "Linha do modelo → ícone de alfinete"
+      },
+      "newBadge": {
+        "title": "Selo de novos resultados",
+        "description": "Modelos concluídos recentemente recebem o selo Novo. Passe o cursor para ver quando a simulação terminou.",
+        "where": "Linha do modelo → ao lado do título"
+      },
+      "tour": {
+        "title": "Tour guiado redesenhado",
+        "description": "O tour percorre passo a passo o painel, o mapa e as ferramentas, com pontos de seção e navegação pelas setas.",
+        "where": "Menu Ajuda → Reiniciar tour"
+      },
+      "workspaceMenu": {
+        "title": "Menu de espaços de trabalho",
+        "description": "A lista de espaços de trabalho abre agora por completo acima dos separadores de estado e da lista de modelos.",
+        "where": "Painel de modelos → seletor de espaço de trabalho"
+      }
+    }
+  },
+  "adminDashboard": {
+    "title": "Painel de administração",
+    "welcomeBack": "Bem-vindo de volta, {{name}}!",
+    "administrator": "Administrador",
+    "loadingContent": "A carregar o conteúdo...",
+    "profile": "Perfil",
+    "settings": "Definições",
+    "logout": "Terminar sessão",
+    "tabs": {
+      "overview": "Vista geral",
+      "allSimulationModels": "Todos os modelos de simulação",
+      "simulationEngine": "Motor de simulação",
+      "feedback": "Comentários",
+      "userManagement": "Gestão de utilizadores",
+      "gridEngine": "Motor de cálculo"
+    },
+    "stats": {
+      "accessLevel": "Nível de acesso",
+      "availableLayers": "Camadas disponíveis",
+      "status": "Estado",
+      "totalUsers": "Total de utilizadores",
+      "lastLogin": "Último início de sessão",
+      "active": "Ativo",
+      "online": "Online",
+      "live": "Em direto",
+      "updating": "A atualizar",
+      "recent": "Recente",
+      "allMapLayers": "Todas as camadas do mapa",
+      "mapLayers": "{{count}} camadas do mapa",
+      "mapLayer": "{{count}} camada do mapa"
+    },
+    "accessLevels": {
+      "expert": "Acesso de especialista",
+      "manager": "Acesso de gestor",
+      "intermediate": "Acesso intermédio",
+      "veryLow": "Acesso muito baixo",
+      "unknown": "Desconhecido"
+    },
+    "accessTrends": {
+      "maximum": "Máximo",
+      "management": "Gestão",
+      "upgradable": "Atualizável",
+      "basic": "Básico"
+    },
+    "userProfile": {
+      "title": "Perfil do utilizador",
+      "subtitle": "Informação da sua conta",
+      "email": "E-mail"
+    },
+    "accessPermissions": {
+      "title": "Acesso e permissões",
+      "subtitle": "Capacidades do sistema",
+      "active": "Ativo",
+      "currentLevel": "Nível atual",
+      "workspaces": "Espaços de trabalho",
+      "unlimited": "Ilimitado",
+      "activeWorkspaces": "{{count}} ativos",
+      "teamSharing": "Partilha em equipa",
+      "enabled": "Ativada",
+      "disabled": "Desativada",
+      "modelQuota": "Quota de modelos",
+      "standardLimit": "Limite padrão",
+      "computePower": "Capacidade de cálculo",
+      "highPerformance": "Alto desemp.",
+      "standard": "Padrão",
+      "availableFeatures": "Funcionalidades disponíveis",
+      "allLayersAvailable": "Todas as camadas disponíveis",
+      "fullSystemAccess": "Acesso total ao sistema",
+      "upgradeMessage": "Desbloqueie mais funcionalidades pedindo uma atualização ao seu administrador.",
+      "resultFinal": "Resultado final"
+    },
+    "quickActions": {
+      "title": "Ações rápidas",
+      "subtitle": "Navegue para as principais funcionalidades",
+      "interactiveMap": "Mapa interativo",
+      "settings": "Definições",
+      "configurePreferences": "Configurar preferências"
+    }
+  },
+  "modelsManagement": {
+    "title": "Todos os modelos de avaliação",
+    "subtitle": "Faça a gestão e o acompanhamento de todos os modelos do sistema",
+    "searchPlaceholder": "Pesquisar modelos...",
+    "refresh": "Atualizar",
+    "loadingModels": "A carregar os modelos...",
+    "noModelsFound": "Nenhum modelo encontrado",
+    "noModelsDescription": "Comece por criar o seu primeiro modelo de avaliação.",
+    "sharedWorkspace": "Espaço de trabalho partilhado (proprietário: {{owner}})",
+    "table": {
+      "model": "Modelo",
+      "status": "Estado",
+      "created": "Criado",
+      "lastModified": "Última modificação",
+      "actions": "Ações"
+    },
+    "status": {
+      "draft": "Rascunho",
+      "inQueue": "Em fila",
+      "inProgress": "Em curso",
+      "completed": "Concluído",
+      "published": "Publicado"
+    },
+    "notifications": {
+      "duplicated": "O modelo \"{{title}}\" foi duplicado com sucesso",
+      "calculationStarted": "Cálculo iniciado com sucesso",
+      "failedToDuplicate": "Não foi possível duplicar o modelo. Tente novamente.",
+      "failedToCalculate": "Não foi possível iniciar o cálculo. Tente novamente.",
+      "moveComingSoon": "A funcionalidade de mover para espaço de trabalho estará disponível em breve para \"{{title}}\"",
+      "shared": "Modelo partilhado com sucesso",
+      "deleted": "O modelo \"{{title}}\" foi eliminado",
+      "failedToDelete": "Não foi possível eliminar o modelo. Tente novamente."
+    }
+  },
+  "webservicesManagement": {
+    "title": "Gestão do motor de simulação",
+    "subtitle": "Faça a gestão das instâncias de webservice de cálculo",
+    "searchPlaceholder": "Pesquisar por nome, IP...",
+    "refresh": "Atualizar",
+    "registerNew": "Registar novo webservice",
+    "loadingWebservices": "A carregar os webservices...",
+    "noWebservicesFound": "Nenhum webservice encontrado",
+    "noWebservicesDescription": "Comece por registar a sua primeira instância de webservice.",
+    "noWebservicesAvailable": "Não há motores de simulação configurados de momento. Contacte um administrador.",
+    "healthCheck": "Motor de simulação",
+    "summary": {
+      "total": "Total",
+      "online": "Online",
+      "available": "Disponível",
+      "busy": "Ocupado",
+      "offline": "Offline"
+    },
+    "yourSimulationStatus": "Estado das suas simulações",
+    "modelsRunningDescription": "{{count}} dos seus modelos estão a ser calculados neste momento",
+    "modelsQueuedDescription": "{{count}} dos seus modelos estão em espera — o motor de simulação está a processar outros cálculos",
+    "filters": {
+      "allStatus": "Todos os estados",
+      "active": "Ativo",
+      "inactive": "Inativo",
+      "maintenance": "Manutenção",
+      "error": "Erro",
+      "allAvailability": "Toda a disponibilidade",
+      "available": "Disponível",
+      "unavailable": "Indisponível"
+    },
+    "table": {
+      "service": "Serviço",
+      "endpoint": "Endpoint",
+      "status": "Estado",
+      "availability": "Disponibilidade",
+      "jobs": "Tarefas",
+      "performance": "Desempenho",
+      "user": "Utilizador",
+      "ip": "Endereço IP",
+      "port": "Porta",
+      "lastCheck": "Última verificação",
+      "actions": "Ações",
+      "never": "Nunca"
+    },
+    "status": {
+      "online": "Online",
+      "offline": "Offline",
+      "available": "Disponível",
+      "unavailable": "Indisponível"
+    },
+    "busyStatus": {
+      "calculating": "A calcular ({{current}}/{{max}})",
+      "idle": "Inativo (0/{{max}})"
+    },
+    "actions": {
+      "pingWebservice": "Fazer ping ao webservice",
+      "editWebservice": "Editar webservice",
+      "deleteWebservice": "Eliminar webservice"
+    },
+    "dialog": {
+      "editTitle": "Editar instância de webservice",
+      "createTitle": "Registar novo webservice",
+      "editDescription": "Atualize a configuração e as definições do webservice",
+      "createDescription": "Configure uma nova instância de webservice de cálculo de simulação",
+      "editButton": "Atualizar webservice",
+      "createButton": "Registar webservice"
+    },
+    "notifications": {
+      "created": "Webservice registado com sucesso!",
+      "updated": "Webservice atualizado com sucesso!",
+      "deleted": "Webservice eliminado com sucesso!",
+      "statusChanged": "O estado do webservice mudou para {{status}}",
+      "failedToCreate": "Não foi possível registar o webservice",
+      "failedToUpdate": "Não foi possível atualizar o webservice",
+      "failedToDelete": "Não foi possível eliminar o webservice",
+      "failedToPing": "Não foi possível fazer ping ao webservice"
+    }
+  },
+  "feedbackManagement": {
+    "title": "Gestão de comentários dos utilizadores",
+    "subtitle": "Analise e responda aos comentários dos utilizadores",
+    "refresh": "Atualizar",
+    "noFeedbackFound": "Nenhum comentário encontrado",
+    "noFeedbackDescription": "Os comentários dos utilizadores aparecerão aqui quando forem enviados.",
+    "filters": {
+      "label": "Filtros:",
+      "allStatus": "Todos os estados",
+      "allCategories": "Todas as categorias",
+      "allPriorities": "Todas as prioridades"
+    },
+    "statuses": {
+      "pending": "Pendente",
+      "inProgress": "Em curso",
+      "resolved": "Resolvido",
+      "closed": "Fechado"
+    },
+    "categories": {
+      "bug": "Relatório de erro",
+      "feature": "Pedido de funcionalidade",
+      "improvement": "Melhoria",
+      "general": "Geral"
+    },
+    "priorities": {
+      "low": "Baixa",
+      "medium": "Média",
+      "high": "Alta",
+      "critical": "Crítica"
+    },
+    "table": {
+      "subject": "Assunto",
+      "category": "Categoria",
+      "priority": "Prioridade",
+      "status": "Estado",
+      "rating": "Avaliação",
+      "user": "Utilizador",
+      "created": "Criado",
+      "actions": "Ações"
+    },
+    "actions": {
+      "viewDetails": "Ver detalhes",
+      "editStatus": "Editar estado",
+      "deleteFeedback": "Eliminar comentário",
+      "delete": "Eliminar"
+    },
+    "hasAttachment": "Tem imagem anexada",
+    "viewDialog": {
+      "title": "Detalhes do comentário",
+      "subtitle": "Ver a informação completa do comentário",
+      "message": "Mensagem:",
+      "rating": "Avaliação:",
+      "submitted": "Enviado",
+      "adminResponse": "Resposta do administrador:",
+      "respondedOn": "Respondido em:",
+      "attachedImage": "Imagem anexada",
+      "feedbackScreenshot": "Captura de ecrã do comentário",
+      "clickToEnlarge": "Clique para ampliar",
+      "imageLoadError": "Não foi possível carregar a imagem",
+      "submittedBy": "Enviado por"
+    },
+    "editDialog": {
+      "title": "Atualizar comentário",
+      "description": "Altere o estado e a prioridade do comentário e escreva uma resposta de administrador",
+      "statusAndPriority": "Estado e prioridade do comentário",
+      "statusAndPriorityDescription": "Atualize o estado e o nível de prioridade do comentário",
+      "status": "Estado",
+      "priority": "Prioridade",
+      "adminResponse": "Resposta do administrador",
+      "adminResponseDescription": "Escreva uma resposta ao utilizador",
+      "response": "Resposta",
+      "responsePlaceholder": "Escreva a sua resposta ao utilizador...",
+      "saveChanges": "Guardar alterações"
+    },
+    "notifications": {
+      "updateSuccess": "O comentário \"{{subject}}\" foi atualizado com sucesso",
+      "updateError": "Não foi possível atualizar o comentário. Tente novamente.",
+      "deleteSuccess": "O comentário \"{{subject}}\" foi eliminado com sucesso",
+      "deleteError": "Não foi possível eliminar o comentário. Tente novamente."
+    }
+  },
+  "apiTokens": {
+    "create": "Criar novo token",
+    "createdOnce": "Copie este token agora — não voltará a ser mostrado.",
+    "errors": {
+      "create": "Não foi possível criar o token",
+      "load": "Não foi possível carregar os tokens",
+      "revoke": "Não foi possível revogar o token"
+    },
+    "existing": "Tokens existentes",
+    "expires": "expira",
+    "expiry": "Validade",
+    "expiry30": "Expira em 30 dias",
+    "expiry365": "Expira em 1 ano",
+    "expiry90": "Expira em 90 dias",
+    "expiryNever": "Nunca expira",
+    "generate": "Gerar token",
+    "lastUsed": "última utilização",
+    "namePlaceholder": "Nome do token (p. ex. script de análise)",
+    "none": "Ainda não há tokens.",
+    "revoke": "Revogar",
+    "scope": "Âmbito",
+    "scopeFull": "Leitura e escrita",
+    "scopeFullShort": "leitura e escrita",
+    "scopeRead": "Apenas leitura (recomendado)",
+    "scopeReadShort": "apenas leitura",
+    "status": {
+      "active": "Ativo",
+      "expired": "Expirado",
+      "revoked": "Revogado"
+    },
+    "subtitle": "Gerir os tokens de acesso à API de",
+    "title": "Tokens de API"
+  }
+}

@@ -1,0 +1,653 @@
+package model
+
+import (
+	"context"
+	"fmt"
+	"strconv"
+	"strings"
+	"time"
+
+	modelservice "spatialhub_backend/internal/model/service"
+
+	"platform.local/common/pkg/constants"
+	"platform.local/common/pkg/httputil"
+	"platform.local/common/pkg/models"
+
+	"github.com/gin-gonic/gin"
+	"gorm.io/gorm"
+)
+
+func parseGetModelsParams(c *gin.Context) (limit, offset int, search, workspaceIDStr, sortBy, sortOrder, fromDate, toDate string) {
+	limit = 100
+	offset = 0
+	sortBy = "created_at"
+	sortOrder = "desc"
+
+	if l := c.Query("limit"); l != "" {
+		var parsed int
+		if _, err := fmt.Sscanf(l, "%d", &parsed); err == nil && parsed > 0 {
+			limit = parsed
+		}
+	}
+	if o := c.Query("offset"); o != "" {
+		var parsed int
+		if _, err := fmt.Sscanf(o, "%d", &parsed); err == nil && parsed >= 0 {
+			offset = parsed
+		}
+	}
+
+	search = c.Query("search")
+	workspaceIDStr = c.Query("workspace_id")
+	fromDate = c.Query("from_date")
+	toDate = c.Query("to_date")
+
+	if sb := c.Query("sort_by"); sb != "" {
+		switch sb {
+		case "title", "status", "created_at", "updated_at", "last_activity":
+			sortBy = sb
+		}
+	}
+	if so := c.Query("sort_order"); so != "" {
+		switch so {
+		case "asc", "desc":
+			sortOrder = so
+		}
+	}
+
+	return
+}
+
+// Pin limit.
+const maxPinnedIDs = 200
+
+// Read pins.
+func parsePinnedIDs(c *gin.Context) []uint {
+	raw := c.Query("pinned")
+	if raw == "" {
+		return nil
+	}
+	seen := make(map[uint]bool)
+	ids := []uint{}
+	for _, part := range strings.Split(raw, ",") {
+		id, err := strconv.ParseUint(strings.TrimSpace(part), 10, 32)
+		if err != nil || id == 0 || seen[uint(id)] {
+			continue
+		}
+		seen[uint(id)] = true
+		ids = append(ids, uint(id))
+		if len(ids) == maxPinnedIDs {
+			break
+		}
+	}
+	return ids
+}
+
+var listableStatuses = map[string]bool{
+	"draft": true, "queue": true, "calculating": true, "running": true, "processing": true,
+	"completed": true, "published": true, "failed": true, "cancelled": true, "modified": true,
+}
+
+func parseStatusFilter(c *gin.Context) []string {
+	statuses := []string{}
+	for _, part := range strings.Split(c.Query("status"), ",") {
+		if s := strings.TrimSpace(part); listableStatuses[s] {
+			statuses = append(statuses, s)
+		}
+	}
+	return statuses
+}
+
+func applyListFilters(c *gin.Context, query *gorm.DB, pinnedIDs []uint) *gorm.DB {
+	if statuses := parseStatusFilter(c); len(statuses) > 0 {
+		query = query.Where("status IN ?", statuses)
+	}
+	if c.Query("pinned_only") == "true" {
+		if len(pinnedIDs) == 0 {
+			return query.Where("1 = 0")
+		}
+		query = query.Where("id IN ?", pinnedIDs)
+	}
+	return query
+}
+
+// Pins first.
+func pinnedOrderClause(ids []uint) string {
+	return "CASE WHEN id IN (" + joinIDList(ids) + ") THEN 0 ELSE 1 END"
+}
+
+// Root or version pinned.
+func pinnedFamilyCondition(ids []uint) string {
+	list := joinIDList(ids)
+	return "id IN (" + list + ") OR id IN (SELECT parent_model_id FROM models pinned_versions WHERE pinned_versions.id IN (" + list + "))"
+}
+
+// Pinned families first.
+func pinnedFamilyOrderClause(ids []uint) string {
+	return "CASE WHEN " + pinnedFamilyCondition(ids) + " THEN 0 ELSE 1 END"
+}
+
+func joinIDList(ids []uint) string {
+	parts := make([]string, len(ids))
+	for i, id := range ids {
+		parts[i] = strconv.FormatUint(uint64(id), 10)
+	}
+	return strings.Join(parts, ",")
+}
+
+func isGroupedRequest(c *gin.Context) bool {
+	return c.Query("grouped") == "true"
+}
+
+const activeStatusList = "'queue','calculating','running','processing'"
+
+// Active first, then latest.
+func listOrderClause(sortBy, sortOrder string, grouped bool) string {
+	if sortBy != "last_activity" {
+		return sortBy + " " + sortOrder
+	}
+	if grouped {
+		return "CASE WHEN EXISTS (SELECT 1 FROM models active_versions WHERE active_versions.deleted_at IS NULL " +
+			"AND (active_versions.id = models.id OR active_versions.parent_model_id = models.id) " +
+			"AND active_versions.status IN (" + activeStatusList + ")) THEN 0 ELSE 1 END, " +
+			"(SELECT MAX(COALESCE(latest_versions.calculation_completed_at, latest_versions.updated_at)) FROM models latest_versions " +
+			"WHERE latest_versions.deleted_at IS NULL AND (latest_versions.id = models.id OR latest_versions.parent_model_id = models.id)) " + sortOrder
+	}
+	return "CASE WHEN status IN (" + activeStatusList + ") THEN 0 ELSE 1 END, COALESCE(calculation_completed_at, updated_at) " + sortOrder
+}
+
+func (h *ModelHandler) buildWorkspaceFilteredQuery(c *gin.Context, userCtx *httputil.UserContext, workspaceID uint) (*gorm.DB, bool) {
+	if !h.ensureWorkspaceAccess(c, userCtx.UserID, workspaceID, errAccessDeniedWorkspace) {
+		return nil, false
+	}
+
+	// Default workspace?
+	modelSvc := h.newModelService()
+	defaultWs, err := modelSvc.GetDefaultWorkspace(userCtx.UserID)
+	isDefault := err == nil && defaultWs.ID == workspaceID
+
+	if isDefault {
+		// Include directly shared models.
+		return h.store.DB().Where(
+			`workspace_id = ? OR (
+				id IN (SELECT model_id FROM model_shares WHERE user_id = ? OR LOWER(email) = LOWER(?))
+				AND workspace_id NOT IN (
+					SELECT id FROM workspaces WHERE user_id = ?
+					UNION
+					SELECT workspace_id FROM workspace_members WHERE user_id = ?
+				)
+			)`,
+			workspaceID, userCtx.UserID, userCtx.Email, userCtx.UserID, userCtx.UserID,
+		), true
+	}
+
+	// Scope to this workspace.
+	return h.store.DB().Where("workspace_id = ?", workspaceID), true
+}
+
+func (h *ModelHandler) buildUserAccessQuery(c *gin.Context, userCtx *httputil.UserContext) *gorm.DB {
+	// Experts see everything.
+	if userCtx.AccessLevel == constants.AccessLevelExpert {
+		return h.store.DB()
+	}
+
+	modelSvc := h.newModelService()
+	groupIDs := modelSvc.GetUserGroupIDs(c.Request.Context(), userCtx.UserID)
+
+	conditions := h.buildBaseAccessConditions(userCtx)
+	conditions = h.addGroupAccessConditions(c, userCtx, groupIDs, conditions, modelSvc)
+
+	return h.combineConditions(conditions)
+}
+
+func (h *ModelHandler) buildBaseAccessConditions(userCtx *httputil.UserContext) []interface{} {
+	db := h.store.DB()
+	conditions := []interface{}{
+		db.Where("user_id = ?", userCtx.UserID),
+	}
+
+	conditions = append(conditions, db.Where(
+		"workspace_id IN (SELECT workspace_id FROM workspace_members WHERE user_id = ?)",
+		userCtx.UserID,
+	))
+
+	conditions = append(conditions, db.Where(
+		"id IN (SELECT model_id FROM model_shares WHERE user_id = ? OR LOWER(email) = LOWER(?))",
+		userCtx.UserID, userCtx.Email,
+	))
+
+	return conditions
+}
+
+func (h *ModelHandler) addGroupAccessConditions(c *gin.Context, userCtx *httputil.UserContext, groupIDs []string, conditions []interface{}, modelSvc *modelservice.ModelService) []interface{} {
+	if len(groupIDs) == 0 {
+		return conditions
+	}
+
+	db := h.store.DB()
+	conditions = append(conditions, db.Where("workspace_id IN (SELECT workspace_id FROM workspace_groups WHERE group_id IN ?)", groupIDs))
+
+	if userCtx.AccessLevel == constants.AccessLevelManager {
+		groupMemberIDs := modelSvc.GetGroupMemberUserIDs(c.Request.Context(), groupIDs)
+		if len(groupMemberIDs) > 0 {
+			conditions = append(conditions, db.Where("user_id IN ?", groupMemberIDs))
+		}
+	}
+
+	return conditions
+}
+
+func (h *ModelHandler) combineConditions(conditions []interface{}) *gorm.DB {
+	db := h.store.DB()
+	query := db.Where(conditions[0])
+	for i := 1; i < len(conditions); i++ {
+		query = query.Or(conditions[i])
+	}
+	return query
+}
+
+// postProcessModelWorkspacesBatch batches the checks.
+func (h *ModelHandler) postProcessModelWorkspacesBatch(ctx context.Context, userCtx *httputil.UserContext, modelsList []models.Model) []models.Model {
+	modelSvc := h.newModelService()
+
+	defaultWorkspace, err := modelSvc.GetDefaultWorkspace(userCtx.UserID)
+	if err != nil {
+		return modelsList
+	}
+
+	// Collect foreign workspace ids.
+	workspaceIDSet := make(map[uint]bool)
+	modelIDsToCheck := make(map[uint]bool) // shared; check access
+	for _, model := range modelsList {
+		if model.UserID == userCtx.UserID || model.WorkspaceID == nil {
+			continue
+		}
+		workspaceIDSet[*model.WorkspaceID] = true
+	}
+
+	if len(workspaceIDSet) == 0 {
+		return modelsList
+	}
+
+	workspaceIDs := make([]uint, 0, len(workspaceIDSet))
+	for wsID := range workspaceIDSet {
+		workspaceIDs = append(workspaceIDs, wsID)
+	}
+
+	// Batch the shared ids.
+	sharedModelIDs := h.store.PluckSharedModelIDsByUser(userCtx.UserID)
+
+	for _, modelID := range sharedModelIDs {
+		modelIDsToCheck[modelID] = true
+	}
+
+	// Batch the access check.
+	accessMap := modelSvc.BatchUserHasWorkspaceAccess(ctx, userCtx.UserID, workspaceIDs)
+
+	// 4. Apply results
+	for i := range modelsList {
+		model := &modelsList[i]
+
+		// Skip owned or workspace-less.
+		if model.UserID == userCtx.UserID || model.WorkspaceID == nil {
+			continue
+		}
+
+		// Shared without workspace access?
+		if modelIDsToCheck[model.ID] && !accessMap[*model.WorkspaceID] {
+			model.WorkspaceID = &defaultWorkspace.ID
+			model.Workspace = defaultWorkspace
+		}
+	}
+
+	return modelsList
+}
+
+func (h *ModelHandler) buildQueryWithWorkspaceFilter(c *gin.Context, userCtx *httputil.UserContext, workspaceIDStr string, limit, offset int) (*gorm.DB, bool) {
+	// Experts skip workspace filtering.
+	if userCtx.AccessLevel == constants.AccessLevelExpert && workspaceIDStr == "" {
+		return h.store.DB(), true
+	}
+
+	if workspaceIDStr != "" {
+		workspaceID, err := parseWorkspaceID(workspaceIDStr)
+		if err != nil {
+			h.respondWithEmptyList(c, limit, offset)
+			return nil, false
+		}
+
+		// Experts: scope to this workspace.
+		if userCtx.AccessLevel == constants.AccessLevelExpert {
+			return h.store.DB().Where("workspace_id = ?", workspaceID), true
+		}
+
+		query, ok := h.buildWorkspaceFilteredQuery(c, userCtx, workspaceID)
+		if !ok {
+			return nil, false
+		}
+		return query, true
+	}
+	return h.buildUserAccessQuery(c, userCtx), true
+}
+
+func parseWorkspaceID(workspaceIDStr string) (uint, error) {
+	var workspaceID int
+	if _, err := fmt.Sscanf(workspaceIDStr, "%d", &workspaceID); err != nil || workspaceID < 0 {
+		return 0, fmt.Errorf("invalid workspace ID")
+	}
+	return uint(workspaceID), nil
+}
+
+func (h *ModelHandler) respondWithEmptyList(c *gin.Context, limit, offset int) {
+	c.JSON(200, gin.H{
+		"success": true,
+		"data":    []models.Model{},
+		"total":   0,
+		"limit":   limit,
+		"offset":  offset,
+	})
+}
+
+func (h *ModelHandler) applySearchFilter(query *gorm.DB, search, fromDate, toDate string) *gorm.DB {
+	query = query.Where("deleted_at IS NULL")
+	if search != "" {
+		query = query.Where("title ILIKE ?", "%"+search+"%")
+	}
+	// Period overlap.
+	if from, err := time.Parse("2006-01-02", fromDate); err == nil {
+		query = query.Where("to_date >= ?", from)
+	}
+	if to, err := time.Parse("2006-01-02", toDate); err == nil {
+		// Inclusive end day.
+		query = query.Where("from_date < ?", to.Add(24*time.Hour))
+	}
+	return query
+}
+
+// Root or version matches.
+func (h *ModelHandler) applyFamilyListFilters(query *gorm.DB, search, fromDate, toDate string, statuses []string) *gorm.DB {
+	query = query.Where("deleted_at IS NULL")
+	const versionMatch = "id IN (SELECT parent_model_id FROM models matching_versions WHERE matching_versions.deleted_at IS NULL AND "
+	if search != "" {
+		pattern := "%" + search + "%"
+		query = query.Where("title ILIKE ? OR "+versionMatch+"matching_versions.title ILIKE ?)", pattern, pattern)
+	}
+	if len(statuses) > 0 {
+		query = query.Where("status IN ? OR "+versionMatch+"matching_versions.status IN ?)", statuses, statuses)
+	}
+	if from, err := time.Parse("2006-01-02", fromDate); err == nil {
+		query = query.Where("to_date >= ? OR "+versionMatch+"matching_versions.to_date >= ?)", from, from)
+	}
+	if to, err := time.Parse("2006-01-02", toDate); err == nil {
+		// Inclusive end day.
+		end := to.Add(24 * time.Hour)
+		query = query.Where("from_date < ? OR "+versionMatch+"matching_versions.from_date < ?)", end, end)
+	}
+	return query
+}
+
+func (h *ModelHandler) fetchModelsWithQuery(query *gorm.DB, limit, offset int, sortBy, sortOrder string, pinnedIDs []uint, grouped bool) ([]models.Model, int64, error) {
+	var total int64
+	query.Model(&models.Model{}).Count(&total)
+
+	if len(pinnedIDs) > 0 {
+		if grouped {
+			query = query.Order(pinnedFamilyOrderClause(pinnedIDs))
+		} else {
+			query = query.Order(pinnedOrderClause(pinnedIDs))
+		}
+	}
+
+	var modelsList []models.Model
+	err := query.
+		Preload(preloadWorkspaceMembers).
+		Preload(preloadWorkspaceGroups).
+		Preload("Shares").
+		Order(listOrderClause(sortBy, sortOrder, grouped)).
+		Limit(limit).
+		Offset(offset).
+		Find(&modelsList).Error
+
+	return modelsList, total, err
+}
+
+// Versions, oldest first.
+func (h *ModelHandler) attachVersions(userCtx httputil.UserContext, modelsList []models.Model) []models.Model {
+	if len(modelsList) == 0 {
+		return modelsList
+	}
+	rootIDs := make([]uint, len(modelsList))
+	for i := range modelsList {
+		rootIDs[i] = modelsList[i].ID
+	}
+
+	var versions []models.Model
+	if err := h.store.DB().
+		Preload(preloadWorkspaceMembers).
+		Preload(preloadWorkspaceGroups).
+		Preload("Shares").
+		Where("parent_model_id IN ? AND deleted_at IS NULL", rootIDs).
+		Order("id asc").
+		Find(&versions).Error; err != nil {
+		return modelsList
+	}
+
+	versions = h.applyPrivacyFilters(userCtx, versions)
+	byParent := make(map[uint][]models.Model, len(versions))
+	for _, version := range versions {
+		if version.ParentModelID == nil {
+			continue
+		}
+		byParent[*version.ParentModelID] = append(byParent[*version.ParentModelID], version)
+	}
+	for i := range modelsList {
+		modelsList[i].Versions = byParent[modelsList[i].ID]
+	}
+	return modelsList
+}
+
+func (h *ModelHandler) includeParentModels(modelsList []models.Model) []models.Model {
+	parentIDs := h.extractParentIDs(modelsList)
+	if len(parentIDs) == 0 {
+		return modelsList
+	}
+
+	existingIDs := h.buildExistingIDsMap(modelsList)
+	missingParents := h.fetchMissingParents(parentIDs)
+
+	return h.prependMissingParents(modelsList, missingParents, existingIDs)
+}
+
+func (h *ModelHandler) extractParentIDs(modelsList []models.Model) []uint {
+	parentIDs := []uint{}
+	for _, model := range modelsList {
+		if model.ParentModelID != nil && *model.ParentModelID > 0 {
+			parentIDs = append(parentIDs, *model.ParentModelID)
+		}
+	}
+	return parentIDs
+}
+
+func (h *ModelHandler) buildExistingIDsMap(modelsList []models.Model) map[uint]bool {
+	existingIDs := make(map[uint]bool)
+	for _, model := range modelsList {
+		existingIDs[model.ID] = true
+	}
+	return existingIDs
+}
+
+func (h *ModelHandler) fetchMissingParents(parentIDs []uint) []models.Model {
+	var missingParents []models.Model
+	return missingParents
+}
+
+func (h *ModelHandler) prependMissingParents(modelsList, missingParents []models.Model, existingIDs map[uint]bool) []models.Model {
+	for _, parent := range missingParents {
+		if !existingIDs[parent.ID] {
+			modelsList = append([]models.Model{parent}, modelsList...)
+		}
+	}
+	return modelsList
+}
+
+// populateChildModelIDs fills every model.
+func (h *ModelHandler) populateChildModelIDs(modelsList []models.Model) {
+	if len(modelsList) == 0 {
+		return
+	}
+
+	parentIDs := make([]uint, len(modelsList))
+	for i := range modelsList {
+		parentIDs[i] = modelsList[i].ID
+	}
+
+	type childRow struct {
+		ID            uint
+		ParentModelID uint
+	}
+	var rows []childRow
+	if err := h.store.DB().
+		Model(&models.Model{}).
+		Where("parent_model_id IN ? AND deleted_at IS NULL", parentIDs).
+		Order("id asc").
+		Select("id, parent_model_id").
+		Scan(&rows).Error; err != nil {
+		return
+	}
+
+	childMap := make(map[uint][]uint, len(rows))
+	for _, r := range rows {
+		childMap[r.ParentModelID] = append(childMap[r.ParentModelID], r.ID)
+	}
+	for i := range modelsList {
+		if children, ok := childMap[modelsList[i].ID]; ok {
+			modelsList[i].ChildModelIDs = children
+		}
+	}
+}
+
+// populateParentModelTitles fills every child.
+func (h *ModelHandler) populateParentModelTitles(modelsList []models.Model) {
+	parentIDSet := make(map[uint]struct{})
+	for i := range modelsList {
+		if modelsList[i].ParentModelID != nil && *modelsList[i].ParentModelID > 0 {
+			parentIDSet[*modelsList[i].ParentModelID] = struct{}{}
+		}
+	}
+	if len(parentIDSet) == 0 {
+		return
+	}
+
+	parentIDs := make([]uint, 0, len(parentIDSet))
+	for id := range parentIDSet {
+		parentIDs = append(parentIDs, id)
+	}
+
+	type titleRow struct {
+		ID    uint
+		Title string
+	}
+	var rows []titleRow
+	if err := h.store.DB().
+		Model(&models.Model{}).
+		Where("id IN ?", parentIDs).
+		Select("id, title").
+		Scan(&rows).Error; err != nil {
+		return
+	}
+
+	titleByID := make(map[uint]string, len(rows))
+	for _, r := range rows {
+		titleByID[r.ID] = r.Title
+	}
+	for i := range modelsList {
+		if modelsList[i].ParentModelID == nil {
+			continue
+		}
+		if title, ok := titleByID[*modelsList[i].ParentModelID]; ok {
+			t := title
+			modelsList[i].ParentModelTitle = &t
+		}
+	}
+}
+
+// populateParentModelTitleForModel fills one child.
+func (h *ModelHandler) populateParentModelTitleForModel(model *models.Model) {
+	if model.ParentModelID == nil || *model.ParentModelID == 0 {
+		return
+	}
+	// Preloaded parent first.
+	if model.ParentModel != nil && model.ParentModel.Title != "" {
+		t := model.ParentModel.Title
+		model.ParentModelTitle = &t
+		return
+	}
+	var titles []string
+	if err := h.store.DB().
+		Model(&models.Model{}).
+		Where("id = ?", *model.ParentModelID).
+		Pluck("title", &titles).Error; err != nil || len(titles) == 0 {
+		return
+	}
+	model.ParentModelTitle = &titles[0]
+}
+
+// populateChildModelIDsForModel fills one model.
+func (h *ModelHandler) populateChildModelIDsForModel(model *models.Model) {
+	var ids []uint
+	if err := h.store.DB().
+		Model(&models.Model{}).
+		Where("parent_model_id = ? AND deleted_at IS NULL", model.ID).
+		Order("id asc").
+		Pluck("id", &ids).Error; err != nil {
+		return
+	}
+	model.ChildModelIDs = ids
+}
+
+func (h *ModelHandler) filterModelShares(model *models.Model, userID, email string) {
+	if model.UserID == userID {
+		return
+	}
+	filteredShares := []models.ModelShare{}
+	for _, share := range model.Shares {
+		if share.UserID == userID || share.Email == email {
+			filteredShares = append(filteredShares, share)
+		}
+	}
+	model.Shares = filteredShares
+}
+
+func (h *ModelHandler) filterWorkspaceData(model *models.Model, userID, email string) {
+	if model.Workspace == nil || model.Workspace.UserID == userID {
+		return
+	}
+	filteredMembers := []models.WorkspaceMember{}
+	for _, member := range model.Workspace.Members {
+		if member.UserID == userID || member.Email == email {
+			filteredMembers = append(filteredMembers, member)
+		}
+	}
+	model.Workspace.Members = filteredMembers
+	model.Workspace.Groups = []models.WorkspaceGroup{}
+}
+
+func (h *ModelHandler) applyPrivacyFilters(userCtx httputil.UserContext, modelsList []models.Model) []models.Model {
+	for i := range modelsList {
+		h.filterModelShares(&modelsList[i], userCtx.UserID, userCtx.Email)
+		h.filterWorkspaceData(&modelsList[i], userCtx.UserID, userCtx.Email)
+	}
+	return modelsList
+}
+func (h *ModelHandler) handleSharedModelWorkspace(userID string, model *models.Model) {
+	if model.UserID == userID || model.WorkspaceID == nil {
+		return
+	}
+
+	modelSvc := h.newModelService()
+	if h.store.CountModelSharesByModelAndUser(model.ID, userID) > 0 && !modelSvc.UserHasWorkspaceAccess(userID, *model.WorkspaceID) {
+		if defaultWorkspace, err := modelSvc.GetDefaultWorkspace(userID); err == nil {
+			model.WorkspaceID = &defaultWorkspace.ID
+			model.Workspace = defaultWorkspace
+		}
+	}
+}

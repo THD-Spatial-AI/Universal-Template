@@ -1,0 +1,1762 @@
+{
+  "common": {
+    "save": "Uložit",
+    "cancel": "Zrušit",
+    "delete": "Smazat",
+    "edit": "Upravit",
+    "create": "Vytvořit",
+    "close": "Zavřít",
+    "confirm": "Potvrdit",
+    "loading": "Načítání...",
+    "error": "Chyba",
+    "success": "Úspěch",
+    "warning": "Varování",
+    "info": "Informace",
+    "yes": "Ano",
+    "no": "Ne",
+    "ok": "OK",
+    "back": "Zpět",
+    "next": "Další",
+    "submit": "Odeslat",
+    "search": "Hledat",
+    "filter": "Filtrovat",
+    "reset": "Obnovit",
+    "clear": "Vymazat",
+    "clearAll": "Vymazat vše",
+    "selectAll": "Vybrat vše",
+    "noResults": "Žádné výsledky",
+    "actions": "Akce",
+    "settings": "Nastavení",
+    "logout": "Odhlásit",
+    "login": "Přihlásit",
+    "register": "Registrovat",
+    "unknown": "Neznámý",
+    "more": "více",
+    "add": "Přidat",
+    "refresh": "Obnovit",
+    "healthCheck": "Kontrola stavu",
+    "na": "N/A",
+    "from": "Od",
+    "to": "Do",
+    "duration": "Trvání",
+    "days": "dní",
+    "country": "Země",
+    "region": "Region",
+    "status": "Stav",
+    "createdAt": "Vytvořeno",
+    "updatedAt": "Naposledy aktualizováno",
+    "workspace": "Pracovní prostor",
+    "results": "Výsledky",
+    "name": "Název",
+    "description": "Popis",
+    "id": "ID",
+    "current": "Aktuální",
+    "max": "Max",
+    "tooltips": {
+      "viewOnMap": "Zobrazit na Mapě",
+      "editLocation": "Upravit Polohu",
+      "editName": "Upravit název",
+      "duplicate": "Duplikovat",
+      "view": "Zobrazit",
+      "share": "Sdílet",
+      "moveToWorkspace": "Přesunout do Pracovního Prostoru",
+      "profile": "Profil",
+      "documentation": "Dokumentace",
+      "howItWorks": "Jak to funguje",
+      "restartTour": "Restartovat prohlídku",
+      "feedback": "Zpětná vazba",
+      "theme": "Motiv",
+      "searchLocation": "Hledat místo",
+      "help": "Help"
+    },
+    "sidebar": {
+      "map": "Mapa",
+      "simulationReports": "Porovnání Modelů",
+      "simulations": "Analysis Runs"
+    },
+    "menu": {
+      "profile": "Profil",
+      "settings": "Nastavení",
+      "logout": "Odhlásit"
+    },
+    "modelActions": {
+      "viewResults": "Zobrazit Výsledky",
+      "downloadResults": "Stáhnout Výsledky",
+      "copyConfiguration": "Kopírovat Konfiguraci",
+      "editConfiguration": "Upravit Konfiguraci",
+      "cannotEditCompleted": "Nelze upravit dokončený model",
+      "moveToWorkspace": "Přesunout do Pracovního Prostoru",
+      "shareModel": "Sdílet Model",
+      "delete": "Smazat",
+      "cannotDelete": "Nelze smazat - pouze vlastník nebo expert může smazat",
+      "retryCalculation": "Opakovat Výpočet",
+      "startCalculation": "Zahájit Výpočet",
+      "engineNotAvailable": "Simulační motor není k dispozici"
+    },
+    "pagination": {
+      "showing": "Zobrazeno",
+      "to": "až",
+      "of": "z",
+      "results": "výsledků",
+      "noResults": "Žádné výsledky",
+      "loading": "Načítání...",
+      "perPage": "na stránku",
+      "previousPage": "Předchozí stránka",
+      "nextPage": "Další stránka"
+    },
+    "saved": "Saved",
+    "copied": "Zkopírováno",
+    "copy": "Kopírovat",
+    "done": "Hotovo"
+  },
+  "dashboard": {
+    "stats": {
+      "totalModels": "Celkem Modelů",
+      "draft": "Koncept",
+      "inProgress": "Probíhá",
+      "completed": "Dokončeno",
+      "published": "Publikováno",
+      "modelLimit": "Limit Modelů",
+      "unlimited": "Neomezeno"
+    }
+  },
+  "notifications": {
+    "title": "Oznámení",
+    "noNotifications": "Žádná oznámení",
+    "allCaughtUp": "Vše je přečteno!",
+    "markAllRead": "Označit vše jako přečtené",
+    "clearAll": "Vymazat vše",
+    "viewAll": "Zobrazit všechna oznámení",
+    "moreNotification": "+{{count}} další oznámení",
+    "moreNotifications": "+{{count}} dalších oznámení",
+    "details": "Podrobnosti",
+    "close": "Zavřít",
+    "scheduledFor": "Naplánováno na:",
+    "service": "Služba",
+    "last30Days": "Posledních 30 dní",
+    "unread": "{{count}} nepřečtených",
+    "loading": "Načítání oznámení...",
+    "confirmClearTitle": "Vymazat všechna oznámení?",
+    "confirmClearDescription": "Opravdu chcete vymazat všechna oznámení? Tuto akci nelze vrátit zpět.",
+    "confirmClearButton": "Vymazat vše",
+    "dismiss": "Zavřít",
+    "types": {
+      "success": "Úspěch",
+      "error": "Chyba",
+      "warning": "Varování",
+      "info": "Info",
+      "maintenance": "Údržba"
+    },
+    "totalExecutionTime": "Celková Doba Provádění",
+    "completedIn": "Úspěšně dokončeno za {{time}}",
+    "failedAfter": "Selhalo po {{time}}",
+    "cancelledAfter": "Zrušeno po {{time}}",
+    "messages": {
+      "modelCalculationComplete": "Výpočet modelu dokončen",
+      "modelCalculationCompleteMessage": "Váš model '{{modelName}}' byl úspěšně vypočítán a je připraven k zobrazení.",
+      "modelCalculationFailed": "Výpočet modelu selhal",
+      "modelCalculationFailedMessage": "Výpočet modelu '{{modelName}}' selhal. Zkuste to prosím znovu.",
+      "modelCalculationStarted": "Výpočet modelu zahájen",
+      "modelCalculationStartedMessage": "Výpočet modelu '{{modelName}}' byl zahájen."
+    }
+  },
+  "modelStatus": {
+    "draft": "Koncept",
+    "queue": "Ve Frontě",
+    "calculating": "Výpočet",
+    "running": "Běží",
+    "processing": "Zpracování",
+    "completed": "Dokončeno",
+    "published": "Publikováno",
+    "failed": "Selhalo",
+    "cancelled": "Zrušeno",
+    "modified": "Upraveno"
+  },
+  "auth": {
+    "signIn": "Přihlásit se",
+    "signUp": "Registrovat se",
+    "signOut": "Odhlásit se",
+    "signingIn": "Přihlašování...",
+    "email": "E-mail",
+    "password": "Heslo",
+    "confirmPassword": "Potvrdit heslo",
+    "enterYourEmail": "Zadejte svůj e-mail",
+    "enterYourPassword": "Zadejte své heslo",
+    "welcomeBack": "Vítejte zpět",
+    "signInToContinue": "Přihlaste se pro pokračování",
+    "or": "nebo",
+    "dontHaveAccount": "Nemáte účet?",
+    "alreadyHaveAccount": "Už máte účet?",
+    "forgotPassword": "Zapomněli jste heslo?",
+    "rememberMe": "Zapamatovat si mě",
+    "loginFailed": "Přihlášení se nezdařilo",
+    "verificationEmailSent": "Ověřovací e-mail odeslán",
+    "checkInboxVerify": "Zkontrolujte svou doručenou poštu a klikněte na ověřovací odkaz.",
+    "emailVerificationRequired": "Vyžadováno ověření e-mailu",
+    "sending": "Odesílání...",
+    "resendVerificationEmail": "Znovu odeslat ověřovací e-mail",
+    "protectedByEncryption": "Chráněno standardním šifrováním",
+    "createAccount": "Vytvořit Účet",
+    "personalInformation": "Osobní Informace",
+    "fullName": "Celé Jméno",
+    "enterFullName": "Zadejte své celé jméno",
+    "emailAddress": "E-mailová Adresa",
+    "enterEmailAddress": "Zadejte svou e-mailovou adresu",
+    "security": "Zabezpečení",
+    "confirmYourPassword": "Potvrďte své heslo",
+    "passwordRequirements": {
+      "title": "Požadavky na Heslo",
+      "minChars": "Alespoň 8 znaků",
+      "uppercase": "Jedno velké písmeno",
+      "lowercase": "Jedno malé písmeno",
+      "number": "Jedna číslice",
+      "specialChar": "Jeden speciální znak",
+      "hasSpaces": "Heslo obsahuje mezery na začátku nebo na konci"
+    },
+    "accessLevel": "Úroveň Přístupu",
+    "veryLow": "Velmi Nízká",
+    "low": "Nízká",
+    "intermediate": "Střední",
+    "manager": "Manažer",
+    "expert": "Expert",
+    "forgotPasswordTitle": "Zapomenuté Heslo",
+    "forgotPasswordDescription": "Zadejte svou e-mailovou adresu a pošleme vám instrukce pro reset hesla.",
+    "secureResetProcess": "Bezpečný proces resetování",
+    "sendResetInstructions": "Odeslat Instrukce",
+    "backToLogin": "Zpět na Přihlášení",
+    "cancel": "Zrušit",
+    "checkSpamFolder": "Pokud e-mail nevidíte, zkontrolujte prosím složku spamu nebo nevyžádané pošty.",
+    "checkYourEmail": "Zkontrolujte svůj e-mail",
+    "note": "Poznámka",
+    "sentResetInstructions": "Odeslali jsme pokyny pro obnovení hesla na vaši e-mailovou adresu.",
+    "signUpNow": "Zaregistrujte se nyní",
+    "createPassword": "Vytvořte heslo",
+    "creating": "Vytváření...",
+    "agreeToTerms": "Vytvořením účtu souhlasíte s našimi Podmínkami služby",
+    "signInHere": "Sign in here",
+    "sidePanel": {},
+    "consentText": "Souhlasím se zpracováním a uchováváním mých osobních údajů v souladu s",
+    "declarationOfConsent": "Prohlášením o souhlasu",
+    "and": "a",
+    "privacyPolicy": "Zásadami ochrany osobních údajů"
+  },
+  "workspace": {
+    "workspace": "Pracovní prostor",
+    "workspaces": "Pracovní prostory",
+    "selectWorkspace": "Vybrat pracovní prostor",
+    "defaultWorkspace": "Výchozí pracovní prostor",
+    "default": "Výchozí",
+    "shared": "Sdíleno",
+    "searchWorkspaces": "Hledat pracovní prostory...",
+    "noWorkspacesMatch": "Žádný pracovní prostor neodpovídá vašemu hledání",
+    "noWorkspacesFound": "Nebyly nalezeny žádné pracovní prostory",
+    "createNewWorkspace": "Vytvořit nový pracovní prostor",
+    "createDescription": "Vytvořte nový pracovní prostor pro organizaci vašich modelů a spolupráci s ostatními",
+    "createWorkspace": "Vytvořit pracovní prostor",
+    "renameWorkspace": "Přejmenovat pracovní prostor",
+    "renameDescription": "Zadejte nový název pro váš pracovní prostor",
+    "copyWorkspaceTitle": "Kopírovat pracovní prostor",
+    "copyDescription": "Vytvořit kopii tohoto pracovního prostoru s novým názvem",
+    "saveChanges": "Uložit změny",
+    "copyWorkspace": "Kopírovat pracovní prostor",
+    "sharedWithYouBy": "Sdíleno s vámi uživatelem {{user}}",
+    "sharedWithUsers": "Sdíleno s uživateli",
+    "sharedWithGroups": "Sdíleno se skupinami",
+    "anotherUser": "jiným uživatelem",
+    "noMembersYet": "Zatím žádní členové. Sdílejte s někým pro spolupráci!",
+    "noGroupsYet": "Zatím žádná skupina nemá přístup. Sdílejte se skupinou pro přístup všech členů!",
+    "removeMember": "Odstranit člena",
+    "removeGroup": "Odstranit skupinu",
+    "selectorHint": "Vyberte nebo vytvořte pracovní prostor pro organizaci modelů"
+  },
+  "model": {
+    "title": "Model",
+    "models": "Modely",
+    "newModel": "Nový model",
+    "editModel": "Upravit model",
+    "deleteModel": "Smazat model",
+    "modelName": "Název modelu",
+    "description": "Popis",
+    "status": "Stav",
+    "created": "Vytvořeno",
+    "updated": "Aktualizováno",
+    "running": "Běží",
+    "completed": "Dokončeno",
+    "failed": "Selhalo",
+    "pending": "Čeká",
+    "queued": "Ve frontě",
+    "runSimulation": "Spustit simulaci",
+    "viewResults": "Zobrazit výsledky",
+    "duplicate": "Duplikovat",
+    "export": "Exportovat",
+    "compare": "Porovnat",
+    "dashboard": "Panel modelů",
+    "searchModels": "Hledat modely...",
+    "allModels": "Všechny modely",
+    "modelGroups": "Skupiny modelů",
+    "loadingWorkspace": "Načítání pracovního prostoru...",
+    "loadingModels": "Načítání modelů...",
+    "loadingWorkspaceDescription": "Prosím počkejte, inicializujeme vaše preference pracovního prostoru.",
+    "selectWorkspace": "Vyberte nebo vytvořte pracovní prostor",
+    "refreshModels": "Obnovit seznam modelů",
+    "share": "Sdílet",
+    "shareDescription": "Sdílet \"{{title}}\" s jiným uživatelem",
+    "copy": "Kopírovat",
+    "rename": "Přejmenovat",
+    "delete": "Smazat",
+    "move": "Přesunout",
+    "shareWorkspace": "Sdílet tento pracovní prostor",
+    "copyWorkspace": "Vytvořit kopii tohoto pracovního prostoru",
+    "renameWorkspace": "Přejmenovat tento pracovní prostor",
+    "deleteWorkspace": "Smazat tento pracovní prostor",
+    "moveToWorkspace": "Přesunout do pracovního prostoru",
+    "noModelsFound": "Žádné modely nenalezeny",
+    "noModelsMatch": "Žádný model neodpovídá \"{{search}}\". Zkuste upravit vyhledávání.",
+    "createFirstModel": "Vytvořte svůj první model",
+    "selected": "vybráno",
+    "deleteSelected": "Smazat vybrané",
+    "moveSelected": "Přesunout vybrané",
+    "cannotDelete": "Nelze smazat - modely jsou zakázány nebo vám nepatří",
+    "cannotMove": "Nelze přesunout - modely vám nepatří",
+    "sharedCannotDelete": "Sdílené modely nelze smazat. Nejprve je zkopírujte",
+    "sharedCannotMove": "Sdílené modely nelze přesunout. Nejprve je zkopírujte",
+    "sharedCannotShare": "Sdílené modely nelze znovu sdílet. Nejprve je zkopírujte",
+    "limitReached": "Dosáhli jste limitu pro vytváření modelů",
+    "selectAll": "Vybrat vše",
+    "deselectAll": "Zrušit výběr",
+    "actions": "Akce",
+    "name": "Název modelu",
+    "owner": "Vlastník",
+    "workspace": "Pracovní prostor",
+    "draft": "Koncept",
+    "published": "Publikováno",
+    "total": "Celkem",
+    "queue": "Fronta",
+    "copyOf": "Kopie \"{{name}}\"",
+    "ownedBy": "Vlastník",
+    "parentModel": "Nadřazený model",
+    "parent": "Nadřazený",
+    "anotherModel": "jiného modelu",
+    "failedDefaultMessage": "Výpočet selhal - webová služba nedostupná nebo vypršel časový limit",
+    "waiting": "Čekání",
+    "queuedTooltip": "Váš model je ve frontě - simulační engine zpracovává jiné výpočty",
+    "compareRequires2Completed": "Vyberte přesně 2 dokončené modely k porovnání",
+    "bulkCopy": "Kopírovat modely",
+    "bulkCopyDescription": "Vytvořit kopie {{count}} vybraného modelu/modelů",
+    "bulkCopyFailed": "Některé modely se nepodařilo zkopírovat. Zkuste to znovu.",
+    "bulkCopySubmit": "Vytvořit kopie",
+    "calculate": "Vypočítat",
+    "cannotCalculate": "Nelze vypočítat – nejsou vybrány žádné vhodné modely",
+    "noWebserviceAvailable": "Simulační engine není k dispozici",
+    "cancelled": "Zrušeno",
+    "modified": "Upraveno",
+    "estimateApproximate": "Tyto běhy předcházejí sledování fronty, skutečné čekání bude delší.",
+    "estimateOverdue": "trvá déle než obvykle",
+    "estimateRemaining": "zbývá ~{{duration}}",
+    "estimateUnavailable": "Nedostatek srovnatelných úspěšných běhů pro odhad",
+    "canEdit": "Může upravovat",
+    "canView": "Může zobrazit",
+    "clearDateFilter": "Vymazat filtr dat",
+    "filterPeriod": "Filtrovat podle období",
+    "noDirectShares": "Tento model zatím nebyl s nikým sdílen.",
+    "peopleWithAccess": "Lidé s přímým přístupem",
+    "revokeAccess": "Odvolat",
+    "revokingAccess": "Odebírání přístupu…",
+    "revokeAccessFor": "Odebrat přístup pro {{email}}",
+    "tabs": {
+      "all": "Vše",
+      "pinned": "Připnuté",
+      "running": "Běží",
+      "completed": "Dokončeno",
+      "drafts": "Koncepty",
+      "failed": "Selhalo"
+    },
+    "area": "Oblast",
+    "period": "Období",
+    "lastActivity": "Poslední aktivita",
+    "pin": "Připnout nahoru",
+    "unpin": "Odepnout",
+    "recentlyCompleted": "Nový",
+    "recentlyCompletedTooltip": "Dokončeno {{time}}. Otevřete jej pro zobrazení výsledků.",
+    "versions_one": "{{count}} verze",
+    "versions_other": "{{count}} verzí",
+    "estimateBasis_one": "Na základě 1 srovnatelného běhu, který trval {{typical}}",
+    "estimateBasis_other": "Na základě {{count}} srovnatelných běhů, které obvykle trvají {{typical}}",
+    "view": "Zobrazit",
+    "run": "Spustit"
+  },
+  "userManagement": {
+    "groups": {
+      "selectOrCreate": "Vyberte nebo vytvořte skupinu",
+      "renameGroup": "Přejmenovat skupinu",
+      "enableGroup": "Aktivovat skupinu a její uživatele",
+      "disableGroup": "Deaktivovat skupinu a její uživatele",
+      "deleteGroup": "Smazat skupinu a všechny její uživatele",
+      "defaultCannotDelete": "Výchozí skupinu nelze smazat",
+      "default": "Výchozí",
+      "unknown": "Neznámý",
+      "defaultGroup": "Výchozí skupina",
+      "unknownGroup": "Neznámá skupina",
+      "changeUserGroup": "Změnit skupinu uživatele",
+      "groupAssignment": "Přiřazení skupiny",
+      "selectGroup": "Vyberte skupinu",
+      "changeGroup": "Změnit skupinu",
+      "renameGroupTitle": "Přejmenovat skupinu",
+      "groupName": "Název skupiny",
+      "newGroupName": "Nový název skupiny",
+      "enterNewGroupName": "Zadejte nový název skupiny",
+      "rename": "Přejmenovat",
+      "createNewGroup": "Vytvořit novou skupinu",
+      "createGroupDescription": "Vytvořte novou skupinu pro organizaci uživatelů ve vaší organizaci",
+      "createGroup": "Vytvořit skupinu",
+      "groupNameRequired": "Název skupiny je povinný",
+      "groupCreated": "Skupina úspěšně vytvořena",
+      "failedToCreateGroup": "Nepodařilo se vytvořit skupinu",
+      "groupNamePlaceholder": "např. Hasiči, Záchranná služba",
+      "searchGroups": "Hledat skupiny...",
+      "allGroups": "Všechny skupiny",
+      "viewUsersFromAllGroups": "Zobrazit uživatele ze všech skupin",
+      "noGroups": "Žádné skupiny",
+      "loading": "Načítání...",
+      "noGroupsFound": "Žádné skupiny nenalezeny",
+      "noGroupsMatchSearch": "Žádné skupiny neodpovídají vašemu hledání",
+      "bulkChangeGroup": "Přesunout uživatele do skupiny",
+      "moveUsers": "Přesunout uživatele"
+    },
+    "title": "Správa uživatelů",
+    "subtitle": "Spravujte uživatele, skupiny a oprávnění",
+    "searchPlaceholder": "Hledat jméno nebo e-mail...",
+    "refresh": "Obnovit",
+    "addNewUser": "Přidat nového uživatele",
+    "add": "Přidat",
+    "editUser": "Upravit uživatele",
+    "createUser": "Vytvořit uživatele",
+    "updateUser": "Aktualizovat uživatele",
+    "loadingUsers": "Načítání uživatelů...",
+    "noUsersFound": "Nebyli nalezeni žádní uživatelé",
+    "noUsersInGroup": "Ve vaší skupině nebyli nalezeni žádní uživatelé. Kontaktujte administrátora pro přiřazení uživatelů do vaší skupiny.",
+    "noUsersMatch": "Žádný uživatel neodpovídá \"{{search}}\"",
+    "noUsersMatchSearch": "Žádný uživatel neodpovídá \"{{search}}\"",
+    "addFirstUser": "Přidejte svého prvního uživatele a začněte.",
+    "dialog": {
+      "editTitle": "Upravit uživatele",
+      "addTitle": "Přidat nového uživatele",
+      "updateUser": "Aktualizovat uživatele",
+      "createUser": "Vytvořit uživatele"
+    },
+    "table": {
+      "user": "Uživatel",
+      "accessLevel": "Úroveň přístupu",
+      "group": "Skupina",
+      "emailVerified": "E-mail ověřen",
+      "actions": "Akce"
+    },
+    "emailStatus": {
+      "verified": "Ověřeno",
+      "unverified": "Neověřeno"
+    },
+    "actions": {
+      "changeGroup": "Změnit skupinu",
+      "enableUser": "Uživatel je deaktivován — klikněte pro aktivaci",
+      "disableUser": "Uživatel je aktivován — klikněte pro deaktivaci",
+      "editUser": "Upravit uživatele",
+      "deleteUser": "Smazat uživatele",
+      "copyEmail": "Kopírovat e-mail",
+      "copied": "Zkopírováno!",
+      "bulkDelete": "Odstranit vybrané",
+      "bulkMoveToGroup": "Přesunout do skupiny",
+      "deselectAll": "Zrušit výběr všeho",
+      "selectAll": "Vybrat vše",
+      "selected": "{{count}} vybráno",
+      "apiTokens": "API tokeny",
+      "apiTokensActive": "Přístup k API povolen — spravovat tokeny"
+    },
+    "notifications": {
+      "userCreated": "Uživatel úspěšně vytvořen!",
+      "userUpdated": "Uživatel úspěšně aktualizován!",
+      "userDeleted": "Uživatel úspěšně smazán!",
+      "userDisabled": "Uživatel úspěšně deaktivován!",
+      "userEnabled": "Uživatel úspěšně aktivován!",
+      "groupDisabled": "Skupina \"{{name}}\" deaktivována",
+      "groupEnabled": "Skupina \"{{name}}\" aktivována",
+      "groupDeleted": "Skupina \"{{name}}\" smazána",
+      "groupRenamed": "Skupina úspěšně přejmenována na \"{{name}}\"",
+      "userMovedToGroup": "Uživatel přesunut do nové skupiny a odhlášen. Musí se znovu přihlásit pro přístup k novému pracovnímu prostoru.",
+      "failedToCreate": "Nepodařilo se vytvořit uživatele",
+      "failedToUpdate": "Nepodařilo se aktualizovat uživatele",
+      "failedToDelete": "Nepodařilo se smazat uživatele",
+      "failedToDisable": "Nepodařilo se deaktivovat uživatele",
+      "failedToEnable": "Nepodařilo se aktivovat uživatele",
+      "failedToFetch": "Nepodařilo se načíst uživatele",
+      "failedToUpdateGroup": "Nepodařilo se aktualizovat skupinu uživatele",
+      "failedToRenameGroup": "Nepodařilo se přejmenovat skupinu",
+      "failedToCopyEmail": "Nepodařilo se zkopírovat e-mail",
+      "pleaseLogIn": "Přihlaste se pro zobrazení uživatelů",
+      "passwordMismatch": "Heslo a potvrzení se musí shodovat",
+      "bulkDeletePartial": "{{succeeded}} z {{total}} uživatelů bylo odstraněno. {{failed}} selhalo.",
+      "bulkDeleted": "{{count}} uživatelů bylo úspěšně odstraněno",
+      "bulkGroupChangeFailed": "Nepodařilo se přesunout uživatele do skupiny",
+      "bulkGroupChanged": "{{count}} uživatelů bylo úspěšně přesunuto do nové skupiny"
+    },
+    "confirmations": {
+      "disableUserDescription": "Uživatel se nebude moci přihlásit.",
+      "enableUserDescription": "Uživatel se bude moci znovu přihlásit.",
+      "disableGroupDescription": "Deaktivace skupiny deaktivuje všechny její uživatele.",
+      "enableGroupDescription": "Aktivace skupiny aktivuje všechny její uživatele.",
+      "deleteGroupDescription": "Tím smažete skupinu a všechny její uživatele. Tuto akci nelze vrátit.",
+      "bulkDeleteDescription": "Tímto trvale odstraníte {{count}} vybraných uživatelů. Tuto akci nelze vrátit zpět."
+    }
+  },
+  "profile": {
+    "title": "Nastavení profilu",
+    "subtitle": "Spravujte své osobní údaje a předvolby účtu",
+    "goBack": "Zpět",
+    "loadingProfile": "Načítání vašeho profilu...",
+    "defaultUser": "Uživatel",
+    "accessLevel": "Úroveň přístupu",
+    "notSpecified": "Nespecifikováno",
+    "personalInfo": "Osobní informace",
+    "personalInfoDescription": "Aktualizujte své profilové údaje níže",
+    "readOnly": "pouze pro čtení",
+    "saving": "Ukládání...",
+    "saveChanges": "Uložit změny",
+    "fields": {
+      "fullName": "Celé jméno",
+      "email": "E-mailová adresa"
+    },
+    "placeholders": {
+      "fullName": "Zadejte své celé jméno"
+    },
+    "accessLevels": {
+      "basic": "Základní",
+      "basicDescription": "Standardní přístup k základním funkcím",
+      "intermediate": "Střední",
+      "intermediateDescription": "Rozšířený přístup s pokročilými funkcemi",
+      "expert": "Expert",
+      "expertDescription": "Plný přístup ke všem funkcím"
+    },
+    "notifications": {
+      "updated": "Profil úspěšně aktualizován!",
+      "failedToLoad": "Nepodařilo se načíst profil. Zkuste to prosím znovu.",
+      "failedToUpdate": "Nepodařilo se aktualizovat profil. Zkuste to prosím znovu."
+    },
+    "password": {
+      "title": "Change Password",
+      "description": "Update the password you use to sign in",
+      "current": "Current Password",
+      "new": "New Password",
+      "confirm": "Confirm New Password",
+      "currentPlaceholder": "Enter your current password",
+      "newPlaceholder": "Enter a new password",
+      "confirmPlaceholder": "Re-enter your new password",
+      "submit": "Update Password",
+      "updating": "Updating...",
+      "updated": "Password changed successfully!",
+      "failed": "Failed to change password. Please try again.",
+      "requirements": {
+        "minChars": "At least 8 characters",
+        "uppercase": "One uppercase letter",
+        "lowercase": "One lowercase letter",
+        "number": "One number",
+        "specialChar": "One special character"
+      },
+      "requirementsNotMet": "Password does not meet all requirements",
+      "mismatch": "Passwords do not match"
+    }
+  },
+  "simulation": {
+    "progress": {
+      "queued": "Queued",
+      "assessing": "Assessing",
+      "done": "Done"
+    }
+  },
+  "mapLayers": {
+    "title": "Mapové vrstvy",
+    "description": "Nakonfigurovat vzhled mapy a datové vrstvy",
+    "baseLayers": {
+      "title": "Základní vrstvy",
+      "description": "Vyberte styl podkladové mapy",
+      "osmStandard": "Standardní vrstva OpenStreetMap",
+      "osmHumanitarian": "Humanitární styl OpenStreetMap",
+      "cartoPositron": "Světlá základní mapa od CartoDB",
+      "cartoVoyager": "Podrobná základní mapa od CartoDB",
+      "openTopoMap": "Topografická stylová mapa",
+      "maplibreDark": "Dark vector basemap",
+      "maplibreVoyager": "Detailed vector basemap"
+    },
+    "dataLayers": {
+      "title": "Datové vrstvy"
+    },
+    "tooltip": "Base Maps"
+  },
+  "tour": {
+    "product": {
+      "welcome": {
+        "tip": "Tato prohlídka se zobrazí pouze jednou. Můžete ji kdykoli přeskočit nebo restartovat z postranního panelu."
+      },
+      "newAssessment": {
+        "title": "Vytvořit Nové Hodnocení",
+        "tip": "Když zde kliknete, vstoupíte do speciální prohlídky procesu výběru oblasti!"
+      },
+      "profile": {
+        "title": "Profil a Nastavení",
+        "description": "Přístup k vašemu profilu, nastavení účtu a uživatelským preferencím. Spravujte svůj účet a další možnosti."
+      },
+      "navigation": {
+        "title": "Administrátorský panel",
+        "description": "Spravujte pracovní prostory, uživatele a všechny modely na platformě. Viditelné pouze pro administrátory."
+      },
+      "simulations": {},
+      "map": {
+        "title": "Interaktivní Mapa"
+      },
+      "reports": {
+        "title": "Zprávy o Simulaci",
+        "description": "Prohlížejte podrobné zprávy o simulaci, exportujte data a analyzujte historické trendy a vzorce."
+      },
+      "layers": {
+        "title": "Vrstvy Mapy",
+        "description": "Ovládejte vrstvy mapy a překryvy. Vybírejte základní mapy, přepínejte datové vrstvy a přizpůsobujte zobrazení mapy."
+      },
+      "documentation": {
+        "title": "Dokumentace",
+        "description": "Otevřete dokumentaci platformy pro podrobné průvodce, API reference a osvědčené postupy.",
+        "tip": "Otevře se v nové záložce, abyste si zachovali současný pracovní postup."
+      },
+      "feedback": {
+        "title": "Zpětná Vazba",
+        "description": "Sdílejte s námi své myšlenky a návrhy. Vaše zpětná vazba pomáhá zlepšovat platformu."
+      },
+      "complete": {
+        "title": "Vše je Připraveno!",
+        "nextSteps": "Další Kroky",
+        "restartTour": "Restartovat Prohlídku",
+        "restartTourDescription": "Tuto prohlídku můžete kdykoli restartovat z postranního panelu."
+      },
+      "dashboard": {
+        "tabsOverview": {
+          "title": "Filtrování podle stavu",
+          "description": "Tyto záložky filtrují vaše modely podle stavu, s živými počty pro každou skupinu."
+        },
+        "tabAll": {
+          "title": "Všechny modely",
+          "description": "Každá rodina modelů v tomto pracovním prostoru, s připnutými rodinami nahoře."
+        },
+        "tabPinned": {
+          "title": "Připnuté",
+          "description": "Modely, které jste připnuli. Připnutí libovolné verze udrží celou rodinu nahoře."
+        },
+        "tabRunning": {
+          "title": "Běžící",
+          "description": "Modely ve frontě, ve výpočtu, běžící nebo zpracovávané. Seznam se během běhu aktualizuje živě."
+        },
+        "tabCompleted": {
+          "title": "Dokončené",
+          "description": "Dokončené a publikované modely, připravené k otevření a prozkoumání."
+        },
+        "tabDrafts": {
+          "title": "Koncepty",
+          "description": "Koncepty a upravené modely, které ještě potřebují spustit."
+        },
+        "tabFailed": {
+          "title": "Selhaly",
+          "description": "Selhané nebo zrušené běhy. Prohlédněte si chybu a až budete připraveni, spusťte je znovu."
+        },
+        "search": {
+          "title": "Hledání a období",
+          "description": "Hledejte názvy modelů a filtrujte podle období simulace. Výsledky zahrnují i starší verze rodiny."
+        },
+        "familyRow": {
+          "title": "Jeden řádek na model",
+          "description": "Každý řádek je rodina modelů s původním modelem nahoře. Odznak verzí rozbalí kopie, od nejstarší."
+        },
+        "columns": {
+          "title": "Sloupce"
+        },
+        "pin": {
+          "title": "Připnout modely",
+          "description": "Připněte model, aby jeho rodina zůstala nahoře v každé záložce."
+        },
+        "primaryAction": {
+          "title": "Hlavní akce",
+          "description": "Zobrazte dokončené modely nebo spusťte koncepty přímo z řádku."
+        },
+        "moreMenu": {
+          "title": "Další akce",
+          "description": "Upravte, kopírujte, stáhněte, sdílejte, přesuňte do pracovního prostoru nebo smažte z této nabídky."
+        },
+        "newBadge": {
+          "title": "Nové výsledky",
+          "description": "Nedávno dokončené modely, které jste ještě neotevřeli, jsou označeny jako nové."
+        },
+        "refresh": {
+          "title": "Obnovit, sdílet a kopírovat",
+          "description": "Obnovit znovu načte seznam modelů (běžící modely se obnovují i samy). Sdílet zpřístupní tento prostor vašemu týmu a Kopírovat jej zduplikuje i s modely."
+        }
+      },
+      "ui": {
+        "stepOf": "Krok {{current}} z {{total}}",
+        "skipTour": "Přeskočit prohlídku",
+        "finish": "Dokončit",
+        "whatsNew": "Nové",
+        "sections": {
+          "welcome": "Vítejte",
+          "navigation": "Navigace",
+          "dashboard": "Řídicí panel",
+          "tabs": "Záložky",
+          "rows": "Řádky",
+          "finish": "Dokončit",
+          "tools": "Nástroje"
+        },
+        "chips": {
+          "filters": "Filtry"
+        }
+      },
+      "workspace": {
+        "title": "Pracovní prostor",
+        "description": "Modely patří do pracovního prostoru. Zde prostor přepnete nebo vytvoříte nový pro organizaci projektů a sdílení s týmem."
+      },
+      "demo": {
+        "example": "Ukázka",
+        "justNow": "Právě teď"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Prohlédněte si otevřený zdrojový kód a nahlaste problémy na GitHubu."
+      },
+      "help": {
+        "title": "Nápověda",
+        "description": "Vše na jednom místě: otevřete dokumentaci, kdykoli znovu spusťte tohoto průvodce nebo nám pošlete zpětnou vazbu."
+      },
+      "language": {
+        "title": "Jazyk",
+        "description": "Změňte jazyk rozhraní. Vaše volba se uloží v tomto prohlížeči."
+      },
+      "notifications": {
+        "title": "Oznámení",
+        "description": "Zde uvidíte dokončené výpočty, sdílení a systémová oznámení."
+      },
+      "version": {
+        "title": "Co je nového",
+        "description": "Klikněte na číslo verze a zobrazte nejnovější funkce a vylepšení."
+      }
+    },
+    "areaSelect": {
+      "welcome": {
+        "tip": "Naučíte se, jak nakonfigurovat model, kreslit oblasti a vytvořit simulaci."
+      },
+      "modelName": {
+        "title": "Název Modelu"
+      },
+      "dateRange": {
+        "title": "Období Simulace"
+      },
+      "mapContainer": {
+        "title": "Interaktivní Mapa",
+        "tip": "Můžete přibližovat a posouvat mapu pro prozkoumání různých oblastí"
+      },
+      "search": {
+        "title": "Vyhledávání Lokace",
+        "description": "Použijte toto vyhledávací pole pro rychlé nalezení konkrétních lokací podle názvu nebo adresy.",
+        "tip": "Zkuste zadat název lokace pro zobrazení okamžitých výsledků"
+      },
+      "save": {
+        "title": "Vytvořit Simulaci",
+        "tip": "Všechna pole musí být vyplněna, než budete moci uložit"
+      },
+      "calculationStatus": {
+        "title": "Calculation status",
+        "description": "This line tells you whether available dates are loading, unavailable, errored, or ready for selection.",
+        "tip": "If this shows a blocker, the continue button stays disabled until the date selection is valid."
+      },
+      "finalReview": {
+        "title": "Validation status"
+      },
+      "saveSummary": {
+        "title": "Save summary",
+        "description": "This final summary shows the values that will be saved with the model and sent to the calculation workflow."
+      },
+      "ui": {
+        "sections": {
+          "intro": "Úvod",
+          "setup": "Nastavení",
+          "map": "Mapa",
+          "layers": "Vrstvy",
+          "review": "Kontrola"
+        }
+      }
+    },
+    "buttons": {
+      "skip": "Přeskočit",
+      "back": "Zpět",
+      "next": "Další",
+      "finish": "Dokončit",
+      "close": "Zavřít"
+    }
+  },
+  "feedback": {
+    "title": "Odeslat zpětnou vazbu",
+    "subtitle": "Pomozte nám zlepšit váš zážitek",
+    "category": "Kategorie zpětné vazby",
+    "categories": {
+      "bug": "Hlášení chyby",
+      "bugDescription": "Něco nefunguje",
+      "feature": "Požadavek na funkci",
+      "featureDescription": "Navrhnout novou funkcionalitu",
+      "improvement": "Vylepšení",
+      "improvementDescription": "Vylepšit stávající funkce",
+      "general": "Obecné",
+      "generalDescription": "Ostatní zpětná vazba"
+    },
+    "subject": "Předmět",
+    "subjectPlaceholder": "např. Problém s načítáním mapy, Návrh funkce...",
+    "message": "Vaše zpětná vazba",
+    "messagePlaceholder": "Popište prosím podrobně vaši zpětnou vazbu, návrhy nebo problémy...",
+    "image": "Příloha (Volitelné)",
+    "imageDropzone": "Klikněte pro nahrání nebo přetáhněte",
+    "imageFormats": "PNG, JPG, GIF do 15MB",
+    "imagePreview": "Náhled obrázku",
+    "removeImage": "Odstranit obrázek",
+    "rating": "Celkové hodnocení",
+    "ratingDescription": "Jak byste ohodnotili svou zkušenost?",
+    "submit": "Odeslat zpětnou vazbu",
+    "submitting": "Odesílání...",
+    "submittingMessage": "Odesílání vaší zpětné vazby...",
+    "gdprNotice": "Vaše zpětná vazba je zpracována v souladu s nařízením GDPR.",
+    "success": {
+      "title": "Zpětná vazba odeslána!",
+      "message": "Děkujeme za zpětnou vazbu. Zkontrolujeme ji a v případě potřeby vás budeme kontaktovat.",
+      "reference": "Reference"
+    },
+    "errors": {
+      "loginRequired": "Pro odeslání zpětné vazby se prosím přihlaste",
+      "submitFailed": "Odeslání zpětné vazby se nezdařilo. Zkuste to prosím později.",
+      "invalidImageType": "Vyberte prosím platný obrazový soubor (PNG, JPG, GIF)",
+      "imageTooLarge": "Velikost obrázku musí být menší než 15MB",
+      "payloadTooLarge": "The attachment is too large. Please use smaller images."
+    },
+    "myFeedback": {
+      "title": "Moje zpětná vazba",
+      "subtitle": "Sledujte stav vašich odeslaných zpětných vazeb",
+      "empty": "Zatím jste neodeslali žádnou zpětnou vazbu",
+      "adminResponse": "Odpověď administrátora",
+      "submittedOn": "Odesláno dne",
+      "autoDeleteNotice": "Tato položka bude automaticky odstraněna za {days} dní",
+      "autoDeleteSoon": "Tato položka bude brzy automaticky odstraněna",
+      "showHistory": "Moje odeslání",
+      "hideHistory": "Skrýt",
+      "status": {
+        "pending": "Čeká na vyřízení",
+        "in_progress": "Zpracovává se",
+        "resolved": "Vyřešeno",
+        "closed": "Uzavřeno"
+      }
+    },
+    "write": "Write",
+    "preview": "Preview",
+    "markdownSupported": "Markdown supported",
+    "words": "words",
+    "chars": "chars",
+    "previewEmpty": "Nothing to preview"
+  },
+  "settings": {
+    "title": "Nastavení",
+    "subtitle": "Přizpůsobte si svůj zážitek a preference",
+    "configuration": "Konfigurace",
+    "goBack": "Zpět",
+    "tabs": {
+      "general": "Obecné",
+      "display": "Zobrazení",
+      "notifications": "Oznámení",
+      "advanced": "Pokročilé",
+      "privacyTerms": "Soukromí a podmínky"
+    },
+    "stats": {
+      "language": "Jazyk",
+      "theme": "Téma",
+      "notifications": "Oznámení",
+      "accessLevel": "Úroveň Přístupu",
+      "enabled": "Povoleno",
+      "disabled": "Zakázáno",
+      "system": "Systém",
+      "user": "Uživatel"
+    },
+    "language": {
+      "title": "Jazyk",
+      "subtitle": "Jazyk rozhraní"
+    },
+    "mapLocation": {
+      "title": "Poloha Mapy",
+      "subtitle": "Uložené pozice",
+      "syncing": "Synchronizace...",
+      "searchPlaceholder": "Vyhledat polohu...",
+      "current": "Aktuální",
+      "noLocation": "Není nastavena žádná poloha",
+      "savedLocations": "Uložené Polohy",
+      "clearAll": "Smazat vše",
+      "syncNote": "Polohy se synchronizují s vaším účtem"
+    },
+    "locationSearch": {
+      "placeholder": "Vyhledat polohu...",
+      "searching": "Vyhledávání...",
+      "noResults": "Nebyly nalezeny žádné polohy",
+      "searchFailed": "Vyhledávání selhalo"
+    },
+    "dataDisplay": {
+      "title": "Data a Zobrazení",
+      "subtitle": "Jednotky a formátování",
+      "distance": "Vzdálenost",
+      "kilometers": "Kilometry",
+      "miles": "Míle",
+      "dataRefresh": "Obnovení Dat",
+      "min": "min",
+      "textSize": "Velikost textu",
+      "textSizes": {
+        "large": "Velký",
+        "normal": "Normální",
+        "small": "Malý"
+      }
+    },
+    "notifications": {
+      "title": "Oznámení",
+      "subtitle": "Preference upozornění",
+      "email": "Email",
+      "notifyWhenComplete": "Oznámit po dokončení",
+      "browser": "Prohlížeč",
+      "enabled": "Povoleno",
+      "blocked": "Blokováno",
+      "systemAlerts": "Systémová upozornění"
+    },
+    "sendNotification": {
+      "title": "Odeslat Oznámení",
+      "subtitle": "Systémová oznámení",
+      "selectService": "Vybrat službu...",
+      "services": {
+        "webService": "Webová Služba",
+        "geoServer": "GeoServer",
+        "database": "Databáze",
+        "api": "API",
+        "mapService": "Mapová Služba"
+      },
+      "messagePlaceholder": "Zadejte text oznámení...",
+      "sending": "Odesílání...",
+      "sendNotification": "Odeslat Oznámení",
+      "sent": "Oznámení odesláno!",
+      "failedToSend": "Odeslání selhalo"
+    },
+    "polygonLimits": {
+      "title": "Limity Polygonů",
+      "yourLimit": "Váš limit",
+      "unlimited": "Neomezený",
+      "byRole": "Podle Role",
+      "reset": "Resetovat",
+      "resetSuccess": "Všechny limity obnoveny na výchozí hodnoty",
+      "resetFailed": "Nepodařilo se resetovat limity",
+      "limitUpdated": "Limit {{label}} aktualizován na {{value}}",
+      "failedToUpdate": "Nepodařilo se aktualizovat limit {{label}}",
+      "contactAdmin": "Kontaktujte administrátora pro vyšší limity.",
+      "levels": {
+        "basic": "Základní",
+        "intermediate": "Střední",
+        "manager": "Manažer",
+        "expert": "Expert"
+      }
+    },
+    "accessLevels": {
+      "basic": "Základní",
+      "expert": "Expert",
+      "intermediate": "Pokročilý",
+      "manager": "Manažer"
+    },
+    "modelCreation": {
+      "checking": "Kontrola předvolby...",
+      "description": "Určuje, zda se před průvodcem tvorbou modelu zobrazí úvodní karta s nastavením.",
+      "enabled": "Úvod je zapnutý",
+      "enabledHint": "Shrnutí se zobrazí před vytvořením nového modelu.",
+      "enabledMessage": "Úvodní karta se zobrazí při příštím vytváření modelu.",
+      "guidancePreferences": "Předvolby nápovědy",
+      "hidden": "Úvod je skrytý",
+      "hiddenHint": "Zapněte jej znovu, když uživatelé potřebují shrnutí před vytvořením modelu.",
+      "loadError": "Tuto předvolbu se nepodařilo načíst.",
+      "sectionTitle": "Tvorba modelů",
+      "showAgain": "Zobrazit znovu",
+      "title": "Úvodní karta modelu",
+      "updateError": "Předvolbu úvodní karty se nepodařilo aktualizovat."
+    }
+  },
+  "map": {
+    "zoomIn": "Přiblížit",
+    "zoomOut": "Oddálit",
+    "centerMap": "Vycentrovat mapu",
+    "fitToExtent": "Přizpůsobit rozsahu",
+    "resetTopDown": "Obnovit pohled shora",
+    "rightClickRotate": "Pravé tlačítko + táhnout pro otočení",
+    "regions": "regiony",
+    "myModels": "moje modely",
+    "grids": "mřížky",
+    "countries": "země",
+    "bookmarks": {
+      "namePlaceholder": "Název záložky...",
+      "none": "Zatím žádné záložky",
+      "saveCurrentView": "Uložit aktuální pohled",
+      "title": "Záložky mapy"
+    },
+    "latestModel": "nejnovější model",
+    "legend": {
+      "title": "Obrysy mapy",
+      "yourModels": "Zelená plocha: váš nejnovější model — vyberte jej pro zobrazení výsledků",
+      "availableRegions": "Přerušovaná indigová: dostupné správní regiony",
+      "zoomDetail": "Podkladová mapa odhalí více detailů při přiblížení."
+    },
+    "newModelShortcut": "Zkratka: N",
+    "privacyRequired": "Pro zobrazení mapy přijměte podmínky o datech a soukromí"
+  },
+  "privacy": {
+    "dataAndPrivacy": "Data a soukromí",
+    "acceptTerms": "Přijmout podmínky ochrany soukromí",
+    "openSettings": "Otevřít nastavení dat a soukromí",
+    "dialogTitle": "Zpracování dat a soukromí",
+    "cartoDescription": "Pro poskytování našich služeb využíváme CARTO a OSMF jako poskytovatele mapových služeb třetí strany.",
+    "sharedWithCarto": "Přijetím budou s CARTO a OSMF sdíleny následující údaje:",
+    "ipAddress": "IP adresa",
+    "browserDeviceType": "Prohlížeč + typ zařízení",
+    "timeOfRequest": "Čas požadavku",
+    "localStorageDescription": "Kromě toho používáme místní úložiště k zapamatování vašich preferencí a sledování, zda jste na tomto zařízení viděli úvodní obsah.",
+    "reviewPolicies": "Pro více informací si prosím přečtěte příslušné zásady ochrany osobních údajů:",
+    "cartoPolicy": "Zásady ochrany osobních údajů Carto",
+    "osmfPolicy": "Zásady ochrany osobních údajů OSMF",
+    "deny": "Odmítnout",
+    "accept": "Přijmout"
+  },
+  "forms": {
+    "user": {
+      "personalInfo": {
+        "title": "Osobní Informace",
+        "description": "Základní údaje uživatele a kontaktní informace"
+      },
+      "security": {
+        "title": "Zabezpečení",
+        "description": "Bezpečnostní údaje účtu"
+      },
+      "fields": {
+        "fullName": "Celé Jméno",
+        "email": "E-mailová Adresa",
+        "accessLevel": "Úroveň Přístupu",
+        "emailVerified": "E-mail Ověřen",
+        "password": "Heslo",
+        "confirmPassword": "Potvrdit Heslo",
+        "modelLimit": "Limit Modelů"
+      },
+      "placeholders": {
+        "fullName": "Zadejte celé jméno",
+        "email": "Zadejte e-mailovou adresu",
+        "password": "Zadejte heslo",
+        "confirmPassword": "Potvrďte heslo",
+        "modelLimit": "Ponechte prázdné pro výchozí hodnotu"
+      },
+      "descriptions": {
+        "emailVerified": "Označit e-mail jako ověřený",
+        "modelLimit": "Vlastní limit pro vytváření modelů (0 = neomezeno, prázdné = výchozí)"
+      },
+      "accessLevels": {
+        "veryLow": "Velmi Nízký Přístup",
+        "intermediate": "Střední Přístup",
+        "manager": "Manažer (Skupinový Přístup)",
+        "expert": "Expert (Plný Přístup)"
+      },
+      "validation": {
+        "passwordLength": "Heslo musí mít alespoň 8 znaků",
+        "nameRequired": "Jméno je povinné",
+        "emailRequired": "E-mail je povinný",
+        "emailInvalid": "Zadejte platnou e-mailovou adresu",
+        "accessLevelRequired": "Úroveň přístupu je povinná",
+        "passwordRequired": "Heslo je povinné",
+        "confirmPasswordRequired": "Potvrzení hesla je povinné",
+        "passwordsMismatch": "Hesla se neshodují"
+      }
+    },
+    "webservice": {
+      "serviceInfo": {
+        "title": "Informace o Službě",
+        "description": "Základní identifikace a metadata webové služby"
+      },
+      "connectionDetails": {
+        "title": "Detaily Připojení",
+        "description": "Konfigurace síťového připojení a koncového bodu"
+      },
+      "performanceSettings": {
+        "title": "Nastavení Výkonu",
+        "description": "Konfigurace kapacity a výkonu služby"
+      },
+      "fields": {
+        "serviceName": "Název Služby",
+        "protocol": "Protokol",
+        "ipAddress": "IP Adresa",
+        "port": "Port",
+        "endpoint": "Cesta Koncového Bodu",
+        "autoScaling": "Auto Škálování",
+        "maxConcurrency": "Max Souběžných Požadavků",
+        "initialStatus": "Počáteční Stav"
+      },
+      "placeholders": {
+        "serviceName": "Zadejte název služby",
+        "ipAddress": "např., 192.168.1.100"
+      },
+      "descriptions": {
+        "serviceName": "Čitelný název pro webovou službu",
+        "autoScaling": "Povolit automatické škálování na základě zátěže",
+        "maxConcurrency": "Maximální počet souběžných požadavků (1-100)"
+      },
+      "statusOptions": {
+        "active": "Aktivní",
+        "inactive": "Neaktivní",
+        "maintenance": "Údržba"
+      },
+      "validation": {
+        "ipInvalid": "Zadejte platnou IP adresu",
+        "portRange": "Port musí být mezi 1 a 65535",
+        "concurrencyRange": "Max souběžnost musí být mezi 1 a 100",
+        "nameRequired": "Název služby je povinný",
+        "ipRequired": "IP adresa je povinná",
+        "portRequired": "Port je povinný"
+      }
+    },
+    "workspace": {
+      "details": {
+        "title": "Detaily",
+        "description": "Zadejte název pracovního prostoru a volitelný popis"
+      },
+      "fields": {
+        "name": "Název Pracovního Prostoru",
+        "description": "Popis"
+      },
+      "placeholders": {
+        "name": "Zadejte název pracovního prostoru",
+        "description": "Zadejte popis pracovního prostoru (volitelné)"
+      },
+      "descriptions": {
+        "name": "Jedinečný název pro váš pracovní prostor",
+        "description": "Volitelný popis účelu pracovního prostoru"
+      },
+      "validation": {
+        "nameRequired": "Název pracovního prostoru je povinný"
+      }
+    },
+    "moveModel": {
+      "destination": {
+        "title": "Cíl",
+        "description": "Vyberte cílový pracovní prostor pro model"
+      },
+      "fields": {
+        "targetWorkspace": "Cílový Pracovní Prostor"
+      },
+      "placeholders": {
+        "selectWorkspace": "Vyberte pracovní prostor"
+      },
+      "descriptions": {
+        "targetWorkspace": "Vyberte pracovní prostor, do kterého přesunout model"
+      },
+      "defaultWorkspace": "Výchozí Pracovní Prostor",
+      "errorMove": "Model se nepodařilo přesunout. Zkuste to znovu.",
+      "errorMovePlural": "Modely se nepodařilo přesunout. Zkuste to znovu.",
+      "errorSelect": "Vyberte pracovní prostor",
+      "noWorkspaces": "Žádné další pracovní prostory nejsou k dispozici. Nejprve vytvořte nový pracovní prostor.",
+      "title": "Přesunout model",
+      "titlePlural": "Přesunout modely"
+    },
+    "shareModel": {
+      "title": "Sdílet s Jednotlivým Uživatelem",
+      "description": "Zadejte e-mailovou adresu uživatele, se kterým chcete sdílet",
+      "emailDescription": "Uživatel získá přístup k tomuto modelu"
+    },
+    "bulkCopy": {
+      "title": "Počet kopií",
+      "description": "Určete, kolik kopií vytvořit pro každý vybraný model",
+      "fields": {
+        "copyCount": "Počet kopií",
+        "copyCountDescription": "Každý vybraný model bude tolikrát zduplikován"
+      },
+      "validation": {
+        "min": "Je vyžadována alespoň 1 kopie",
+        "max": "Maximálně 10 kopií povoleno",
+        "integer": "Musí být celé číslo"
+      }
+    }
+  },
+  "onboarding": {
+    "welcome": {
+      "title": "Vítejte!",
+      "description": "Nastavme vaše preference pro začátek",
+      "intro": "Věnujme chvíli nastavení vašich preferencí. To nám pomůže přizpůsobit váš zážitek a poskytnout vám nejrelevantnější informace.",
+      "step1": "Vyberte svůj preferovaný jazyk",
+      "step2": "Nastavte předvolby mapy a oznámení",
+      "step3": "Nakonfigurujte nastavení oznámení",
+      "timeNote": "Bude to trvat jen minutu"
+    },
+    "language": {
+      "title": "Jazyková preference",
+      "description": "Vyberte svůj preferovaný jazyk pro aplikaci"
+    },
+    "map": {
+      "title": "Preference mapy",
+      "description": "Nakonfigurujte výchozí umístění mapy"
+    },
+    "notifications": {
+      "title": "Preference oznámení",
+      "description": "Vyberte, jak chcete dostávat upozornění a aktualizace"
+    },
+    "navigation": {
+      "previous": "Předchozí",
+      "next": "Další",
+      "complete": "Dokončit",
+      "completing": "Dokončování...",
+      "skip": "Přeskočit"
+    }
+  },
+  "newsFeed": {
+    "title": "Zprávy",
+    "readMore": "Číst více",
+    "noNews": "Žádné zprávy k dispozici",
+    "loading": "Načítání zpráv..."
+  },
+  "landing": {
+    "contact": {
+      "label": "Spojte se s námi",
+      "description": "Máte dotazy, nápady na spolupráci nebo zpětnou vazbu? Napište nám a ozveme se.",
+      "name": "Jméno",
+      "namePlaceholder": "Vaše jméno",
+      "email": "E-mail",
+      "emailPlaceholder": "vy@priklad.cz",
+      "category": "Kategorie",
+      "categories": {
+        "general": "Obecný dotaz",
+        "partnership": "Partnerství",
+        "pilot": "Pilot / Demo",
+        "research": "Výzkumná spolupráce",
+        "media": "Tisk a média"
+      },
+      "subject": "Předmět",
+      "subjectPlaceholder": "Jak můžeme pomoci?",
+      "message": "Zpráva",
+      "messagePlaceholder": "Řekněte nám více…",
+      "send": "Odeslat zprávu",
+      "sending": "Odesílání…",
+      "successText": "Děkujeme! Vaše zpráva byla odeslána.",
+      "genericError": "Něco se pokazilo. Zkuste to prosím znovu.",
+      "submitFailed": "Zprávu se nepodařilo odeslat. Zkuste to prosím znovu.",
+      "validationError": "Vyplňte prosím všechna povinná pole."
+    },
+    "footer": {
+      "privacySettings": "Nastavení soukromí",
+      "privacyPolicy": "Zásady ochrany osobních údajů",
+      "cookies": "Zásady používání cookies",
+      "impressum": "Impressum",
+      "terms": "Obchodní podmínky"
+    }
+  },
+  "modelResults": {
+    "title": "Model Results",
+    "errors": {
+      "noId": "No model ID provided",
+      "loadFailed": "Failed to load model results",
+      "layerIncomplete": "Layer configuration is incomplete",
+      "layerLoad": "Failed to load layer from GeoServer",
+      "tileLoad": "Some tiles failed to load from GeoServer ({{count}})"
+    },
+    "loadingWorkspace": "Loading workspace…",
+    "loadingModels": "Loading models…",
+    "noCompletedModels": "No completed models",
+    "selectModel": "Select a model",
+    "map": {
+      "initializing": "Initializing map…"
+    },
+    "empty": {
+      "title": "No result for this model yet.",
+      "hint": "The simulation output will appear here once processing finishes."
+    },
+    "details": {
+      "description": "Description",
+      "location": "Location",
+      "period": "Assessment period",
+      "days": "days",
+      "updated": "Updated",
+      "awaiting": "Waiting for result…",
+      "title": "Title",
+      "region": "Region",
+      "country": "Country",
+      "from": "From",
+      "to": "To",
+      "humidity": "Humidity"
+    }
+  },
+  "configurator": {
+    "registry": {},
+    "stepper": {
+      "stepOf": "Step {{step}} of {{total}}",
+      "back": "Back",
+      "continue": "Continue",
+      "update": "Update",
+      "save": "Save",
+      "saving": "Saving...",
+      "starting": "Starting...",
+      "saveAndRun": "Save & run",
+      "introTitle": "New analysis model",
+      "introSubtitle": "Let's set up your simulation",
+      "introDesc": "Six guided steps to define your area, validate inputs and launch a analysis run.",
+      "introProgressSaved": "Your progress is saved as you go",
+      "introDontShow": "Don't show this intro again",
+      "introCancel": "Cancel",
+      "introStart": "Get started",
+      "step": "STEP"
+    },
+    "layer1": {
+      "purpose": "Name this analysis run and choose the date window you want to assess.",
+      "modelNameLabel": "Model name",
+      "modelNameHint": "A descriptive name so you can find this model later.",
+      "dynamicLoading": "Loading available dynamic dates...",
+      "dynamicEmpty": "No dynamic dates available.",
+      "dynamicSelected": "Selected range: {{start}} to {{end}} ({{days}} days).",
+      "dynamicSelectedOne": "Selected range: {{start}} to {{end}} (1 day).",
+      "dynamicSelectInside": "Select a range inside available dynamic dates: {{start}} to {{end}}",
+      "dynamicAvailable": "Available dynamic dates: {{start}} to {{end}}",
+      "suggestedNamesLabel": "Rychlý výběr",
+      "suggestedName2": "Studie průmyslového klastru",
+      "modelNameQuestion": "Jak chcete tento model pojmenovat?",
+      "periodQuestion": "Jaké období se má vyhodnotit?",
+      "assessmentPeriod": "Období hodnocení"
+    },
+    "layer2": {},
+    "layer4": {
+      "purpose": "CAPEX potrubí roste s odporem trasy; kamion a železnice používají vzdálenostní tarify.",
+      "nextStepHint": "Následuje závěrečná kontrola před uložením.",
+      "missingModelName": "Missing — go back to Step 1.",
+      "missingDates": "Start or end date missing.",
+      "loadingDynamic": "Loading available dynamic dates…",
+      "dynamicRequiresBefore": "Dynamic mode requires start before end.",
+      "dynamicUnavailableDates": "The selected dynamic date range contains unavailable dates.",
+      "dynamicRange": "Dynamic {{start}} → {{end}}.",
+      "noGeoJson": "No GeoJSON uploaded.",
+      "noPolygon": "No polygon drawn on the map.",
+      "uploadIncomplete": "GeoJSON upload incomplete.",
+      "areaDetails": "{{count}} regions · {{area}}",
+      "areaDetailsSingle": "1 region · {{area}}",
+      "someSignalsActive": "Running with {{count}} of 3 optional signals — output will differ from the full model.",
+      "bufferDistance": "{{buffer}} m around the AOI.",
+      "blockers": "{{count}} blockers — fix before running.",
+      "blockersSingle": "1 blocker — fix before running.",
+      "warnings": "{{count}} warnings — review before running.",
+      "warningsSingle": "1 warning — review before running.",
+      "allPassed": "All checks passed. Ready to save & calculate.",
+      "labels": {
+        "modelName": "Model name",
+        "timeframe": "Timeframe",
+        "areaOfInterest": "Area of interest",
+        "bufferDistance": "Buffer distance"
+      },
+      "costsQuestion": "Kolik tyto trasy stojí?",
+      "costsInfo": "Spočítáno z tras nalezených v předchozím kroku."
+    },
+    "layer5": {
+      "looksGood": "Everything looks good? Hit ",
+      "below": " below.",
+      "labels": {
+        "modelName": "Model name",
+        "from": "From",
+        "to": "To"
+      }
+    },
+    "coverage": {
+      "title": "Data coverage",
+      "unavailable": "Coverage unavailable",
+      "exactFootprint": "Exact raster footprint",
+      "mainFootprint": "{{percent}}% main footprint",
+      "data": "Data",
+      "noData": "No data",
+      "useShaded": "Use shaded areas",
+      "requiredAvailable": "Required inputs are available.",
+      "requiredAvailableDates": "Required inputs are available for {{dates}}.",
+      "avoidBlank": "Avoid blank gaps",
+      "blankDesc": "Blank areas have no valid source raster data for calculation.",
+      "availableData": "Data available"
+    },
+    "mapHeader": {},
+    "blocking": {
+      "and": " a ",
+      "dateRange": "počáteční a koncové datum",
+      "dynamicEmpty": "Momentálně nejsou k dispozici žádná dynamická data.",
+      "dynamicLoading": "Načítání dostupných dynamických dat.",
+      "dynamicRange": "Vyberte plně dostupný rozsah dynamických dat.",
+      "modelName": "název modelu",
+      "dynamicOrder": "Počáteční datum musí být dřívější nebo shodné s koncovým."
+    },
+    "save": {
+      "calculationFailed": "Model byl uložen, ale výpočet se nepodařilo spustit.",
+      "createFailed": "Model se nepodařilo vytvořit. Zkuste to prosím znovu.",
+      "updateFailed": "Model se nepodařilo uložit. Zkuste to prosím znovu.",
+      "uploadFailed": "Model byl uložen, ale jeho vstupní soubory se nepodařilo nahrát."
+    },
+    "stepPurposeHide": "Skrýt informace o kroku",
+    "stepPurposeShow": "Co je tento krok?",
+    "wizard": {
+      "steps": "Kroky modelu"
+    }
+  },
+  "whatsNew": {
+    "open": "Co je nového v této verzi",
+    "title": "Co je nového",
+    "version": "Verze {{version}}",
+    "released": "Vydáno {{date}}",
+    "intro": "Přehled nejnovějších funkcí, vylepšení a oprav v tomto vydání.",
+    "where": "Kde",
+    "viewAll": "Všechny změny na GitHubu",
+    "close": "Rozumím",
+    "groups": {
+      "new": "Nové",
+      "improved": "Vylepšené",
+      "fixed": "Opravené"
+    },
+    "items": {
+      "families": {
+        "title": "Seskupené verze modelů",
+        "description": "Každý model se nyní zobrazí jen jednou a jeho kopie jsou seskupeny pod ním. Původní model zůstává nahoře a odznak verzí rozbalí kopie, od nejstarší.",
+        "where": "Panel modelů → seznam modelů"
+      },
+      "tabs": {
+        "title": "Karty stavů",
+        "description": "Přepínejte mezi Vše, Připnuté, Běžící, Dokončené, Koncepty a Neúspěšné. Vyhledávání a filtr období fungují v každé kartě.",
+        "where": "Panel modelů → nad seznamem"
+      },
+      "pinning": {
+        "title": "Připnutí modelů",
+        "description": "Připnutý model zůstane nahoře v seznamu. Připnutí libovolné verze drží nahoře celou rodinu a karta Připnuté je shromažďuje na jednom místě.",
+        "where": "Řádek modelu → ikona připnutí"
+      },
+      "newBadge": {
+        "title": "Odznak nových výsledků",
+        "description": "Nedávno dokončené modely dostanou odznak Nové. Najeďte na něj a uvidíte, kdy výpočet skončil.",
+        "where": "Řádek modelu → vedle názvu"
+      },
+      "tour": {
+        "title": "Přepracovaný průvodce",
+        "description": "Průvodce vás krok za krokem provede panelem, mapou a nástroji, s tečkami sekcí a ovládáním šipkami.",
+        "where": "Nápověda → Restartovat průvodce"
+      },
+      "workspaceMenu": {
+        "title": "Nabídka pracovních prostorů",
+        "description": "Seznam pracovních prostorů se nyní otevírá celý nad kartami stavů a seznamem modelů.",
+        "where": "Přehled modelů → výběr pracovního prostoru"
+      }
+    }
+  },
+  "adminDashboard": {
+    "welcome": "Vítejte zpět",
+    "subtitle": "Vaše velitelské centrum pro hodnocení rizik",
+    "navigation": "Navigace",
+    "overview": "Přehled",
+    "profile": "Profil",
+    "settings": "Nastavení",
+    "logout": "Odhlásit",
+    "tabs": {
+      "overview": "Přehled",
+      "allSimulationModels": "Všechny Simulační Modely",
+      "simulationEngine": "Simulační Engine",
+      "feedback": "Zpětná Vazba",
+      "userManagement": "Správa Uživatelů",
+      "gridEngine": "Compute Engine"
+    },
+    "stats": {
+      "accessLevel": "Úroveň Přístupu",
+      "availableLayers": "Dostupné Vrstvy",
+      "status": "Stav",
+      "totalUsers": "Celkem Uživatelů",
+      "lastLogin": "Poslední Přihlášení",
+      "active": "Aktivní",
+      "online": "Online",
+      "live": "Živě",
+      "updating": "Aktualizace",
+      "recent": "Nedávné",
+      "allMapLayers": "Všechny Vrstvy",
+      "mapLayers": "{{count}} Vrstev",
+      "mapLayer": "{{count}} Vrstva"
+    },
+    "accessLevels": {
+      "expert": "Expertní Přístup",
+      "manager": "Manažerský Přístup",
+      "intermediate": "Střední Přístup",
+      "veryLow": "Velmi Nízký Přístup",
+      "unknown": "Neznámý"
+    },
+    "accessTrends": {
+      "maximum": "Maximum",
+      "management": "Správa",
+      "upgradable": "Upgradovatelný",
+      "basic": "Základní"
+    },
+    "userProfile": {
+      "title": "Uživatelský Profil",
+      "subtitle": "Informace o vašem účtu",
+      "email": "E-mail"
+    },
+    "accessPermissions": {
+      "title": "Přístup a Oprávnění",
+      "subtitle": "Možnosti systému",
+      "active": "Aktivní",
+      "currentLevel": "Aktuální Úroveň",
+      "workspaces": "Pracovní Prostory",
+      "unlimited": "Neomezené",
+      "activeWorkspaces": "{{count}} Aktivních",
+      "teamSharing": "Sdílení Týmu",
+      "enabled": "Povoleno",
+      "disabled": "Zakázáno",
+      "modelQuota": "Kvóta Modelů",
+      "standardLimit": "Standardní Limit",
+      "computePower": "Výpočetní Výkon",
+      "highPerformance": "Vysoký Výkon",
+      "standard": "Standardní",
+      "availableFeatures": "Dostupné Funkce",
+      "allLayersAvailable": "Všechny Vrstvy Dostupné",
+      "fullSystemAccess": "Plný Přístup k Systému",
+      "upgradeMessage": "Odemkněte více funkcí požádáním administrátora o upgrade.",
+      "resultFinal": "Result Final"
+    },
+    "quickActions": {
+      "title": "Rychlé Akce",
+      "subtitle": "Přejít na klíčové funkce",
+      "interactiveMap": "Interaktivní Mapa",
+      "settings": "Nastavení",
+      "configurePreferences": "Konfigurovat preference"
+    },
+    "title": "Panel správce",
+    "welcomeBack": "Vítejte zpět, {{name}}!",
+    "administrator": "Administrátor",
+    "loadingContent": "Načítání obsahu..."
+  },
+  "modelsManagement": {
+    "title": "Všechny modely hodnocení simulace",
+    "subtitle": "Spravujte a sledujte všechny modely v systému",
+    "searchPlaceholder": "Hledat modely...",
+    "loadingModels": "Načítání modelů...",
+    "noModelsFound": "Nebyly nalezeny žádné modely",
+    "noModelsDescription": "Začněte vytvořením prvního modelu hodnocení simulace.",
+    "sharedWorkspace": "Sdílený pracovní prostor (Vlastník: {{owner}})",
+    "table": {
+      "model": "Model",
+      "status": "Stav",
+      "created": "Vytvořeno",
+      "lastModified": "Naposledy upraveno",
+      "actions": "Akce"
+    },
+    "status": {
+      "draft": "Koncept",
+      "inQueue": "Ve frontě",
+      "inProgress": "Probíhá",
+      "completed": "Dokončeno",
+      "published": "Publikováno"
+    },
+    "notifications": {
+      "duplicated": "Model \"{{title}}\" byl úspěšně duplikován",
+      "failedToDuplicate": "Nepodařilo se duplikovat model. Zkuste to prosím znovu.",
+      "calculationStarted": "Výpočet úspěšně zahájen",
+      "failedToCalculate": "Nepodařilo se zahájit výpočet. Zkuste to prosím znovu.",
+      "moveComingSoon": "Funkce přesunu do pracovního prostoru bude brzy dostupná pro \"{{title}}\"",
+      "shared": "Model úspěšně sdílen",
+      "deleted": "Model \"{{title}}\" byl smazán",
+      "failedToDelete": "Nepodařilo se smazat model. Zkuste to prosím znovu."
+    },
+    "refresh": "Obnovit"
+  },
+  "webservicesManagement": {
+    "title": "Správa simulačního enginu",
+    "subtitle": "Spravujte instance webservices výpočtů",
+    "searchPlaceholder": "Hledat podle názvu, IP...",
+    "refresh": "Obnovit",
+    "registerNew": "Registrovat nový webservice",
+    "loadingWebservices": "Načítání webservices...",
+    "noWebservicesFound": "Nebyly nalezeny žádné webservices",
+    "noWebservicesDescription": "Začněte registrací první instance webservice.",
+    "summary": {
+      "total": "Celkem",
+      "online": "Online",
+      "available": "Dostupný",
+      "busy": "Zaneprázdněný",
+      "offline": "Offline"
+    },
+    "yourSimulationStatus": "Váš stav simulace",
+    "modelsRunningDescription": "{{count}} vašich modelů se právě počítá",
+    "modelsQueuedDescription": "{{count}} vašich modelů čeká - simulační engine zpracovává jiné výpočty",
+    "filters": {
+      "allStatus": "Všechny stavy",
+      "active": "Aktivní",
+      "inactive": "Neaktivní",
+      "maintenance": "Údržba",
+      "error": "Chyba",
+      "allAvailability": "Všechna dostupnost",
+      "available": "Dostupný",
+      "unavailable": "Nedostupný"
+    },
+    "table": {
+      "service": "Služba",
+      "endpoint": "Endpoint",
+      "status": "Stav",
+      "availability": "Dostupnost",
+      "jobs": "Úlohy",
+      "performance": "Výkon",
+      "user": "Uživatel",
+      "ip": "IP adresa",
+      "port": "Port",
+      "lastCheck": "Poslední kontrola",
+      "actions": "Akce",
+      "never": "Nikdy"
+    },
+    "status": {
+      "online": "Online",
+      "offline": "Offline",
+      "available": "Dostupný",
+      "unavailable": "Nedostupný"
+    },
+    "busyStatus": {
+      "calculating": "Výpočet ({{current}}/{{max}})",
+      "idle": "Nečinný (0/{{max}})"
+    },
+    "actions": {
+      "pingWebservice": "Ping webservice",
+      "editWebservice": "Upravit webservice",
+      "deleteWebservice": "Smazat webservice"
+    },
+    "dialog": {
+      "editTitle": "Upravit instanci webservice",
+      "createTitle": "Registrovat nový webservice",
+      "editDescription": "Aktualizovat konfiguraci webservice",
+      "createDescription": "Nastavit novou instanci webservice pro simulační výpočty",
+      "editButton": "Aktualizovat webservice",
+      "createButton": "Registrovat webservice"
+    },
+    "notifications": {
+      "created": "Webservice úspěšně registrován!",
+      "updated": "Webservice úspěšně aktualizován!",
+      "deleted": "Webservice úspěšně smazán!",
+      "statusChanged": "Stav webservice změněn na {{status}}",
+      "failedToCreate": "Nepodařilo se registrovat webservice",
+      "failedToUpdate": "Nepodařilo se aktualizovat webservice",
+      "failedToDelete": "Nepodařilo se smazat webservice",
+      "failedToPing": "Nepodařilo se pingnout webservice"
+    },
+    "noWebservicesAvailable": "Žádné simulační motory nejsou aktuálně nakonfigurovány. Kontaktujte správce.",
+    "healthCheck": "Simulační motor"
+  },
+  "feedbackManagement": {
+    "title": "Správa Zpětné Vazby Uživatelů",
+    "subtitle": "Kontrolujte a odpovídejte na zpětnou vazbu uživatelů",
+    "refresh": "Obnovit",
+    "noFeedbackFound": "Žádná zpětná vazba nenalezena",
+    "noFeedbackDescription": "Zpětná vazba uživatelů se zde zobrazí po odeslání.",
+    "filters": {
+      "label": "Filtry:",
+      "allStatus": "Všechny Stavy",
+      "allCategories": "Všechny Kategorie",
+      "allPriorities": "Všechny Priority"
+    },
+    "statuses": {
+      "pending": "Čekající",
+      "inProgress": "Probíhající",
+      "resolved": "Vyřešeno",
+      "closed": "Uzavřeno"
+    },
+    "categories": {
+      "bug": "Hlášení Chyby",
+      "feature": "Požadavek na Funkci",
+      "improvement": "Vylepšení",
+      "general": "Obecné"
+    },
+    "priorities": {
+      "low": "Nízká",
+      "medium": "Střední",
+      "high": "Vysoká",
+      "critical": "Kritická"
+    },
+    "table": {
+      "subject": "Předmět",
+      "category": "Kategorie",
+      "priority": "Priorita",
+      "status": "Stav",
+      "rating": "Hodnocení",
+      "user": "Uživatel",
+      "created": "Vytvořeno",
+      "actions": "Akce"
+    },
+    "actions": {
+      "viewDetails": "Zobrazit Detaily",
+      "editStatus": "Upravit Stav",
+      "deleteFeedback": "Smazat Zpětnou Vazbu",
+      "delete": "Smazat"
+    },
+    "viewDialog": {
+      "title": "Detaily Zpětné Vazby",
+      "subtitle": "Zobrazit kompletní informace o zpětné vazbě",
+      "message": "Zpráva:",
+      "rating": "Hodnocení:",
+      "submitted": "Odesláno",
+      "adminResponse": "Odpověď Administrátora:",
+      "respondedOn": "Odpovězeno:",
+      "attachedImage": "Přiložený obrázek",
+      "feedbackScreenshot": "Snímek obrazovky zpětné vazby",
+      "clickToEnlarge": "Klikněte pro zvětšení",
+      "imageLoadError": "Nepodařilo se načíst obrázek",
+      "submittedBy": "Odesláno uživatelem"
+    },
+    "editDialog": {
+      "title": "Aktualizovat Zpětnou Vazbu",
+      "description": "Upravte stav zpětné vazby, prioritu a poskytněte odpověď administrátora",
+      "statusAndPriority": "Stav a Priorita Zpětné Vazby",
+      "statusAndPriorityDescription": "Aktualizujte stav a úroveň priority zpětné vazby",
+      "status": "Stav",
+      "priority": "Priorita",
+      "adminResponse": "Odpověď Administrátora",
+      "adminResponseDescription": "Poskytněte odpověď uživateli",
+      "response": "Odpověď",
+      "responsePlaceholder": "Přidejte svou odpověď uživateli...",
+      "saveChanges": "Uložit Změny"
+    },
+    "notifications": {
+      "updateSuccess": "Zpětná vazba \"{{subject}}\" úspěšně aktualizována",
+      "updateError": "Nepodařilo se aktualizovat zpětnou vazbu. Zkuste to prosím znovu.",
+      "deleteSuccess": "Zpětná vazba \"{{subject}}\" úspěšně smazána",
+      "deleteError": "Nepodařilo se smazat zpětnou vazbu. Zkuste to prosím znovu."
+    },
+    "hasAttachment": "Má přiložený obrázek"
+  },
+  "apiTokens": {
+    "create": "Vytvořit nový token",
+    "createdOnce": "Zkopírujte tento token hned — už se znovu nezobrazí.",
+    "errors": {
+      "create": "Token se nepodařilo vytvořit",
+      "load": "Tokeny se nepodařilo načíst",
+      "revoke": "Token se nepodařilo odvolat"
+    },
+    "existing": "Existující tokeny",
+    "expires": "vyprší",
+    "expiry": "Platnost",
+    "expiry30": "Vyprší za 30 dní",
+    "expiry365": "Vyprší za 1 rok",
+    "expiry90": "Vyprší za 90 dní",
+    "expiryNever": "Nikdy nevyprší",
+    "generate": "Vygenerovat token",
+    "lastUsed": "naposledy použit",
+    "namePlaceholder": "Název tokenu (např. analytický skript)",
+    "none": "Zatím žádné tokeny.",
+    "revoke": "Odvolat",
+    "scope": "Rozsah",
+    "scopeFull": "Čtení i zápis",
+    "scopeFullShort": "čtení i zápis",
+    "scopeRead": "Jen pro čtení (doporučeno)",
+    "scopeReadShort": "jen pro čtení",
+    "status": {
+      "active": "Aktivní",
+      "expired": "Vypršel",
+      "revoked": "Odvolán"
+    },
+    "subtitle": "Správa přístupových tokenů k API pro",
+    "title": "API tokeny"
+  }
+}

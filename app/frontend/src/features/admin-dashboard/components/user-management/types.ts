@@ -1,0 +1,47 @@
+import type { Group } from "@/components/workspace";
+
+export interface User {
+	id: string | number;
+	name: string;
+	email: string;
+	email_verified?: boolean;
+	enabled?: boolean;
+	access_level: "very_low" | "intermediate" | "manager" | "expert";
+	group_id?: string;
+	model_limit?: number;
+	created_at?: number;
+	/** Has an active token. */
+	has_api_access?: boolean;
+}
+
+export interface UserFormData {
+	name: string;
+	email: string;
+	access_level: "very_low" | "intermediate" | "manager" | "expert";
+	email_verified?: boolean;
+	password?: string;
+	password_confirmation?: string;
+	model_limit?: number | string;
+}
+
+export interface ApiResponse<T> {
+	success: boolean;
+	message: string;
+	data?: T;
+	users?: T;
+	errors?: Record<string, string>;
+}
+
+export interface NotificationState {
+	open: boolean;
+	message: string;
+	severity: "success" | "error" | "warning" | "info";
+}
+
+export type CreateUserPayload = {
+	email: string;
+	name: string;
+	password?: string;
+	access_level: User["access_level"];
+	group_id?: Group["id"];
+};

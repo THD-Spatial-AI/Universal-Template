@@ -1,0 +1,111 @@
+import SidebarButton from "@/components/ui/SidebarButton";
+import { Authorized } from "@/middleware/authorized";
+import { LayoutDashboard, type LucideIcon } from "lucide-react";
+import { GithubIcon } from "@/components/ui/GithubIcon";
+import { ADMIN_PATH, GITHUB_URL } from "./constants";
+import { WhatsNewDialog } from "./WhatsNewDialog";
+import { LayersSheet } from "./LayersSheet";
+import { ProfileMenu } from "./ProfileMenu";
+import { HelpMenu } from "./HelpMenu";
+import type { NavigationHandlers, SidebarItem, UserMenuItem } from "./types";
+import { APP_VERSION } from "@/version";
+
+type BaseLayerInfo = {
+  id: string;
+  name: string;
+  description: string;
+};
+
+interface AppLayoutSidebarProps {
+  accessibleBaseLayers: BaseLayerInfo[];
+  changeBaseLayer: (layerId: string) => void;
+  isActive: (path: string) => boolean;
+  navigationHandlers: NavigationHandlers;
+  onRestartTour: () => void;
+  selectedBaseLayerId: string;
+  sidebarItems: SidebarItem[];
+  utilityItems: {
+    documentation: LucideIcon;
+    restartTour: LucideIcon;
+    feedback: LucideIcon;
+  };
+  navigateTo: (path: string) => void;
+  userMenuItems: UserMenuItem[];
+  getUserInitial: () => string;
+}
+
+export const AppLayoutSidebar: React.FC<AppLayoutSidebarProps> = ({
+  accessibleBaseLayers,
+  changeBaseLayer,
+  isActive,
+  navigationHandlers,
+  onRestartTour,
+  selectedBaseLayerId,
+  sidebarItems,
+  utilityItems,
+  navigateTo,
+  userMenuItems,
+  getUserInitial,
+}) => {
+  return (
+    <aside className="fixed left-0 bottom-0 bg-card border-r border-border z-[51] w-[var(--sidebar-width)] top-[var(--topbar-height)]">
+      <div className="flex flex-col items-center gap-3 py-4">
+        <Authorized>
+          {sidebarItems.map((item) => (
+            <SidebarButton
+              key={item.path}
+              icon={item.icon}
+              tooltip={item.title}
+              onClick={() => navigateTo(item.path)}
+              isActive={isActive(item.path)}
+              dataTour={item.dataTour}
+            />
+          ))}
+        </Authorized>
+
+        {/* Separate from navigation. */}
+        <Authorized>
+          <div className="w-6 h-px bg-border" />
+        </Authorized>
+
+        <LayersSheet
+          baseLayers={accessibleBaseLayers}
+          selectedBaseLayerId={selectedBaseLayerId}
+          changeBaseLayer={changeBaseLayer}
+        />
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-3 text-center">
+        <SidebarButton
+          icon={GithubIcon}
+          tooltip="GitHub repository"
+          onClick={() => window.open(GITHUB_URL, "_blank", "noopener,noreferrer")}
+          dataTour="github"
+        />
+
+        <HelpMenu
+          documentationIcon={utilityItems.documentation}
+          restartTourIcon={utilityItems.restartTour}
+          feedbackIcon={utilityItems.feedback}
+          onDocumentation={navigationHandlers.documentation}
+          onRestartTour={onRestartTour}
+          onFeedback={() => navigationHandlers.feedback()}
+        />
+
+        <Authorized>
+          <SidebarButton
+            icon={LayoutDashboard}
+            tooltip="Dashboard"
+            onClick={navigationHandlers.dashboard}
+            isActive={isActive(ADMIN_PATH)}
+            dataTour="dashboard"
+          />
+        </Authorized>
+
+        <ProfileMenu userMenuItems={userMenuItems} getUserInitial={getUserInitial} />
+
+        <WhatsNewDialog version={APP_VERSION} />
+      </div>
+    </aside>
+  );
+};

@@ -1,0 +1,98 @@
+import React from "react";
+import { Ruler, Clock, Type } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useDataDisplayStore } from "@/features/settings/store/data-display";
+import { useTranslation } from "@/i18n";
+
+const OptionButton: React.FC<{
+	active: boolean;
+	onClick: () => void;
+	children: React.ReactNode;
+}> = ({ active, onClick, children }) => (
+	<button
+		onClick={onClick}
+		className={cn(
+			"px-2 py-1 text-[10px] font-medium rounded transition-all duration-200 active:scale-95",
+			active
+				? "bg-primary text-primary-foreground shadow-sm"
+				: "bg-muted text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+		)}
+	>
+		{children}
+	</button>
+);
+
+const DataDisplaySettings: React.FC = () => {
+	const { t } = useTranslation();
+	const { distanceUnit, refreshInterval, textSize, setPreference } = useDataDisplayStore();
+
+	return (
+		<div className="space-y-3">
+			{/* Distance */}
+			<div className="space-y-1">
+				<div className="flex items-center gap-1.5 text-xs font-medium text-foreground">
+					<Ruler className="w-3 h-3" />
+					<span>{t('settings.dataDisplay.distance')}</span>
+				</div>
+				<div className="flex gap-1.5">
+					<OptionButton
+						active={distanceUnit === "kilometers"}
+						onClick={() => setPreference("distanceUnit", "kilometers")}
+					>
+						{t('settings.dataDisplay.kilometers')}
+					</OptionButton>
+					<OptionButton
+						active={distanceUnit === "miles"}
+						onClick={() => setPreference("distanceUnit", "miles")}
+					>
+						{t('settings.dataDisplay.miles')}
+					</OptionButton>
+				</div>
+			</div>
+
+			{/* Text size */}
+			<div className="space-y-1">
+				<div className="flex items-center gap-1.5 text-xs font-medium text-foreground">
+					<Type className="w-3 h-3" />
+					<span>{t('settings.dataDisplay.textSize', 'Text size')}</span>
+				</div>
+				<div className="flex gap-1.5">
+					{([
+						{ value: "small" as const, label: t('settings.dataDisplay.textSizes.small', 'Small') },
+						{ value: "normal" as const, label: t('settings.dataDisplay.textSizes.normal', 'Normal') },
+						{ value: "large" as const, label: t('settings.dataDisplay.textSizes.large', 'Large') },
+					]).map((option) => (
+						<OptionButton
+							key={option.value}
+							active={textSize === option.value}
+							onClick={() => setPreference("textSize", option.value)}
+						>
+							{option.label}
+						</OptionButton>
+					))}
+				</div>
+			</div>
+
+			{/* Refresh Interval */}
+			<div className="space-y-1 pt-2 border-t border-border">
+				<div className="flex items-center gap-1.5 text-xs font-medium text-foreground">
+					<Clock className="w-3 h-3" />
+					<span>{t('settings.dataDisplay.dataRefresh')}</span>
+				</div>
+				<div className="flex flex-wrap gap-1.5">
+					{[1, 5, 10, 15].map((mins) => (
+						<OptionButton
+							key={mins}
+							active={refreshInterval === mins}
+							onClick={() => setPreference("refreshInterval", mins)}
+						>
+							{mins} {t('settings.dataDisplay.min')}
+						</OptionButton>
+					))}
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default DataDisplaySettings;

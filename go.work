@@ -1,0 +1,10 @@
+go 1.25.0
+
+use (
+	./app/backend
+	./infrastructure/common
+	./infrastructure/platform
+	./platform-core/auth-service
+	./platform-core/geoserver
+	./platform-core/webservice
+)

@@ -1,0 +1,118 @@
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+
+// Bundled locale resources.
+import en from "./locales/en.json";
+import de from "./locales/de.json";
+import es from "./locales/es.json";
+import fr from "./locales/fr.json";
+import it from "./locales/it.json";
+import nl from "./locales/nl.json";
+import pl from "./locales/pl.json";
+import cs from "./locales/cs.json";
+import pt from "./locales/pt.json";
+
+// Language configuration
+export const languages = [
+  { code: "en", name: "English", nativeName: "English", flag: "🇬🇧" },
+  { code: "de", name: "German", nativeName: "Deutsch", flag: "🇩🇪" },
+  { code: "es", name: "Spanish", nativeName: "Español", flag: "🇪🇸" },
+  { code: "fr", name: "French", nativeName: "Français", flag: "🇫🇷" },
+  { code: "it", name: "Italian", nativeName: "Italiano", flag: "🇮🇹" },
+  { code: "nl", name: "Dutch", nativeName: "Nederlands", flag: "🇳🇱" },
+  { code: "pl", name: "Polish", nativeName: "Polski", flag: "🇵🇱" },
+  { code: "cs", name: "Czech", nativeName: "Čeština", flag: "🇨🇿" },
+  { code: "pt", name: "Portuguese", nativeName: "Português", flag: "🇵🇹" },
+] as const;
+
+export type LanguageCode = (typeof languages)[number]["code"];
+
+interface Language {
+  code: LanguageCode;
+  name: string;
+  nativeName: string;
+  flag: string;
+}
+
+// All translation resources
+const resources = {
+  en: { translation: en },
+  de: { translation: de },
+  es: { translation: es },
+  fr: { translation: fr },
+  it: { translation: it },
+  nl: { translation: nl },
+  pl: { translation: pl },
+  cs: { translation: cs },
+  pt: { translation: pt },
+};
+
+interface I18nConfig {
+  /** Language storage key. */
+  storageKey?: string;
+  /** Detection fallback language. */
+  fallbackLng?: LanguageCode;
+  /** Enable debug mode */
+  debug?: boolean;
+}
+
+/**
+ * Initialize i18n with configuration
+ */
+export const initI18n = (config: I18nConfig = {}) => {
+  const { storageKey = "app_language", fallbackLng = "en", debug = false } = config;
+
+  i18n
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+      resources,
+      fallbackLng,
+      defaultNS: "translation",
+
+      // Language detection options
+      detection: {
+        order: ["localStorage", "navigator", "htmlTag"],
+        caches: ["localStorage"],
+        lookupLocalStorage: storageKey,
+      },
+
+      interpolation: {
+        escapeValue: false, // React already escapes values
+      },
+
+      // React specific options
+      react: {
+        useSuspense: false,
+        bindI18n: "languageChanged loaded",
+        bindI18nStore: "added removed",
+      },
+
+      debug,
+    });
+
+  return i18n;
+};
+
+/**
+ * Get current language info
+ */
+export const getCurrentLanguage = (): Language => {
+  const code = i18n.language?.split("-")[0] || "en";
+  return languages.find((l) => l.code === code) || languages[0];
+};
+
+/**
+ * Change the current language
+ */
+export const changeLanguage = async (
+  code: LanguageCode,
+  storageKey = "app_language"
+): Promise<void> => {
+  await i18n.changeLanguage(code);
+  localStorage.setItem(storageKey, code);
+};
+
+// Re-export useful items from react-i18next
+export { useTranslation } from "react-i18next";

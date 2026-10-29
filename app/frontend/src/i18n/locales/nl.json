@@ -1,0 +1,1771 @@
+{
+  "common": {
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "edit": "Bewerken",
+    "create": "Aanmaken",
+    "close": "Sluiten",
+    "confirm": "Bevestigen",
+    "loading": "Laden...",
+    "error": "Fout",
+    "success": "Succes",
+    "warning": "Waarschuwing",
+    "info": "Info",
+    "yes": "Ja",
+    "no": "Nee",
+    "ok": "OK",
+    "back": "Terug",
+    "next": "Volgende",
+    "submit": "Verzenden",
+    "search": "Zoeken",
+    "filter": "Filteren",
+    "reset": "Resetten",
+    "clear": "Wissen",
+    "clearAll": "Alles wissen",
+    "selectAll": "Alles selecteren",
+    "noResults": "Geen resultaten gevonden",
+    "actions": "Acties",
+    "settings": "Instellingen",
+    "logout": "Uitloggen",
+    "login": "Inloggen",
+    "register": "Registreren",
+    "unknown": "Onbekend",
+    "more": "meer",
+    "add": "Toevoegen",
+    "refresh": "Vernieuwen",
+    "healthCheck": "Statuscontrole",
+    "na": "N/B",
+    "from": "Van",
+    "to": "Tot",
+    "duration": "Duur",
+    "days": "dagen",
+    "country": "Land",
+    "region": "Regio",
+    "status": "Status",
+    "createdAt": "Aangemaakt",
+    "updatedAt": "Laatst bijgewerkt",
+    "workspace": "Werkruimte",
+    "results": "Resultaten",
+    "name": "Naam",
+    "description": "Beschrijving",
+    "id": "ID",
+    "current": "Huidig",
+    "max": "Max",
+    "tooltips": {
+      "viewOnMap": "Bekijk op Kaart",
+      "editLocation": "Locatie Bewerken",
+      "editName": "Naam bewerken",
+      "duplicate": "Dupliceren",
+      "view": "Bekijken",
+      "share": "Delen",
+      "moveToWorkspace": "Verplaatsen naar Werkruimte",
+      "profile": "Profiel",
+      "documentation": "Documentatie",
+      "howItWorks": "Hoe het werkt",
+      "restartTour": "Tour herstarten",
+      "feedback": "Feedback",
+      "theme": "Thema",
+      "searchLocation": "Zoek locatie",
+      "help": "Help"
+    },
+    "sidebar": {
+      "map": "Kaart",
+      "simulationReports": "Modelvergelijking",
+      "simulations": "Analysis Runs"
+    },
+    "menu": {
+      "profile": "Profiel",
+      "settings": "Instellingen",
+      "logout": "Uitloggen"
+    },
+    "modelActions": {
+      "viewResults": "Resultaten Bekijken",
+      "downloadResults": "Resultaten Downloaden",
+      "copyConfiguration": "Configuratie Kopiëren",
+      "editConfiguration": "Configuratie Bewerken",
+      "cannotEditCompleted": "Kan voltooid model niet bewerken",
+      "moveToWorkspace": "Verplaatsen naar Werkruimte",
+      "shareModel": "Model Delen",
+      "delete": "Verwijderen",
+      "cannotDelete": "Kan niet verwijderen - alleen de eigenaar of een expert kan verwijderen",
+      "retryCalculation": "Berekening Opnieuw",
+      "startCalculation": "Berekening Starten",
+      "engineNotAvailable": "Simulatiemotor is niet beschikbaar"
+    },
+    "pagination": {
+      "showing": "Weergave",
+      "to": "tot",
+      "of": "van",
+      "results": "resultaten",
+      "noResults": "Geen resultaten",
+      "loading": "Laden...",
+      "perPage": "per pagina",
+      "previousPage": "Vorige pagina",
+      "nextPage": "Volgende pagina"
+    },
+    "saved": "Saved",
+    "copied": "Gekopieerd",
+    "copy": "Kopiëren",
+    "done": "Klaar"
+  },
+  "dashboard": {
+    "stats": {
+      "totalModels": "Totaal Modellen",
+      "draft": "Concept",
+      "inProgress": "In Uitvoering",
+      "completed": "Voltooid",
+      "published": "Gepubliceerd",
+      "modelLimit": "Modellimiet",
+      "unlimited": "Onbeperkt"
+    }
+  },
+  "notifications": {
+    "title": "Meldingen",
+    "noNotifications": "Geen meldingen",
+    "allCaughtUp": "Je bent helemaal bij!",
+    "markAllRead": "Alles als gelezen markeren",
+    "clearAll": "Alles wissen",
+    "viewAll": "Alle meldingen bekijken",
+    "moreNotification": "+{{count}} melding meer",
+    "moreNotifications": "+{{count}} meldingen meer",
+    "details": "Details",
+    "close": "Sluiten",
+    "scheduledFor": "Gepland voor:",
+    "service": "Service",
+    "last30Days": "Laatste 30 dagen",
+    "unread": "{{count}} ongelezen",
+    "loading": "Meldingen laden...",
+    "confirmClearTitle": "Alle meldingen wissen?",
+    "confirmClearDescription": "Weet u zeker dat u alle meldingen wilt wissen? Deze actie kan niet ongedaan worden gemaakt.",
+    "confirmClearButton": "Alles wissen",
+    "dismiss": "Negeren",
+    "types": {
+      "success": "Succes",
+      "error": "Fout",
+      "warning": "Waarschuwing",
+      "info": "Info",
+      "maintenance": "Onderhoud"
+    },
+    "totalExecutionTime": "Totale Uitvoeringstijd",
+    "completedIn": "Succesvol voltooid in {{time}}",
+    "failedAfter": "Mislukt na {{time}}",
+    "cancelledAfter": "Geannuleerd na {{time}}",
+    "messages": {
+      "modelCalculationComplete": "Modelberekening voltooid",
+      "modelCalculationCompleteMessage": "Uw model '{{modelName}}' is succesvol berekend en is klaar om te bekijken.",
+      "modelCalculationFailed": "Modelberekening mislukt",
+      "modelCalculationFailedMessage": "De berekening van uw model '{{modelName}}' is mislukt. Probeer het opnieuw.",
+      "modelCalculationStarted": "Modelberekening gestart",
+      "modelCalculationStartedMessage": "De berekening van uw model '{{modelName}}' is gestart."
+    }
+  },
+  "modelStatus": {
+    "draft": "Concept",
+    "queue": "In Wachtrij",
+    "calculating": "Berekenen",
+    "running": "Actief",
+    "processing": "Verwerking",
+    "completed": "Voltooid",
+    "published": "Gepubliceerd",
+    "failed": "Mislukt",
+    "cancelled": "Geannuleerd",
+    "modified": "Gewijzigd"
+  },
+  "auth": {
+    "signIn": "Inloggen",
+    "signUp": "Registreren",
+    "signOut": "Uitloggen",
+    "signingIn": "Inloggen...",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "confirmPassword": "Bevestig wachtwoord",
+    "enterYourEmail": "Voer uw e-mail in",
+    "enterYourPassword": "Voer uw wachtwoord in",
+    "welcomeBack": "Welkom terug",
+    "signInToContinue": "Log in om door te gaan",
+    "or": "of",
+    "dontHaveAccount": "Heeft u geen account?",
+    "alreadyHaveAccount": "Heeft u al een account?",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "rememberMe": "Onthoud mij",
+    "loginFailed": "Inloggen mislukt",
+    "verificationEmailSent": "Verificatie-e-mail verzonden",
+    "checkInboxVerify": "Controleer uw inbox en klik op de verificatielink.",
+    "emailVerificationRequired": "E-mailverificatie vereist",
+    "sending": "Verzenden...",
+    "resendVerificationEmail": "Verificatie-e-mail opnieuw verzenden",
+    "protectedByEncryption": "Beveiligd met industriestandaard versleuteling",
+    "createAccount": "Account Aanmaken",
+    "personalInformation": "Persoonlijke Informatie",
+    "fullName": "Volledige Naam",
+    "enterFullName": "Voer uw volledige naam in",
+    "emailAddress": "E-mailadres",
+    "enterEmailAddress": "Voer uw e-mailadres in",
+    "security": "Beveiliging",
+    "confirmYourPassword": "Bevestig uw wachtwoord",
+    "passwordRequirements": {
+      "title": "Wachtwoordvereisten",
+      "minChars": "Minimaal 8 tekens",
+      "uppercase": "Eén hoofdletter",
+      "lowercase": "Eén kleine letter",
+      "number": "Eén cijfer",
+      "specialChar": "Eén speciaal teken",
+      "hasSpaces": "Wachtwoord bevat spaties aan het begin of einde"
+    },
+    "accessLevel": "Toegangsniveau",
+    "veryLow": "Zeer Laag",
+    "low": "Laag",
+    "intermediate": "Gemiddeld",
+    "manager": "Manager",
+    "expert": "Expert",
+    "forgotPasswordTitle": "Wachtwoord Vergeten",
+    "forgotPasswordDescription": "Voer uw e-mailadres in en we sturen u instructies om uw wachtwoord te resetten.",
+    "secureResetProcess": "Veilig wachtwoord reset proces",
+    "sendResetInstructions": "Instructies Versturen",
+    "backToLogin": "Terug naar Inloggen",
+    "cancel": "Annuleren",
+    "checkSpamFolder": "Als je de e-mail niet ziet, controleer dan je spam- of ongewenste e-mailmap.",
+    "checkYourEmail": "Controleer je e-mail",
+    "note": "Opmerking",
+    "sentResetInstructions": "We hebben instructies voor het opnieuw instellen van het wachtwoord naar je e-mailadres gestuurd.",
+    "signUpNow": "Meld je nu aan",
+    "createPassword": "Maak een wachtwoord aan",
+    "creating": "Aanmaken...",
+    "agreeToTerms": "Door een account aan te maken, gaat u akkoord met onze Servicevoorwaarden",
+    "signInHere": "Sign in here",
+    "sidePanel": {},
+    "consentText": "Ik geef toestemming voor de verwerking en opslag van mijn persoonsgegevens in overeenstemming met de",
+    "declarationOfConsent": "Toestemmingsverklaring",
+    "and": "en",
+    "privacyPolicy": "Privacybeleid"
+  },
+  "workspace": {
+    "workspace": "Werkruimte",
+    "workspaces": "Werkruimtes",
+    "selectWorkspace": "Werkruimte selecteren",
+    "defaultWorkspace": "Standaard werkruimte",
+    "default": "Standaard",
+    "shared": "Gedeeld",
+    "searchWorkspaces": "Werkruimtes zoeken...",
+    "noWorkspacesMatch": "Geen werkruimtes komen overeen met je zoekopdracht",
+    "noWorkspacesFound": "Geen werkruimtes gevonden",
+    "createNewWorkspace": "Nieuwe werkruimte maken",
+    "createDescription": "Maak een nieuwe werkruimte om je modellen te organiseren en samen te werken met anderen",
+    "createWorkspace": "Werkruimte maken",
+    "renameWorkspace": "Werkruimte hernoemen",
+    "renameDescription": "Voer een nieuwe naam in voor je werkruimte",
+    "copyWorkspaceTitle": "Werkruimte kopiëren",
+    "copyDescription": "Maak een kopie van deze werkruimte met een nieuwe naam",
+    "saveChanges": "Wijzigingen opslaan",
+    "copyWorkspace": "Werkruimte kopiëren",
+    "sharedWithYouBy": "Gedeeld met jou door {{user}}",
+    "sharedWithUsers": "Gedeeld met gebruikers",
+    "sharedWithGroups": "Gedeeld met groepen",
+    "anotherUser": "een andere gebruiker",
+    "noMembersYet": "Nog geen leden. Deel met iemand om samen te werken!",
+    "noGroupsYet": "Nog geen groepen hebben toegang. Deel met een groep om alle leden toegang te geven!",
+    "removeMember": "Lid verwijderen",
+    "removeGroup": "Groep verwijderen",
+    "selectorHint": "Selecteer of maak een werkruimte om uw modellen te organiseren"
+  },
+  "model": {
+    "title": "Model",
+    "models": "Modellen",
+    "newModel": "Nieuw model",
+    "editModel": "Model bewerken",
+    "deleteModel": "Model verwijderen",
+    "modelName": "Modelnaam",
+    "description": "Beschrijving",
+    "status": "Status",
+    "created": "Aangemaakt",
+    "updated": "Bijgewerkt",
+    "running": "Actief",
+    "completed": "Voltooid",
+    "failed": "Mislukt",
+    "pending": "In afwachting",
+    "queued": "In wachtrij",
+    "runSimulation": "Simulatie starten",
+    "viewResults": "Resultaten bekijken",
+    "duplicate": "Dupliceren",
+    "export": "Exporteren",
+    "compare": "Vergelijken",
+    "dashboard": "Model Dashboard",
+    "searchModels": "Modellen zoeken...",
+    "allModels": "Alle modellen",
+    "modelGroups": "Modelgroepen",
+    "loadingWorkspace": "Werkruimte laden...",
+    "loadingModels": "Modellen laden...",
+    "loadingWorkspaceDescription": "Even geduld terwijl we je werkruimtevoorkeuren initialiseren.",
+    "selectWorkspace": "Selecteer of maak een werkruimte",
+    "refreshModels": "Modellenlijst vernieuwen",
+    "share": "Delen",
+    "shareDescription": "\"{{title}}\" delen met een andere gebruiker",
+    "copy": "Kopiëren",
+    "rename": "Hernoemen",
+    "delete": "Verwijderen",
+    "move": "Verplaatsen",
+    "shareWorkspace": "Deze werkruimte delen",
+    "copyWorkspace": "Een kopie van deze werkruimte maken",
+    "renameWorkspace": "Deze werkruimte hernoemen",
+    "deleteWorkspace": "Deze werkruimte verwijderen",
+    "moveToWorkspace": "Naar werkruimte verplaatsen",
+    "noModelsFound": "Geen modellen gevonden",
+    "noModelsMatch": "Geen modellen komen overeen met \"{{search}}\". Probeer je zoekopdracht aan te passen.",
+    "createFirstModel": "Maak je eerste model",
+    "selected": "geselecteerd",
+    "deleteSelected": "Geselecteerde verwijderen",
+    "moveSelected": "Geselecteerde verplaatsen",
+    "cannotDelete": "Kan niet verwijderen - modellen zijn uitgeschakeld of zijn niet van jou",
+    "cannotMove": "Kan niet verplaatsen - modellen zijn niet van jou",
+    "sharedCannotDelete": "Gedeelde modellen kunnen niet worden verwijderd. Kopieer het eerst",
+    "sharedCannotMove": "Gedeelde modellen kunnen niet worden verplaatst. Kopieer het eerst",
+    "sharedCannotShare": "Gedeelde modellen kunnen niet opnieuw worden gedeeld. Kopieer het eerst",
+    "limitReached": "U heeft uw limiet voor het maken van modellen bereikt",
+    "selectAll": "Alles selecteren",
+    "deselectAll": "Alles deselecteren",
+    "actions": "Acties",
+    "name": "Modelnaam",
+    "owner": "Eigenaar",
+    "workspace": "Werkruimte",
+    "draft": "Concept",
+    "published": "Gepubliceerd",
+    "total": "Totaal",
+    "queue": "Wachtrij",
+    "copyOf": "Kopie van \"{{name}}\"",
+    "ownedBy": "Eigendom van",
+    "parentModel": "Bovenliggend model",
+    "parent": "Bovenliggend",
+    "anotherModel": "een ander model",
+    "failedDefaultMessage": "Berekening mislukt - webservice niet beschikbaar of time-out",
+    "waiting": "Wachtend",
+    "queuedTooltip": "Uw model staat in de wachtrij - de simulatie-engine verwerkt andere berekeningen",
+    "compareRequires2Completed": "Selecteer precies 2 voltooide modellen om te vergelijken",
+    "bulkCopy": "Modellen kopiëren",
+    "bulkCopyDescription": "Kopieën maken van {{count}} geselecteerd(e) model(len)",
+    "bulkCopyFailed": "Sommige modellen konden niet worden gekopieerd. Probeer het opnieuw.",
+    "bulkCopySubmit": "Kopieën maken",
+    "calculate": "Berekenen",
+    "cannotCalculate": "Kan niet berekenen – geen geschikte modellen geselecteerd",
+    "noWebserviceAvailable": "Geen simulatie-engine beschikbaar",
+    "cancelled": "Geannuleerd",
+    "modified": "Gewijzigd",
+    "estimateApproximate": "Die runs dateren van voor de wachtrijregistratie, dus de echte wachttijd is langer.",
+    "estimateOverdue": "duurt langer dan gebruikelijk",
+    "estimateRemaining": "~{{duration}} resterend",
+    "estimateUnavailable": "Te weinig vergelijkbare geslaagde runs voor een schatting",
+    "canEdit": "Kan bewerken",
+    "canView": "Kan bekijken",
+    "clearDateFilter": "Datumfilter wissen",
+    "filterPeriod": "Filteren op periode",
+    "noDirectShares": "Dit model is nog met niemand gedeeld.",
+    "peopleWithAccess": "Personen met directe toegang",
+    "revokeAccess": "Intrekken",
+    "revokingAccess": "Bezig met intrekken…",
+    "revokeAccessFor": "Toegang intrekken voor {{email}}",
+    "tabs": {
+      "all": "Alle",
+      "pinned": "Vastgezet",
+      "running": "Actief",
+      "completed": "Voltooid",
+      "drafts": "Concepten",
+      "failed": "Mislukt"
+    },
+    "area": "Gebied",
+    "period": "Periode",
+    "lastActivity": "Laatste activiteit",
+    "pin": "Bovenaan vastzetten",
+    "unpin": "Losmaken",
+    "recentlyCompleted": "Nieuw",
+    "recentlyCompletedTooltip": "Voltooid op {{time}}. Open het om de resultaten te bekijken.",
+    "versions_one": "{{count}} versie",
+    "versions_other": "{{count}} versies",
+    "estimateBasis_one": "Op basis van 1 vergelijkbare run, die {{typical}} duurde",
+    "estimateBasis_other": "Op basis van {{count}} vergelijkbare runs, die meestal {{typical}} duren",
+    "view": "Bekijken",
+    "run": "Starten"
+  },
+  "userManagement": {
+    "groups": {
+      "selectOrCreate": "Selecteer of maak een groep aan",
+      "renameGroup": "Groep hernoemen",
+      "enableGroup": "Groep en gebruikers inschakelen",
+      "disableGroup": "Groep en gebruikers uitschakelen",
+      "deleteGroup": "Groep en alle gebruikers verwijderen",
+      "defaultCannotDelete": "Standaardgroep kan niet worden verwijderd",
+      "default": "Standaard",
+      "unknown": "Onbekend",
+      "defaultGroup": "Standaardgroep",
+      "unknownGroup": "Onbekende groep",
+      "changeUserGroup": "Gebruikersgroep wijzigen",
+      "groupAssignment": "Groeptoewijzing",
+      "selectGroup": "Groep selecteren",
+      "changeGroup": "Groep wijzigen",
+      "renameGroupTitle": "Groep hernoemen",
+      "groupName": "Groepsnaam",
+      "newGroupName": "Nieuwe groepsnaam",
+      "enterNewGroupName": "Voer nieuwe groepsnaam in",
+      "rename": "Hernoemen",
+      "createNewGroup": "Nieuwe groep maken",
+      "createGroupDescription": "Maak een nieuwe groep om gebruikers in uw organisatie te organiseren",
+      "createGroup": "Groep maken",
+      "groupNameRequired": "Groepsnaam is verplicht",
+      "groupCreated": "Groep succesvol aangemaakt",
+      "failedToCreateGroup": "Groep aanmaken mislukt",
+      "groupNamePlaceholder": "bijv. Brandweer, Noodhulp",
+      "searchGroups": "Groepen zoeken...",
+      "allGroups": "Alle groepen",
+      "viewUsersFromAllGroups": "Gebruikers van alle groepen bekijken",
+      "noGroups": "Geen groepen",
+      "loading": "Laden...",
+      "noGroupsFound": "Geen groepen gevonden",
+      "noGroupsMatchSearch": "Geen groepen komen overeen met uw zoekopdracht",
+      "bulkChangeGroup": "Gebruikers naar groep verplaatsen",
+      "moveUsers": "Gebruikers verplaatsen"
+    },
+    "title": "Gebruikersbeheer",
+    "subtitle": "Beheer gebruikers, groepen en machtigingen",
+    "searchPlaceholder": "Zoek naam of e-mail...",
+    "refresh": "Vernieuwen",
+    "addNewUser": "Nieuwe gebruiker toevoegen",
+    "add": "Toevoegen",
+    "editUser": "Gebruiker bewerken",
+    "createUser": "Gebruiker aanmaken",
+    "updateUser": "Gebruiker bijwerken",
+    "loadingUsers": "Gebruikers laden...",
+    "noUsersFound": "Geen gebruikers gevonden",
+    "noUsersInGroup": "Geen gebruikers gevonden in uw groep. Neem contact op met een beheerder om gebruikers aan uw groep toe te wijzen.",
+    "noUsersMatch": "Geen gebruikers komen overeen met \"{{search}}\"",
+    "noUsersMatchSearch": "Geen gebruikers komen overeen met \"{{search}}\"",
+    "addFirstUser": "Voeg de eerste gebruiker toe om te beginnen.",
+    "dialog": {
+      "editTitle": "Gebruiker bewerken",
+      "addTitle": "Nieuwe gebruiker toevoegen",
+      "updateUser": "Gebruiker bijwerken",
+      "createUser": "Gebruiker aanmaken"
+    },
+    "table": {
+      "user": "Gebruiker",
+      "accessLevel": "Toegangsniveau",
+      "group": "Groep",
+      "emailVerified": "E-mail geverifieerd",
+      "actions": "Acties"
+    },
+    "emailStatus": {
+      "verified": "Geverifieerd",
+      "unverified": "Niet geverifieerd"
+    },
+    "actions": {
+      "changeGroup": "Groep wijzigen",
+      "enableUser": "Gebruiker is uitgeschakeld — klik om in te schakelen",
+      "disableUser": "Gebruiker is ingeschakeld — klik om uit te schakelen",
+      "editUser": "Gebruiker bewerken",
+      "deleteUser": "Gebruiker verwijderen",
+      "copyEmail": "E-mail kopiëren",
+      "copied": "Gekopieerd!",
+      "bulkDelete": "Geselecteerde verwijderen",
+      "bulkMoveToGroup": "Naar groep verplaatsen",
+      "deselectAll": "Alles deselecteren",
+      "selectAll": "Alles selecteren",
+      "selected": "{{count}} geselecteerd",
+      "apiTokens": "API-tokens",
+      "apiTokensActive": "API-toegang ingeschakeld — tokens beheren"
+    },
+    "notifications": {
+      "userCreated": "Gebruiker succesvol aangemaakt!",
+      "userUpdated": "Gebruiker succesvol bijgewerkt!",
+      "userDeleted": "Gebruiker succesvol verwijderd!",
+      "userDisabled": "Gebruiker succesvol uitgeschakeld!",
+      "userEnabled": "Gebruiker succesvol ingeschakeld!",
+      "groupDisabled": "Groep \"{{name}}\" uitgeschakeld",
+      "groupEnabled": "Groep \"{{name}}\" ingeschakeld",
+      "groupDeleted": "Groep \"{{name}}\" verwijderd",
+      "groupRenamed": "Groep succesvol hernoemd naar \"{{name}}\"",
+      "userMovedToGroup": "Gebruiker verplaatst naar nieuwe groep en uitgelogd. Ze moeten opnieuw inloggen om toegang te krijgen tot hun nieuwe werkruimte.",
+      "failedToCreate": "Gebruiker aanmaken mislukt",
+      "failedToUpdate": "Gebruiker bijwerken mislukt",
+      "failedToDelete": "Gebruiker verwijderen mislukt",
+      "failedToDisable": "Gebruiker uitschakelen mislukt",
+      "failedToEnable": "Gebruiker inschakelen mislukt",
+      "failedToFetch": "Gebruikers ophalen mislukt",
+      "failedToUpdateGroup": "Gebruikersgroep bijwerken mislukt",
+      "failedToRenameGroup": "Groep hernoemen mislukt",
+      "failedToCopyEmail": "E-mail kopiëren mislukt",
+      "pleaseLogIn": "Log in om gebruikers te bekijken",
+      "passwordMismatch": "Wachtwoord en bevestiging moeten overeenkomen",
+      "bulkDeletePartial": "{{succeeded}} van {{total}} gebruikers verwijderd. {{failed}} mislukt.",
+      "bulkDeleted": "{{count}} gebruikers succesvol verwijderd",
+      "bulkGroupChangeFailed": "Gebruikers verplaatsen naar groep mislukt",
+      "bulkGroupChanged": "{{count}} gebruikers succesvol naar nieuwe groep verplaatst"
+    },
+    "confirmations": {
+      "disableUserDescription": "Dit voorkomt dat de gebruiker kan inloggen.",
+      "enableUserDescription": "Dit stelt de gebruiker in staat om opnieuw in te loggen.",
+      "disableGroupDescription": "Het uitschakelen van een groep schakelt al zijn gebruikers uit.",
+      "enableGroupDescription": "Het inschakelen van een groep schakelt al zijn gebruikers in.",
+      "deleteGroupDescription": "Dit verwijdert de groep en al zijn gebruikers. Deze actie kan niet ongedaan worden gemaakt.",
+      "bulkDeleteDescription": "Hiermee worden {{count}} geselecteerde gebruikers permanent verwijderd. Deze actie kan niet ongedaan worden gemaakt."
+    }
+  },
+  "profile": {
+    "title": "Profielinstellingen",
+    "subtitle": "Beheer uw persoonlijke gegevens en accountvoorkeuren",
+    "goBack": "Terug",
+    "loadingProfile": "Uw profiel laden...",
+    "defaultUser": "Gebruiker",
+    "accessLevel": "Toegangsniveau",
+    "notSpecified": "Niet gespecificeerd",
+    "personalInfo": "Persoonlijke informatie",
+    "personalInfoDescription": "Werk uw profielgegevens hieronder bij",
+    "readOnly": "alleen-lezen",
+    "saving": "Opslaan...",
+    "saveChanges": "Wijzigingen opslaan",
+    "fields": {
+      "fullName": "Volledige naam",
+      "email": "E-mailadres"
+    },
+    "placeholders": {
+      "fullName": "Voer uw volledige naam in"
+    },
+    "accessLevels": {
+      "basic": "Basis",
+      "basicDescription": "Standaard toegang tot basisfuncties",
+      "intermediate": "Gemiddeld",
+      "intermediateDescription": "Uitgebreide toegang met geavanceerde functies",
+      "expert": "Expert",
+      "expertDescription": "Volledige toegang tot alle functies"
+    },
+    "notifications": {
+      "updated": "Profiel succesvol bijgewerkt!",
+      "failedToLoad": "Profiel laden mislukt. Probeer het opnieuw.",
+      "failedToUpdate": "Profiel bijwerken mislukt. Probeer het opnieuw."
+    },
+    "password": {
+      "title": "Change Password",
+      "description": "Update the password you use to sign in",
+      "current": "Current Password",
+      "new": "New Password",
+      "confirm": "Confirm New Password",
+      "currentPlaceholder": "Enter your current password",
+      "newPlaceholder": "Enter a new password",
+      "confirmPlaceholder": "Re-enter your new password",
+      "submit": "Update Password",
+      "updating": "Updating...",
+      "updated": "Password changed successfully!",
+      "failed": "Failed to change password. Please try again.",
+      "requirements": {
+        "minChars": "At least 8 characters",
+        "uppercase": "One uppercase letter",
+        "lowercase": "One lowercase letter",
+        "number": "One number",
+        "specialChar": "One special character"
+      },
+      "requirementsNotMet": "Password does not meet all requirements",
+      "mismatch": "Passwords do not match"
+    }
+  },
+  "simulation": {
+    "progress": {
+      "queued": "Queued",
+      "assessing": "Assessing",
+      "done": "Done"
+    }
+  },
+  "mapLayers": {
+    "title": "Kaartlagen",
+    "description": "Configureer kaartweergave en datalagen",
+    "baseLayers": {
+      "title": "Basislagen",
+      "description": "Kies de achtergrondkaartstijl",
+      "osmStandard": "Standaard OpenStreetMap-laag",
+      "osmHumanitarian": "Humanitaire stijl OpenStreetMap",
+      "cartoPositron": "Lichte thema basiskaart van CartoDB",
+      "cartoVoyager": "Gedetailleerde basiskaart van CartoDB",
+      "openTopoMap": "Topografische stijlkaart",
+      "maplibreDark": "Dark vector basemap",
+      "maplibreVoyager": "Detailed vector basemap"
+    },
+    "dataLayers": {
+      "title": "Datalagen"
+    },
+    "tooltip": "Base Maps"
+  },
+  "tour": {
+    "product": {
+      "welcome": {
+        "tip": "Deze rondleiding wordt slechts één keer getoond. U kunt hem op elk moment overslaan of opnieuw starten vanuit de zijbalk."
+      },
+      "newAssessment": {
+        "title": "Nieuwe Beoordeling Maken",
+        "tip": "Wanneer u hier klikt, gaat u naar een speciale rondleiding voor het gebiedsselectieproces!"
+      },
+      "profile": {
+        "title": "Profiel & Instellingen",
+        "description": "Toegang tot uw profiel, accountinstellingen en gebruikersvoorkeuren. Beheer uw account en extra opties."
+      },
+      "navigation": {
+        "title": "Beheerdashboard",
+        "description": "Beheer werkruimtes, gebruikers en alle modellen op het platform. Alleen zichtbaar voor beheerders."
+      },
+      "simulations": {},
+      "map": {
+        "title": "Interactieve Kaart"
+      },
+      "reports": {
+        "title": "Simulatierapporten",
+        "description": "Bekijk gedetailleerde simulatierapporten, exporteer gegevens en analyseer historische trends en patronen."
+      },
+      "layers": {
+        "title": "Kaartlagen",
+        "description": "Beheer kaartlagen en overlays. Kies basiskaarten, schakel gegevenslagen in/uit en pas uw kaartweergave aan."
+      },
+      "documentation": {
+        "title": "Documentatie",
+        "description": "Open de platformdocumentatie voor gedetailleerde handleidingen, API-referenties en best practices.",
+        "tip": "Opent in een nieuw tabblad zodat u uw huidige workflow behoudt."
+      },
+      "feedback": {
+        "title": "Feedback",
+        "description": "Deel uw gedachten en suggesties met ons. Uw feedback helpt het platform te verbeteren."
+      },
+      "complete": {
+        "title": "U bent Klaar!",
+        "nextSteps": "Volgende Stappen",
+        "restartTour": "Rondleiding Herstarten",
+        "restartTourDescription": "U kunt deze rondleiding op elk moment herstarten vanuit de zijbalk."
+      },
+      "dashboard": {
+        "tabsOverview": {
+          "title": "Filteren op status",
+          "description": "Deze tabbladen filteren uw modellen op status, met live tellingen voor elke groep."
+        },
+        "tabAll": {
+          "title": "Alle modellen",
+          "description": "Elke modelfamilie in deze werkruimte, met vastgepinde families bovenaan."
+        },
+        "tabPinned": {
+          "title": "Vastgepind",
+          "description": "Modellen die u heeft vastgepind. Eén versie pinnen houdt de hele familie bovenaan."
+        },
+        "tabRunning": {
+          "title": "Actief",
+          "description": "Modellen in de wachtrij, in berekening, actief of in verwerking. De lijst wordt live bijgewerkt terwijl ze lopen."
+        },
+        "tabCompleted": {
+          "title": "Voltooid",
+          "description": "Voltooide en gepubliceerde modellen, klaar om te openen en te verkennen."
+        },
+        "tabDrafts": {
+          "title": "Concepten",
+          "description": "Concepten en gewijzigde modellen die nog uitgevoerd moeten worden."
+        },
+        "tabFailed": {
+          "title": "Mislukt",
+          "description": "Mislukte of geannuleerde runs. Bekijk de foutmelding en voer opnieuw uit wanneer u klaar bent."
+        },
+        "search": {
+          "title": "Zoeken & periode",
+          "description": "Zoek in modeltitels en filter op simulatieperiode. Resultaten omvatten ook oudere versies van een familie."
+        },
+        "familyRow": {
+          "title": "Eén rij per model",
+          "description": "Elke rij is een modelfamilie met het oorspronkelijke model bovenaan. De versiebadge klapt de kopieën uit, oudste eerst."
+        },
+        "columns": {
+          "title": "Kolommen"
+        },
+        "pin": {
+          "title": "Modellen pinnen",
+          "description": "Pin een model om zijn familie bovenaan elk tabblad te houden."
+        },
+        "primaryAction": {
+          "title": "Primaire actie",
+          "description": "Open voltooide modellen of voer concepten direct vanuit de rij uit."
+        },
+        "moreMenu": {
+          "title": "Meer acties",
+          "description": "Bewerken, kopiëren, downloaden, delen, verplaatsen naar een werkruimte of verwijderen via dit menu."
+        },
+        "newBadge": {
+          "title": "Nieuwe resultaten",
+          "description": "Recent voltooide modellen die u nog niet heeft geopend, worden als nieuw gemarkeerd."
+        },
+        "refresh": {
+          "title": "Vernieuwen, delen en kopiëren",
+          "description": "Vernieuwen laadt de modellenlijst opnieuw (lopende modellen worden ook vanzelf bijgewerkt). Delen geeft je team toegang tot deze werkruimte en Kopiëren dupliceert hem met zijn modellen."
+        }
+      },
+      "ui": {
+        "stepOf": "Stap {{current}} van {{total}}",
+        "skipTour": "Rondleiding overslaan",
+        "finish": "Afronden",
+        "whatsNew": "Nieuw",
+        "sections": {
+          "welcome": "Welkom",
+          "navigation": "Navigatie",
+          "dashboard": "Dashboard",
+          "tabs": "Tabbladen",
+          "rows": "Rijen",
+          "finish": "Afronden",
+          "tools": "Hulpmiddelen"
+        },
+        "chips": {
+          "filters": "Filters"
+        }
+      },
+      "workspace": {
+        "title": "Werkruimte",
+        "description": "Modellen horen bij een werkruimte. Wissel hier van werkruimte of maak een nieuwe om projecten te ordenen en met je team te delen."
+      },
+      "demo": {
+        "example": "Voorbeeld",
+        "justNow": "Zojuist"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Bekijk de open-sourcecode en meld problemen op GitHub."
+      },
+      "help": {
+        "title": "Help",
+        "description": "Alles op één plek: open de documentatie, start deze rondleiding op elk moment opnieuw of stuur ons feedback."
+      },
+      "language": {
+        "title": "Taal",
+        "description": "Wijzig de taal van de interface. Je keuze wordt in deze browser opgeslagen."
+      },
+      "notifications": {
+        "title": "Meldingen",
+        "description": "Hier zie je voltooide berekeningen, gedeelde items en systeemmeldingen."
+      },
+      "version": {
+        "title": "Wat is er nieuw",
+        "description": "Klik op het versienummer om de nieuwste functies en verbeteringen te zien."
+      }
+    },
+    "areaSelect": {
+      "welcome": {
+        "tip": "U leert hoe u uw model configureert, gebieden tekent en uw simulatie maakt."
+      },
+      "modelName": {
+        "title": "Modelnaam"
+      },
+      "dateRange": {
+        "title": "Simulatieperiode"
+      },
+      "mapContainer": {
+        "title": "Interactieve Kaart",
+        "tip": "U kunt zoomen en de kaart verschuiven om verschillende regio's te verkennen"
+      },
+      "search": {
+        "title": "Locatie Zoeken",
+        "description": "Gebruik dit zoekvak om snel specifieke locaties op naam of adres te vinden.",
+        "tip": "Typ een locatienaam om direct resultaten te zien"
+      },
+      "save": {
+        "title": "Simulatie Maken",
+        "tip": "Alle velden moeten zijn ingevuld voordat u kunt opslaan"
+      },
+      "calculationStatus": {
+        "title": "Calculation status",
+        "description": "This line tells you whether available dates are loading, unavailable, errored, or ready for selection.",
+        "tip": "If this shows a blocker, the continue button stays disabled until the date selection is valid."
+      },
+      "finalReview": {
+        "title": "Validation status"
+      },
+      "saveSummary": {
+        "title": "Save summary",
+        "description": "This final summary shows the values that will be saved with the model and sent to the calculation workflow."
+      },
+      "ui": {
+        "sections": {
+          "intro": "Intro",
+          "setup": "Instellen",
+          "map": "Kaart",
+          "layers": "Lagen",
+          "review": "Controleren"
+        }
+      }
+    },
+    "buttons": {
+      "skip": "Overslaan",
+      "back": "Terug",
+      "next": "Volgende",
+      "finish": "Voltooien",
+      "close": "Sluiten"
+    }
+  },
+  "feedback": {
+    "title": "Feedback verzenden",
+    "subtitle": "Help ons uw ervaring te verbeteren",
+    "category": "Feedback categorie",
+    "categories": {
+      "bug": "Bugmelding",
+      "bugDescription": "Iets werkt niet",
+      "feature": "Functieverzoek",
+      "featureDescription": "Nieuwe functionaliteit voorstellen",
+      "improvement": "Verbetering",
+      "improvementDescription": "Bestaande functies verbeteren",
+      "general": "Algemeen",
+      "generalDescription": "Overige feedback"
+    },
+    "subject": "Onderwerp",
+    "subjectPlaceholder": "bijv. Kaart laadprobleem, Functiesuggestie...",
+    "message": "Uw feedback",
+    "messagePlaceholder": "Beschrijf uw feedback, suggesties of problemen in detail...",
+    "image": "Bijlage (Optioneel)",
+    "imageDropzone": "Klik om te uploaden of sleep en zet neer",
+    "imageFormats": "PNG, JPG, GIF tot 15MB",
+    "imagePreview": "Afbeeldingsvoorbeeld",
+    "removeImage": "Afbeelding verwijderen",
+    "rating": "Algemene beoordeling",
+    "ratingDescription": "Hoe zou u uw ervaring beoordelen?",
+    "submit": "Feedback verzenden",
+    "submitting": "Verzenden...",
+    "submittingMessage": "Uw feedback wordt verzonden...",
+    "gdprNotice": "Uw feedback wordt verwerkt in overeenstemming met de AVG-regelgeving.",
+    "success": {
+      "title": "Feedback verzonden!",
+      "message": "Bedankt voor uw feedback. We zullen het bekijken en indien nodig contact met u opnemen.",
+      "reference": "Referentie"
+    },
+    "errors": {
+      "loginRequired": "Log in om feedback te verzenden",
+      "submitFailed": "Feedback verzenden mislukt. Probeer het later opnieuw.",
+      "invalidImageType": "Selecteer een geldig afbeeldingsbestand (PNG, JPG, GIF)",
+      "imageTooLarge": "Afbeeldingsgrootte moet kleiner zijn dan 15MB",
+      "payloadTooLarge": "The attachment is too large. Please use smaller images."
+    },
+    "myFeedback": {
+      "title": "Mijn feedback",
+      "subtitle": "Volg de status van uw ingediende feedback",
+      "empty": "U heeft nog geen feedback ingediend",
+      "adminResponse": "Beheerderreactie",
+      "submittedOn": "Ingediend op",
+      "autoDeleteNotice": "Dit item wordt automatisch verwijderd over {days} dagen",
+      "autoDeleteSoon": "Dit item wordt binnenkort automatisch verwijderd",
+      "showHistory": "Mijn inzendingen",
+      "hideHistory": "Verbergen",
+      "status": {
+        "pending": "In afwachting",
+        "in_progress": "In behandeling",
+        "resolved": "Opgelost",
+        "closed": "Gesloten"
+      }
+    },
+    "write": "Write",
+    "preview": "Preview",
+    "markdownSupported": "Markdown supported",
+    "words": "words",
+    "chars": "chars",
+    "previewEmpty": "Nothing to preview"
+  },
+  "settings": {
+    "title": "Instellingen",
+    "subtitle": "Pas uw ervaring en voorkeuren aan",
+    "configuration": "Configuratie",
+    "goBack": "Terug",
+    "tabs": {
+      "general": "Algemeen",
+      "display": "Weergave",
+      "notifications": "Meldingen",
+      "advanced": "Geavanceerd",
+      "privacyTerms": "Privacy en voorwaarden"
+    },
+    "stats": {
+      "language": "Taal",
+      "theme": "Thema",
+      "notifications": "Meldingen",
+      "accessLevel": "Toegangsniveau",
+      "enabled": "Ingeschakeld",
+      "disabled": "Uitgeschakeld",
+      "system": "Systeem",
+      "user": "Gebruiker"
+    },
+    "language": {
+      "title": "Taal",
+      "subtitle": "Interfacetaal"
+    },
+    "mapLocation": {
+      "title": "Kaartlocatie",
+      "subtitle": "Opgeslagen posities",
+      "syncing": "Synchroniseren...",
+      "searchPlaceholder": "Zoek locatie...",
+      "current": "Huidig",
+      "noLocation": "Geen locatie ingesteld",
+      "savedLocations": "Opgeslagen Locaties",
+      "clearAll": "Alles wissen",
+      "syncNote": "Locaties worden gesynchroniseerd met uw account"
+    },
+    "locationSearch": {
+      "placeholder": "Zoek locatie...",
+      "searching": "Zoeken...",
+      "noResults": "Geen locaties gevonden",
+      "searchFailed": "Zoeken mislukt"
+    },
+    "dataDisplay": {
+      "title": "Data en Weergave",
+      "subtitle": "Eenheden en opmaak",
+      "distance": "Afstand",
+      "kilometers": "Kilometers",
+      "miles": "Mijlen",
+      "dataRefresh": "Data Verversing",
+      "min": "min",
+      "textSize": "Tekstgrootte",
+      "textSizes": {
+        "large": "Groot",
+        "normal": "Normaal",
+        "small": "Klein"
+      }
+    },
+    "notifications": {
+      "title": "Meldingen",
+      "subtitle": "Alertvoorkeuren",
+      "email": "E-mail",
+      "notifyWhenComplete": "Melden bij voltooiing",
+      "browser": "Browser",
+      "enabled": "Ingeschakeld",
+      "blocked": "Geblokkeerd",
+      "systemAlerts": "Systeemwaarschuwingen"
+    },
+    "sendNotification": {
+      "title": "Melding Verzenden",
+      "subtitle": "Systeemmeldingen",
+      "selectService": "Selecteer dienst...",
+      "services": {
+        "webService": "Webdienst",
+        "geoServer": "GeoServer",
+        "database": "Database",
+        "api": "API",
+        "mapService": "Kaartdienst"
+      },
+      "messagePlaceholder": "Voer meldingsbericht in...",
+      "sending": "Verzenden...",
+      "sendNotification": "Melding Verzenden",
+      "sent": "Melding verzonden!",
+      "failedToSend": "Verzenden mislukt"
+    },
+    "polygonLimits": {
+      "title": "Polygoon Limieten",
+      "yourLimit": "Uw limiet",
+      "unlimited": "Onbeperkt",
+      "byRole": "Per Rol",
+      "reset": "Herstellen",
+      "resetSuccess": "Alle limieten hersteld naar standaardwaarden",
+      "resetFailed": "Limieten herstellen mislukt",
+      "limitUpdated": "{{label}} limiet bijgewerkt naar {{value}}",
+      "failedToUpdate": "{{label}} limiet bijwerken mislukt",
+      "contactAdmin": "Neem contact op met admin voor hogere limieten.",
+      "levels": {
+        "basic": "Basis",
+        "intermediate": "Gemiddeld",
+        "manager": "Manager",
+        "expert": "Expert"
+      }
+    },
+    "accessLevels": {
+      "basic": "Basis",
+      "expert": "Expert",
+      "intermediate": "Gevorderd",
+      "manager": "Beheerder"
+    },
+    "modelCreation": {
+      "checking": "Voorkeur controleren...",
+      "description": "Bepaalt of de instelkaart verschijnt vóór de begeleide stappen om een model te maken.",
+      "enabled": "Introductie staat aan",
+      "enabledHint": "De samenvatting verschijnt voordat een nieuw model wordt gemaakt.",
+      "enabledMessage": "De introductiekaart verschijnt de volgende keer dat u een model maakt.",
+      "guidancePreferences": "Voorkeuren voor begeleiding",
+      "hidden": "Introductie is verborgen",
+      "hiddenHint": "Zet hem weer aan als gebruikers de samenvatting nodig hebben voordat ze een model maken.",
+      "loadError": "Deze voorkeur kan niet worden geladen.",
+      "sectionTitle": "Modellen maken",
+      "showAgain": "Opnieuw tonen",
+      "title": "Introductiekaart van het model",
+      "updateError": "De voorkeur voor de introductiekaart kan niet worden bijgewerkt."
+    }
+  },
+  "map": {
+    "zoomIn": "Inzoomen",
+    "zoomOut": "Uitzoomen",
+    "centerMap": "Kaart centreren",
+    "fitToExtent": "Aanpassen aan bereik",
+    "resetTopDown": "Terug naar bovenaanzicht",
+    "rightClickRotate": "Rechtsklik + slepen om te draaien",
+    "regions": "regio's",
+    "myModels": "mijn modellen",
+    "grids": "rasters",
+    "countries": "landen",
+    "bookmarks": {
+      "namePlaceholder": "Naam bladwijzer...",
+      "none": "Nog geen bladwijzers",
+      "saveCurrentView": "Huidige weergave opslaan",
+      "title": "Kaartbladwijzers"
+    },
+    "latestModel": "nieuwste model",
+    "legend": {
+      "title": "Kaartcontouren",
+      "yourModels": "Groen gebied: uw nieuwste model — selecteer het om de resultaten te openen",
+      "availableRegions": "Indigo gestippeld: beschikbare bestuurlijke regio's",
+      "zoomDetail": "De basiskaart toont meer detail bij inzoomen."
+    },
+    "newModelShortcut": "Sneltoets: N",
+    "privacyRequired": "Accepteer de voorwaarden voor gegevens en privacy om de kaart te bekijken"
+  },
+  "privacy": {
+    "dataAndPrivacy": "Gegevens & Privacy",
+    "acceptTerms": "Privacyvoorwaarden accepteren",
+    "openSettings": "Gegevens- en privacy-instellingen openen",
+    "dialogTitle": "Gegevensverwerking & Privacy",
+    "cartoDescription": "Om u onze diensten te kunnen leveren, maken we gebruik van CARTO en OSMF als externe kaartproviders.",
+    "sharedWithCarto": "Door te accepteren worden de volgende gegevens gedeeld met CARTO en OSMF:",
+    "ipAddress": "IP-adres",
+    "browserDeviceType": "Browser + apparaattype",
+    "timeOfRequest": "Tijdstip van verzoek",
+    "localStorageDescription": "Daarnaast gebruiken we lokale opslag om uw voorkeuren te onthouden en bij te houden of u de introductie-inhoud op dit apparaat hebt gezien.",
+    "reviewPolicies": "Raadpleeg voor meer informatie het respectievelijke privacybeleid:",
+    "cartoPolicy": "Carto Privacybeleid",
+    "osmfPolicy": "OSMF Privacybeleid",
+    "deny": "Weigeren",
+    "accept": "Accepteren"
+  },
+  "forms": {
+    "user": {
+      "personalInfo": {
+        "title": "Persoonlijke Informatie",
+        "description": "Basisgegevens en contactinformatie van gebruiker"
+      },
+      "security": {
+        "title": "Beveiliging",
+        "description": "Beveiligingsgegevens van account"
+      },
+      "fields": {
+        "fullName": "Volledige Naam",
+        "email": "E-mailadres",
+        "accessLevel": "Toegangsniveau",
+        "emailVerified": "E-mail Geverifieerd",
+        "password": "Wachtwoord",
+        "confirmPassword": "Bevestig Wachtwoord",
+        "modelLimit": "Modellimiet"
+      },
+      "placeholders": {
+        "fullName": "Voer volledige naam in",
+        "email": "Voer e-mailadres in",
+        "password": "Voer wachtwoord in",
+        "confirmPassword": "Bevestig wachtwoord",
+        "modelLimit": "Laat leeg voor standaardwaarde"
+      },
+      "descriptions": {
+        "emailVerified": "Markeer e-mail als geverifieerd",
+        "modelLimit": "Aangepaste limiet voor het maken van modellen (0 = onbeperkt, leeg = standaard)"
+      },
+      "accessLevels": {
+        "veryLow": "Zeer Lage Toegang",
+        "intermediate": "Tussenliggende Toegang",
+        "manager": "Manager (Groepstoegang)",
+        "expert": "Expert (Volledige Toegang)"
+      },
+      "validation": {
+        "passwordLength": "Wachtwoord moet minimaal 8 tekens lang zijn",
+        "nameRequired": "Naam is verplicht",
+        "emailRequired": "E-mail is verplicht",
+        "emailInvalid": "Voer een geldig e-mailadres in",
+        "accessLevelRequired": "Toegangsniveau is verplicht",
+        "passwordRequired": "Wachtwoord is verplicht",
+        "confirmPasswordRequired": "Wachtwoordbevestiging is verplicht",
+        "passwordsMismatch": "Wachtwoorden komen niet overeen"
+      }
+    },
+    "webservice": {
+      "serviceInfo": {
+        "title": "Service Informatie",
+        "description": "Basisidentificatie en metadata van webservice"
+      },
+      "connectionDetails": {
+        "title": "Verbindingsdetails",
+        "description": "Netwerk- en endpoint-configuratie"
+      },
+      "performanceSettings": {
+        "title": "Prestatie-instellingen",
+        "description": "Capaciteits- en prestatieconfiguratie van service"
+      },
+      "fields": {
+        "serviceName": "Servicenaam",
+        "protocol": "Protocol",
+        "ipAddress": "IP-adres",
+        "port": "Poort",
+        "endpoint": "Endpoint Pad",
+        "autoScaling": "Auto Schalen",
+        "maxConcurrency": "Max Gelijktijdige Verzoeken",
+        "initialStatus": "Initiële Status"
+      },
+      "placeholders": {
+        "serviceName": "Voer servicenaam in",
+        "ipAddress": "bijv., 192.168.1.100"
+      },
+      "descriptions": {
+        "serviceName": "Leesbare naam voor de webservice",
+        "autoScaling": "Schakel automatisch schalen in op basis van belasting",
+        "maxConcurrency": "Maximum aantal gelijktijdige verzoeken (1-100)"
+      },
+      "statusOptions": {
+        "active": "Actief",
+        "inactive": "Inactief",
+        "maintenance": "Onderhoud"
+      },
+      "validation": {
+        "ipInvalid": "Voer een geldig IP-adres in",
+        "portRange": "Poort moet tussen 1 en 65535 liggen",
+        "concurrencyRange": "Max gelijktijdigheid moet tussen 1 en 100 liggen",
+        "nameRequired": "Servicenaam is verplicht",
+        "ipRequired": "IP-adres is verplicht",
+        "portRequired": "Poort is verplicht"
+      }
+    },
+    "workspace": {
+      "details": {
+        "title": "Details",
+        "description": "Voer de werkruimtenaam en optionele beschrijving in"
+      },
+      "fields": {
+        "name": "Werkruimte Naam",
+        "description": "Beschrijving"
+      },
+      "placeholders": {
+        "name": "Voer werkruimtenaam in",
+        "description": "Voer werkruimtebeschrijving in (optioneel)"
+      },
+      "descriptions": {
+        "name": "Een unieke naam voor uw werkruimte",
+        "description": "Optionele beschrijving van het doel van de werkruimte"
+      },
+      "validation": {
+        "nameRequired": "Werkruimtenaam is verplicht"
+      }
+    },
+    "moveModel": {
+      "destination": {
+        "title": "Bestemming",
+        "description": "Selecteer de doelwerkruimte voor het model"
+      },
+      "fields": {
+        "targetWorkspace": "Doelwerkruimte"
+      },
+      "placeholders": {
+        "selectWorkspace": "Selecteer een werkruimte"
+      },
+      "descriptions": {
+        "targetWorkspace": "Kies de werkruimte waarnaar het model wordt verplaatst"
+      },
+      "defaultWorkspace": "Standaard Werkruimte",
+      "errorMove": "Model verplaatsen mislukt. Probeer het opnieuw.",
+      "errorMovePlural": "Modellen verplaatsen mislukt. Probeer het opnieuw.",
+      "errorSelect": "Selecteer een werkruimte",
+      "noWorkspaces": "Geen andere werkruimtes beschikbaar. Maak eerst een nieuwe werkruimte aan.",
+      "title": "Model verplaatsen",
+      "titlePlural": "Modellen verplaatsen"
+    },
+    "shareModel": {
+      "title": "Deel met een Individuele Gebruiker",
+      "description": "Voer het e-mailadres in van de gebruiker om mee te delen",
+      "emailDescription": "De gebruiker krijgt toegang tot dit model"
+    },
+    "bulkCopy": {
+      "title": "Aantal kopieën",
+      "description": "Geef aan hoeveel kopieën er voor elk geselecteerd model moeten worden gemaakt",
+      "fields": {
+        "copyCount": "Aantal kopieën",
+        "copyCountDescription": "Elk geselecteerd model wordt zo vaak gedupliceerd"
+      },
+      "validation": {
+        "min": "Minimaal 1 kopie is vereist",
+        "max": "Maximaal 10 kopieën toegestaan",
+        "integer": "Moet een geheel getal zijn"
+      }
+    }
+  },
+  "onboarding": {
+    "welcome": {
+      "title": "Welkom!",
+      "description": "Laten we je voorkeuren instellen om te beginnen",
+      "intro": "Laten we even de tijd nemen om je voorkeuren in te stellen. Dit helpt ons je ervaring te personaliseren en je de meest relevante informatie te geven.",
+      "step1": "Kies je voorkeurstaal",
+      "step2": "Stel uw kaart- en meldingsvoorkeuren in",
+      "step3": "Configureer meldingsinstellingen",
+      "timeNote": "Dit duurt maar een minuut"
+    },
+    "language": {
+      "title": "Taalvoorkeur",
+      "description": "Selecteer je voorkeurstaal voor de applicatie"
+    },
+    "map": {
+      "title": "Kaartvoorkeuren",
+      "description": "Configureer je standaard kaartlocatie"
+    },
+    "notifications": {
+      "title": "Meldingsvoorkeuren",
+      "description": "Kies hoe je waarschuwingen en updates wilt ontvangen"
+    },
+    "navigation": {
+      "previous": "Vorige",
+      "next": "Volgende",
+      "complete": "Voltooien",
+      "completing": "Voltooien...",
+      "skip": "Overslaan"
+    }
+  },
+  "newsFeed": {
+    "title": "Nieuws",
+    "readMore": "Lees meer",
+    "noNews": "Geen nieuws beschikbaar",
+    "loading": "Nieuws laden..."
+  },
+  "landing": {
+    "contact": {
+      "label": "Neem contact op",
+      "description": "Vragen, ideeën voor samenwerking of feedback? Stuur ons een bericht en we nemen contact op.",
+      "name": "Naam",
+      "namePlaceholder": "Uw naam",
+      "email": "E-mail",
+      "emailPlaceholder": "u@voorbeeld.nl",
+      "category": "Categorie",
+      "categories": {
+        "general": "Algemene vraag",
+        "partnership": "Samenwerking",
+        "pilot": "Pilot / Demo",
+        "research": "Onderzoekssamenwerking",
+        "media": "Pers & media"
+      },
+      "subject": "Onderwerp",
+      "subjectPlaceholder": "Hoe kunnen we helpen?",
+      "message": "Bericht",
+      "messagePlaceholder": "Vertel ons meer…",
+      "send": "Bericht verzenden",
+      "sending": "Verzenden…",
+      "successText": "Bedankt! Uw bericht is verzonden.",
+      "genericError": "Er ging iets mis. Probeer het opnieuw.",
+      "submitFailed": "Uw bericht kon niet worden verzonden. Probeer het opnieuw.",
+      "validationError": "Vul alle verplichte velden in."
+    },
+    "footer": {
+      "privacySettings": "Privacy-instellingen",
+      "privacyPolicy": "Privacybeleid",
+      "cookies": "Cookiebeleid",
+      "impressum": "Impressum",
+      "terms": "Algemene voorwaarden"
+    }
+  },
+  "modelResults": {
+    "title": "Model Results",
+    "errors": {
+      "noId": "No model ID provided",
+      "loadFailed": "Failed to load model results",
+      "layerIncomplete": "Layer configuration is incomplete",
+      "layerLoad": "Failed to load layer from GeoServer",
+      "tileLoad": "Some tiles failed to load from GeoServer ({{count}})"
+    },
+    "loadingWorkspace": "Loading workspace…",
+    "loadingModels": "Loading models…",
+    "noCompletedModels": "No completed models",
+    "selectModel": "Select a model",
+    "map": {
+      "initializing": "Initializing map…"
+    },
+    "empty": {
+      "title": "No result for this model yet.",
+      "hint": "The simulation output will appear here once processing finishes."
+    },
+    "details": {
+      "description": "Description",
+      "location": "Location",
+      "period": "Assessment period",
+      "days": "days",
+      "updated": "Updated",
+      "awaiting": "Waiting for result…",
+      "title": "Title",
+      "region": "Region",
+      "country": "Country",
+      "from": "From",
+      "to": "To",
+      "humidity": "Humidity"
+    }
+  },
+  "configurator": {
+    "registry": {},
+    "stepper": {
+      "stepOf": "Step {{step}} of {{total}}",
+      "back": "Back",
+      "continue": "Continue",
+      "update": "Update",
+      "save": "Save",
+      "saving": "Saving...",
+      "starting": "Starting...",
+      "saveAndRun": "Save & run",
+      "introTitle": "New analysis model",
+      "introSubtitle": "Let's set up your simulation",
+      "introDesc": "Six guided steps to define your area, validate inputs and launch a analysis run.",
+      "introProgressSaved": "Your progress is saved as you go",
+      "introDontShow": "Don't show this intro again",
+      "introCancel": "Cancel",
+      "introStart": "Get started",
+      "step": "STEP"
+    },
+    "layer1": {
+      "purpose": "Geef deze beoordeling een naam en kies de jaren die ze beslaat.",
+      "modelNameLabel": "Model name",
+      "modelNameHint": "A descriptive name so you can find this model later.",
+      "dynamicLoading": "Loading available dynamic dates...",
+      "dynamicEmpty": "No dynamic dates available.",
+      "dynamicSelected": "Selected range: {{start}} to {{end}} ({{days}} days).",
+      "dynamicSelectedOne": "Selected range: {{start}} to {{end}} (1 day).",
+      "dynamicSelectInside": "Select a range inside available dynamic dates: {{start}} to {{end}}",
+      "dynamicAvailable": "Available dynamic dates: {{start}} to {{end}}",
+      "suggestedNamesLabel": "Snelle keuzes",
+      "suggestedName2": "Studie industriecluster",
+      "modelNameQuestion": "Hoe wilt u dit model noemen?",
+      "periodQuestion": "Welke periode moet worden beoordeeld?",
+      "assessmentPeriod": "Beoordelingsperiode",
+      "startYear": "Beginjaar",
+      "endYear": "Eindjaar",
+      "periodSelected": "{{period}} · {{count}} jaar",
+      "periodMissing": "Kies een begin- en eindjaar."
+    },
+    "layer2": {},
+    "layer4": {
+      "purpose": "Pijpleiding-CAPEX schaalt met routeweerstand; vrachtwagen en spoor gebruiken afstandstarieven.",
+      "nextStepHint": "Daarna volgt de laatste controle voor het opslaan.",
+      "missingModelName": "Missing — go back to Step 1.",
+      "missingDates": "Start or end date missing.",
+      "loadingDynamic": "Loading available dynamic dates…",
+      "dynamicRequiresBefore": "Dynamic mode requires start before end.",
+      "dynamicUnavailableDates": "The selected dynamic date range contains unavailable dates.",
+      "dynamicRange": "Dynamic {{start}} → {{end}}.",
+      "noGeoJson": "No GeoJSON uploaded.",
+      "noPolygon": "No polygon drawn on the map.",
+      "uploadIncomplete": "GeoJSON upload incomplete.",
+      "areaDetails": "{{count}} regions · {{area}}",
+      "areaDetailsSingle": "1 region · {{area}}",
+      "someSignalsActive": "Running with {{count}} of 3 optional signals — output will differ from the full model.",
+      "bufferDistance": "{{buffer}} m around the AOI.",
+      "blockers": "{{count}} blockers — fix before running.",
+      "blockersSingle": "1 blocker — fix before running.",
+      "warnings": "{{count}} warnings — review before running.",
+      "warningsSingle": "1 warning — review before running.",
+      "allPassed": "All checks passed. Ready to save & calculate.",
+      "labels": {
+        "modelName": "Model name",
+        "timeframe": "Timeframe",
+        "areaOfInterest": "Area of interest",
+        "bufferDistance": "Buffer distance"
+      },
+      "costsQuestion": "Wat kosten deze routes?",
+      "costsInfo": "Berekend uit de routes uit de vorige stap.",
+      "missingYears": "Begin- of eindjaar ontbreekt – ga terug naar stap 1.",
+      "yearOrder": "Het beginjaar ligt na het eindjaar.",
+      "periodYears": "{{period}} · {{count}} jaar"
+    },
+    "layer5": {
+      "looksGood": "Everything looks good? Hit ",
+      "below": " below.",
+      "labels": {
+        "modelName": "Model name",
+        "from": "From",
+        "to": "To"
+      }
+    },
+    "coverage": {
+      "title": "Data coverage",
+      "unavailable": "Coverage unavailable",
+      "exactFootprint": "Exact raster footprint",
+      "mainFootprint": "{{percent}}% main footprint",
+      "data": "Data",
+      "noData": "No data",
+      "useShaded": "Use shaded areas",
+      "requiredAvailable": "Required inputs are available.",
+      "requiredAvailableDates": "Required inputs are available for {{dates}}.",
+      "avoidBlank": "Avoid blank gaps",
+      "blankDesc": "Blank areas have no valid source raster data for calculation.",
+      "availableData": "Data available"
+    },
+    "mapHeader": {},
+    "blocking": {
+      "and": " en ",
+      "dateRange": "een begin- en einddatum",
+      "dynamicEmpty": "Er zijn momenteel geen dynamische datums beschikbaar.",
+      "dynamicLoading": "Beschikbare dynamische datums laden.",
+      "dynamicRange": "Selecteer een volledig beschikbaar dynamisch datumbereik.",
+      "modelName": "een modelnaam",
+      "dynamicOrder": "De startdatum moet vóór of gelijk aan de einddatum liggen.",
+      "yearRange": "een begin- en eindjaar",
+      "yearOrder": "Het beginjaar mag niet na het eindjaar liggen."
+    },
+    "save": {
+      "calculationFailed": "Het model is opgeslagen, maar de berekening kon niet worden gestart.",
+      "createFailed": "Het model kon niet worden gemaakt. Probeer het opnieuw.",
+      "updateFailed": "Het model kon niet worden opgeslagen. Probeer het opnieuw.",
+      "uploadFailed": "Het model is opgeslagen, maar de invoerbestanden konden niet worden geüpload."
+    },
+    "stepPurposeHide": "Stapinfo verbergen",
+    "stepPurposeShow": "Wat houdt deze stap in?",
+    "wizard": {
+      "steps": "Modelstappen"
+    }
+  },
+  "whatsNew": {
+    "open": "Wat is er nieuw in deze versie",
+    "title": "Wat is er nieuw",
+    "version": "Versie {{version}}",
+    "released": "Uitgebracht op {{date}}",
+    "intro": "Een overzicht van de nieuwste functies, verbeteringen en oplossingen in deze release.",
+    "where": "Waar",
+    "viewAll": "Alle wijzigingen op GitHub",
+    "close": "Begrepen",
+    "groups": {
+      "new": "Nieuw",
+      "improved": "Verbeterd",
+      "fixed": "Opgelost"
+    },
+    "items": {
+      "families": {
+        "title": "Modelversies gegroepeerd",
+        "description": "Elk model verschijnt nu één keer, met de kopieën eronder gegroepeerd. Het oorspronkelijke model blijft bovenaan en de versiebadge klapt de kopieën uit, oudste eerst.",
+        "where": "Modeldashboard → modellenlijst"
+      },
+      "tabs": {
+        "title": "Statustabbladen",
+        "description": "Schakel tussen Alle, Vastgezet, Bezig, Voltooid, Concepten en Mislukt. Zoeken en het periodefilter werken in elk tabblad.",
+        "where": "Modeldashboard → boven de lijst"
+      },
+      "pinning": {
+        "title": "Modellen vastzetten",
+        "description": "Een vastgezet model blijft bovenaan de lijst. Een versie vastzetten houdt de hele familie bovenaan, en het tabblad Vastgezet verzamelt ze op één plek.",
+        "where": "Modelrij → punaise-icoon"
+      },
+      "newBadge": {
+        "title": "Badge voor nieuwe resultaten",
+        "description": "Recent voltooide modellen krijgen een Nieuw-badge. Beweeg erover om te zien wanneer de berekening klaar was.",
+        "where": "Modelrij → naast de titel"
+      },
+      "tour": {
+        "title": "Vernieuwde rondleiding",
+        "description": "De rondleiding loopt stap voor stap door dashboard, kaart en hulpmiddelen, met sectiepunten en navigatie met pijltjestoetsen.",
+        "where": "Help-menu → Rondleiding herstarten"
+      },
+      "workspaceMenu": {
+        "title": "Werkruimtemenu",
+        "description": "De lijst met werkruimtes opent nu volledig boven de statustabbladen en de modellenlijst.",
+        "where": "Modeldashboard → werkruimtekiezer"
+      }
+    }
+  },
+  "adminDashboard": {
+    "welcome": "Welkom terug",
+    "subtitle": "Uw commandocentrum voor risicobeoordeling",
+    "navigation": "Navigatie",
+    "overview": "Overzicht",
+    "profile": "Profiel",
+    "settings": "Instellingen",
+    "logout": "Uitloggen",
+    "tabs": {
+      "overview": "Overzicht",
+      "allSimulationModels": "Alle Simulatiemodellen",
+      "simulationEngine": "Simulatie-Engine",
+      "feedback": "Feedback",
+      "userManagement": "Gebruikersbeheer",
+      "gridEngine": "Compute Engine"
+    },
+    "stats": {
+      "accessLevel": "Toegangsniveau",
+      "availableLayers": "Beschikbare Lagen",
+      "status": "Status",
+      "totalUsers": "Totaal Gebruikers",
+      "lastLogin": "Laatste Aanmelding",
+      "active": "Actief",
+      "online": "Online",
+      "live": "Live",
+      "updating": "Bijwerken",
+      "recent": "Recent",
+      "allMapLayers": "Alle Lagen",
+      "mapLayers": "{{count}} Lagen",
+      "mapLayer": "{{count}} Laag"
+    },
+    "accessLevels": {
+      "expert": "Expert Toegang",
+      "manager": "Manager Toegang",
+      "intermediate": "Gemiddelde Toegang",
+      "veryLow": "Zeer Lage Toegang",
+      "unknown": "Onbekend"
+    },
+    "accessTrends": {
+      "maximum": "Maximum",
+      "management": "Beheer",
+      "upgradable": "Upgradebaar",
+      "basic": "Basis"
+    },
+    "userProfile": {
+      "title": "Gebruikersprofiel",
+      "subtitle": "Uw accountinformatie",
+      "email": "E-mail"
+    },
+    "accessPermissions": {
+      "title": "Toegang & Machtigingen",
+      "subtitle": "Systeemmogelijkheden",
+      "active": "Actief",
+      "currentLevel": "Huidig Niveau",
+      "workspaces": "Werkruimtes",
+      "unlimited": "Onbeperkt",
+      "activeWorkspaces": "{{count}} Actief",
+      "teamSharing": "Team Delen",
+      "enabled": "Ingeschakeld",
+      "disabled": "Uitgeschakeld",
+      "modelQuota": "Model Quotum",
+      "standardLimit": "Standaard Limiet",
+      "computePower": "Rekenkracht",
+      "highPerformance": "Hoge Prestaties",
+      "standard": "Standaard",
+      "availableFeatures": "Beschikbare Functies",
+      "allLayersAvailable": "Alle Lagen Beschikbaar",
+      "fullSystemAccess": "Volledige Systeemtoegang",
+      "upgradeMessage": "Ontgrendel meer functies door een upgrade aan te vragen bij uw beheerder.",
+      "resultFinal": "Result Final"
+    },
+    "quickActions": {
+      "title": "Snelle Acties",
+      "subtitle": "Navigeer naar belangrijke functies",
+      "interactiveMap": "Interactieve Kaart",
+      "settings": "Instellingen",
+      "configurePreferences": "Configureer voorkeuren"
+    },
+    "title": "Beheerdersdashboard",
+    "welcomeBack": "Welkom terug, {{name}}!",
+    "administrator": "Beheerder",
+    "loadingContent": "Inhoud laden..."
+  },
+  "modelsManagement": {
+    "title": "Alle simulatiebeoordelingsmodellen",
+    "subtitle": "Beheer en monitor alle modellen in het systeem",
+    "searchPlaceholder": "Modellen zoeken...",
+    "loadingModels": "Modellen laden...",
+    "noModelsFound": "Geen modellen gevonden",
+    "noModelsDescription": "Begin met het maken van uw eerste simulatiebeoordelingsmodel.",
+    "sharedWorkspace": "Gedeelde werkruimte (Eigenaar: {{owner}})",
+    "table": {
+      "model": "Model",
+      "status": "Status",
+      "created": "Aangemaakt",
+      "lastModified": "Laatst gewijzigd",
+      "actions": "Acties"
+    },
+    "status": {
+      "draft": "Concept",
+      "inQueue": "In wachtrij",
+      "inProgress": "In uitvoering",
+      "completed": "Voltooid",
+      "published": "Gepubliceerd"
+    },
+    "notifications": {
+      "duplicated": "Model \"{{title}}\" is succesvol gedupliceerd",
+      "failedToDuplicate": "Model dupliceren mislukt. Probeer het opnieuw.",
+      "calculationStarted": "Berekening succesvol gestart",
+      "failedToCalculate": "Berekening starten mislukt. Probeer het opnieuw.",
+      "moveComingSoon": "Verplaatsen naar werkruimte functie komt binnenkort voor \"{{title}}\"",
+      "shared": "Model succesvol gedeeld",
+      "deleted": "Model \"{{title}}\" is verwijderd",
+      "failedToDelete": "Model verwijderen mislukt. Probeer het opnieuw."
+    },
+    "refresh": "Vernieuwen"
+  },
+  "webservicesManagement": {
+    "title": "Simulatiemotor beheer",
+    "subtitle": "Beheer berekeningswebservice-instanties",
+    "searchPlaceholder": "Zoeken op naam, IP...",
+    "refresh": "Vernieuwen",
+    "registerNew": "Nieuwe webservice registreren",
+    "loadingWebservices": "Webservices laden...",
+    "noWebservicesFound": "Geen webservices gevonden",
+    "noWebservicesDescription": "Begin met het registreren van uw eerste webservice-instantie.",
+    "summary": {
+      "total": "Totaal",
+      "online": "Online",
+      "available": "Beschikbaar",
+      "busy": "Bezig",
+      "offline": "Offline"
+    },
+    "yourSimulationStatus": "Uw simulatiestatus",
+    "modelsRunningDescription": "{{count}} van uw modellen worden momenteel berekend",
+    "modelsQueuedDescription": "{{count}} van uw modellen wachten - de simulatie-engine verwerkt andere berekeningen",
+    "filters": {
+      "allStatus": "Alle statussen",
+      "active": "Actief",
+      "inactive": "Inactief",
+      "maintenance": "Onderhoud",
+      "error": "Fout",
+      "allAvailability": "Alle beschikbaarheid",
+      "available": "Beschikbaar",
+      "unavailable": "Niet beschikbaar"
+    },
+    "table": {
+      "service": "Service",
+      "endpoint": "Endpoint",
+      "status": "Status",
+      "availability": "Beschikbaarheid",
+      "jobs": "Taken",
+      "performance": "Prestaties",
+      "user": "Gebruiker",
+      "ip": "IP-adres",
+      "port": "Poort",
+      "lastCheck": "Laatste controle",
+      "actions": "Acties",
+      "never": "Nooit"
+    },
+    "status": {
+      "online": "Online",
+      "offline": "Offline",
+      "available": "Beschikbaar",
+      "unavailable": "Niet beschikbaar"
+    },
+    "busyStatus": {
+      "calculating": "Berekening ({{current}}/{{max}})",
+      "idle": "Inactief (0/{{max}})"
+    },
+    "actions": {
+      "pingWebservice": "Webservice pingen",
+      "editWebservice": "Webservice bewerken",
+      "deleteWebservice": "Webservice verwijderen"
+    },
+    "dialog": {
+      "editTitle": "Webservice-instantie bewerken",
+      "createTitle": "Nieuwe webservice registreren",
+      "editDescription": "Webserviceconfiguratie bijwerken",
+      "createDescription": "Een nieuwe simulatieberekeningswebservice-instantie configureren",
+      "editButton": "Webservice bijwerken",
+      "createButton": "Webservice registreren"
+    },
+    "notifications": {
+      "created": "Webservice succesvol geregistreerd!",
+      "updated": "Webservice succesvol bijgewerkt!",
+      "deleted": "Webservice succesvol verwijderd!",
+      "statusChanged": "Webservicestatus gewijzigd naar {{status}}",
+      "failedToCreate": "Webservice registreren mislukt",
+      "failedToUpdate": "Webservice bijwerken mislukt",
+      "failedToDelete": "Webservice verwijderen mislukt",
+      "failedToPing": "Webservice pingen mislukt"
+    },
+    "noWebservicesAvailable": "Geen simulatie-engines momenteel geconfigureerd. Neem contact op met een beheerder.",
+    "healthCheck": "Simulatie-engine"
+  },
+  "feedbackManagement": {
+    "title": "Gebruikersfeedback Beheer",
+    "subtitle": "Bekijk en reageer op gebruikersfeedback",
+    "refresh": "Vernieuwen",
+    "noFeedbackFound": "Geen feedback gevonden",
+    "noFeedbackDescription": "Gebruikersfeedback verschijnt hier wanneer het wordt ingediend.",
+    "filters": {
+      "label": "Filters:",
+      "allStatus": "Alle Statussen",
+      "allCategories": "Alle Categorieën",
+      "allPriorities": "Alle Prioriteiten"
+    },
+    "statuses": {
+      "pending": "In Afwachting",
+      "inProgress": "In Behandeling",
+      "resolved": "Opgelost",
+      "closed": "Gesloten"
+    },
+    "categories": {
+      "bug": "Bugrapport",
+      "feature": "Functieverzoek",
+      "improvement": "Verbetering",
+      "general": "Algemeen"
+    },
+    "priorities": {
+      "low": "Laag",
+      "medium": "Gemiddeld",
+      "high": "Hoog",
+      "critical": "Kritiek"
+    },
+    "table": {
+      "subject": "Onderwerp",
+      "category": "Categorie",
+      "priority": "Prioriteit",
+      "status": "Status",
+      "rating": "Beoordeling",
+      "user": "Gebruiker",
+      "created": "Aangemaakt",
+      "actions": "Acties"
+    },
+    "actions": {
+      "viewDetails": "Details Bekijken",
+      "editStatus": "Status Bewerken",
+      "deleteFeedback": "Feedback Verwijderen",
+      "delete": "Verwijderen"
+    },
+    "viewDialog": {
+      "title": "Feedbackdetails",
+      "subtitle": "Bekijk volledige feedbackinformatie",
+      "message": "Bericht:",
+      "rating": "Beoordeling:",
+      "submitted": "Ingediend",
+      "adminResponse": "Admin Reactie:",
+      "respondedOn": "Gereageerd op:",
+      "attachedImage": "Bijgevoegde afbeelding",
+      "feedbackScreenshot": "Feedback screenshot",
+      "clickToEnlarge": "Klik om te vergroten",
+      "imageLoadError": "Afbeelding laden mislukt",
+      "submittedBy": "Ingediend door"
+    },
+    "editDialog": {
+      "title": "Feedback Bijwerken",
+      "description": "Wijzig feedbackstatus, prioriteit en geef een adminreactie",
+      "statusAndPriority": "Feedbackstatus & Prioriteit",
+      "statusAndPriorityDescription": "Werk feedbackstatus en prioriteitsniveau bij",
+      "status": "Status",
+      "priority": "Prioriteit",
+      "adminResponse": "Admin Reactie",
+      "adminResponseDescription": "Geef een reactie aan de gebruiker",
+      "response": "Reactie",
+      "responsePlaceholder": "Voeg uw reactie toe aan de gebruiker...",
+      "saveChanges": "Wijzigingen Opslaan"
+    },
+    "notifications": {
+      "updateSuccess": "Feedback \"{{subject}}\" succesvol bijgewerkt",
+      "updateError": "Feedback bijwerken mislukt. Probeer het opnieuw.",
+      "deleteSuccess": "Feedback \"{{subject}}\" succesvol verwijderd",
+      "deleteError": "Feedback verwijderen mislukt. Probeer het opnieuw."
+    },
+    "hasAttachment": "Heeft bijgevoegde afbeelding"
+  },
+  "apiTokens": {
+    "create": "Nieuw token maken",
+    "createdOnce": "Kopieer dit token nu — het wordt nooit meer getoond.",
+    "errors": {
+      "create": "Token maken mislukt",
+      "load": "Tokens laden mislukt",
+      "revoke": "Token intrekken mislukt"
+    },
+    "existing": "Bestaande tokens",
+    "expires": "verloopt",
+    "expiry": "Verloopdatum",
+    "expiry30": "Verloopt over 30 dagen",
+    "expiry365": "Verloopt over 1 jaar",
+    "expiry90": "Verloopt over 90 dagen",
+    "expiryNever": "Verloopt nooit",
+    "generate": "Token genereren",
+    "lastUsed": "laatst gebruikt",
+    "namePlaceholder": "Tokennaam (bijv. analysescript)",
+    "none": "Nog geen tokens.",
+    "revoke": "Intrekken",
+    "scope": "Rechten",
+    "scopeFull": "Lezen en schrijven",
+    "scopeFullShort": "lezen en schrijven",
+    "scopeRead": "Alleen lezen (aanbevolen)",
+    "scopeReadShort": "alleen lezen",
+    "status": {
+      "active": "Actief",
+      "expired": "Verlopen",
+      "revoked": "Ingetrokken"
+    },
+    "subtitle": "Beheer API-toegangstokens voor",
+    "title": "API-tokens"
+  }
+}
